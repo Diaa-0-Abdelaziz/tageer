@@ -1,3 +1,6 @@
+.search {
+  z-index: -1;
+}
 .search img {
   width: 100%;
 }
