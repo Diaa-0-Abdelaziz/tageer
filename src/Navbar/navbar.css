@@ -1,0 +1,197 @@
+header .navbar {
+  background-color: #3a1b50;
+  color: white;
+}
+header .navbar .container {
+  display: flex;
+  justify-content: space-between;
+}
+header .navbar .logo {
+  width: 200px;
+}
+header .navbar .lamborghini {
+  width: 70px;
+}
+header .navbar .img_calendar {
+  width: 30px;
+}
+header .navbar .border-style {
+  position: relative;
+  padding: 12px 0;
+}
+header .navbar .border-style::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: white;
+  left: -7px;
+}
+header .navbar ul .fs-13 {
+  font-size: 13px;
+  font-weight: bold;
+}
+header .navbar ul select {
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  background-color: transparent;
+  border: none;
+  padding-left: 0px;
+}
+header .navbar ul select option {
+  background-color: white;
+  color: black;
+}
+@media screen and (max-width: 1425px) {
+  header .navbar .advertisement {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1060px) {
+  header .navbar .content {
+    flex-wrap: wrap !important;
+  }
+}
+@media screen and (max-width: 800px) {
+  header .navbar .setting_btn {
+    display: inline !important;
+    position: absolute;
+    left: 0;
+    cursor: pointer;
+  }
+  header .navbar .open_Setting {
+    top: 100px !important;
+  }
+  header .navbar .settings {
+    padding: 0 10px;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: #3A1B50;
+    top: -360px;
+    transition: all 0.5s;
+  }
+  header .navbar .settings select {
+    color: white;
+  }
+  header .navbar .settings .border-style::before {
+    width: 0px;
+  }
+  header .navbar .settings .close_Setting {
+    cursor: pointer;
+    display: inline !important;
+  }
+}
+@media screen and (max-width: 930px) {
+  header .navbar .content .menu {
+    cursor: pointer;
+    display: inline !important;
+  }
+}
+header .navlist {
+  background-color: white;
+}
+header .navlist ul {
+  padding: 0 5px;
+}
+header .navlist ul li {
+  margin: 0 10px;
+}
+header .navlist ul li a {
+  padding: 0 3px;
+  transition: all 0.3s;
+}
+header .navlist ul li a:hover,
+header .navlist ul li select:hover {
+  background-color: #3A1B50;
+  color: white !important;
+  border-radius: 5px;
+}
+header .navlist ul .fs-18 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #3A1B50;
+}
+header .navlist ul select {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  background-color: transparent;
+  border: none;
+  padding-left: 0px;
+}
+header .navlist ul select option {
+  background-color: white;
+  color: black;
+}
+header .navlist img {
+  width: 300px;
+}
+header .navlist .social {
+  padding-left: 15px;
+}
+header .navlist .social li {
+  width: 36px;
+  height: 36px;
+  position: relative;
+  border-radius: 50%;
+  background-color: #3A1B50;
+  margin: 0 5px;
+  overflow: hidden;
+}
+header .navlist .social li a {
+  position: absolute;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%);
+  color: white;
+  font-size: 20px;
+}
+header .navlist .facebook {
+  background-color: #3B5998 !important;
+}
+header .navlist .twitter {
+  background-color: #55ACEE !important;
+}
+@media screen and (max-width: 930px) {
+  header .open_nav_list {
+    left: 0px !important;
+  }
+  header .navlist {
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+    left: -100%;
+  }
+  header .navlist .close {
+    display: block !important;
+    position: absolute;
+    right: 0;
+    margin: 5px;
+  }
+  header .navlist .content {
+    flex-direction: column;
+  }
+  header .navlist .content .close {
+    cursor: pointer;
+    color: #3A1B50;
+  }
+  header .navlist .content .navlinks {
+    margin-top: 40px !important;
+    flex-direction: column;
+  }
+  header .navlist .content .navlinks li {
+    margin: auto;
+    width: 100%;
+  }
+  header .navlist .content .appAndSocial {
+    flex-direction: column;
+  }
+  header .navlist .content .appAndSocial img {
+    max-width: 170px;
+  }
+}/*# sourceMappingURL=navbar.css.map */
