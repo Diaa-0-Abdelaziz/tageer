@@ -1,0 +1,40 @@
+.BetterWay
+{
+    .container
+    {
+        border-top: 1px solid rgb(79, 79, 79);
+        padding-top: 20px;
+    
+    .img_cover
+    {
+        background-image: url(../../../../images/img_rum_banner.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 150px 0;
+        border-radius: 30px;
+    }
+    .text
+    {
+        
+        h3
+        {
+            font-size: 38px;
+        }
+        p 
+        {
+           font-size: 16px;
+        }
+    }
+    ul 
+    {
+        li 
+        {
+            i 
+            {
+                width: 76px;
+                height: 76px;
+            }
+        }
+    }
+}
+}
