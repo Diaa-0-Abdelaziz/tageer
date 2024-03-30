@@ -1,0 +1,39 @@
+.right
+{
+  margin-right: -30px;
+  cursor: pointer;
+  background-color: #CEEFFF;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.left
+{
+  margin-left: -30px;
+  cursor: pointer;
+  background-color: #CEEFFF;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.carTypeSlider .title
+{
+    background-color: #CEEFFF;
+    width: 100%;
+    padding: 7px 0;
+    text-align: center;
+}
+@media screen and (max-width: 600px) {
+    .right{
+        display: none;
+    }
+    .left{
+        display: none;
+    }
+}

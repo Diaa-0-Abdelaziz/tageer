@@ -1,0 +1,40 @@
+.CarType
+{
+    .CarType_Header
+    {
+         h3 
+         {
+            width: fit-content;
+            font-size: 24px;
+            font-weight: bold;
+            color: black;
+         }
+        .line
+        {
+            width: 60%;
+            height: 2px;
+            background-color: #3a1b50;
+        }
+    }
+    p 
+    {
+        font-size: 12px;
+    }
+    .collapsed {
+        overflow: hidden;
+        text-overflow: ellipsis; 
+        white-space: nowrap; 
+        // color: red;
+        // background-color: #3a1b50;
+        height: 40px;
+      }
+      
+      .expanded {
+        overflow: visible;
+        height: auto;
+      }
+      .read_more
+      {
+       cursor: pointer;
+      }
+}
