@@ -31,7 +31,7 @@ export default function CarTypeCursel() {
         infinite: true,
         slidesToShow: 7,
         slidesToScroll: 1,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 2000,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,

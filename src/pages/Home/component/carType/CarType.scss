@@ -15,6 +15,22 @@
             height: 2px;
             background-color: #3a1b50;
         }
+        .ViewAll
+        {
+            background-color: #E6F6FF;
+            color: rgb(95, 95, 95);
+            padding: 10px 40px;
+            border-radius: 30px;
+            font-size: 16px;
+            font-weight: 100;
+        }
+        @media screen and (max-width: 550px) {
+            flex-direction: column;
+            .ViewAll
+            {
+                margin-top: 10px;
+            }
+        }
     }
     p 
     {

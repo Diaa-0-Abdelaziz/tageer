@@ -166,6 +166,7 @@ header .navlist .twitter {
     overflow: hidden;
     transition: all 0.5s;
     left: -100%;
+    z-index: 99999;
   }
   header .navlist .close {
     display: block !important;
