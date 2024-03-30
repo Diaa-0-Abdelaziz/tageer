@@ -1,0 +1,40 @@
+.search img {
+  width: 100%;
+}
+.search .cover_color {
+  background-color: rgba(58, 27, 80, 0.5803921569);
+}
+.search .form .View_all_cars_btn {
+  background-color: rgba(58, 27, 80, 0.7490196078);
+  border-radius: 20px 0px 0px 20px;
+  padding: 7px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search .form .View_all_cars_btn i {
+  cursor: pointer;
+  color: #3a1b50;
+  background-color: #E6F6FF;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  margin-right: 5px;
+  justify-content: center;
+  align-items: center;
+}
+.search .form .View_all_cars_btn p {
+  color: white;
+  font-size: 16px;
+  font-weight: bolder;
+  margin-bottom: 0;
+}
+.search .form .search_form .search_btn {
+  cursor: pointer;
+}
+.search .form .search_form input {
+  border-radius: 0px 20px 20px 0px;
+  border: none;
+  outline: none;
+}/*# sourceMappingURL=search.css.map */

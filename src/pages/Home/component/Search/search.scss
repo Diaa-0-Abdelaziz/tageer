@@ -1,0 +1,63 @@
+.search
+{
+    // background-image:linear-gradient( #3a1b503e, #3a1b503e), url(../../../../images/car-subscription-new-image@2x.png);
+//    background-size:100%;
+//    background-repeat: no-repeat;
+//    background-attachment: fixed;
+//    padding: 20px 0;
+img 
+{
+    width: 100%;
+}
+.cover_color
+{
+    background-color: #3a1b5094;
+}
+.form
+{
+    .View_all_cars_btn
+    {
+        // 3a1b50bf
+        background-color: #3a1b50bf;
+        border-radius: 20px 0px 0px 20px;
+        padding: 7px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i 
+        {
+            cursor: pointer;
+            color: #3a1b50;
+            background-color: #E6F6FF;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            margin-right: 5px;
+            justify-content: center;
+            align-items: center;
+        }
+        p 
+        {
+            color: white;
+            font-size: 16px;
+            font-weight: bolder;
+            margin-bottom: 0;
+        }
+    }
+    .search_form
+        {
+            .search_btn
+            {
+                cursor: pointer;
+            }
+            input 
+            {
+                border-radius: 0px 20px 20px 0px;
+                border: none;
+                outline: none;
+            }
+        }
+}
+
+}
