@@ -1,0 +1,37 @@
+.faq
+{
+    h2
+    {
+        color: #3D1F50;
+    }
+    article
+    {
+        background-color: #E6F6FF;
+        height: 60px;
+        transition: height .3s ease;
+        overflow: hidden;
+        .toggleButton
+        {
+            background-color: white;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .question
+        {
+            font-size: 25px;
+        }
+        p{
+            font-size: 25px;
+        }
+    }
+     .open
+     {
+        max-height: 1000px;
+        transition: .3s;
+     }
+}

@@ -8,6 +8,7 @@ import BetterWay from './component/BetterWay/BetterWay'
 import BESTSERVICES from './component/BEST-SERVICES/BESTSERVICES'
 import NextTrip from './component/Next-Trip/NextTrip'
 import Testimonials from './component/TestimonialsAndCursol/Testimonials'
+import FAQ from './component/FAQ/FAQ'
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
  <NextTrip/>
  <BESTSERVICES/>
  <Testimonials/>
+ <FAQ/>
   </>
   )
 }

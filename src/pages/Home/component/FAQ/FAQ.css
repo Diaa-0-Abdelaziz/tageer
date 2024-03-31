@@ -1,0 +1,20 @@
+.faq article {
+  background-color: #E6F6FF;
+  height: 60px;
+  transition: height 0.3s ease;
+  overflow: hidden;
+}
+.faq article .toggleButton {
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.faq .open {
+  height: 150px;
+  transition: 0.3s;
+}/*# sourceMappingURL=FAQ.css.map */
