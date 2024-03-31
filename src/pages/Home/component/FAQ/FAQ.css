@@ -24,6 +24,6 @@
   font-size: 25px;
 }
 .faq .open {
-  max-height: 1000px;
+  height: 200px;
   transition: 0.3s;
 }/*# sourceMappingURL=FAQ.css.map */

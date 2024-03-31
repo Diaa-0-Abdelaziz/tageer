@@ -11,7 +11,7 @@ export default function FAQ() {
             answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quo nam nesciunt laboriosam iste laborum corrupti corporis quaerat ut perspiciatis?" 
         },
         { id: 2, 
-          question: "Question 2?",
+          question: "Can I take a rental car from Dubai to Oman?",
           answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quo nam nesciunt laboriosam iste laborum corrupti corporis quaerat ut perspiciatis?" 
         },
     ];
