@@ -1,0 +1,37 @@
+.BESTSERVICES
+{
+    background-image: url(../../../../images/BESTSERVICESBACKGROUND.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   margin-top: 50px;
+   position: relative;
+   ::before
+   {
+   position: absolute;
+   content: "";
+   top: -10px;
+   width: 70%;
+   left: 50%;
+   height: 1px;
+   background-color: #3A1B50;
+   transform: translateX(-50%);
+   }
+ .container 
+ {
+    padding: 70px 0;
+    h3 
+    {
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    p{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:770px) {
+    overflow: hidden;
+    background-image:linear-gradient(rgba(255, 255, 255, 0.871), rgba(255, 255, 255, 0.307)), url(../../../../images/dots.png);
+    background-size: auto;
+    background-repeat: repeat;
+}
+}

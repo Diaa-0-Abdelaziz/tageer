@@ -5,6 +5,8 @@ import Carbrand from './component/carBrand/Carbrand'
 import RentSUVLuxury from './component/RentSUVLuxury/RentSUVLuxury'
 import CarRentalCompanies from './component/CarRentalCompanies/CarRentalCompanies'
 import BetterWay from './component/BetterWay/BetterWay'
+import BESTSERVICES from './component/BEST-SERVICES/BESTSERVICES'
+import NextTrip from './component/Next-Trip/NextTrip'
 
 export default function Home() {
   return (
@@ -16,6 +18,9 @@ export default function Home() {
  <RentSUVLuxury/>
  <CarRentalCompanies/>
  <BetterWay/>
+ <BESTSERVICES/>
+ <NextTrip/>
+ <BESTSERVICES/>
   </>
   )
 }

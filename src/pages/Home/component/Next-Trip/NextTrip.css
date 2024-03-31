@@ -1,0 +1,45 @@
+.NextTrip {
+  background-image: linear-gradient(rgba(58, 27, 80, 0.6235294118), rgba(58, 27, 80, 0.6235294118)), url(../../../../images/img_ferarif8tributo.png);
+  background-size: cover;
+}
+.NextTrip .container {
+  padding: 60px 0;
+}
+.NextTrip .container .NextTrip_content {
+  max-width: 290px;
+  color: white;
+}
+.NextTrip .container .NextTrip_content h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.NextTrip .container .NextTrip_content article {
+  margin: 30px 0;
+}
+.NextTrip .container .NextTrip_content article p {
+  padding: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+.NextTrip .container .NextTrip_content article span {
+  font-size: 16px;
+}
+.NextTrip .container .line {
+  width: 2px;
+  background-color: white;
+}
+@media screen and (max-width: 770px) {
+  .NextTrip .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .NextTrip .container .NextTrip_content {
+    margin-top: 20px;
+  }
+  .NextTrip .container .line {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+  }
+}/*# sourceMappingURL=NextTrip.css.map */
