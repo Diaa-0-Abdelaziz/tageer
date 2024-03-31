@@ -1,0 +1,83 @@
+footer {
+  margin-top: 100px;
+  padding: 20px;
+  background-image: linear-gradient(rgba(58, 27, 80, 0.7137254902), rgba(58, 27, 80, 0.7137254902)), url(../images/img_ferarif8tributo_539x1920.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+footer .social {
+  position: relative;
+  padding-left: 15px;
+  top: -60px;
+}
+footer .social li {
+  width: 36px;
+  height: 36px;
+  position: relative;
+  border-radius: 50%;
+  background-color: #3A1B50;
+  margin: 0 5px;
+  overflow: hidden;
+}
+footer .social li a {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+}
+footer .social .facebook {
+  background-color: #3B5998 !important;
+}
+footer .social .twitter {
+  background-color: #55ACEE !important;
+}
+footer .container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .container-fluid ul {
+  list-style: none;
+  font-size: 17px;
+  position: relative;
+}
+footer .container-fluid ul .app {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+footer .container-fluid ul .app img {
+  width: 150px;
+  margin-top: -50px;
+}
+footer .container-fluid ul .Download {
+  max-width: 200px;
+  text-align: center;
+}
+footer .container-fluid ul:not(:nth-child(5))::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  background-color: white;
+  height: 100%;
+  right: -20px;
+  top: 0;
+}
+@media screen and (max-width: 1242px) {
+  footer .container-fluid {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  footer .container-fluid ul:not(:nth-child(5))::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0px;
+  }
+}/*# sourceMappingURL=Footer.css.map */

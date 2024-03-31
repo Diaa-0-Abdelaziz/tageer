@@ -12,7 +12,7 @@ export default function CarType() {
     <section className='CarType pt-3'>
         <div className="container">
         <div className='CarType_Header d-flex justify-content-between mb-3 align-items-center'>
-        <h3 className=' badge'>Choose your favorite car type</h3>
+        <h3 className=''>Choose your favorite car type</h3>
         <div className='line'></div>
         </div>
         <p className=' fw-bold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, laborum.</p>

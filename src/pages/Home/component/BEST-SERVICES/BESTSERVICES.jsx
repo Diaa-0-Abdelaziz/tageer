@@ -5,7 +5,7 @@ export default function BESTSERVICES() {
   return (
     <>
     <section className='BESTSERVICES'>
-<div className="container">
+<div className="container overflow-hidden">
     <div className="row d-flex justify-content-center overflow-hidden">
         <div className="col-lg-4 col-md-6">
         <img src={img_your_image_mask} alt={img_your_image_mask} className=' w-100' />
