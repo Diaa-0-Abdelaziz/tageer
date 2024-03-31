@@ -1,0 +1,38 @@
+.Testimonials .container {
+  border-top: 1px solid #3A1B50;
+  padding-top: 20px;
+}
+.Testimonials .container p {
+  font-size: 18px;
+  color: rgb(109, 109, 109);
+  margin-bottom: 0;
+}
+.Testimonials .container h2 {
+  font-size: 40px;
+  font-weight: bolder;
+}
+.Testimonials .container .slider_pro {
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.226);
+  border-radius: 20px;
+}
+.Testimonials .container .slider_pro img.one {
+  width: 40px;
+  height: 40px;
+}
+.Testimonials .container .slider_pro img {
+  width: 30px;
+  height: 30px;
+}
+.Testimonials .container .slider_pro .Name {
+  text-align: center;
+  color: rgb(86, 86, 86);
+}
+.Testimonials .container .slider_pro .Name h5 {
+  font-size: 18px;
+}
+.Testimonials .container .slider_pro .Name h6 {
+  font-size: 14px;
+}
+.Testimonials .container .slider_pro .info .rating li {
+  color: rgb(232, 232, 11);
+}/*# sourceMappingURL=Testimonials.css.map */
