@@ -38,38 +38,113 @@ header
         }
         ul 
         {
+
+            .custom-select {
+                position: relative;
+                display: inline-block;
+            .selected-option {
+                font-size: 12px;
+                padding: 8px 12px;
+                border-radius: 5px;
+                width:150px;
+                cursor: pointer;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                text-decoration: underline;
+            }
+            .opt2
+            {
+                width: 100px;
+            }
+            .opt3
+            {
+              width: 50px;
+            }
+            .opt4
+            {
+              width: 85px;
+            }
+            .options {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: #fff;
+                overflow: hidden;
+                color: #3A1B50;
+                font-size: 12px;
+                font-weight: bolder;
+                border: 1px solid #ccc;
+                text-align: center;
+                border-top: none;
+                border-radius: 20px;
+                box-shadow: 0 0px 7px rgba(0, 0, 0, 0.1);
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                z-index: 99999;
+                li {
+                   padding: 8px 12px;
+                   cursor: pointer;
+               }
+                li:hover {
+                   background-color: #f0f0f0;
+               }
+            }
+            
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             .fs-13
             {
                 font-size: 13px;
                 font-weight: bold;
             }
     
-            select 
-            {
+            // select 
+            // {
              
-             color: rgb(255, 255, 255);
-              font-size: 12px;
-              background-color: transparent;
-              border: none;
-              padding-left: 0px;
-              option
-              {
-                background-color: white;
-                color: black;
-              }
-            }
+            //  color: rgb(255, 255, 255);
+            //   font-size: 12px;
+            //   background-color: transparent;
+            //   border: none;
+            //   padding-left: 0px;
+            //   option
+            //   {
+            //     background-color: white;
+            //     color: black;
+            //     margin-top: 20px;
+            //     border-radius: 20px;
+            //   }
+            // }
         }
         @media screen and (max-width: 1425px) {
             .advertisement{
                 display: none !important;
             }
     }
-        @media screen and (max-width: 1060px) {
+        @media screen and (max-width: 1138px) {
             .content{
             flex-wrap: wrap !important;
             }
     }
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 885px) {
             .setting_btn
             {
                 display: inline !important;
@@ -89,7 +164,7 @@ header
             background-color: #3A1B50;
             top:-360px;
             transition: all .5s;
-            // right: ;
+            z-index: 9999;
           
             select 
             {

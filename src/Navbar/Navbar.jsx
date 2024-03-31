@@ -15,12 +15,72 @@ import { FaTwitter } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
 import { FaWindowClose } from "react-icons/fa";
 import { IoMdSettings } from "react-icons/io";
-
+import { FaAngleDown } from "react-icons/fa6";
+import { IoIosArrowUp } from "react-icons/io";
 import"./navbar.css"
 import { Link } from 'react-router-dom'
 export default function Navbar() {
   const [open, setOpen] = useState(true)
   const [openSetting, setOpenSetting] = useState(true)
+  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen2, setIsOpen2] = useState(false);
+  const [isOpen3, setIsOpen3] = useState(false);
+  const [isOpen4, setIsOpen4] = useState(false);
+  const [selectedOption1, setSelectedOption1] = useState("United Arab Emirates");
+  const [selectedOption2, setSelectedOption2] = useState("Abu Dhabi");
+  const [selectedOption3, setSelectedOption3] = useState("AED");
+  const [selectedOption4, setSelectedOption4] = useState("русский");
+  const options1 = ['United Arab Emirates', 'Saudi Arabia', 'Kuwait','Qatar'];
+  const options2 = ['dubai', 'Abu Dhabi', 'Al Ain','Sharjah'];
+  const options3 = ['AED', 'SAR', 'USD','EUR'];
+  const options4 = ['English', 'العربية', 'русский','中国人'];
+  
+  const toggleOptions = () => {
+      setIsOpen(!isOpen);
+      setIsOpen2(false);
+      setIsOpen3(false);
+      setIsOpen4(false);
+  };
+  const toggleOptions2 = () => {
+      setIsOpen2(!isOpen2);
+      setIsOpen(false);
+      setIsOpen3(false);
+      setIsOpen4(false);
+  };
+  const toggleOptions3 = () => {
+      setIsOpen3(!isOpen3);
+      setIsOpen2(false);
+      setIsOpen(false);
+      setIsOpen4(false);
+  };
+  const toggleOptions4 = () => {
+      setIsOpen4(!isOpen4);
+      setIsOpen2(false);
+      setIsOpen3(false);
+      setIsOpen(false);
+  };
+
+  const handleOptionClick1 = (option) => {
+    setSelectedOption1(option);
+      setIsOpen(false);
+  };
+  const handleOptionClick2 = (option) => {
+    setSelectedOption2(option);
+      setIsOpen2(false);
+  };
+  const handleOptionClick3 = (option) => {
+    setSelectedOption3(option);
+      setIsOpen3(false);
+  };
+  const handleOptionClick4 = (option) => {
+    setSelectedOption4(option);
+      setIsOpen4(false);
+  };
+
+
+
+
+
   function openNavList(){
     setOpen(!open)
   }
@@ -45,37 +105,63 @@ export default function Navbar() {
                 <li className=' fs-5 me-2'><CiLocationOn/></li>
                 <li className='fs-13 text-capitalize'>country</li>
                 <li>
-                  <select className="form-select text-capitalize w-auto text-decoration-underline" aria-label="Default select example">
-                  <option value="united arab emirates">united arab emirates</option>
-                  <option value="1">one</option>
-                  <option value="2">two</option>
-                  <option value="3">three</option>
-                </select>
+                <div className="custom-select">
+            <div className="selected-option" onClick={toggleOptions}>
+                {selectedOption1}
+                {isOpen? <IoIosArrowUp/> : <FaAngleDown/>}
+            </div>
+            {isOpen && (
+                <ul className="options">
+                    {options1.map((option, index) => (
+                        <li key={index} onClick={() => handleOptionClick1(option)}>
+                            {option}
+                        </li>
+                    ))}
+                </ul>
+            )}
+                </div>
                 </li>
               </ul>
 
               <ul className='list-unstyled d-flex align-items-center'>
               <li className='fs-13 text-capitalize'>city</li>
               <li>
-              <select className="form-select text-capitalize w-auto text-decoration-underline" aria-label="Default select example">
-                  <option value="dubai">dubai</option>
-                  <option value="1">one</option>
-                  <option value="2">two</option>
-                  <option value="3">three</option>
-                </select>
+              <div className="custom-select">
+            <div className="selected-option opt2" onClick={toggleOptions2}>
+                {selectedOption2}
+                {isOpen2? <IoIosArrowUp/> : <FaAngleDown/>}
+            </div>
+            {isOpen2 && (
+                <ul className="options">
+                    {options2.map((option, index) => (
+                        <li key={index} onClick={() => handleOptionClick2(option)}>
+                            {option}
+                        </li>
+                    ))}
+                </ul>
+            )}
+                </div>
               </li>
               </ul>
-
               <ul className='border-style list-unstyled d-flex align-items-center'>
                 <li className='fs-5 me-2'><RiMoneyDollarCircleLine/></li>
                 <li className='fs-13 text-capitalize'>currency</li>
                 <li>
-                <select className="form-select text-capitalize w-auto text-decoration-underline" aria-label="Default select example">
-                  <option value="ksh">ksh</option>
-                  <option value="1">one</option>
-                  <option value="2">two</option>
-                  <option value="3">the</option>
-                </select>
+                <div className="custom-select">
+            <div className="selected-option opt3" onClick={toggleOptions3}>
+                {selectedOption3}
+                {isOpen3? <IoIosArrowUp/> : <FaAngleDown/>}
+            </div>
+            {isOpen3 && (
+                <ul className="options">
+                    {options3.map((option, index) => (
+                        <li key={index} onClick={() => handleOptionClick3(option)}>
+                            {option}
+                        </li>
+                    ))}
+                </ul>
+            )}
+                </div>
                 </li>
               </ul>
               <ul className='border-style language list-unstyled d-flex align-items-center'>
@@ -83,12 +169,22 @@ export default function Navbar() {
                 <li className='fs-13 text-capitalize'>language</li>
                 <li className=' d-flex'>
                   <img src={img_united_arab_emirates} alt={img_united_arab_emirates} className=' w-25' />
-                <select className="form-select text-capitalize w-auto text-decoration-underline" aria-label="Default select example">
-                  <option value="العربية">العربية</option>
-                  <option value="1">English</option>
-                  <option value="2">two</option>
-                  <option value="3">three</option>
-                </select>
+                
+                  <div className="custom-select">
+            <div className="selected-option opt4" onClick={toggleOptions4}>
+                {selectedOption4}
+                {isOpen4? <IoIosArrowUp/> : <FaAngleDown/>}
+            </div>
+            {isOpen4 && (
+                <ul className="options">
+                    {options4.map((option, index) => (
+                        <li key={index} onClick={() => handleOptionClick4(option)}>
+                            {option}
+                        </li>
+                    ))}
+                </ul>
+            )}
+                </div>
                 </li>
               </ul>
               <ul className='border-style list-unstyled d-flex ms-3 align-items-center'>
@@ -103,7 +199,7 @@ export default function Navbar() {
            <span className='close d-none fs-5' onClick={openNavList}><FaWindowClose/></span>
             <ul className='navlinks m-auto mt-3 pe-5 justify-content-between list-unstyled d-flex align-items-center'>
               <li>
-              <Link className='fs-18 text-decoration-none'>Home</Link>
+              <Link className='fs-18 text-decoration-none' to="#">Home</Link>
               </li>
               <li>
               <select className="fs-18 form-select .fs-13 text-capitalize w-auto text-decoration-underline" aria-label="Default select example">
@@ -122,9 +218,9 @@ export default function Navbar() {
                 </select>
               </li>
               <li>
-                <Link className='fs-18 text-decoration-none'>Rent acar with driver</Link>
+                <Link className='fs-18 text-decoration-none'  to="#">Rent acar with driver</Link>
               </li>
-              <li><Link className='fs-18 text-decoration-none'>Rent yacht</Link></li>
+              <li><Link className='fs-18 text-decoration-none'  to="#">Rent yacht</Link></li>
               <li>
               <select className="fs-18 form-select text-capitalize w-auto text-decoration-underline" aria-label="Default select example">
                   <option value="united arab emirates">Quick links</option>

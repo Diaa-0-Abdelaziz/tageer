@@ -27,32 +27,72 @@ header .navbar .border-style::before {
   background-color: white;
   left: -7px;
 }
+header .navbar ul .custom-select {
+  position: relative;
+  display: inline-block;
+}
+header .navbar ul .custom-select .selected-option {
+  font-size: 12px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  width: 150px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: underline;
+}
+header .navbar ul .custom-select .opt2 {
+  width: 100px;
+}
+header .navbar ul .custom-select .opt3 {
+  width: 50px;
+}
+header .navbar ul .custom-select .opt4 {
+  width: 85px;
+}
+header .navbar ul .custom-select .options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+  color: #3A1B50;
+  font-size: 12px;
+  font-weight: bolder;
+  border: 1px solid #ccc;
+  text-align: center;
+  border-top: none;
+  border-radius: 20px;
+  box-shadow: 0 0px 7px rgba(0, 0, 0, 0.1);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  z-index: 99999;
+}
+header .navbar ul .custom-select .options li {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+header .navbar ul .custom-select .options li:hover {
+  background-color: #f0f0f0;
+}
 header .navbar ul .fs-13 {
   font-size: 13px;
   font-weight: bold;
-}
-header .navbar ul select {
-  color: rgb(255, 255, 255);
-  font-size: 12px;
-  background-color: transparent;
-  border: none;
-  padding-left: 0px;
-}
-header .navbar ul select option {
-  background-color: white;
-  color: black;
 }
 @media screen and (max-width: 1425px) {
   header .navbar .advertisement {
     display: none !important;
   }
 }
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 1138px) {
   header .navbar .content {
     flex-wrap: wrap !important;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 885px) {
   header .navbar .setting_btn {
     display: inline !important;
     position: absolute;
@@ -71,6 +111,7 @@ header .navbar ul select option {
     background-color: #3A1B50;
     top: -360px;
     transition: all 0.5s;
+    z-index: 9999;
   }
   header .navbar .settings select {
     color: white;
