@@ -1,0 +1,137 @@
+import React from 'react'
+// import ImageGallery from 'react-image-gallery';
+import { GoDotFill } from "react-icons/go";
+import 'react-image-gallery/styles/css/image-gallery.css';
+import img1 from "../../../../../images/Your image mask@2x.png"
+import logo from "../../../../../images/tajeer app icon@2x.png"
+
+import { IoLogoWhatsapp } from "react-icons/io";
+import { MdEmail } from "react-icons/md";
+import { IoCallSharp } from "react-icons/io5";
+
+import "./RentSuvDubaiCursel.css"
+export default function RentSuvDubaiCursel() {
+    // const images = [
+    //     {
+    //       original:img1,
+    //       thumbnail:img1,
+    //     },
+    //     {
+    //       original:img1,
+    //       thumbnail:img1,
+    //     },
+    //     {
+    //       original:img1,
+    //       thumbnail:img1,
+    //     }
+    //   ];
+      return (
+       <section className='RentSuvDubaiCursel'>
+       <div className="container">
+       <div className="row">
+        <div className="col-md-6 position-relative">
+            <div className=' mb-5'>
+                <div className="main_img position-relative">
+                <span className='position-absolute top-0 end-0 m-3 p-1 fs-6'>Save to whishlist</span>
+                    <img src={img1} alt={img1} className=' w-100' />
+                </div>
+                <div className='small_images d-flex justify-content-between mt-2'>
+                <img src={img1} alt={img1} className=' w-25' />
+                <img src={img1} alt={img1} className=' w-25' />
+                <img src={img1} alt={img1} className=' w-25' />
+                </div>
+            </div>
+            {/* <span className=' z-3 position-absolute end-0 me-3 p-1'>save to whishlist</span> */}
+        {/* <ImageGallery lazyLoad={true} autoPlay={true} showNav={false} items={images} showPlayButton={false} showFullscreenButton={false} /> */}
+        
+        
+        
+        
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class=" active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Description</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Features & Options</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Reviews</button>
+  </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+    <h3 className=' mt-5'>Highlights of the new BMW i8</h3>
+    <p className=' mt-5'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequuntur nulla natus accusamus error id reiciendis voluptas alias minus repellat.</p>
+  </div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+  <h3 className=' mt-5'>Highlights of the new BMW i8</h3>
+    <p className=' mt-5'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequuntur nulla natus accusamus error id reiciendis voluptas alias minus repellat.</p>
+  </div>
+  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+  <h3 className=' mt-5'>Highlights of the new BMW i8</h3>
+    <p className=' mt-5'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequuntur nulla natus accusamus error id reiciendis voluptas alias minus repellat.</p>
+  </div>
+</div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        </div>
+        <div className="col-md-6 details">
+            <h3>BMW I8</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti maxime ullam nostrum ipsa aliquam eligendi mollitia explicabo consectetur quis eius, molestiae magni repellendus reiciendis velit delectus voluptate harum voluptates ex.</p>
+            <h4>Feature</h4>
+           <div className="feature_details d-flex justify-content-between align-items-center">
+           <ul>
+            <li><GoDotFill/> Car color: white</li>
+            <li><GoDotFill/> Car brand: Mercedes</li>
+            <li><GoDotFill/> Car model: C300</li>
+            <li><GoDotFill/> Car year: 2021</li>
+            <li><GoDotFill/> Car Type: luxury ,Sport</li>
+           </ul>
+           <ul>
+            <li><GoDotFill/> No. Of Doors: 4 doors</li>
+            <li><GoDotFill/> Engine:  5.0 V8</li>
+            <li><GoDotFill/> Minimum of Days: 2 days</li>
+            <li><GoDotFill/> Deposit:  2000 AED</li>
+            <li><GoDotFill/> Car Type</li>
+           </ul>
+           <ul className='pricing'>
+            <li>
+                <div>2 hrs/ 350 AED</div>
+            </li>
+            <li>
+                <div>5 hrs/ 350 AED</div>
+            </li>
+            <li>
+                <div>8 hrs/ 350 AED</div>
+            </li>
+           </ul>
+           </div>
+           <div className="contact mt-2">
+            <ul className=' list-unstyled d-flex justify-content-around'>
+                <li><i><IoLogoWhatsapp/></i><span>WHATSAPP</span></li>
+                <li><i><MdEmail/></i><span>EMAIL</span></li>
+                <li><i><IoCallSharp/></i><span>CALL</span></li>
+            </ul>
+          </div>
+          <div className='logo d-flex justify-content-center'>
+          <img src={logo} alt={logo} />
+          </div>
+        </div>
+       </div>
+       </div>
+       </section>
+      );
+}

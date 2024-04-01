@@ -6,7 +6,7 @@ import { MdEmail } from "react-icons/md";
 import { IoCallSharp } from "react-icons/io5";
 import "../../../../Home/component/carType/carTypeCursel/carTypeCursel.css"
 
-import logo from "../../../../../images/\img_artboard_2_169x246.png"
+import logo from "../../../../../images/img_artboard_2_169x246.png"
 
 import img1 from "../../../../../images/d61540b0-3b21-11ed-9155-3d23b669ca31-marguerite-profile.png"
 export default function RentCarWithDriverProducts() {
