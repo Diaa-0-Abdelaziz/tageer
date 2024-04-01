@@ -53,6 +53,14 @@ $fifth:#E6F6FF;
             font-weight: 600;
         }
     }
+    .new_feature
+    {
+        margin-top: 100px;
+        h3 
+        {
+            color: black;
+        }
+    }
     .feature_details
     {
         ul 
@@ -118,5 +126,39 @@ $fifth:#E6F6FF;
             margin-top: 15px;
         }
     
+}
+@media screen and (max-width:991px) {
+    .details
+    {
+        border-top: 3px solid #343434;
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+}
+@media screen and (max-width:769px) {
+    .feature_details
+    {
+        flex-wrap: wrap;
+        ul 
+        {
+            margin: auto;
+        }
+    }
+}
+@media screen and (max-width:516px) {
+    .nav-pills
+    {
+        border-bottom: 5px solid gray;
+        display: flex;
+        justify-content: space-between;
+        li 
+        {
+            button
+            {
+             font-size: 17px;
+            }
+
+        }
+    }
 }
 }
