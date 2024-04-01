@@ -82,17 +82,17 @@ header .navbar ul .fs-13 {
   font-size: 13px;
   font-weight: bold;
 }
-@media screen and (max-width: 1425px) {
+@media screen and (max-width: 1537px) {
   header .navbar .advertisement {
     display: none !important;
   }
 }
-@media screen and (max-width: 1138px) {
+@media screen and (max-width: 1168px) {
   header .navbar .content {
     flex-wrap: wrap !important;
   }
 }
-@media screen and (max-width: 885px) {
+@media screen and (max-width: 912px) {
   header .navbar .setting_btn {
     display: inline !important;
     position: absolute;

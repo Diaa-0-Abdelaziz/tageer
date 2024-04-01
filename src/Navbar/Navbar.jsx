@@ -29,7 +29,7 @@ export default function Navbar() {
   const [selectedOption1, setSelectedOption1] = useState("United Arab Emirates");
   const [selectedOption2, setSelectedOption2] = useState("Abu Dhabi");
   const [selectedOption3, setSelectedOption3] = useState("AED");
-  const [selectedOption4, setSelectedOption4] = useState("русский");
+  const [selectedOption4, setSelectedOption4] = useState("العربية");
   const options1 = ['United Arab Emirates', 'Saudi Arabia', 'Kuwait','Qatar'];
   const options2 = ['dubai', 'Abu Dhabi', 'Al Ain','Sharjah'];
   const options3 = ['AED', 'SAR', 'USD','EUR'];

@@ -3,24 +3,13 @@
     background-image: url(../../../../images/BESTSERVICESBACKGROUND.png);
    background-size: cover;
    background-repeat: no-repeat;
-   margin: 50px 0;
+   margin-top: 50px;
    position: relative;
    ::before
    {
    position: absolute;
    content: "";
    top: -10px;
-   width: 70%;
-   left: 50%;
-   height: 1px;
-   background-color: #3A1B50;
-   transform: translateX(-50%);
-   }
-   ::after
-   {
-   position: absolute;
-   content: "";
-   bottom: -10px;
    width: 70%;
    left: 50%;
    height: 1px;
