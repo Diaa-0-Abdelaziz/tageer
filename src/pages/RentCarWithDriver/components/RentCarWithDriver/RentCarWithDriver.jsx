@@ -14,6 +14,7 @@ export default function RentCarWithDriver() {
         <div className='CarType_Header d-flex justify-content-between mb-3 align-items-center'>
         <h3 className=''>Rent Car With Driver</h3>
         <div className='line'></div>
+        <span className='ViewAll badge ms-2'>View all</span>
         </div>
         <p className=' fw-bold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, laborum.</p>
         <p className={` position-relative ${isExpanded ? 'expanded' : 'collapsed'}`}>
