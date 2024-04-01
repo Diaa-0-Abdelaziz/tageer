@@ -1,5 +1,5 @@
 import React from 'react'
-import img_your_image_mask from "../../../images/Your image mask@2x.png"
+import img_your_image_mask from "../../../images/Your image mask@2x0.png"
 import "../../Home/component/BEST-SERVICES/BESTSERVICES.css"
 export default function BESTSERVICES() {
   return (
