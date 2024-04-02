@@ -36,7 +36,7 @@ export default function ContactForm() {
      <div className="container">
         <div className="row">
             <div className="col-md-6">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7220.928369635145!2d55.281079!3d25.187564!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5d818bf1f6e3%3A0x86248e6468b6ed4e!2sTAJEER%20RENT%20A%20CAR!5e0!3m2!1sen!2skw!4v1712047952927!5m2!1sen!2skw" className=' w-100' height="450" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7220.928369635145!2d55.281079!3d25.187564!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5d818bf1f6e3%3A0x86248e6468b6ed4e!2sTAJEER%20RENT%20A%20CAR!5e0!3m2!1sen!2skw!4v1712047952927!5m2!1sen!2skw" className=' w-100 h-100' allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div className="col-md-5">
                 <h2>SEND A MESSAGE</h2>
