@@ -8,6 +8,7 @@ import RentCarWithDrivers from './pages/RentCarWithDriver/RentCarWithDrivers';
 import RentCarWithDriverDetails from './pages/rent-car-with-driver-details/rentCarWithDriverDetails';
 import CarDetails from './pages/car-details/carDetails';
 import Blog from './pages/Blog/Blog';
+import ListYourCars from './pages/List your cars/ListYourCars';
 
 function App() {
   let routes =  createBrowserRouter([
@@ -19,6 +20,7 @@ function App() {
         {path:'yachts', element:<Yachts/>},
         {path:'rentCarWithDriver', element:<RentCarWithDrivers/>},
         {path:'Blog', element:<Blog/>},
+        {path:'ListYourCars', element:<ListYourCars/>},
         {path:'YachtsDetails/:id', element:<YachtsDetails/>},
         {path:'RentCarWithDriverDetails/:id', element:<RentCarWithDriverDetails/>},
         {path:'CarDetails/:id', element:<CarDetails/>},
