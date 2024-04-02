@@ -12,6 +12,7 @@ import ListYourCars from './pages/List your cars/ListYourCars';
 import ContactUs from './pages/Contact us/ContactUs';
 import TermsAndCondition from './pages/TermsAndCondition/TermsAndCondition';
 import Privacy from './pages/Privacy/Privacy';
+import AboutUs from './pages/About us/AboutUs';
 
 function App() {
   let routes =  createBrowserRouter([
@@ -27,6 +28,7 @@ function App() {
         {path:'ContactUs', element:<ContactUs/>},
         {path:'TermsAndCondition', element:<TermsAndCondition/>},
         {path:'Privacy', element:<Privacy/>},
+        {path:'AboutUs', element:<AboutUs/>},
         {path:'YachtsDetails/:id', element:<YachtsDetails/>},
         {path:'RentCarWithDriverDetails/:id', element:<RentCarWithDriverDetails/>},
         {path:'CarDetails/:id', element:<CarDetails/>},
