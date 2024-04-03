@@ -5,7 +5,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import { IoCallSharp } from "react-icons/io5";
 import "../../../../Home/component/carType/carTypeCursel/carTypeCursel.css"
-
+import { Link } from 'react-router-dom';
 import logo from "../../../../../images/img_artboard_2_169x246.png"
 
 import img1 from "../../../../../images/Screen Shot 2022-04-23 at 11.19.06 PM@2x.png"
@@ -55,6 +55,7 @@ export default function RentCarWithDriverProducts() {
        <div className="container main-slider mb-5">
         <div className="row">
           {products.map((pro)=> <div className='p-2 content col-lg-4 col-md-6' key={pro.id}>
+          <Link  to={`/RentCarWithDriverDetails/` + pro.id} className=' text-decoration-none text-black'>
             <div className='slider-pro overflow-hidden position-relative'>
           <img src={pro.img} alt="" className='w-100' />
           <div className="body px-2">
@@ -93,6 +94,7 @@ export default function RentCarWithDriverProducts() {
           </div>
           </div>
         </div>
+        </Link>
           </div>)}
         </div>
        </div>

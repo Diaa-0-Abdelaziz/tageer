@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "../../../Home/component/carType/CarType.css"
-import RentCarWithDriverProducts from './RentCarWithDriverProducts/RentCarWithDriverProducts';
-export default function RentCarWithDriver() {
+import RentyachtWithDriverProducts from './RentyachtWithDriverProducts/RentyachtWithDriverProducts';
+export default function Rentyacht() {
     const [isExpanded, setIsExpanded] = useState(false);
 
     const toggleExpanded = () => {
@@ -31,7 +31,7 @@ export default function RentCarWithDriver() {
         </p>
         </div>
     </section>
-    <RentCarWithDriverProducts/>
+    <RentyachtWithDriverProducts/>
     </>
   )
 }
