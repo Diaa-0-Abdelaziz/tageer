@@ -37,7 +37,18 @@ export default function Navbar() {
   const options2 = ['dubai', 'Abu Dhabi', 'Al Ain','Sharjah'];
   const options3 = ['AED', 'SAR', 'USD','EUR'];
   const options4 = ['English', 'العربية', 'русский','中国人'];
-  const accountSelect = ['Sign in', 'Create account', 'Manage your account'];
+  // const accountSelect = [
+  //   {
+  //     btn:'Sign in',
+  //   },
+  //   {
+  //     btn:'Create account',
+  //   },
+  //   {
+  //     btn:'Manage your account',
+  //     path:"./MyAccount"
+  //   }
+  //     ];
   const RentACar = [
                      {
                       linkName:"Rent a car monthly",
@@ -167,7 +178,9 @@ export default function Navbar() {
   const handleOptionClick6 = (option) => {
       setIsOpen6(false);
   };
+// const handleaccountSetting = (option) =>{
 
+// }
 
 
   function openNavList(){
@@ -288,11 +301,9 @@ export default function Navbar() {
             </div>
             {Account && (
                 <ul className="options">
-                    {accountSelect.map((select, index) => (
-                        <li key={index}>
-                            {select}
-                        </li>
-                    ))}
+                    <li>Sign in</li>
+                    <li>Create accoun</li>
+                    <li> <Link to="/MyAccount"> Manage your account</Link> </li>
                 </ul>
             )}
                 </div>

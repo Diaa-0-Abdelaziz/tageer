@@ -75,6 +75,10 @@ header .navbar ul .custom-select .options li {
   padding: 8px 12px;
   cursor: pointer;
 }
+header .navbar ul .custom-select .options li a {
+  text-decoration: none;
+  color: #3A1B50;
+}
 header .navbar ul .custom-select .options li:hover {
   background-color: #f0f0f0;
 }

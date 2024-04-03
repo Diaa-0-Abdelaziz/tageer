@@ -87,6 +87,12 @@ header
                 li {
                    padding: 8px 12px;
                    cursor: pointer;
+                   a 
+                   {
+                    text-decoration: none;
+                    color: #3A1B50;
+                   }
+                   
                }
                 li:hover {
                    background-color: #f0f0f0;
