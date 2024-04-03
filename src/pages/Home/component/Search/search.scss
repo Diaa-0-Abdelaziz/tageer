@@ -1,6 +1,9 @@
+.main_content
+{
+
 .search
 {
-   z-index: -1;
+//    z-index: -1;
 img 
 {
     width: 100%;
@@ -8,6 +11,8 @@ img
 .cover_color
 {
     background-color: #3a1b5094;
+}
+
 }
 .form
 {
@@ -45,7 +50,7 @@ img
         {
             .search_btn
             {
-                cursor: pointer;
+                cursor: pointer !important;
             }
             input 
             {
@@ -55,5 +60,4 @@ img
             }
         }
 }
-
 }

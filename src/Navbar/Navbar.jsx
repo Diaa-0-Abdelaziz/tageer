@@ -26,6 +26,9 @@ export default function Navbar() {
   const [isOpen2, setIsOpen2] = useState(false);
   const [isOpen3, setIsOpen3] = useState(false);
   const [isOpen4, setIsOpen4] = useState(false);
+  const [isOpen5, setIsOpen5] = useState(false);
+  const [isOpen6, setIsOpen6] = useState(false);
+  const [Account, setAccount] = useState(false);
   const [selectedOption1, setSelectedOption1] = useState("United Arab Emirates");
   const [selectedOption2, setSelectedOption2] = useState("Abu Dhabi");
   const [selectedOption3, setSelectedOption3] = useState("AED");
@@ -34,31 +37,113 @@ export default function Navbar() {
   const options2 = ['dubai', 'Abu Dhabi', 'Al Ain','Sharjah'];
   const options3 = ['AED', 'SAR', 'USD','EUR'];
   const options4 = ['English', 'العربية', 'русский','中国人'];
+  const accountSelect = ['Sign in', 'Create account', 'Manage your account'];
+  const RentACar = [
+                     {
+                      linkName:"Rent a car monthly",
+                      path:"Rent a car monthly"
+                     },
+                     {
+                      linkName:"Rent luxury car",
+                      path:"Rent luxury car"
+                     },
+                     {
+                      linkName:"Rent sport car",
+                      path:"Rent sport car"
+                     },
+                     {
+                      linkName:"Rent cheap car",
+                      path:"Rent cheap car"
+                     },
+
+                   ];
+
+ const QuickLinks = [
+                    {
+                     linkName:"Contact us",
+                     path:"./ContactUs"
+                    },
+                    {
+                     linkName:"About us",
+                     path:"./AboutUs"
+                    },
+                    {
+                     linkName:"Blog",
+                     path:"./Blog"
+                    },
+                    {
+                     linkName:"Terms & Conditions",
+                     path:"./TermsAndCondition"
+                    },
+
+                  ];
   
   const toggleOptions = () => {
       setIsOpen(!isOpen);
       setIsOpen2(false);
       setIsOpen3(false);
       setIsOpen4(false);
+      setAccount(false);
+      setIsOpen5(false);
+      setIsOpen6(false);
   };
   const toggleOptions2 = () => {
       setIsOpen2(!isOpen2);
       setIsOpen(false);
       setIsOpen3(false);
       setIsOpen4(false);
+      setAccount(false);
+      setIsOpen5(false);
+      setIsOpen6(false);
   };
   const toggleOptions3 = () => {
       setIsOpen3(!isOpen3);
       setIsOpen2(false);
       setIsOpen(false);
       setIsOpen4(false);
+      setAccount(false);
+      setIsOpen5(false);
+      setIsOpen6(false);
   };
   const toggleOptions4 = () => {
       setIsOpen4(!isOpen4);
       setIsOpen2(false);
       setIsOpen3(false);
       setIsOpen(false);
+      setAccount(false);
+      setIsOpen5(false);
+      setIsOpen6(false);
   };
+  const toggleOptions5 = () => {
+      setIsOpen5(!isOpen5);
+      setIsOpen4(false);
+      setIsOpen2(false);
+      setIsOpen3(false);
+      setIsOpen(false);
+      setAccount(false);
+      setIsOpen6(false);
+  };
+  const toggleOptions6 = () => {
+      setIsOpen6(!isOpen6);
+      setIsOpen5(false);
+      setIsOpen4(false);
+      setIsOpen2(false);
+      setIsOpen3(false);
+      setIsOpen(false);
+      setAccount(false);
+  };
+
+
+  const toggleDropdownAccount = () => {
+    setAccount(!Account);
+    setIsOpen4(false);
+      setIsOpen2(false);
+      setIsOpen3(false);
+      setIsOpen(false);
+      setIsOpen5(false);
+  };
+
+
 
   const handleOptionClick1 = (option) => {
     setSelectedOption1(option);
@@ -76,8 +161,12 @@ export default function Navbar() {
     setSelectedOption4(option);
       setIsOpen4(false);
   };
-
-
+  const handleOptionClick5 = (option) => {
+      setIsOpen5(false);
+  };
+  const handleOptionClick6 = (option) => {
+      setIsOpen6(false);
+  };
 
 
 
@@ -94,7 +183,7 @@ export default function Navbar() {
             <img src={logo} alt={logo} className='me-5 logo'/>
            <span className='fs-1 menu  d-none' onClick={openNavList}> <CgMenuGridR /></span>
            <span className='fs-3 setting_btn  d-none' onClick={openSettingList}> <IoMdSettings /></span>
-            <div className='advertisement px-2 me-5 d-flex align-items-center bg-light'>
+            <div className='advertisement px-2 me-4 d-flex align-items-center bg-light'>
               <img src={lamborghini} alt={lamborghini} className='lamborghini' />
               <p className='badge text-dark mt-2'>List your cars in <span className='bolder'>TAJEER</span> platform</p>
               <img src={img_calendar} alt={img_calendar} className='img_calendar' />
@@ -189,7 +278,48 @@ export default function Navbar() {
               </ul>
               <ul className='border-style list-unstyled d-flex ms-3 align-items-center'>
                 <li className='fs-5'><MdOutlineAccountBox/></li>
-                <li className='fs-13 badge text-decoration-underline'><Link className='text-light'>My account</Link></li>
+                <li>
+                
+
+                  
+                <div className="custom-select">
+            <div className="selected-option badge opt2" onClick={toggleDropdownAccount}>
+                My Account
+            </div>
+            {Account && (
+                <ul className="options">
+                    {accountSelect.map((select, index) => (
+                        <li key={index}>
+                            {select}
+                        </li>
+                    ))}
+                </ul>
+            )}
+                </div>
+
+
+
+
+
+
+
+
+                {/* {Account && (
+                  <div className='dropdown-menu'>
+
+                  <ul className="">
+                    {accountSelect.map((select, index) => (
+                      <li key={index}>
+                        {select}
+                      </li>
+                    ))}
+              
+                  </ul>
+                  </div>
+      )} */}
+          
+                        
+                </li>
               </ul>
             </div>
         </div>
@@ -199,7 +329,7 @@ export default function Navbar() {
            <span className='close d-none fs-5' onClick={openNavList}><FaWindowClose/></span>
             <ul className='navlinks m-auto mt-3 pe-5 justify-content-between list-unstyled d-flex align-items-center'>
               <li>
-              <Link className='fs-18 text-decoration-none' to="#">Home</Link>
+              <Link className='fs-18 text-decoration-none' to="/">Home</Link>
               </li>
               <li>
               <select className="fs-18 form-select .fs-13 text-capitalize w-auto text-decoration-underline" aria-label="Default select example">
@@ -210,25 +340,53 @@ export default function Navbar() {
                 </select>
               </li>
               <li>
-              <select className=" fs-18 form-select text-capitalize w-auto text-decoration-underline" aria-label="Default select example">
-                  <option value="united arab emirates">Rent a car</option>
-                  <option value="1">one</option>
-                  <option value="2">two</option>
-                  <option value="3">three</option>
-                </select>
+
+              <div className="custom-select">
+            <div className="selected-option opt2" onClick={toggleOptions5}>
+            {isOpen5? <IoIosArrowUp className='arrow' /> : <FaAngleDown className='arrow' />}
+            <span className='header'>Rent a car</span>
+            </div>
+            {isOpen5 && (
+                <ul className="options">
+                    {RentACar.map((option, index) => (
+                        <li key={index} onClick={() => handleOptionClick5(option)}>
+                            {option.linkName}
+                        </li>
+                    ))}
+                </ul>
+            )}
+                </div>
+
+
               </li>
               <li>
-                <Link className='fs-18 text-decoration-none'  to="#">Rent acar with driver</Link>
+                <Link className='fs-18 text-decoration-none'  to="./rentCarWithDriver">Rent a car with driver</Link>
               </li>
-              <li><Link className='fs-18 text-decoration-none'  to="#">Rent yacht</Link></li>
+              <li><Link className='fs-18 text-decoration-none'  to="./yachts">Rent yacht</Link></li>
               <li>
-              <select className="fs-18 form-select text-capitalize w-auto text-decoration-underline" aria-label="Default select example">
-                  <option value="united arab emirates">Quick links</option>
-                  <option value="1">one</option>
-                  <option value="2">two</option>
-                  <option value="3">three</option>
-                </select>
+
+
+
+
+              <div className="custom-select">
+            <div className="selected-option opt2" onClick={toggleOptions6}>
+            {isOpen6? <IoIosArrowUp className='arrow' /> : <FaAngleDown className='arrow' />}
+            <span className='header'>Quick links</span>
+            </div>
+            {isOpen6 && (
+                <ul className="options">
+                    {QuickLinks.map((option, index) => (
+                        <li key={index} onClick={() => handleOptionClick6(option)}>
+                          <Link to={option.path}>{option.linkName}</Link>
+                        </li>
+                    ))}
+                </ul>
+            )}
+                </div>
               </li>
+
+
+
             </ul>
             <div className='appAndSocial m-auto d-flex align-items-center'>
               <img src={Operating_System} alt={Operating_System} />
