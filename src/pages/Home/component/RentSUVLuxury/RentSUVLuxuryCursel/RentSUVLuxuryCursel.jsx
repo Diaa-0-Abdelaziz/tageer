@@ -18,6 +18,7 @@ import img2 from "../../../../../images/img_whatsapp_image_2023_01_19.png"
 import img3 from "../../../../../images/img_whatsapp_image_2023_01_19.png"
 import img4 from "../../../../../images/img_whatsapp_image_2023_01_19.png"
 import img5 from "../../../../../images/img_whatsapp_image_2023_01_19.png"
+import { Link } from 'react-router-dom';
 export default function RentSUVLuxuryCursel() {
     function SampleNextArrow(props) {
         const {onClick } = props;
@@ -115,6 +116,7 @@ export default function RentSUVLuxuryCursel() {
        <div className="container main-slider mb-5">
          <Slider {...settings}>
           {products.map((pro)=> <div className='p-2 content' key={pro.id}>
+          <Link  to={`/RentCarWithDriverDetails/` + pro.id} className=' text-decoration-none text-black'>
             <div className='slider-pro overflow-hidden position-relative'>
           <img src={pro.img} alt="" className='w-100' />
           <div className="body px-2">
@@ -153,6 +155,7 @@ export default function RentSUVLuxuryCursel() {
           </div>
           </div>
         </div>
+        </Link>
           </div>)}
       </Slider>
        </div>
