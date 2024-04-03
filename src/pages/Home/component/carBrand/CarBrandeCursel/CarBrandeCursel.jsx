@@ -69,37 +69,37 @@ export default function CarBrandeCursel() {
       let products = [
         {
           id:1,
-          title:"Sport cars",
+          title:"Dodge",
           img:img1
         },
         {
           id:2,
-          title:"Sport cars",
+          title:"Dodge",
           img:img2
         },
         {
           id:3,
-          title:"Sport cars",
+          title:"Dodge",
           img:img3
         },
         {
           id:4,
-          title:"Sport cars",
+          title:"Dodge",
           img:img4
         },
         {
           id:5,
-          title:"Sport cars",
+          title:"Dodge",
           img:img5
         },
         {
           id:6,
-          title:"Sport cars",
+          title:"Dodge",
           img:img5
         },
         {
           id:7,
-          title:"Sport cars",
+          title:"Dodge",
           img:img5
         },
       ]
