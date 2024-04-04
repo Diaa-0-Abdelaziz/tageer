@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import logo from "../images/img_tajeer_logo_websit.png"
 import lamborghini from "../images/img_lamborghiniurus.png"
 import img_calendar from "../images/img_calendar.svg"
-import Operating_System from "../images/Google-Play-App-Store-PNG-Transparent-Image@2x.png"
+import app_Store from "../images/app store.png"
+import google_Play from "../images/google play.png"
 import img_united_arab_emirates from "../images/img_united_arab_emirates.png"
 import { CiLocationOn } from "react-icons/ci";
 import { RiMoneyDollarCircleLine } from "react-icons/ri";
@@ -404,12 +405,19 @@ export default function Navbar() {
 
             </ul>
             <div className='appAndSocial m-auto d-flex align-items-center'>
-              <img src={Operating_System} alt={Operating_System} />
+             <ul className='appsLink d-flex align-items-center list-unstyled'>
+              <li>
+                 <a href="https://play.google.com/store/apps/details?id=com.tajeer&hl=en&gl=US&pli=1" target='_blank' rel="noopener noreferrer"><img src={google_Play} alt={google_Play} /></a>
+              </li>
+              <li>
+                 <a href="https://apps.apple.com/sa/app/tajeer-rent-a-car-in-dubai/id1458290275" target='_blank' rel="noopener noreferrer"><img src={app_Store} alt={app_Store} /></a>
+              </li>
+             </ul>
               <ul className=' mt-3 social list-unstyled d-flex'>
-                <li><a href=""><IoMdCall/></a></li>
-                <li className='facebook'><a href=""><FaFacebookF/></a></li>
-                <li className='twitter'><a href=""><FaTwitter/></a></li>
-                <li><a href=""><GrInstagram/></a></li>
+                <li><a href="tel:+971 52 313 1587"><IoMdCall/></a></li>
+                <li className='facebook'><a a href="https://www.facebook.com/Tajeercarrental" target='_blank' rel="noopener noreferrer"><FaFacebookF/></a></li>
+                <li className='twitter'><a href="https://twitter.com/tajeercarrental" target='_blank' rel="noopener noreferrer"><FaTwitter/></a></li>
+                <li><a href="https://www.instagram.com/tajeercarrental/?utm_medium=copy_link" target='_blank' rel="noopener noreferrer"><GrInstagram/></a></li>
               </ul>
             </div>
           </div>

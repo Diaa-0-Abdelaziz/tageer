@@ -14,10 +14,10 @@ export default function Footer() {
     <footer>
     <div className="social">
       <ul className=' list-unstyled d-flex'>
-        <li><a href="#"><IoMdCall/></a></li>
-        <li className='facebook'><a href="#"><FaFacebookF/></a></li>
-        <li className='twitter'><a href="#"><FaTwitter/></a></li>
-        <li><a href="#"><GrInstagram/></a></li>
+        <li><a href="tel:+971 52 313 1587"><IoMdCall/></a></li>
+        <li className='facebook'><a href="https://www.facebook.com/Tajeercarrental" target='_blank' rel="noopener noreferrer"><FaFacebookF/></a></li>
+        <li className='twitter'><a href="https://twitter.com/tajeercarrental" target='_blank' rel="noopener noreferrer"><FaTwitter/></a></li>
+        <li><a href="https://www.instagram.com/tajeercarrental/?utm_medium=copy_link" target='_blank' rel="noopener noreferrer"><GrInstagram/></a></li>
       </ul>
     </div>
       <div className="container-fluid">
@@ -70,10 +70,10 @@ export default function Footer() {
           <li className='Download'>Download on the App Store & Google play</li>
          <div className="app">
          <li>
-            <a href='#'><img src={google_play} alt={google_play} /></a>
+            <a href="https://play.google.com/store/apps/details?id=com.tajeer&hl=en&gl=US&pli=1" target='_blank' rel="noopener noreferrer"><img src={google_play} alt={google_play} /></a>
           </li>
           <li>
-          <a href='#'><img src={app_store} alt={app_store} /></a>
+          <a href="https://apps.apple.com/sa/app/tajeer-rent-a-car-in-dubai/id1458290275" target='_blank' rel="noopener noreferrer"><img src={app_store} alt={app_store} /></a>
           </li>
          </div>
         </ul>

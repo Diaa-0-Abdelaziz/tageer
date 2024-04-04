@@ -1,12 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import "../../../Home/component/carType/CarType.css"
 import { Link } from 'react-router-dom';
 export default function FeatureCars() {
-    const [isExpanded, setIsExpanded] = useState(false);
-
-    const toggleExpanded = () => {
-      setIsExpanded(!isExpanded);
-    };
   return (
     <>
     <section className='CarType pt-3'>

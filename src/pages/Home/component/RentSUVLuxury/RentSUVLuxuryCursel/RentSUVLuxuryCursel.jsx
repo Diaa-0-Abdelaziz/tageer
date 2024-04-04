@@ -11,7 +11,7 @@ import { IoCallSharp } from "react-icons/io5";
 
 import "../../carType/carTypeCursel/carTypeCursel.css"
 
-import logo from "../../../../../images/\img_artboard_2_169x246.png"
+import logo from "../../../../../images/img_artboard_2_169x246.png"
 
 import img1 from "../../../../../images/img_whatsapp_image_2023_01_19.png"
 import img2 from "../../../../../images/img_whatsapp_image_2023_01_19.png"

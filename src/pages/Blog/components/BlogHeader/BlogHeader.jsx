@@ -1,8 +1,4 @@
 import React from 'react'
-import { BsSearch } from "react-icons/bs";
-
-import { GrFormPrevious } from "react-icons/gr";
-
 import imgCover from "../../../../images/car-subscription-new-image@2x.png"
 import"./BlogHeader.css"
 export default function BlogHeader() {

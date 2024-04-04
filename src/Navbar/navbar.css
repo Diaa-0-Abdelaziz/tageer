@@ -212,8 +212,14 @@ header .navlist ul .fs-18 {
   font-weight: bold;
   color: #3A1B50;
 }
-header .navlist img {
-  width: 300px;
+header .navlist .appsLink {
+  margin-top: 15px;
+}
+header .navlist .appsLink li {
+  width: 100px;
+}
+header .navlist .appsLink li a img {
+  width: 100%;
 }
 header .navlist .social {
   padding-left: 15px;
@@ -273,11 +279,23 @@ header .navlist .twitter {
     flex-direction: column;
   }
   header .navlist .content .navlinks li {
-    margin: auto;
+    margin-top: 5px;
+    margin-left: 25%;
     width: 100%;
+    text-align: center;
   }
   header .navlist .content .appAndSocial {
     flex-direction: column;
+  }
+  header .navlist .content .appAndSocial .appsLink {
+    flex-direction: column;
+    margin-top: 15px;
+  }
+  header .navlist .content .appAndSocial .appsLink li {
+    width: 100%;
+  }
+  header .navlist .content .appAndSocial .appsLink li a img {
+    width: 100%;
   }
   header .navlist .content .appAndSocial img {
     max-width: 170px;

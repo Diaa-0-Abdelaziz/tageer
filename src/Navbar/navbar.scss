@@ -373,9 +373,20 @@ header
         //   }
         // }
     }
-    img 
+    .appsLink 
     {
-        width: 300px;
+        // background-color: #55ACEE;
+        margin-top: 15px;
+        li 
+        {
+            width: 100px;
+            a {
+                img 
+                {
+                    width: 100%;
+                }
+            }
+        }
     }
     .social
     {
@@ -445,13 +456,30 @@ header
             flex-direction: column;
             li 
             {
-                margin: auto;
+                margin-top: 5px;
+               margin-left: 25%;
                 width: 100%;
+                text-align: center;
             }
         }
         .appAndSocial
         {
             flex-direction: column;
+            .appsLink 
+            {
+                flex-direction: column;
+                margin-top: 15px;
+                li 
+                {
+                    width: 100%;
+                    a {
+                        img 
+                        {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
             
             img 
             {
