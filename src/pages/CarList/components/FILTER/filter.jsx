@@ -279,7 +279,6 @@ export default function Filter() {
         <span className='clearBTN' >Sort by </span>
         <select className="select" value={brand} onChange={handleBrandChange}>
           <option value="">Price</option>
-          {/* Populate brand options dynamically */}
         </select>
         </div>
 
@@ -298,25 +297,21 @@ export default function Filter() {
       <div className="filter-item">
         <select className="select" value={brand} onChange={handleBrandChange}>
           <option value="">Choose Brand</option>
-          {/* Populate brand options dynamically */}
         </select>
       </div>
       <div className="filter-item">
         <select className="select" value={model} onChange={handleModelChange}>
           <option value="">Choose Model</option>
-          {/* Populate model options dynamically */}
         </select>
       </div>
       <div className="filter-item">
         <select className="select" value={year} onChange={handleYearChange}>
           <option value="">Choose Year</option>
-          {/* Populate year options dynamically */}
         </select>
       </div>
       <div className="filter-item">
         <select className="select" value={color} onChange={handleColorChange}>
           <option value="">Choose Color</option>
-          {/* Populate color options dynamically */}
         </select>
       </div>
       
@@ -459,7 +454,7 @@ export default function Filter() {
   <ul className="pagination">
     <li className="page-item">
       <p className="page-link" aria-label="Previous" onClick={() => handlePageChangeBtn('prev')}>
-        <span aria-hidden="true">&laquo;</span>
+        <span>&laquo;</span>
       </p>
     </li>
     {Array.from({ length: Math.ceil(carsDetails.length / 5) }, (_, index) => (
@@ -468,7 +463,7 @@ export default function Filter() {
     {/* <li className="page-item">3</li> */}
     <li className="page-item">
       <p className="page-link" aria-label="Next" onClick={() => handlePageChangeBtn('next')} >
-        <span aria-hidden="true">&raquo;</span>
+        <span>&raquo;</span>
       </p>
     </li>
   </ul>

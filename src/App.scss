@@ -3,6 +3,10 @@ $fifth:#E6F6FF;
 $second:#000000;
 $third:#FFA200;
 $main:#03A9F4;
+
+
+
+//*** FILTER Styles**
 .FILTER
 {
   article
@@ -59,33 +63,13 @@ $main:#03A9F4;
     .select{
         
         padding: 10px;
-        border-radius: 4px; /* Rounded corners */
-        background-color: #E6F6FF; /* Set background color for elements */
+        border-radius: 4px;
+        background-color: #E6F6FF;
         cursor: pointer;
-        border: 1px solid #ccc; /* Add border */
+        border: 1px solid #ccc;
       }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-    .filter-container {
-        // max-width: 300px;
-        // margin-right:  20px; /* Align to the left */
-        // padding: 20px;
-      
-      
-    
-    
+    .filter-container {    
     .title {
      
       color: #333;
@@ -107,9 +91,9 @@ $main:#03A9F4;
     .select,  .find-car-button, input[type="text"] {
       width: 100%;
       padding: 10px;
-      border-radius: 4px; /* Rounded corners */
-      background-color: #E6F6FF; /* Set background color for elements */
-      border: 1px solid #ccc; /* Add border */
+      border-radius: 4px;
+      background-color: #E6F6FF;
+      border: 1px solid #ccc;
     }
     select 
     {
@@ -126,21 +110,11 @@ $main:#03A9F4;
       margin-top: 10px;
     }
     
-    // .price-range input[type="range"] {
-    //   width: calc(100%);
-    //   margin-right: 10px;
-    // }
-    
-    // .price-range .price-label {
-    //   font-size: 14px;
-    //   color: #333;
-    // }
     
     .button-group {
       display: flex;
       flex-direction: row;
-    //   flex-wrap: wrap; /* Allow flex items to wrap to the next line */
-      justify-content: space-between; /* Add space between buttons */
+      justify-content: space-between;
     }
     @media screen and (min-width:768px ) and (max-width: 992px) {
         .button-group
@@ -150,99 +124,88 @@ $main:#03A9F4;
     }
     .Type {
         display: flex;
-        align-items: center; /* Align items vertically */
+        align-items: center;
        flex-wrap: wrap;
        justify-content: center;
       }
-      
-    //   .type-button {
-    //     margin-right: 10px; /* Add spacing between the button and radio buttons */
-    //   }
-      
       .radio-buttons {
         display: flex;
-        flex-direction: column; /* Arrange radio buttons vertically */
+        flex-direction: column;
       }
       
       .radio-label {
-        margin-bottom: 5px; /* Add spacing between radio buttons */
+        margin-bottom: 5px;
       }
       
     
     .Type button {
       position: relative;
-      padding-left: 20px; /* Adjust padding to leave space for the checkbox */
+      padding-left: 20px;
       background-color: transparent;
       border: none;
       cursor: pointer;
-      margin-right: 60px; /* Add space between words */
+      margin-right: 60px;
     }
     
     .checkbox-icon {
       position: absolute;
-      left: 10px; /* Adjust the position of the checkbox */
+      left: 10px;
     }
     
     .Type button:hover {
-      background-color: #f0f0f0; /* Change the background color on hover if needed */
+      background-color: #f0f0f0;
     }
     
     
     
     .pill-button {
-      padding: 10px 20px; /* Adjust padding as needed */
-    //   margin-top: 30px;
+      padding: 10px 20px; 
     margin: 5px;
-    //   margin-left:5px;
-      border-radius: 0; /* Remove border radius */
-      background-color: #E6F6FF; /* Set background color */
-      color: #161515; /* Set text color */
+      border-radius: 0;
+      background-color: #E6F6FF;
+      color: #161515;
       cursor: pointer;
-      margin-bottom: 10px; /* Add margin bottom to create space between rows */
-      width: 100%; /* Adjust width to fit two buttons in a row with spacing */
-      border: none; /* Remove border */
+      margin-bottom: 10px;
+      width: 100%;
+      border: none;
     }
     
     .pill-button:hover {
       background-color: #3A1B50;
-      color: white; /* Change to red on hover */
+      color: white;
     }
     
     
     
     .find-car-button {
-      width: 100%; /* Adjust width to match other buttons */
+      width: 100%;
       padding: 10px;
-      background-color: #3A1B50; /* Set background color to red */
+      background-color: #3A1B50;
       color: white;
       border: none;
-      border-radius: 4px; /* Rounded corners */
+      border-radius: 4px;
       cursor: pointer;
     }
     
     
     
     .find-car-button:hover {
-      background-color: #3A1B50; /* Darker red on hover */
+      background-color: #3A1B50;
     }
 
 
 }
 
-
-
-// .carts{
-
-
-
-// }
 .card 
 {
     box-shadow:  0 0 7px rgba(0, 0, 0, 0.088);
     border-radius: 10px;
     border: none;
     margin: 10px;
-
+img 
+{
+  object-fit: cover;
+}
     .feature_details
     {
         ul 
@@ -386,4 +349,105 @@ nav
         left: 50%;
         transform: translate(-50%,50%);
     }
+}
+
+//*** Footer Styles**
+footer
+{
+    margin-top: 100px;
+    padding: 20px;
+    background-image: linear-gradient(#3a1b50b6, #3a1b50b6), url(./images/img_ferarif8tributo_539x1920.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    .social
+    {
+        position: relative;
+        padding-left: 15px;
+        top: -60px;
+        li 
+        {
+            width: 36px;
+            height: 36px;
+            position: relative;
+            border-radius: 50%;
+            background-color: #3A1B50;
+            margin: 0 5px;
+            overflow: hidden;
+            a 
+            {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                height: 100%;
+                width: 100%;
+                text-align: center;
+                transform: translate(-50%, -50%);
+                color: white;
+                font-size: 20px;
+            }
+        }
+        .facebook
+        {
+            background-color: #3B5998 !important;
+        }
+        .twitter
+        {
+            background-color: #55ACEE !important;
+        }
+    }
+    .container-fluid 
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        ul 
+        {
+            list-style: none;
+            font-size: 17px;
+            position: relative;
+            .app
+            {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                img 
+                {
+                    width: 150px;
+                    margin-left: 20px;
+                }
+            }
+            .Download
+            {
+                max-width: 200px;
+                text-align: center;
+            }
+        }
+        ul:not(:nth-child(5))::after{
+            position: absolute;
+            content: "";
+            width: 1px;
+            background-color: white;
+            height: 100%;
+            right: -20px;
+             top: 0;
+        }
+        
+    }
+    @media screen and (max-width:1242px) {
+        .container-fluid
+        {
+        //  flex-direction: column;
+        flex-wrap: wrap;
+         justify-content: center;
+
+         ul:not(:nth-child(5))::after{
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 0px;
+        }
+        }
+    }
+   
 }

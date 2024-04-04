@@ -2,6 +2,10 @@
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.116);
   border-radius: 40px;
 }
+.RentSUVLuxuryCursel .slider-pro img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .RentSUVLuxuryCursel .slider-pro .Featured {
   background-color: #03A9F4;
 }

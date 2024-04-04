@@ -4,7 +4,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import img1 from "../../../images/WhatsAppImage.png"
 import logo from "../../../images/tajeer app icon@2x.png"
-import "./filter.css"
+// import "./filter.css"
 import { GoDotFill } from 'react-icons/go';
 import { IoLogoWhatsapp } from 'react-icons/io';
 import { MdEmail } from 'react-icons/md';
@@ -458,7 +458,7 @@ export default function Filter() {
   <ul className="pagination">
     <li className="page-item">
       <p className="page-link" aria-label="Previous" onClick={() => handlePageChangeBtn('prev')}>
-        <span aria-hidden="true">&laquo;</span>
+        <span>&laquo;</span>
       </p>
     </li>
     {Array.from({ length: Math.ceil(carsDetails.length / 5) }, (_, index) => (
@@ -467,7 +467,7 @@ export default function Filter() {
     {/* <li className="page-item">3</li> */}
     <li className="page-item">
       <p className="page-link" aria-label="Next" onClick={() => handlePageChangeBtn('next')} >
-        <span aria-hidden="true">&raquo;</span>
+        <span>&raquo;</span>
       </p>
     </li>
   </ul>
