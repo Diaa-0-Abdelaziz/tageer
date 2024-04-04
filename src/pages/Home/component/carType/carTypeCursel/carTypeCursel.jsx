@@ -8,6 +8,7 @@ import img2 from "../../../../../images/img_convertible.png"
 import img3 from "../../../../../images/img_convertible.png"
 import img4 from "../../../../../images/img_convertible.png"
 import img5 from "../../../../../images/img_convertible.png"
+import { Link } from 'react-router-dom';
 export default function CarTypeCursel() {
     function SampleNextArrow(props) {
         const {onClick } = props;
@@ -39,7 +40,7 @@ export default function CarTypeCursel() {
           {
             breakpoint: 1024,
             settings: {
-              slidesToShow: 3,
+              slidesToShow: 5,
               slidesToScroll: 1,
               infinite: true,
             }
@@ -47,7 +48,7 @@ export default function CarTypeCursel() {
           {
             breakpoint: 600,
             settings: {
-              slidesToShow: 2,
+              slidesToShow: 4,
               slidesToScroll: 1,
               initialSlide: 2
             }
@@ -55,7 +56,7 @@ export default function CarTypeCursel() {
           {
             breakpoint: 480,
             settings: {
-              slidesToShow: 1,
+              slidesToShow: 3,
               slidesToScroll: 1
             }
           }
@@ -111,12 +112,14 @@ export default function CarTypeCursel() {
        <div className="container main-slider mb-5">
          <Slider {...settings}>
           {products.map((pro)=> <div className='p-2 content' key={pro.id}>
-            <div className='slider-pro p-1 overflow-hidden'>
+           <Link to={`/Category/` + pro.id}>
+           <div className='slider-pro p-1 overflow-hidden'>
           <img src={pro.img} alt="" className='w-100' />
           <div className='title'>
-          <span className='text-capitalize'>{pro.title}</span>
+          <span className='text-capitalize badge text-black'>{pro.title}</span>
           </div>
         </div>
+           </Link>
           </div>)}
       </Slider>
        </div>

@@ -3,9 +3,7 @@ import { GoDotFill } from "react-icons/go";
 import Filter from './FILTER/filter';
 import BESTSERVICES from '../Home/component/BEST-SERVICES/BESTSERVICES';
 import FAQ from '../Home/component/FAQ/FAQ';
-import ViewAllCursel from './ViewAllCursel/ViewAllCursel';
-
-export default function ViewAll() {
+export default function Category() {
     const [isExpanded, setIsExpanded] = useState(false);
     const toggleExpanded = () => {
       setIsExpanded(!isExpanded);
@@ -63,22 +61,9 @@ export default function ViewAll() {
             <span className='rounded-pill py-2 px-5' style={{background:"#E6F6FF",color:"#3A1B50",cursor:"pointer" }}>View More</span>
         </div>
 
-
-
-
-
-
         </div>
-
-
-
-
-
-
-
     </section>
     <Filter/>
-    <ViewAllCursel/>
     <BESTSERVICES/>
     <FAQ/>
     </>

@@ -53,7 +53,7 @@ export default function Navbar() {
   const RentACar = [
                      {
                       linkName:"Rent a car monthly",
-                      path:"./CarList"
+                      path:"./HomeMothlyCarRental"
                      },
                      {
                       linkName:"Rent luxury car",
@@ -201,11 +201,13 @@ export default function Navbar() {
             <img src={logo} alt={logo} className='me-5 logo'/>
            <span className='fs-1 menu  d-none' onClick={openNavList}> <CgMenuGridR /></span>
            <span className='fs-3 setting_btn  d-none' onClick={openSettingList}> <IoMdSettings /></span>
+            <Link to="/ListYourCars" className=' text-decoration-none'>
             <div className='advertisement px-2 me-4 d-flex align-items-center bg-light'>
               <img src={lamborghini} alt={lamborghini} className='lamborghini' />
               <p className='badge text-dark mt-2'>List your cars in <span className='bolder'>TAJEER</span> platform</p>
               <img src={img_calendar} alt={img_calendar} className='img_calendar' />
             </div>
+            </Link>
             <div className={`d-flex ${openSetting? 'settings':  'settings open_Setting'}`}>
             <span className='close_Setting d-none fs-5' onClick={openSettingList}><FaWindowClose/></span>
               <ul className=' border-style list-unstyled d-flex align-items-center'>

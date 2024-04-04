@@ -1,27 +1,3 @@
-.FILTER article {
-  margin-bottom: 30px;
-}
-.FILTER article p {
-  font-size: 18px;
-  letter-spacing: 3px;
-}
-.FILTER article .content {
-  background-color: #E6F6FF;
-  padding: 20px 40px;
-  max-width: 250px;
-}
-.FILTER article .content ul li {
-  font-size: 17px;
-  color: #333;
-}
-.FILTER article .content ul li .IoCheckmarkCircle {
-  font-size: 25px;
-  color: #c2c2c2;
-  margin-right: 10px;
-}
-.FILTER article .adout_content {
-  color: #656C70;
-}
 .FILTER .clear {
   width: 280px;
   display: flex;

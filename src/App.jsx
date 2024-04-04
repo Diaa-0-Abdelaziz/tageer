@@ -16,6 +16,12 @@ import AboutUs from './pages/About us/AboutUs';
 import MyAccount from './pages/MyAccount/MyAccount';
 import ViewAll from './pages/ViewAll/ViewAll';
 import CarList from './pages/CarList/CarList';
+import CarRentalDealsOffers from './pages/CarRentalDealsOffers/CarRentalDealsOffers';
+import HomeMothlyCarRental from './pages/HomeMothlyCarRental/HomeMothlyCarRental';
+import Brands from './pages/Brands/Brands';
+import BrandModel from './pages/BrandModel/BrandModel';
+import Category from './pages/Category/Category';
+import CarRentalCompany from './pages/CarRentalCompany/CarRentalCompany';
 
 function App() {
   let routes =  createBrowserRouter([
@@ -28,7 +34,13 @@ function App() {
         {path:'rentCarWithDriver', element:<RentCarWithDrivers/>},
         {path:'ViewAll', element:<ViewAll/>},
         {path:'CarList', element:<CarList/>},
+        {path:'CarRentalDealsOffers', element:<CarRentalDealsOffers/>},
+        {path:'HomeMothlyCarRental', element:<HomeMothlyCarRental/>},
         {path:'Blog', element:<Blog/>},
+        {path:'Brands/:id', element:<Brands/>},
+        {path:'Category/:id', element:<Category/>},
+        {path:'CarRentalCompany', element:<CarRentalCompany/>},
+        {path:'BrandModel', element:<BrandModel/>},
         {path:'ListYourCars', element:<ListYourCars/>},
         {path:'ContactUs', element:<ContactUs/>},
         {path:'TermsAndCondition', element:<TermsAndCondition/>},

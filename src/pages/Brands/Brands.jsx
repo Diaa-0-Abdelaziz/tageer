@@ -3,9 +3,7 @@ import { GoDotFill } from "react-icons/go";
 import Filter from './FILTER/filter';
 import BESTSERVICES from '../Home/component/BEST-SERVICES/BESTSERVICES';
 import FAQ from '../Home/component/FAQ/FAQ';
-import ViewAllCursel from './ViewAllCursel/ViewAllCursel';
-
-export default function ViewAll() {
+export default function Brands() {
     const [isExpanded, setIsExpanded] = useState(false);
     const toggleExpanded = () => {
       setIsExpanded(!isExpanded);
@@ -78,7 +76,6 @@ export default function ViewAll() {
 
     </section>
     <Filter/>
-    <ViewAllCursel/>
     <BESTSERVICES/>
     <FAQ/>
     </>

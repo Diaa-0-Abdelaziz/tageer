@@ -3,9 +3,7 @@ import { GoDotFill } from "react-icons/go";
 import Filter from './FILTER/filter';
 import BESTSERVICES from '../Home/component/BEST-SERVICES/BESTSERVICES';
 import FAQ from '../Home/component/FAQ/FAQ';
-import ViewAllCursel from './ViewAllCursel/ViewAllCursel';
-
-export default function ViewAll() {
+export default function CarRentalCompany() {
     const [isExpanded, setIsExpanded] = useState(false);
     const toggleExpanded = () => {
       setIsExpanded(!isExpanded);
@@ -15,7 +13,7 @@ export default function ViewAll() {
     <section className='CarType pt-3'>
         <div className="container">
         <div className='CarType_Header d-flex justify-content-between mb-3 align-items-center'>
-        <h3 className=''>Rent SUV in Dubai</h3>
+        <h3 className=' fw-medium fs-2' style={{ textTransform:"uppercase",letterSpacing:"2px"}}>MonZa car rental</h3>
         </div>
         <p className=' fw-bold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, laborum.</p>
         <p className={` position-relative ${isExpanded ? 'expanded' : 'collapsed'}`}>
@@ -63,22 +61,9 @@ export default function ViewAll() {
             <span className='rounded-pill py-2 px-5' style={{background:"#E6F6FF",color:"#3A1B50",cursor:"pointer" }}>View More</span>
         </div>
 
-
-
-
-
-
         </div>
-
-
-
-
-
-
-
     </section>
     <Filter/>
-    <ViewAllCursel/>
     <BESTSERVICES/>
     <FAQ/>
     </>
