@@ -4,7 +4,6 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import img1 from "../../../../images/WhatsAppImage.png"
 import logo from "../../../../images/tajeer app icon@2x.png"
-import "./filter.css"
 import { GoDotFill } from 'react-icons/go';
 import { IoLogoWhatsapp } from 'react-icons/io';
 import { MdEmail } from 'react-icons/md';
