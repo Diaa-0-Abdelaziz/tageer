@@ -136,6 +136,7 @@ header .navbar ul .fs-13 {
 }
 header .navlist {
   background-color: white;
+  border-bottom: 4px solid #E6F6FF;
 }
 header .navlist ul {
   padding: 0 5px;

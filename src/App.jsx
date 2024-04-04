@@ -15,6 +15,7 @@ import Privacy from './pages/Privacy/Privacy';
 import AboutUs from './pages/About us/AboutUs';
 import MyAccount from './pages/MyAccount/MyAccount';
 import ViewAll from './pages/ViewAll/ViewAll';
+import CarList from './pages/CarList/CarList';
 
 function App() {
   let routes =  createBrowserRouter([
@@ -26,6 +27,7 @@ function App() {
         {path:'yachts', element:<Yachts/>},
         {path:'rentCarWithDriver', element:<RentCarWithDrivers/>},
         {path:'ViewAll', element:<ViewAll/>},
+        {path:'CarList', element:<CarList/>},
         {path:'Blog', element:<Blog/>},
         {path:'ListYourCars', element:<ListYourCars/>},
         {path:'ContactUs', element:<ContactUs/>},

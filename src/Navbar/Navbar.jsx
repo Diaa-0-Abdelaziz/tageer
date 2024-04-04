@@ -53,19 +53,19 @@ export default function Navbar() {
   const RentACar = [
                      {
                       linkName:"Rent a car monthly",
-                      path:"Rent a car monthly"
+                      path:"./CarList"
                      },
                      {
                       linkName:"Rent luxury car",
-                      path:"Rent luxury car"
+                      path:"./CarList"
                      },
                      {
                       linkName:"Rent sport car",
-                      path:"Rent sport car"
+                      path:"./CarList"
                      },
                      {
                       linkName:"Rent cheap car",
-                      path:"Rent cheap car"
+                      path:"./CarList"
                      },
 
                    ];
@@ -366,7 +366,7 @@ export default function Navbar() {
                 <ul className="options">
                     {RentACar.map((option, index) => (
                         <li key={index} onClick={() => handleOptionClick5(option)}>
-                            {option.linkName}
+                            <Link to={option.path} className=' text-decoration-none'>{option.linkName}</Link>
                         </li>
                     ))}
                 </ul>
