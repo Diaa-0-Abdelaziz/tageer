@@ -156,6 +156,9 @@ export default function Navbar() {
 
 
 
+  const handleDropdownAccount = () => {
+    setAccount(!Account);
+  };
   const handleOptionClick1 = (option) => {
     setSelectedOption1(option);
       setIsOpen(false);
@@ -301,9 +304,9 @@ export default function Navbar() {
             </div>
             {Account && (
                 <ul className="options">
-                    <li>Sign in</li>
-                    <li>Create accoun</li>
-                    <li> <Link to="/MyAccount"> Manage your account</Link> </li>
+                    <li onClick={handleDropdownAccount}>Sign in</li>
+                    <li onClick={handleDropdownAccount}>Create accoun</li>
+                    <li onClick={handleDropdownAccount}> <Link to="/MyAccount"> Manage your account</Link> </li>
                 </ul>
             )}
                 </div>

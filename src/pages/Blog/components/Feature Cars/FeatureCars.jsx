@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "../../../Home/component/carType/CarType.css"
+import { Link } from 'react-router-dom';
 export default function FeatureCars() {
     const [isExpanded, setIsExpanded] = useState(false);
 
@@ -13,7 +14,7 @@ export default function FeatureCars() {
         <div className='CarType_Header d-flex justify-content-between mb-3 align-items-center'>
         <h3 className=''>Feature Cars</h3>
         <div className='line'></div>
-        <span className='ViewAll badge ms-2'>View all</span>
+        <Link to="/ViewAll" className='ViewAll badge ms-2 text-decoration-none'><span className=''>View all</span></Link>
         </div>
         </div>
     </section>

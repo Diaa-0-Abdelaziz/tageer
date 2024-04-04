@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import "../carType/CarType.css"
 import CarRentalCompaniesCursel from './CarRentalCompaniesCursel/CarRentalCompaniesCursel';
+import { Link } from 'react-router-dom';
 export default function CarRentalCompanies() {
     const [isExpanded, setIsExpanded] = useState(false);
 
@@ -14,7 +15,7 @@ export default function CarRentalCompanies() {
         <div className='CarType_Header d-flex justify-content-between mb-3 align-items-center'>
         <h3 className=' '>Car Rental Companies</h3>
         <div className='line'></div>
-        <span className='ViewAll badge ms-2'>View all</span>
+        <Link to="./ViewAll" className='ViewAll badge ms-2 text-decoration-none'><span className=''>View all</span></Link>
         </div>
         <p className=' fw-bold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, laborum.</p>
         <p className={` position-relative ${isExpanded ? 'expanded' : 'collapsed'}`}>

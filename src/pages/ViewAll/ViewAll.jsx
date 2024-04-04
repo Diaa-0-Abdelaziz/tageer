@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import "../../../Home/component/carType/CarType.css"
-import RentCarWithDriverProducts from './RentCarWithDriverProducts/RentCarWithDriverProducts';
-import { Link } from 'react-router-dom';
-export default function RentCarWithDriver() {
-    const [isExpanded, setIsExpanded] = useState(false);
+import { GoDotFill } from "react-icons/go";
+import Filter from './FILTER/filter';
+import BESTSERVICES from '../Home/component/BEST-SERVICES/BESTSERVICES';
+import FAQ from '../Home/component/FAQ/FAQ';
 
+export default function ViewAll() {
+    const [isExpanded, setIsExpanded] = useState(false);
     const toggleExpanded = () => {
       setIsExpanded(!isExpanded);
     };
@@ -13,9 +14,7 @@ export default function RentCarWithDriver() {
     <section className='CarType pt-3'>
         <div className="container">
         <div className='CarType_Header d-flex justify-content-between mb-3 align-items-center'>
-        <h3 className=''>Rent Car With Driver</h3>
-        <div className='line'></div>
-        <Link to="/ViewAll" className='ViewAll badge ms-2 text-decoration-none'><span className=''>View all</span></Link>
+        <h3 className=''>Rent SUV in Dubai</h3>
         </div>
         <p className=' fw-bold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, laborum.</p>
         <p className={` position-relative ${isExpanded ? 'expanded' : 'collapsed'}`}>
@@ -31,9 +30,56 @@ export default function RentCarWithDriver() {
           <span onClick={toggleExpanded} className=" position-absolute bottom-0 end-0 mt-2 read_more text-decoration-underline fw-bold">read more</span>
         )}
         </p>
+
+
+
+        <div className='View_More my-5 border border-1 py-4 px-5 border-black rounded-2 d-flex flex-wrap justify-content-between position-relative'>
+            <ul className=' list-unstyled m-auto'>
+                <li className=' mb-2'><GoDotFill/> Mercedes (9)</li>
+                <li><GoDotFill/> Mercedes (9)</li>
+                </ul>
+                <ul className=' list-unstyled m-auto'>
+                <li className=' mb-2'><GoDotFill/> Mercedes (9)</li>
+                <li><GoDotFill/> Mercedes (9)</li>
+                </ul>
+                <ul className=' list-unstyled m-auto'>
+                <li className=' mb-2'><GoDotFill/> Mercedes (9)</li>
+                <li><GoDotFill/> Mercedes (9)</li>
+                </ul>
+                <ul className=' list-unstyled m-auto'>
+                <li className=' mb-2'><GoDotFill/> Mercedes (9)</li>
+                <li><GoDotFill/> Mercedes (9)</li>
+                </ul>
+                <ul className=' list-unstyled m-auto'>
+                <li className=' mb-2'><GoDotFill/> Mercedes (9)</li>
+                <li><GoDotFill/> Mercedes (9)</li>
+                </ul>
+                <ul className='list-unstyled m-auto'>
+                <li className=' mb-2'><GoDotFill/> Mercedes (9)</li>
+                <li><GoDotFill/> Mercedes (9)</li>
+            </ul>
+
+            <span className='rounded-pill py-2 px-5' style={{background:"#E6F6FF",color:"#3A1B50",cursor:"pointer" }}>View More</span>
         </div>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
     </section>
-    <RentCarWithDriverProducts/>
+    <Filter/>
+    <BESTSERVICES/>
+    <FAQ/>
     </>
   )
 }
+
