@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import logo from "../images/img_tajeer_logo_websit.png"
 import lamborghini from "../images/img_lamborghiniurus.png"
 import img_calendar from "../images/img_calendar.svg"
@@ -21,6 +21,7 @@ import { IoIosArrowUp } from "react-icons/io";
 import"./navbar.css"
 import { Link } from 'react-router-dom'
 export default function Navbar() {
+  const dropdownRef = useRef(null);
   const [open, setOpen] = useState(true)
   const [openSetting, setOpenSetting] = useState(true)
   const [isOpen, setIsOpen] = useState(false);
@@ -38,6 +39,33 @@ export default function Navbar() {
   const options2 = ['dubai', 'Abu Dhabi', 'Al Ain','Sharjah'];
   const options3 = ['AED', 'SAR', 'USD','EUR'];
   const options4 = ['English', 'العربية', 'русский','中国人'];
+
+
+
+
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        // إذا كانت النقرة خارج العنصر، قم بإغلاق الـ dropdown
+        setIsOpen(false);
+      setIsOpen2(false);
+      setIsOpen3(false);
+      setIsOpen4(false);
+      setAccount(false);
+      setIsOpen5(false);
+      setIsOpen6(false);
+      }
+    }
+
+    // إضافة مستمع لحدث النقر عند تحميل الصفحة
+    document.addEventListener('mousedown', handleClickOutside);
+
+    // تنظيف المستمع عند إلغاء تحميل الصفحة أو إزالة العنصر
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
   // const accountSelect = [
   //   {
   //     btn:'Sign in',
@@ -220,7 +248,7 @@ export default function Navbar() {
                 {isOpen? <IoIosArrowUp/> : <FaAngleDown/>}
             </div>
             {isOpen && (
-                <ul className="options">
+                <ul className="options" ref={dropdownRef}>
                     {options1.map((option, index) => (
                         <li key={index} onClick={() => handleOptionClick1(option)}>
                             {option}
@@ -241,7 +269,7 @@ export default function Navbar() {
                 {isOpen2? <IoIosArrowUp/> : <FaAngleDown/>}
             </div>
             {isOpen2 && (
-                <ul className="options">
+                <ul className="options" ref={dropdownRef}>
                     {options2.map((option, index) => (
                         <li key={index} onClick={() => handleOptionClick2(option)}>
                             {option}
@@ -262,7 +290,7 @@ export default function Navbar() {
                 {isOpen3? <IoIosArrowUp/> : <FaAngleDown/>}
             </div>
             {isOpen3 && (
-                <ul className="options">
+                <ul className="options" ref={dropdownRef}>
                     {options3.map((option, index) => (
                         <li key={index} onClick={() => handleOptionClick3(option)}>
                             {option}
@@ -285,7 +313,7 @@ export default function Navbar() {
                 {isOpen4? <IoIosArrowUp/> : <FaAngleDown/>}
             </div>
             {isOpen4 && (
-                <ul className="options">
+                <ul className="options" ref={dropdownRef}>
                     {options4.map((option, index) => (
                         <li key={index} onClick={() => handleOptionClick4(option)}>
                             {option}
@@ -307,7 +335,7 @@ export default function Navbar() {
                 My Account
             </div>
             {Account && (
-                <ul className="options">
+                <ul className="options" ref={dropdownRef}>
                     <li onClick={handleDropdownAccount}>Sign in</li>
                     <li onClick={handleDropdownAccount}>Create accoun</li>
                     <li onClick={handleDropdownAccount}> <Link to="/MyAccount"> Manage your account</Link> </li>
@@ -365,7 +393,7 @@ export default function Navbar() {
             <span className='header'>Rent a car</span>
             </div>
             {isOpen5 && (
-                <ul className="options">
+                <ul className="options" ref={dropdownRef}>
                     {RentACar.map((option, index) => (
                         <li key={index} onClick={() => handleOptionClick5(option)}>
                             <Link to={option.path} className=' text-decoration-none'>{option.linkName}</Link>
@@ -392,7 +420,7 @@ export default function Navbar() {
             <span className='header'>Quick links</span>
             </div>
             {isOpen6 && (
-                <ul className="options">
+                <ul className="options" ref={dropdownRef}>
                     {QuickLinks.map((option, index) => (
                         <li key={index} onClick={() => handleOptionClick6(option)}>
                           <Link to={option.path}>{option.linkName}</Link>
