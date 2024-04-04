@@ -180,7 +180,7 @@ export default function Content() {
   <div className="container my-5 d-flex flex-column align-items-center">
   <img src={TAJEER_LOGO} alt={TAJEER_LOGO} className=' w-75'/>
   <p>You don’t have saved bookings yet</p>
-  <Link to="/" className='Back_To_Home text-decoration-none'><span className=''>Back to hom</span></Link>
+  <Link to="/" className='Back_To_Home text-decoration-none'><span className=''>Back to home</span></Link>
   </div>
 
 

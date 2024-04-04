@@ -152,6 +152,7 @@ export default function Navbar() {
       setIsOpen3(false);
       setIsOpen(false);
       setIsOpen5(false);
+      setIsOpen6(false)
   };
 
 
