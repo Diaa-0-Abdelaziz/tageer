@@ -25,22 +25,6 @@ const BrandModel = lazy(() => import('./pages/BrandModel/BrandModel'));
 const Category = lazy(() => import('./pages/Category/Category'));
 const CarRentalCompany = lazy(() => import('./pages/CarRentalCompany/CarRentalCompany'));
 const Blog = lazy(() => import('./pages/Blog/Blog'));
-
-// import ListYourCars from './pages/List your cars/ListYourCars';
-// import ContactUs from './pages/Contact us/ContactUs';
-// import TermsAndCondition from './pages/TermsAndCondition/TermsAndCondition';
-// import Privacy from './pages/Privacy/Privacy';
-// import AboutUs from './pages/About us/AboutUs';
-// import MyAccount from './pages/MyAccount/MyAccount';
-// import ViewAll from './pages/ViewAll/ViewAll';
-// import CarList from './pages/CarList/CarList';
-// import CarRentalDealsOffers from './pages/CarRentalDealsOffers/CarRentalDealsOffers';
-// import HomeMothlyCarRental from './pages/HomeMothlyCarRental/HomeMothlyCarRental';
-// import Brands from './pages/Brands/Brands';
-// import BrandModel from './pages/BrandModel/BrandModel';
-// import Category from './pages/Category/Category';
-// import CarRentalCompany from './pages/CarRentalCompany/CarRentalCompany';
-
 function App() {
   let routes =  createBrowserRouter([
     {

@@ -1,5 +1,4 @@
 import React from 'react';
-import "../../../Home/component/carType/CarType.css"
 import { Link } from 'react-router-dom';
 export default function FeatureCars() {
   return (
