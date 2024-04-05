@@ -19,7 +19,7 @@ export default function BetterWay() {
         <li className='notLine'>
             <div><BsListUl/></div>
             <span className=' fs-4'>Choose Your Car</span>
-            <h6>Select a car using search or catalog.</h6>
+            <span className=' fs-6 px-1 pb-2'>Select a car using search or catalog.</span>
         </li>
         <li>
             <img src={line1} alt={line1} />
@@ -27,7 +27,7 @@ export default function BetterWay() {
         <li className='notLine'>
         <div><CiCalendar/></div>
         <span className=' fs-4'>Contact Your Dealer</span>
-        <h6>After you’ve selected a car a dealer will contact you.</h6>
+        <span className=' fs-6 px-1 pb-2'>After you’ve selected a car a dealer will contact you.</span>
         </li>
         <li>
             <img src={line2} alt={line2} />
@@ -35,7 +35,7 @@ export default function BetterWay() {
         <li className='notLine'>
         <div><LuCheckSquare/></div>
         <span className=' fs-4'>Get Your Car</span>
-        <h6>Here you are! Your car is book and waiting for you.</h6>
+        <span className=' fs-6 px-1 pb-2'>Here you are! Your car is book and waiting for you.</span>
         </li>
       </ul>
       </div>
