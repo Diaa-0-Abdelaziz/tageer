@@ -18,7 +18,7 @@ export default function BetterWay() {
       <ul className=' list-unstyled d-flex align-items-center justify-content-center'>
         <li className='notLine'>
             <div><BsListUl/></div>
-            <h5>Choose Your Car</h5>
+            <span className=' fs-4'>Choose Your Car</span>
             <h6>Select a car using search or catalog.</h6>
         </li>
         <li>
@@ -26,7 +26,7 @@ export default function BetterWay() {
         </li>
         <li className='notLine'>
         <div><CiCalendar/></div>
-        <h5>Contact Your Dealer</h5>
+        <span className=' fs-4'>Contact Your Dealer</span>
         <h6>After you’ve selected a car a dealer will contact you.</h6>
         </li>
         <li>
@@ -34,7 +34,7 @@ export default function BetterWay() {
         </li>
         <li className='notLine'>
         <div><LuCheckSquare/></div>
-        <h5>Get Your Car</h5>
+        <span className=' fs-4'>Get Your Car</span>
         <h6>Here you are! Your car is book and waiting for you.</h6>
         </li>
       </ul>
