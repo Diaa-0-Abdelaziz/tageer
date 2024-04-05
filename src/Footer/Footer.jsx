@@ -6,6 +6,7 @@ import { GrInstagram } from "react-icons/gr";
 import { GoDotFill } from "react-icons/go";
 import google_play from "../images/google play.png"
 import app_store from "../images/app store.png"
+import "./footer.css"
 export default function Footer() {
   return (
     <>

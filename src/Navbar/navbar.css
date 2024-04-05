@@ -225,6 +225,10 @@ header .navlist .appsLink li a img {
 header .navlist .social {
   padding-left: 15px;
 }
+header .navlist .social .hidden-text {
+  text-indent: -9999px;
+  overflow: hidden;
+}
 header .navlist .social li {
   width: 36px;
   height: 36px;
