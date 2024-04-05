@@ -1,27 +1,45 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { Suspense, lazy } from 'react';
 import './App.css';
-import Home from './pages/Home/Home';
 import Layout from './Layout/Layout';
-import Yachts from './pages/Yachts/Yachts';
-import YachtsDetails from './pages/YachtsDetails/YachtsDetails';
-import RentCarWithDrivers from './pages/RentCarWithDriver/RentCarWithDrivers';
-import RentCarWithDriverDetails from './pages/rent-car-with-driver-details/rentCarWithDriverDetails';
-import CarDetails from './pages/car-details/carDetails';
-import Blog from './pages/Blog/Blog';
-import ListYourCars from './pages/List your cars/ListYourCars';
-import ContactUs from './pages/Contact us/ContactUs';
-import TermsAndCondition from './pages/TermsAndCondition/TermsAndCondition';
-import Privacy from './pages/Privacy/Privacy';
-import AboutUs from './pages/About us/AboutUs';
-import MyAccount from './pages/MyAccount/MyAccount';
-import ViewAll from './pages/ViewAll/ViewAll';
-import CarList from './pages/CarList/CarList';
-import CarRentalDealsOffers from './pages/CarRentalDealsOffers/CarRentalDealsOffers';
-import HomeMothlyCarRental from './pages/HomeMothlyCarRental/HomeMothlyCarRental';
-import Brands from './pages/Brands/Brands';
-import BrandModel from './pages/BrandModel/BrandModel';
-import Category from './pages/Category/Category';
-import CarRentalCompany from './pages/CarRentalCompany/CarRentalCompany';
+import Loading from './Loading';
+const Home = lazy(() => import('./pages/Home/Home'));
+// const Layout = lazy(() => import('./Layout/Layout'));
+const Yachts = lazy(() => import('./pages/Yachts/Yachts'));
+const YachtsDetails = lazy(() => import('./pages/YachtsDetails/YachtsDetails'));
+const RentCarWithDrivers = lazy(() => import('./pages/RentCarWithDriver/RentCarWithDrivers'));
+const RentCarWithDriverDetails = lazy(() => import('./pages/rent-car-with-driver-details/rentCarWithDriverDetails'));
+const CarDetails = lazy(() => import('./pages/car-details/carDetails'));
+const ListYourCars = lazy(() => import('./pages/List your cars/ListYourCars'));
+const ContactUs = lazy(() => import('./pages/Contact us/ContactUs'));
+const TermsAndCondition = lazy(() => import('./pages/TermsAndCondition/TermsAndCondition'));
+const Privacy = lazy(() => import('./pages/Privacy/Privacy'));
+const AboutUs = lazy(() => import('./pages/About us/AboutUs'));
+const MyAccount = lazy(() => import('./pages/MyAccount/MyAccount'));
+const ViewAll = lazy(() => import('./pages/ViewAll/ViewAll'));
+const CarList = lazy(() => import('./pages/CarList/CarList'));
+const CarRentalDealsOffers = lazy(() => import('./pages/CarRentalDealsOffers/CarRentalDealsOffers'));
+const HomeMothlyCarRental = lazy(() => import('./pages/HomeMothlyCarRental/HomeMothlyCarRental'));
+const Brands = lazy(() => import('./pages/Brands/Brands'));
+const BrandModel = lazy(() => import('./pages/BrandModel/BrandModel'));
+const Category = lazy(() => import('./pages/Category/Category'));
+const CarRentalCompany = lazy(() => import('./pages/CarRentalCompany/CarRentalCompany'));
+const Blog = lazy(() => import('./pages/Blog/Blog'));
+
+// import ListYourCars from './pages/List your cars/ListYourCars';
+// import ContactUs from './pages/Contact us/ContactUs';
+// import TermsAndCondition from './pages/TermsAndCondition/TermsAndCondition';
+// import Privacy from './pages/Privacy/Privacy';
+// import AboutUs from './pages/About us/AboutUs';
+// import MyAccount from './pages/MyAccount/MyAccount';
+// import ViewAll from './pages/ViewAll/ViewAll';
+// import CarList from './pages/CarList/CarList';
+// import CarRentalDealsOffers from './pages/CarRentalDealsOffers/CarRentalDealsOffers';
+// import HomeMothlyCarRental from './pages/HomeMothlyCarRental/HomeMothlyCarRental';
+// import Brands from './pages/Brands/Brands';
+// import BrandModel from './pages/BrandModel/BrandModel';
+// import Category from './pages/Category/Category';
+// import CarRentalCompany from './pages/CarRentalCompany/CarRentalCompany';
 
 function App() {
   let routes =  createBrowserRouter([
@@ -29,27 +47,27 @@ function App() {
       path:"",
       element:<Layout/>,
       children:[
-        {index:true, element:<Home/>},
-        {path:'yachts', element:<Yachts/>},
-        {path:'rentCarWithDriver', element:<RentCarWithDrivers/>},
-        {path:'ViewAll', element:<ViewAll/>},
-        {path:'CarList', element:<CarList/>},
-        {path:'CarRentalDealsOffers', element:<CarRentalDealsOffers/>},
-        {path:'HomeMothlyCarRental', element:<HomeMothlyCarRental/>},
-        {path:'Blog', element:<Blog/>},
-        {path:'Brands/:id', element:<Brands/>},
-        {path:'Category/:id', element:<Category/>},
-        {path:'CarRentalCompany', element:<CarRentalCompany/>},
-        {path:'BrandModel', element:<BrandModel/>},
-        {path:'ListYourCars', element:<ListYourCars/>},
-        {path:'ContactUs', element:<ContactUs/>},
-        {path:'TermsAndCondition', element:<TermsAndCondition/>},
-        {path:'Privacy', element:<Privacy/>},
-        {path:'AboutUs', element:<AboutUs/>},
-        {path:'MyAccount', element:<MyAccount/>},
-        {path:'YachtsDetails/:id', element:<YachtsDetails/>},
-        {path:'RentCarWithDriverDetails/:id', element:<RentCarWithDriverDetails/>},
-        {path:'CarDetails/:id', element:<CarDetails/>},
+        {index:true, element:<Suspense fallback={<Loading/>}><Home/></Suspense>},
+        {path:'yachts', element:<Suspense fallback={<Loading/>}><Yachts/></Suspense>},
+        {path:'rentCarWithDriver', element:<Suspense fallback={<Loading/>}> <RentCarWithDrivers/> </Suspense>},
+        {path:'ViewAll', element:<Suspense fallback={<Loading/>}> <ViewAll/> </Suspense>},
+        {path:'CarList', element:<Suspense fallback={<Loading/>}> <CarList/> </Suspense>},
+        {path:'CarRentalDealsOffers', element:<Suspense fallback={<Loading/>}> <CarRentalDealsOffers/> </Suspense>},
+        {path:'HomeMothlyCarRental', element:<Suspense fallback={<Loading/>}> <HomeMothlyCarRental/> </Suspense>},
+        {path:'Blog', element:<Suspense fallback={<Loading/>}> <Blog/> </Suspense>},
+        {path:'Brands/:id', element:<Suspense fallback={<Loading/>}> <Brands/> </Suspense>},
+        {path:'Category/:id', element:<Suspense fallback={<Loading/>}> <Category/> </Suspense>},
+        {path:'CarRentalCompany', element:<Suspense fallback={<Loading/>}> <CarRentalCompany/> </Suspense>},
+        {path:'BrandModel', element:<Suspense fallback={<Loading/>}> <BrandModel/> </Suspense>},
+        {path:'ListYourCars', element:<Suspense fallback={<Loading/>}> <ListYourCars/> </Suspense>},
+        {path:'ContactUs', element:<Suspense fallback={<Loading/>}> <ContactUs/> </Suspense>},
+        {path:'TermsAndCondition', element:<Suspense fallback={<Loading/>}> <TermsAndCondition/> </Suspense>},
+        {path:'Privacy', element:<Suspense fallback={<Loading/>}> <Privacy/> </Suspense>},
+        {path:'AboutUs', element:<Suspense fallback={<Loading/>}> <AboutUs/> </Suspense>},
+        {path:'MyAccount', element:<Suspense fallback={<Loading/>}> <MyAccount/> </Suspense>},
+        {path:'YachtsDetails/:id', element:<Suspense fallback={<Loading/>}> <YachtsDetails/> </Suspense>},
+        {path:'RentCarWithDriverDetails/:id', element:<Suspense fallback={<Loading/>}> <RentCarWithDriverDetails/> </Suspense>},
+        {path:'CarDetails/:id', element:<Suspense fallback={<Loading/>}> <CarDetails/> </Suspense>},
         // {path:'*', element:<Notfound/>}
       ]
     }
