@@ -128,9 +128,9 @@ export default function Testimonials() {
             <li>
           <img className='one' src={pro.userPicture} alt={pro.userPicture}/>
             </li>
-            <li  className='Name'>
-                <h5>{pro.userName}</h5>
-                <h6>{pro.userLocation}</h6>
+            <li  className='Name d-flex flex-column'>
+                <span className=' fs-5'>{pro.userName}</span>
+                <span className=' fs-6'>{pro.userLocation}</span>
             </li>
             <li>
           <img src={pro.img} alt={pro.img}/>
