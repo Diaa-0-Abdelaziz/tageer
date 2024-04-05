@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import Slider from '@mui/material/Slider';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import img1 from "../../../images/WhatsAppImage.png"
-import logo from "../../../images/tajeer app icon@2x.png"
+import img1 from "../../../images/WhatsAppImage.jpg"
+import logo from "../../../images/tajeer app icon@2x.jpg"
 // import "./filter.css"
 import { GoDotFill } from 'react-icons/go';
 import { IoLogoWhatsapp } from 'react-icons/io';

@@ -1,8 +1,8 @@
 import React from 'react'
 import { GoDotFill } from "react-icons/go";
 import 'react-image-gallery/styles/css/image-gallery.css';
-import img1 from "../../../../../images/Your image mask@2x.png"
-import logo from "../../../../../images/tajeer app icon@2x.png"
+import img1 from "../../../../../images/Your image mask@2x.jpg"
+import logo from "../../../../../images/tajeer app icon@2x.jpg"
 import { IoLogoWhatsapp } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import { IoCallSharp } from "react-icons/io5";

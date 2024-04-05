@@ -7,8 +7,8 @@ import { GoDotFill } from "react-icons/go";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import { IoCallSharp } from "react-icons/io5";
-import logo from "../../../images/img_artboard_2_169x246.png"
-import img1 from "../../../images/img_whatsapp_image_2023_01_19.png"
+import logo from "../../../images/img_artboard_2_169x246.jpg"
+import img1 from "../../../images/img_whatsapp_image_2023_01_19.jpg"
 import { Link } from 'react-router-dom';
 export default function ViewAllCursel() {
     function SampleNextArrow(props) {

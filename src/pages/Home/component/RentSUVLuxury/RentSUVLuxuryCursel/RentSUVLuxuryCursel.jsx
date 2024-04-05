@@ -13,11 +13,7 @@ import "../../carType/carTypeCursel/carTypeCursel.css"
 
 import logo from "../../../../../images/img_artboard_2_169x246.png"
 
-import img1 from "../../../../../images/img_whatsapp_image_2023_01_19.png"
-import img2 from "../../../../../images/img_whatsapp_image_2023_01_19.png"
-import img3 from "../../../../../images/img_whatsapp_image_2023_01_19.png"
-import img4 from "../../../../../images/img_whatsapp_image_2023_01_19.png"
-import img5 from "../../../../../images/img_whatsapp_image_2023_01_19.png"
+import img1 from "../../../../../images/img_whatsapp_image_2023_01_19.jpg"
 import { Link } from 'react-router-dom';
 export default function RentSUVLuxuryCursel() {
     function SampleNextArrow(props) {
@@ -42,7 +38,7 @@ export default function RentSUVLuxuryCursel() {
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 2000,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
@@ -80,32 +76,32 @@ export default function RentSUVLuxuryCursel() {
         {
           id:2,
           title:"BMW X5 Convertible slider ",
-          img:img2
+          img:img1
         },
         {
           id:3,
           title:"BMW X5 Convertible slider ",
-          img:img3
+          img:img1
         },
         {
           id:4,
           title:"BMW X5 Convertible slider ",
-          img:img4
+          img:img1
         },
         {
           id:5,
           title:"BMW X5 Convertible slider ",
-          img:img5
+          img:img1
         },
         {
           id:6,
           title:"BMW X5 Convertible slider ",
-          img:img5
+          img:img1
         },
         {
           id:7,
           title:"BMW X5 Convertible slider ",
-          img:img5
+          img:img1
         },
       ]
     

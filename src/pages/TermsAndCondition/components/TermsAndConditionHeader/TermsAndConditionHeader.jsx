@@ -1,5 +1,5 @@
 import React from 'react'
-import imgCover from "../../../../images/car-subscription-new-image@2x.png"
+import imgCover from "../../../../images/car-subscription-new-image@2x.jpg"
 export default function TermsAndConditionHeader() {
   return (
     <>

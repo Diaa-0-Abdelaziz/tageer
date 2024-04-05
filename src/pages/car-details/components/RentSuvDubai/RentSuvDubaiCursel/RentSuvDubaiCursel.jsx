@@ -1,10 +1,10 @@
 import React from 'react'
 import { GoDotFill } from "react-icons/go";
 import 'react-image-gallery/styles/css/image-gallery.css';
-import img1 from "../../../../../images/Your image mask@2x11.png"
-import img2 from "../../../../../images/Your image mask@2x12.png"
-import img3 from "../../../../../images/Your image mask@2x13.png"
-import img4 from "../../../../../images/Your image mask@2x14.png"
+import img1 from "../../../../../images/Your image mask@2x11.jpg"
+import img2 from "../../../../../images/Your image mask@2x12.jpg"
+import img3 from "../../../../../images/Your image mask@2x13.jpg"
+import img4 from "../../../../../images/Your image mask@2x14.jpg"
 import logo from "../../../../../images/tajeer app icon@2x.png"
 import { IoLogoWhatsapp } from "react-icons/io";
 import { MdEmail } from "react-icons/md";

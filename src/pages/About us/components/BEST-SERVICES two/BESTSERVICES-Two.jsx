@@ -1,5 +1,5 @@
 import React from 'react'
-import img_your_image_mask from "../../../../images/img_your_image_mask.png"
+import img_your_image_mask from "../../../../images/img_your_image_mask.jpg"
 import "../../../Home/component/BEST-SERVICES/BESTSERVICES.css"
 export default function BESTSERVICESAboutTwo() {
   return (

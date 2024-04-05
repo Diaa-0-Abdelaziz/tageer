@@ -4,10 +4,6 @@ import { MdOutlineNavigateNext } from "react-icons/md";
 import { GrFormPrevious } from "react-icons/gr";
 import "../../carType/carTypeCursel/carTypeCursel.css"
 import img1 from "../../../../../images/img_dodge_logo.png"
-import img2 from "../../../../../images/img_dodge_logo.png"
-import img3 from "../../../../../images/img_dodge_logo.png"
-import img4 from "../../../../../images/img_dodge_logo.png"
-import img5 from "../../../../../images/img_dodge_logo.png"
 import { Link } from 'react-router-dom';
 export default function CarBrandeCursel() {
     function SampleNextArrow(props) {
@@ -76,32 +72,32 @@ export default function CarBrandeCursel() {
         {
           id:2,
           title:"Dodge",
-          img:img2
+          img:img1
         },
         {
           id:3,
           title:"Dodge",
-          img:img3
+          img:img1
         },
         {
           id:4,
           title:"Dodge",
-          img:img4
+          img:img1
         },
         {
           id:5,
           title:"Dodge",
-          img:img5
+          img:img1
         },
         {
           id:6,
           title:"Dodge",
-          img:img5
+          img:img1
         },
         {
           id:7,
           title:"Dodge",
-          img:img5
+          img:img1
         },
       ]
     

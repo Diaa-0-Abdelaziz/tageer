@@ -1,8 +1,5 @@
 import React, { useState } from 'react'
-// import Slider from '@mui/material/Slider';
-// import Typography from '@mui/material/Typography';
-// import Box from '@mui/material/Box';
-import img1 from "../../../images/WhatsAppImage.png"
+import img1 from "../../../images/WhatsAppImage.jpg"
 import logo from "../../../images/tajeer app icon@2x.png"
 import { IoCheckmarkCircle } from "react-icons/io5";
 

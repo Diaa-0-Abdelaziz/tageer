@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaUserCircle } from "react-icons/fa";
-import img1 from "../../../../images/WhatsAppImage.png"
+import img1 from "../../../../images/WhatsAppImage.jpg"
 import logo from "../../../../images/tajeer app icon@2x.png"
 import TAJEER_LOGO from "../../../../images/TAJEER LOGO.png"
 import "./content.css"

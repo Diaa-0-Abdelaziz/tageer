@@ -14,10 +14,6 @@ import "../../../Home/component/carType/carTypeCursel/carTypeCursel.css"
 import logo from "../../../../images/img_artboard_2_169x246.png"
 
 import img1 from "../../../../images/img_whatsapp_image_2023_01_19.png"
-import img2 from "../../../../images/img_whatsapp_image_2023_01_19.png"
-import img3 from "../../../../images/img_whatsapp_image_2023_01_19.png"
-import img4 from "../../../../images/img_whatsapp_image_2023_01_19.png"
-import img5 from "../../../../images/img_whatsapp_image_2023_01_19.png"
 export default function SuggestedCarRentalCursel() {
     function SampleNextArrow(props) {
         const {onClick } = props;
@@ -79,32 +75,32 @@ export default function SuggestedCarRentalCursel() {
         {
           id:2,
           title:"BMW X5 Convertible slider ",
-          img:img2
+          img:img1
         },
         {
           id:3,
           title:"BMW X5 Convertible slider ",
-          img:img3
+          img:img1
         },
         {
           id:4,
           title:"BMW X5 Convertible slider ",
-          img:img4
+          img:img1
         },
         {
           id:5,
           title:"BMW X5 Convertible slider ",
-          img:img5
+          img:img1
         },
         {
           id:6,
           title:"BMW X5 Convertible slider ",
-          img:img5
+          img:img1
         },
         {
           id:7,
           title:"BMW X5 Convertible slider ",
-          img:img5
+          img:img1
         },
       ]
     
