@@ -51,19 +51,6 @@ footer .container-fluid ul {
   font-size: 17px;
   position: relative;
 }
-footer .container-fluid ul .app {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-footer .container-fluid ul .app img {
-  width: 150px;
-  margin-left: 20px;
-}
-footer .container-fluid ul .Download {
-  max-width: 200px;
-  text-align: center;
-}
 footer .container-fluid ul:not(:nth-child(5))::after {
   position: absolute;
   content: "";
@@ -72,6 +59,19 @@ footer .container-fluid ul:not(:nth-child(5))::after {
   height: 100%;
   right: -20px;
   top: 0;
+}
+footer .container-fluid .app {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+footer .container-fluid .app img {
+  width: 150px;
+  margin-left: 20px;
+}
+footer .container-fluid .Download {
+  max-width: 200px;
+  text-align: center;
 }
 @media screen and (max-width: 1242px) {
   footer .container-fluid {

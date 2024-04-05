@@ -65,17 +65,13 @@ export default function Footer() {
           <li><GoDotFill/> +97145540871</li>
           <li><GoDotFill/> info@tajeercarrent.com</li>
         </ul>
-        <ul className=''>
-          <li className='Download'>Download on the App Store & Google play</li>
+        <div className=' d-flex flex-column '>
+        <span className='Download'>Download on the App Store & Google play</span>
          <div className="app">
-         <li>
             <a href="https://play.google.com/store/apps/details?id=com.tajeer&hl=en&gl=US&pli=1" target='_blank' rel="noopener noreferrer"><img src={google_play} alt={google_play} /></a>
-          </li>
-          <li>
           <a href="https://apps.apple.com/sa/app/tajeer-rent-a-car-in-dubai/id1458290275" target='_blank' rel="noopener noreferrer"><img src={app_store} alt={app_store} /></a>
-          </li>
          </div>
-        </ul>
+        </div>
       </div>
     </footer>
     </>

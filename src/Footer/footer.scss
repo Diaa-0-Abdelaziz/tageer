@@ -58,22 +58,6 @@ footer
             list-style: none;
             font-size: 17px;
             position: relative;
-            .app
-            {
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                img 
-                {
-                    width: 150px;
-                    margin-left: 20px;
-                }
-            }
-            .Download
-            {
-                max-width: 200px;
-                text-align: center;
-            }
         }
         ul:not(:nth-child(5))::after{
             position: absolute;
@@ -83,6 +67,22 @@ footer
             height: 100%;
             right: -20px;
              top: 0;
+        }
+        .app
+        {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            img 
+            {
+                width: 150px;
+                margin-left: 20px;
+            }
+        }
+        .Download
+        {
+            max-width: 200px;
+            text-align: center;
         }
         
     }
