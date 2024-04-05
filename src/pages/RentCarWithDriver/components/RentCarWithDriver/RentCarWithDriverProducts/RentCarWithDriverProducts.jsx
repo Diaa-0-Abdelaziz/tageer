@@ -8,7 +8,7 @@ import "../../../../Home/component/carType/carTypeCursel/carTypeCursel.css"
 import { Link } from 'react-router-dom';
 import logo from "../../../../../images/img_artboard_2_169x246.png"
 
-import img1 from "../../../../../images/Screen Shot 2022-04-23 at 11.19.06 PM@2x.jpg"
+import img1 from "../../../../../images/Screen Shot 2022-04-23 at 11.19.06 PM@2x.png"
 export default function RentCarWithDriverProducts() {
   
     

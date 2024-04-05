@@ -3,7 +3,7 @@ import { BsSearch } from "react-icons/bs";
 
 import { GrFormPrevious } from "react-icons/gr";
 
-import imgCover from "../../../../images/car-subscription-new-image@2x.jpg"
+import imgCover from "../../../../images/car-subscription-new-image@2x.png"
 import"./search.css"
 export default function Search() {
   return (

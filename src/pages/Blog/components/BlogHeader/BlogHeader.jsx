@@ -1,5 +1,5 @@
 import React from 'react'
-import imgCover from "../../../../images/car-subscription-new-image@2x.jpg"
+import imgCover from "../../../../images/car-subscription-new-image@2x.png"
 export default function BlogHeader() {
   return (
     <>

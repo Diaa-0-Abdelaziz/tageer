@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import { MdOutlineNavigateNext } from "react-icons/md";
 import { GrFormPrevious } from "react-icons/gr";
 import "./carTypeCursel.css"
-import img1 from "../../../../../images/img_convertible.jpg"
+import img1 from "../../../../../images/img_convertible.png"
 import { Link } from 'react-router-dom';
 export default function CarTypeCursel() {
     function SampleNextArrow(props) {

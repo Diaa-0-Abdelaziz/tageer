@@ -13,7 +13,7 @@ import "../../carType/carTypeCursel/carTypeCursel.css"
 
 import logo from "../../../../../images/img_artboard_2_169x246.png"
 
-import img1 from "../../../../../images/img_whatsapp_image_2023_01_19.jpg"
+import img1 from "../../../../../images/img_whatsapp_image_2023_01_19.png"
 import { Link } from 'react-router-dom';
 export default function RentSUVLuxuryCursel() {
     function SampleNextArrow(props) {

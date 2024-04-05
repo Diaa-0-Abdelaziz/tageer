@@ -1,7 +1,7 @@
 import React from 'react'
 import { GoDotFill } from "react-icons/go";
 import 'react-image-gallery/styles/css/image-gallery.css';
-import img1 from "../../../../../images/Your image mask@2x000.jpg"
+import img1 from "../../../../../images/Your image mask@2x000.png"
 import logo from "../../../../../images/tajeer app icon@2x.png"
 import { IoLogoWhatsapp } from "react-icons/io";
 import { MdEmail } from "react-icons/md";

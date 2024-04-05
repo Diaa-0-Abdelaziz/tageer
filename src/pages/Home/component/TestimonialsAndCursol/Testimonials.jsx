@@ -5,7 +5,7 @@ import { GrFormPrevious } from "react-icons/gr";
 import { IoStarSharp } from "react-icons/io5";
 import "../carType/carTypeCursel/carTypeCursel.css"
 import "./Testimonials.css"
-import img1 from "../../../../images/img_image.jpg"
+import img1 from "../../../../images/img_image.png"
 import google from "../../../../images/img_pngwing_com_16.png"
 export default function Testimonials() {
     function SampleNextArrow(props) {
