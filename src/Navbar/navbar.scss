@@ -391,6 +391,11 @@ header
     .social
     {
         padding-left: 15px;
+        .hidden-text
+        {
+          text-indent: -9999px;
+         overflow: hidden;
+        }
         li 
         {
             width: 36px;
