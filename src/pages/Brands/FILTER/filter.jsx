@@ -250,7 +250,6 @@ export default function Filter() {
 
   // Handler function for submitting filter
   const handleSubmit = () => {
-    // Logic to apply the filter
     console.log("Filter applied:", { search, brand, model, year, color, type, value });
   };
 
@@ -279,7 +278,6 @@ export default function Filter() {
         <span className='clearBTN' >Sort by </span>
         <select className="select" value={brand} onChange={handleBrandChange}>
           <option value="">Price</option>
-          {/* Populate brand options dynamically */}
         </select>
         </div>
 
@@ -298,25 +296,21 @@ export default function Filter() {
       <div className="filter-item">
         <select className="select" value={brand} onChange={handleBrandChange}>
           <option value="">Choose Brand</option>
-          {/* Populate brand options dynamically */}
         </select>
       </div>
       <div className="filter-item">
         <select className="select" value={model} onChange={handleModelChange}>
           <option value="">Choose Model</option>
-          {/* Populate model options dynamically */}
         </select>
       </div>
       <div className="filter-item">
         <select className="select" value={year} onChange={handleYearChange}>
           <option value="">Choose Year</option>
-          {/* Populate year options dynamically */}
         </select>
       </div>
       <div className="filter-item">
         <select className="select" value={color} onChange={handleColorChange}>
           <option value="">Choose Color</option>
-          {/* Populate color options dynamically */}
         </select>
       </div>
       
@@ -365,12 +359,11 @@ export default function Filter() {
         step={10000}
         sx={{
             '& .MuiSlider-thumb': {
-              borderRadius: 0, // إلغاء الإنحناء لجعل المقبض مربعًا
+              borderRadius: 0,
               width: 16,
               height: 16,
               marginTop: 0,
               backgroundColor: '#3A1B50',
-            //   border: '2px solid #000',
               cursor: 'pointer',
             },
           }}

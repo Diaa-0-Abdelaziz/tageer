@@ -11,16 +11,7 @@ import { IoLogoWhatsapp } from 'react-icons/io';
 import { MdEmail } from 'react-icons/md';
 import { IoCallSharp } from 'react-icons/io5';
 export default function Filter() {
-      // State for filter options
-  // const [search, setSearch] = useState('');
   const [brand, setBrand] = useState('');
-  // const [model, setModel] = useState('');
-  // const [year, setYear] = useState('');
-  // const [color, setColor] = useState('');
-  // const [type, setType] = useState('');
-  // const [value, setValue] = React.useState([10000, 200000]);
-  // const [lowerValue, setLowerValue] = React.useState(10000);
-  // const [upperValue, setUpperValue] = React.useState(200000);
   const [currentPage, setCurrentPage] = useState(1);
   const carsDetails=[
     {
@@ -239,26 +230,7 @@ export default function Filter() {
   };
 
 
-  // Handler functions for updating state
-  // const handleSearchChange = (event) => setSearch(event.target.value);
   const handleBrandChange = (event) => setBrand(event.target.value);
-  // const handleModelChange = (event) => setModel(event.target.value);
-  // const handleYearChange = (event) => setYear(event.target.value);
-  // const handleColorChange = (event) => setColor(event.target.value);
-  // const handleTypeChange = (event) => setType(event.target.value);
-
-  // Handler function for submitting filter
-  // const handleSubmit = () => {
-  //   // Logic to apply the filter
-  //   console.log("Filter applied:", { search, brand, model, year, color, type, value });
-  // };
-
-
-  // const handleChange = (event, newValue) => {
-  //   setValue(newValue);
-  //   setLowerValue(newValue[0]);
-  //   setUpperValue(newValue[1]);
-  // };
 
     const AboutUs=["Taking public transportation is inconvenient, exhausting, and unpredictable. The distances can be considered when trying to get to different places and sights in Dubai. Furthermore, public transportation does not always provide end-to-end service, so you may have to walk to your destination."]
     const AboutUs_Content = AboutUs[0].slice(0,61)

@@ -30,51 +30,7 @@ export default function BrandModel() {
           <span onClick={toggleExpanded} className=" position-absolute bottom-0 end-0 mt-2 read_more text-decoration-underline fw-bold">read more</span>
         )}
         </p>
-
-
-
-        {/* <div className='View_More my-5 border border-1 py-4 px-5 border-black rounded-2 d-flex flex-wrap justify-content-between position-relative'>
-            <ul className=' list-unstyled m-auto'>
-                <li className=' mb-2'><GoDotFill/> Mercedes (9)</li>
-                <li><GoDotFill/> Mercedes (9)</li>
-                </ul>
-                <ul className=' list-unstyled m-auto'>
-                <li className=' mb-2'><GoDotFill/> Mercedes (9)</li>
-                <li><GoDotFill/> Mercedes (9)</li>
-                </ul>
-                <ul className=' list-unstyled m-auto'>
-                <li className=' mb-2'><GoDotFill/> Mercedes (9)</li>
-                <li><GoDotFill/> Mercedes (9)</li>
-                </ul>
-                <ul className=' list-unstyled m-auto'>
-                <li className=' mb-2'><GoDotFill/> Mercedes (9)</li>
-                <li><GoDotFill/> Mercedes (9)</li>
-                </ul>
-                <ul className=' list-unstyled m-auto'>
-                <li className=' mb-2'><GoDotFill/> Mercedes (9)</li>
-                <li><GoDotFill/> Mercedes (9)</li>
-                </ul>
-                <ul className='list-unstyled m-auto'>
-                <li className=' mb-2'><GoDotFill/> Mercedes (9)</li>
-                <li><GoDotFill/> Mercedes (9)</li>
-            </ul>
-
-            <span className='rounded-pill py-2 px-5' style={{background:"#E6F6FF",color:"#3A1B50",cursor:"pointer" }}>View More</span>
-        </div> */}
-
-
-
-
-
-
         </div>
-
-
-
-
-
-
-
     </section>
     <Filter/>
     <BESTSERVICES/>

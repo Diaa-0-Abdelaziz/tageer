@@ -4,10 +4,6 @@ import { MdOutlineNavigateNext } from "react-icons/md";
 import { GrFormPrevious } from "react-icons/gr";
 import "./carTypeCursel.css"
 import img1 from "../../../../../images/img_convertible.png"
-import img2 from "../../../../../images/img_convertible.png"
-import img3 from "../../../../../images/img_convertible.png"
-import img4 from "../../../../../images/img_convertible.png"
-import img5 from "../../../../../images/img_convertible.png"
 import { Link } from 'react-router-dom';
 export default function CarTypeCursel() {
     function SampleNextArrow(props) {
@@ -76,32 +72,32 @@ export default function CarTypeCursel() {
         {
           id:2,
           title:"Sport cars",
-          img:img2
+          img:img1
         },
         {
           id:3,
           title:"Sport cars",
-          img:img3
+          img:img1
         },
         {
           id:4,
           title:"Sport cars",
-          img:img4
+          img:img1
         },
         {
           id:5,
           title:"Sport cars",
-          img:img5
+          img:img1
         },
         {
           id:6,
           title:"Sport cars",
-          img:img5
+          img:img1
         },
         {
           id:7,
           title:"Sport cars",
-          img:img5
+          img:img1
         },
       ]
     
@@ -112,7 +108,7 @@ export default function CarTypeCursel() {
        <div className="container main-slider mb-5">
          <Slider {...settings}>
           {products.map((pro)=> <div className='p-2 content' key={pro.id}>
-           <Link to={`/Category/` + pro.id}>
+           <Link to={`/Category/` + pro.id} aria-label="Go to categories's page">
            <div className='slider-pro p-1 overflow-hidden'>
           <img src={pro.img} alt="" className='w-100' />
           <div className='title'>

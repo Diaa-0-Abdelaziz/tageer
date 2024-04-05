@@ -47,8 +47,7 @@ export default function Navbar() {
   useEffect(() => {
     function handleClickOutside(event) {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        // إذا كانت النقرة خارج العنصر، قم بإغلاق الـ dropdown
-        setIsOpen(false);
+      setIsOpen(false);
       setIsOpen2(false);
       setIsOpen3(false);
       setIsOpen4(false);
@@ -66,18 +65,6 @@ export default function Navbar() {
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
-  // const accountSelect = [
-  //   {
-  //     btn:'Sign in',
-  //   },
-  //   {
-  //     btn:'Create account',
-  //   },
-  //   {
-  //     btn:'Manage your account',
-  //     path:"./MyAccount"
-  //   }
-  //     ];
   const RentACar = [
                      {
                       linkName:"Rent a car monthly",
@@ -117,7 +104,6 @@ export default function Navbar() {
                     },
 
                   ];
-  
   const toggleOptions = () => {
       setIsOpen(!isOpen);
       setIsOpen2(false);
@@ -211,10 +197,6 @@ export default function Navbar() {
   const handleOptionClick6 = (option) => {
       setIsOpen6(false);
   };
-// const handleaccountSetting = (option) =>{
-
-// }
-
 
   function openNavList(){
     setOpen(!open)
@@ -229,7 +211,7 @@ export default function Navbar() {
             <img src={logo} alt={logo} className='me-5 logo'/>
            <span className='fs-1 menu  d-none' onClick={openNavList}> <CgMenuGridR /></span>
            <span className='fs-3 setting_btn  d-none' onClick={openSettingList}> <IoMdSettings /></span>
-            <Link to="/ListYourCars" className=' text-decoration-none'>
+            <Link to="/ListYourCars" className=' text-decoration-none' aria-label="Go to list your cars page">
             <div className='advertisement px-2 me-4 d-flex align-items-center bg-light'>
               <img src={lamborghini} alt={lamborghini} className='lamborghini' />
               <p className='badge text-dark mt-2'>List your cars in <span className='bolder'>TAJEER</span> platform</p>
@@ -338,32 +320,10 @@ export default function Navbar() {
                 <ul className="options" ref={dropdownRef}>
                     <li onClick={handleDropdownAccount}>Sign in</li>
                     <li onClick={handleDropdownAccount}>Create accoun</li>
-                    <li onClick={handleDropdownAccount}> <Link to="/MyAccount"> Manage your account</Link> </li>
+                    <li onClick={handleDropdownAccount}> <Link to="/MyAccount" aria-label="Go to my account setting page"> Manage your account</Link> </li>
                 </ul>
             )}
-                </div>
-
-
-
-
-
-
-
-
-                {/* {Account && (
-                  <div className='dropdown-menu'>
-
-                  <ul className="">
-                    {accountSelect.map((select, index) => (
-                      <li key={index}>
-                        {select}
-                      </li>
-                    ))}
-              
-                  </ul>
-                  </div>
-      )} */}
-          
+                </div>          
                         
                 </li>
               </ul>
@@ -375,7 +335,7 @@ export default function Navbar() {
            <span className='close d-none fs-5' onClick={openNavList}><FaWindowClose/></span>
             <ul className='navlinks m-auto mt-3 pe-5 justify-content-between list-unstyled d-flex align-items-center'>
               <li>
-              <Link className='fs-18 text-decoration-none' to="/">Home</Link>
+              <Link className='fs-18 text-decoration-none' to="/" aria-label="Go to home page">Home</Link>
               </li>
               <li>
               <select className="fs-18 form-select .fs-13 text-capitalize w-auto text-decoration-underline" aria-label="Default select example">
@@ -396,7 +356,7 @@ export default function Navbar() {
                 <ul className="options" ref={dropdownRef}>
                     {RentACar.map((option, index) => (
                         <li key={index} onClick={() => handleOptionClick5(option)}>
-                            <Link to={option.path} className=' text-decoration-none'>{option.linkName}</Link>
+                            <Link to={option.path} className=' text-decoration-none' aria-label={`Go to ${option.linkName} page`}>{option.linkName}</Link>
                         </li>
                     ))}
                 </ul>
@@ -406,9 +366,9 @@ export default function Navbar() {
 
               </li>
               <li>
-                <Link className='fs-18 text-decoration-none'  to="./rentCarWithDriver">Rent a car with driver</Link>
+                <Link className='fs-18 text-decoration-none'  to="./rentCarWithDriver" aria-label="Go to rent car with driver page">Rent a car with driver</Link>
               </li>
-              <li><Link className='fs-18 text-decoration-none'  to="./yachts">Rent yacht</Link></li>
+              <li><Link className='fs-18 text-decoration-none'  to="./yachts" aria-label="Go to yachts page">Rent yacht</Link></li>
               <li>
 
 
@@ -423,7 +383,7 @@ export default function Navbar() {
                 <ul className="options" ref={dropdownRef}>
                     {QuickLinks.map((option, index) => (
                         <li key={index} onClick={() => handleOptionClick6(option)}>
-                          <Link to={option.path}>{option.linkName}</Link>
+                          <Link to={option.path} aria-label={`Go to ${option.linkName} page`}>{option.linkName}</Link>
                         </li>
                     ))}
                 </ul>

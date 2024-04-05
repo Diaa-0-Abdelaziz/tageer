@@ -110,7 +110,7 @@ export default function ViewAllCursel() {
                 <div className='CarType_Header d-flex justify-content-between mb-3 align-items-center'>
                 <h3 className=''>Suggested Car Rental</h3>
                 <div className='line'></div>
-                <Link to="./ViewAll" className='ViewAll badge ms-2 text-decoration-none'><span className=''>View all</span></Link>
+                <Link to="./ViewAll" className='ViewAll badge ms-2 text-decoration-none' aria-label="Go to view all page"><span className=''>View all</span></Link>
                 </div>
                 </div>
             </div>

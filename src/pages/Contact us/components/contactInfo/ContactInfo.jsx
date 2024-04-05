@@ -14,14 +14,14 @@ export default function ContactInfo() {
             <div>
                <i><FaLocationDot/></i>
                <h4>Head Office</h4>
-               <span><a href="https://maps.app.goo.gl/inBUS8hTzjHZC1eF9" target='_blank' rel="noopener">68 Landsriver St, Welson California 22066</a></span>
+               <span><a href="https://maps.app.goo.gl/inBUS8hTzjHZC1eF9" target='_blank' rel="noopener noreferrer">68 Landsriver St, Welson California 22066</a></span>
             </div>
         </li>
         <li>
         <div>
                <i><IoCall/></i>
                <h4>Phone number</h4>
-               <span><a href="#tel:+303 123 456 7890">+303 123 456 7890</a> <a href="#tel:0800 123 4567">Sales.  0800 123 4567</a></span>
+               <span><a href="#tel:+303 123 456 7890" aria-label="call me on phone number">+303 123 456 7890</a> <a href="#tel:0800 123 4567">Sales.  0800 123 4567</a></span>
             </div>
         </li>
        </ul>
@@ -31,14 +31,14 @@ export default function ContactInfo() {
             <div>
                <i><IoLogoWhatsapp/></i>
                <h4>Whatsapp</h4>
-               <span><a href="https://wa.me/+3031234567890">+303 123 456 7890</a> <a href="https://wa.me/08001234567">Sales.  0800 123 4567</a></span>
+               <span><a href="https://wa.me/+3031234567890" aria-label="call me on whatsapp number">+303 123 456 7890</a> <a href="https://wa.me/08001234567">Sales.  0800 123 4567</a></span>
             </div>
         </li>
         <li>
         <div>
                <i><MdEmail/></i>
                <h4>Mail</h4>
-               <span><a href="mailto:info@tajeercarrent.com">info@tajeercarrent.com</a> <a href="mailto:support@domain.com">support@domain.com</a></span>
+               <span><a href="mailto:info@tajeercarrent.com" aria-label="this link is gmail link">info@tajeercarrent.com</a> <a href="mailto:support@domain.com">support@domain.com</a></span>
             </div>
         </li>
        </ul>
