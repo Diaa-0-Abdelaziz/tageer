@@ -4,18 +4,30 @@ header
     {
         background-color: #3a1b50;
         color: white;
-      .container
+        padding: 0;
+      .content
       {
         display: flex;
             justify-content: space-between;
+            align-items: center;
+            // background-color: #55ACEE;
+            align-content: center;
+            padding: 0 10px;
+            margin: auto;
+            .settings
+            {
+                margin-top: 10px;
+                display: flow-root;
+            }
       }
         .logo
         {
-            width: 200px;
+            width: 150px;
         }
         .lamborghini
         {
-            width: 70px;
+            width: 60px;
+            padding: 2px 0;
         }
         .img_calendar
         {
@@ -25,13 +37,14 @@ header
         {
             position: relative;
             padding: 12px 0;
+            // background-color: #55ACEE;
     
         }
         .border-style::before
         {
           position: absolute;
           content: "";
-          width: 1px;
+          width: .5px;
           height: 100%;
           background-color: white;
           left: -7px;
@@ -42,6 +55,9 @@ header
             .custom-select {
                 position: relative;
                 display: inline-block;
+                // background-color: #077cf1;
+                border-radius: 30px;
+                margin-right: 2px;
             .selected-option {
                 font-size: 12px;
                 padding: 8px 12px;
@@ -98,82 +114,14 @@ header
                    background-color: #f0f0f0;
                }
             }
-
-            // .Brand_Options
-            // {
-            //   position: absolute;
-            //     top: 100%;
-            //     left: 0;
-            //     width: 100%;
-            //     background-color: #fff;
-            //     overflow: hidden;
-            //     color: #3A1B50;
-            //     font-size: 12px;
-            //     font-weight: bolder;
-            //     border: 1px solid #ccc;
-            //     text-align: center;
-            //     border-top: none;
-            //     border-radius: 20px;
-            //     box-shadow: 0 0px 7px rgba(0, 0, 0, 0.1);
-            //     list-style-type: none;
-            //     margin: 0;
-            //     padding: 0;
-            //     z-index: 99999;
-            //     li {
-            //        padding: 8px 12px;
-            //        cursor: pointer;
-            //        a 
-            //        {
-            //         text-decoration: none;
-            //         color: #3A1B50;
-            //        }
-                   
-            //    }
-            //     li:hover {
-            //        background-color: #f0f0f0;
-            //    }
-            // }
-            
-            
+    
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             .fs-13
             {
                 font-size: 13px;
                 font-weight: bold;
             }
     
-            // select 
-            // {
-             
-            //  color: rgb(255, 255, 255);
-            //   font-size: 12px;
-            //   background-color: transparent;
-            //   border: none;
-            //   padding-left: 0px;
-            //   option
-            //   {
-            //     background-color: white;
-            //     color: black;
-            //     margin-top: 20px;
-            //     border-radius: 20px;
-            //   }
-            // }
         }
         @media screen and (max-width: 1500px) {
             .advertisement{
@@ -181,17 +129,36 @@ header
             }
     }
         @media screen and (max-width: 1188px) {
-            .content{
-            flex-wrap: wrap !important;
-            }
+            // .content{
+            // // flex-wrap: wrap !important;
+            // // justify-content: center;
+            // // align-items: center;
+            // // align-content: center;
+            // // margin: auto;
+            // }
     }
-        @media screen and (max-width: 1050px) {
+        @media screen and (max-width: 1091px) {
+            // background-color: #3B5998;
+            .content 
+            {
+                width: 100%;
+                padding: 0 20px;
+            }
             .setting_btn
             {
                 display: inline !important;
                 position: absolute;
-                left: 0;
+                right: 0px;
+                top: 55px;
+                width: 40px;
+                height: 40px;
+                background-color: #3A1B50;
+                border: 3px solid white;
+                border-radius: 7px 0 0 7px;
+                text-align: center;
+                font-size: 20px;
                 cursor: pointer;
+                z-index: 9999;
             }
             .open_Setting{
                 top:100px !important;
@@ -203,7 +170,9 @@ header
             align-items: center;
             color:white;
             background-color: #3A1B50;
-            top:-370px;
+            top:-1000%;
+            border-radius: 20px;
+            box-shadow: 0 0px 7px rgba(0, 0, 0, 0.284);
             transition: all .5s;
             z-index: 9999;
           
@@ -222,49 +191,18 @@ header
             }
             }
     }
-        @media screen and (max-width: 1050px) {
+        @media screen and (max-width: 1091px) {
             .content
             {
             .menu
             {
                 cursor: pointer;
                 display: inline !important;
+                margin-left: auto;
             }
             }
     }
 
-    // .dropdown_btn
-    // {
-    //     cursor: pointer;
-    //     position: relative;
-    //     .dropdown-menu {
-    //         position: absolute;
-    //         top: 100%;
-    //         left: 0;
-    //         width: 100%;
-    //         background-color: #fff;
-    //         overflow: hidden;
-    //         color: #3A1B50;
-    //         font-size: 12px;
-    //         font-weight: bolder;
-    //         border: 1px solid #ccc;
-    //         text-align: center;
-    //         border-top: none;
-    //         border-radius: 20px;
-    //         box-shadow: 0 0px 7px rgba(0, 0, 0, 0.1);
-    //         list-style-type: none;
-    //         margin: 0;
-    //         padding: 0;
-    //         z-index: 99999;
-    //         li {
-    //             padding: 8px 12px;
-    //             cursor: pointer;
-    //         }
-    //         li:hover {
-    //             background-color: #f0f0f0;
-    //         }
-    //     }
-    //     }
     }
   .navlist
   {
@@ -378,13 +316,6 @@ header
             padding:0 3px;
             transition: all .3s;
         }
-        // a:hover,
-        // select:hover
-        // {
-        //     background-color: #3A1B50;
-        //     color: white !important;
-        //     border-radius: 5px;
-        // }
       }
         .fs-18
         {
@@ -393,24 +324,9 @@ header
             color: #3A1B50;
         }
 
-        // select 
-        // {
-        //  cursor: pointer;
-        //  color: rgb(255, 255, 255);
-        //   font-size: 12px;
-        //   background-color: transparent;
-        //   border: none;
-        //   padding-left: 0px;
-        //   option
-        //   {
-        //     background-color: white;
-        //     color: black;
-        //   }
-        // }
     }
     .appsLink 
     {
-        // background-color: #55ACEE;
         margin-top: 15px;
         li 
         {
@@ -534,11 +450,12 @@ header
 .Brand_Options
 {
   position: absolute;
-    top: 50%;
+    top: 70px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     width: 80%;
-    height: 250px;
+    margin-bottom: -10px;
+    max-height: 600px;
     background-color: #fff;
     overflow: auto;
     color: #3A1B50;
@@ -560,6 +477,7 @@ header
     li {
        padding: 8px 12px;
        cursor: pointer;
+       transition: all .5s;
        a 
        {
         text-decoration: none;
@@ -568,6 +486,8 @@ header
        
    }
     li:hover {
-       background-color: #f0f0f0;
+    //    background-color: #f0f0f0;
+    transform: scale(1.2, 1.2);
+    // text-shadow: 0 0px 7px rgba(0, 0, 0, 0.1);
    }
 }

@@ -1,16 +1,26 @@
 header .navbar {
   background-color: #3a1b50;
   color: white;
+  padding: 0;
 }
-header .navbar .container {
+header .navbar .content {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 0 10px;
+  margin: auto;
+}
+header .navbar .content .settings {
+  margin-top: 10px;
+  display: flow-root;
 }
 header .navbar .logo {
-  width: 200px;
+  width: 150px;
 }
 header .navbar .lamborghini {
-  width: 70px;
+  width: 60px;
+  padding: 2px 0;
 }
 header .navbar .img_calendar {
   width: 30px;
@@ -22,7 +32,7 @@ header .navbar .border-style {
 header .navbar .border-style::before {
   position: absolute;
   content: "";
-  width: 1px;
+  width: 0.5px;
   height: 100%;
   background-color: white;
   left: -7px;
@@ -30,6 +40,8 @@ header .navbar .border-style::before {
 header .navbar ul .custom-select {
   position: relative;
   display: inline-block;
+  border-radius: 30px;
+  margin-right: 2px;
 }
 header .navbar ul .custom-select .selected-option {
   font-size: 12px;
@@ -91,17 +103,25 @@ header .navbar ul .fs-13 {
     display: none !important;
   }
 }
-@media screen and (max-width: 1188px) {
+@media screen and (max-width: 1091px) {
   header .navbar .content {
-    flex-wrap: wrap !important;
+    width: 100%;
+    padding: 0 20px;
   }
-}
-@media screen and (max-width: 1050px) {
   header .navbar .setting_btn {
     display: inline !important;
     position: absolute;
-    left: 0;
+    right: 0px;
+    top: 55px;
+    width: 40px;
+    height: 40px;
+    background-color: #3A1B50;
+    border: 3px solid white;
+    border-radius: 7px 0 0 7px;
+    text-align: center;
+    font-size: 20px;
     cursor: pointer;
+    z-index: 9999;
   }
   header .navbar .open_Setting {
     top: 100px !important;
@@ -113,7 +133,9 @@ header .navbar ul .fs-13 {
     align-items: center;
     color: white;
     background-color: #3A1B50;
-    top: -370px;
+    top: -1000%;
+    border-radius: 20px;
+    box-shadow: 0 0px 7px rgba(0, 0, 0, 0.284);
     transition: all 0.5s;
     z-index: 9999;
   }
@@ -128,10 +150,11 @@ header .navbar ul .fs-13 {
     display: inline !important;
   }
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1091px) {
   header .navbar .content .menu {
     cursor: pointer;
     display: inline !important;
+    margin-left: auto;
   }
 }
 header .navlist {
@@ -309,11 +332,12 @@ header .navlist .twitter {
 
 .Brand_Options {
   position: absolute;
-  top: 50%;
+  top: 70px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   width: 80%;
-  height: 250px;
+  margin-bottom: -10px;
+  max-height: 600px;
   background-color: #fff;
   overflow: auto;
   color: #3A1B50;
@@ -336,11 +360,12 @@ header .navlist .twitter {
 .Brand_Options li {
   padding: 8px 12px;
   cursor: pointer;
+  transition: all 0.5s;
 }
 .Brand_Options li a {
   text-decoration: none;
   color: #3A1B50;
 }
 .Brand_Options li:hover {
-  background-color: #f0f0f0;
+  transform: scale(1.2, 1.2);
 }/*# sourceMappingURL=navbar.css.map */

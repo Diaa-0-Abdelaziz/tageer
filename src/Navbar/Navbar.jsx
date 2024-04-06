@@ -237,6 +237,16 @@ export default function Navbar() {
       img:car_Brand,
       path:"./Brands/"
      },
+    {
+      linkName:"Audi (102)",
+      img:car_Brand,
+      path:"./Brands/"
+     },
+    {
+      linkName:"Audi (102)",
+      img:car_Brand,
+      path:"./Brands/"
+     },
      
 
                    ];
@@ -383,10 +393,10 @@ export default function Navbar() {
   return (
     <header>
     <div className="navbar">
-        <div className="content container d-flex justify-content-around flex-nowrap">
+        <div className="content d-flex justify-content-around flex-nowrap">
             <img src={logo} alt={logo} className='me-5 logo'/>
            <span className='fs-1 menu  d-none' onClick={openNavList}> <CgMenuGridR /></span>
-           <span className='fs-3 setting_btn  d-none' onClick={openSettingList}> <IoMdSettings /></span>
+           <span className='setting_btn  d-none' onClick={openSettingList}> <IoMdSettings /></span>
             <Link to="/ListYourCars" className=' text-decoration-none' aria-label="Go to list your cars page">
             <div className='advertisement px-2 me-4 d-flex align-items-center bg-light'>
               <img src={lamborghini} alt={lamborghini} className='lamborghini' />
@@ -401,7 +411,7 @@ export default function Navbar() {
                 <li className='fs-13 text-capitalize'>country</li>
                 <li>
                 <div className="custom-select">
-            <div className="selected-option" onClick={toggleOptions}>
+            <div className="selected-option badge fw-light" onClick={toggleOptions}>
                 {selectedOption1}
                 {isOpen? <IoIosArrowUp/> : <FaAngleDown/>}
             </div>
@@ -422,7 +432,7 @@ export default function Navbar() {
               <li className='fs-13 text-capitalize'>city</li>
               <li>
               <div className="custom-select">
-            <div className="selected-option opt2" onClick={toggleOptions2}>
+            <div className="selected-option opt2 badge fw-light" onClick={toggleOptions2}>
                 {selectedOption2}
                 {isOpen2? <IoIosArrowUp/> : <FaAngleDown/>}
             </div>
@@ -438,9 +448,9 @@ export default function Navbar() {
                 </div>
               </li>
               </ul>
-              <ul className='border-style list-unstyled d-flex align-items-center'>
+              <ul className=' ms-2 border-style list-unstyled d-flex align-items-center'>
                 <li className='fs-5 me-2'><RiMoneyDollarCircleLine/></li>
-                <li className='fs-13 text-capitalize'>currency</li>
+                <li className='fs-13 text-capitalize badge p-0'>currency</li>
                 <li>
                 <div className="custom-select">
             <div className="selected-option opt3" onClick={toggleOptions3}>
@@ -459,9 +469,9 @@ export default function Navbar() {
                 </div>
                 </li>
               </ul>
-              <ul className='border-style language list-unstyled d-flex align-items-center'>
+              <ul className='ms-2 border-style language list-unstyled d-flex align-items-center'>
                 <li className='fs-5 me-2'><SiGoogletranslate/></li>
-                <li className='fs-13 text-capitalize'>language</li>
+                <li className='fs-13 text-capitalize badge p-0'>language</li>
                 <li className=' d-flex'>
                   <img src={img_united_arab_emirates} alt={img_united_arab_emirates} className=' w-25' />
                 
@@ -482,7 +492,7 @@ export default function Navbar() {
                 </div>
                 </li>
               </ul>
-              <ul className='border-style list-unstyled d-flex ms-3 align-items-center'>
+              <ul className='border-style list-unstyled d-flex align-items-center'>
                 <li className='fs-5'><MdOutlineAccountBox/></li>
                 <li>
                 
@@ -506,7 +516,8 @@ export default function Navbar() {
             </div>
         </div>
         </div>
-        <div className={open?`navlist`:`navlist open_nav_list`}>
+        
+        {/* <div className={open?`navlist position-relative`:`navlist open_nav_list position-relative`}>
           <div className="content px-3 m-auto justify-content-between  d-flex flex-wrap align-items-center">
            <span className='close d-none fs-5' onClick={openNavList}><FaWindowClose/></span>
             <ul className='navlinks m-auto mt-3 pe-5 justify-content-between list-unstyled d-flex align-items-center'>
@@ -524,13 +535,6 @@ export default function Navbar() {
             </div>
            
                 </div>
-
-              {/* <select className="fs-18 form-select .fs-13 text-capitalize w-auto text-decoration-underline" aria-label="Default select example">
-                  <option value="united arab emirates">Car brands</option>
-                  <option value="1">one</option>
-                  <option value="2">two</option>
-                  <option value="3">three</option>
-                </select> */}
               </li>
               <li>
 
@@ -580,16 +584,7 @@ export default function Navbar() {
 
 
             </ul>
-              {isOpen7 && (
-                <ul className="Brand_Options">
-                    {carBrands.map((option, index) => (
-                        <li key={index} onClick={() => handleOptionClick7(option)}>
-                          <img src={option.img} alt={option.img} width={80} height={50} />
-                            <Link to={option.path + index} className=' text-decoration-none' aria-label={`Go to ${option.linkName} page`}>{option.linkName}</Link>
-                        </li>
-                    ))}
-                </ul>
-            )}
+           
             <div className='appAndSocial m-auto d-flex align-items-center'>
              <ul className='appsLink d-flex align-items-center list-unstyled'>
               <li>
@@ -606,8 +601,19 @@ export default function Navbar() {
                 <li><a href="https://www.instagram.com/tajeercarrental/?utm_medium=copy_link" target='_blank' rel="noopener noreferrer"><GrInstagram/><span className="hidden-text">Instagram</span></a></li>
               </ul>
             </div>
-          </div>
-        </div>
+          </div> */}
+
+          {/* {isOpen7 && (
+                <ul className="Brand_Options">
+                    {carBrands.map((option, index) => (
+                        <li key={index} onClick={() => handleOptionClick7(option)}>
+                          <img src={option.img} alt={option.img} width={80} height={50} />
+                            <Link to={option.path + index} className=' text-decoration-none' aria-label={`Go to ${option.linkName} page`}>{option.linkName}</Link>
+                        </li>
+                    ))}
+                </ul>
+            )} */}
+        {/* </div> */}
     </header>
   )
 }
