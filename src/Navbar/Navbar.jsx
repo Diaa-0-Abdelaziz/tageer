@@ -396,7 +396,7 @@ export default function Navbar() {
         <div className="content d-flex justify-content-around flex-nowrap">
             <img src={logo} alt={logo} className='me-5 logo'/>
            <span className='fs-1 menu  d-none' onClick={openNavList}> <CgMenuGridR /></span>
-           <span className='setting_btn  d-none' onClick={openSettingList}> <IoMdSettings /></span>
+           <span className='setting_btn  d-none' onClick={openSettingList}> <IoMdSettings className=' position-absolute start-50 top-50 translate-middle'/></span>
             <Link to="/ListYourCars" className=' text-decoration-none' aria-label="Go to list your cars page">
             <div className='advertisement px-2 me-4 d-flex align-items-center bg-light'>
               <img src={lamborghini} alt={lamborghini} className='lamborghini' />
@@ -517,7 +517,7 @@ export default function Navbar() {
         </div>
         </div>
         
-        {/* <div className={open?`navlist position-relative`:`navlist open_nav_list position-relative`}>
+        <div className={open?`navlist position-relative`:`navlist open_nav_list position-relative`}>
           <div className="content px-3 m-auto justify-content-between  d-flex flex-wrap align-items-center">
            <span className='close d-none fs-5' onClick={openNavList}><FaWindowClose/></span>
             <ul className='navlinks m-auto mt-3 pe-5 justify-content-between list-unstyled d-flex align-items-center'>
@@ -601,9 +601,9 @@ export default function Navbar() {
                 <li><a href="https://www.instagram.com/tajeercarrental/?utm_medium=copy_link" target='_blank' rel="noopener noreferrer"><GrInstagram/><span className="hidden-text">Instagram</span></a></li>
               </ul>
             </div>
-          </div> */}
+          </div> 
 
-          {/* {isOpen7 && (
+          {isOpen7 && (
                 <ul className="Brand_Options">
                     {carBrands.map((option, index) => (
                         <li key={index} onClick={() => handleOptionClick7(option)}>
@@ -612,8 +612,8 @@ export default function Navbar() {
                         </li>
                     ))}
                 </ul>
-            )} */}
-        {/* </div> */}
+            )}
+        </div>
     </header>
   )
 }

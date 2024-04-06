@@ -112,14 +112,13 @@ header .navbar ul .fs-13 {
     display: inline !important;
     position: absolute;
     right: 0px;
-    top: 55px;
-    width: 40px;
-    height: 40px;
+    top: 58px;
+    width: 30px;
+    height: 30px;
     background-color: #3A1B50;
-    border: 3px solid white;
+    border: 2px solid white;
     border-radius: 7px 0 0 7px;
-    text-align: center;
-    font-size: 20px;
+    font-size: 15px;
     cursor: pointer;
     z-index: 9999;
   }
@@ -277,14 +276,16 @@ header .navlist .facebook {
 header .navlist .twitter {
   background-color: #55ACEE !important;
 }
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1091px) {
   header .open_nav_list {
     left: 0px !important;
   }
   header .navlist {
-    position: absolute;
+    position: absolute !important;
     top: 0;
+    max-width: 300px;
     overflow: hidden;
+    height: 100%;
     transition: all 0.5s;
     left: -100%;
     z-index: 99999;
