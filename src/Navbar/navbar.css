@@ -98,7 +98,7 @@ header .navbar ul .fs-13 {
   font-size: 13px;
   font-weight: bold;
 }
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1400px) {
   header .navbar .advertisement {
     display: none !important;
   }
