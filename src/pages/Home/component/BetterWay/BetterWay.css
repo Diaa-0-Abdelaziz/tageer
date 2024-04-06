@@ -2,11 +2,11 @@
   border-top: 1px solid rgb(79, 79, 79);
   padding-top: 20px;
 }
+.BetterWay .container .notLine {
+  width: 300px;
+}
 .BetterWay .container .img_cover {
-  background-image: url(../../../../images/img_rum_banner.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 150px 0;
+  margin: 50px 0;
   border-radius: 30px;
 }
 .BetterWay .container .text h3 {
@@ -25,7 +25,7 @@
   align-items: center;
 }
 .BetterWay .container ul li img {
-  width: 200px;
+  width: 100%;
 }
 .BetterWay .container ul li div {
   width: 60px;
@@ -39,10 +39,11 @@
   background-color: #E6F6FF;
   font-size: 30px;
 }
-.BetterWay .container ul li h5 {
+.BetterWay .container ul li .head {
   font-size: 20px;
+  font-weight: 500;
 }
-.BetterWay .container ul li h6 {
+.BetterWay .container ul li .exp {
   font-size: 14px;
   padding: 0 10px;
   margin-bottom: 25px;
@@ -52,7 +53,58 @@
   max-width: 250px;
 }
 @media screen and (max-width: 993px) {
+  .BetterWay .container ul .notLine {
+    width: 250px !important;
+  }
+  .BetterWay .container ul .notLine div {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 7px;
+    margin: 5px 0;
+  }
+  .BetterWay .container ul .notLine .head {
+    font-size: 15px;
+  }
+  .BetterWay .container ul .notLine .exp {
+    font-size: 11px;
+    margin-bottom: 2px;
+  }
+  .BetterWay .container ul .notLine img {
+    width: 50px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .BetterWay .container ul .notLine {
+    width: 100px !important;
+  }
+  .BetterWay .container ul .notLine div {
+    font-size: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    margin: 5px 0;
+  }
+  .BetterWay .container ul .notLine .head {
+    font-size: 10px;
+    font-weight: 400;
+  }
+  .BetterWay .container ul .notLine .exp {
+    font-size: 7px;
+    margin-bottom: 2px;
+  }
+  .BetterWay .container ul .notLine img {
+    width: 20px;
+  }
+}
+@media screen and (max-width: 318px) {
   .BetterWay .container ul {
     flex-direction: column;
+  }
+  .BetterWay .container ul img {
+    display: none;
+  }
+  .BetterWay .container ul .notLine {
+    margin: 10px 0;
   }
 }/*# sourceMappingURL=BetterWay.css.map */

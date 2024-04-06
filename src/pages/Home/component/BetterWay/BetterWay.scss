@@ -4,13 +4,13 @@
     {
         border-top: 1px solid rgb(79, 79, 79);
         padding-top: 20px;
-    
+    .notLine
+    {
+        width: 300px;
+    }
     .img_cover
     {
-        background-image: url(../../../../images/img_rum_banner.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        padding: 150px 0;
+        margin: 50px 0;
         border-radius: 30px;
     }
     .text
@@ -36,7 +36,8 @@
             align-items: center;
             img 
             {
-                width: 200px;
+                // width: 200px;
+                width: 100%;
             }
             div 
             {
@@ -51,11 +52,12 @@
                 background-color: #E6F6FF;
                 font-size: 30px;
             }
-            h5 
+            .head 
             {
                 font-size: 20px;
+                font-weight: 500;
             }
-            h6 
+           .exp
             {
                 font-size: 14px;
                 padding: 0 10px;
@@ -68,7 +70,75 @@
             max-width: 250px;
         }
         @media screen and (max-width:993px) {
+        
+            .notLine
+            {
+                // background-color: #2a2a2a;
+                width: 250px !important;
+                div 
+                {
+                    font-size: 20px;
+                    width: 40px;
+                height: 40px;
+                border-radius: 7px;
+                margin: 5px 0;
+                }
+                .head
+                {
+                    font-size: 15px;
+                }
+                .exp
+            {
+                font-size: 11px;
+                margin-bottom: 2px;
+            }
+            img 
+            {
+                width: 50px;
+            }
+            }
+        }
+        @media screen and (max-width:575px) {
+         
+            .notLine
+            {
+                // background-color: #2a2a2a;
+                width: 100px !important;
+                // height: 100px;
+                div 
+                {
+                    font-size: 10px;
+                    width: 20px;
+                height: 20px;
+                border-radius: 5px;
+                margin: 5px 0;
+                }
+                .head
+                {
+                    font-size: 10px;
+                    font-weight: 400;
+                }
+                .exp
+            {
+                font-size: 7px;
+                margin-bottom: 2px;
+            }
+            img 
+            {
+                width: 20px;
+            }
+            }
+        }
+        @media screen and (max-width:318px) {
             flex-direction: column;
+            img 
+            {
+                display: none;
+            }
+            .notLine
+            {
+                margin: 10px 0;
+            }
         }
 
     }
