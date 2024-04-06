@@ -56,7 +56,6 @@ export default function Navbar() {
   const handleBodyClick = (event) => {
     // Check if the clicked element or any of its ancestors has class "elected-option"
     if (!event.target.closest('.selected-option')) {
-      console.log('Clicked on the body');
       setIsOpen(false);
       setIsOpen2(false);
       setIsOpen3(false);
