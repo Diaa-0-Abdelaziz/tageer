@@ -84,4 +84,13 @@ footer .container-fluid .Download {
     width: 0;
     height: 0px;
   }
+}
+@media screen and (max-width: 507px) {
+  footer {
+    background-image: linear-gradient(rgba(58, 27, 80, 0), #3a1b50), url(../images/dots.png);
+    background-size: auto;
+    background-repeat: repeat;
+    color: rgb(15, 15, 15);
+    font-weight: 500;
+  }
 }/*# sourceMappingURL=footer.css.map */

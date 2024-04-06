@@ -101,5 +101,11 @@ footer
         }
         }
     }
-   
+   @media screen and (max-width:507px){
+    background-image: linear-gradient(#3a1b5000, #3a1b50), url(../images/dots.png);
+    background-size:auto;
+    background-repeat: repeat;
+    color: rgb(15, 15, 15);
+    font-weight: 500;
+   }
 }
