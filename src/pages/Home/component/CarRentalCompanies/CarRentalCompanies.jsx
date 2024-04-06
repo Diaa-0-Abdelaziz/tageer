@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import "../carType/CarType.css"
 import CarRentalCompaniesCursel from './CarRentalCompaniesCursel/CarRentalCompaniesCursel';
 import { Link } from 'react-router-dom';
 export default function CarRentalCompanies() {

@@ -4,15 +4,10 @@ import "./RentSUVLuxuryCursel.css"
 import { MdOutlineNavigateNext } from "react-icons/md";
 import { GrFormPrevious } from "react-icons/gr";
 import { GoDotFill } from "react-icons/go";
-
 import { IoLogoWhatsapp } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import { IoCallSharp } from "react-icons/io5";
-
-import "../../../Home/component/carType/carTypeCursel/carTypeCursel.css"
-
 import logo from "../../../../images/img_artboard_2_169x246.png"
-
 import img1 from "../../../../images/img_whatsapp_image_2023_01_19.png"
 export default function SuggestedCarRentalCursel() {
     function SampleNextArrow(props) {

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import "../carType/CarType.css"
 import CarBrandeCursel from './CarBrandeCursel/CarBrandeCursel';
 export default function Carbrand() {
     const [isExpanded, setIsExpanded] = useState(false);

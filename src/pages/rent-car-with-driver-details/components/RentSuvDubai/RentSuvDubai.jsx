@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import "../../../Home/component/carType/CarType.css"
 import RentSuvDubaiCursel from './RentSuvDubaiCursel/RentSuvDubaiCursel';
 export default function RentSuvDubai() {
     const [isExpanded, setIsExpanded] = useState(false);

@@ -1,10 +1,8 @@
 import React from 'react'
-import "../../../../Home/component/RentSUVLuxury/RentSUVLuxuryCursel/RentSUVLuxuryCursel.css"
 import { GoDotFill } from "react-icons/go";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import { IoCallSharp } from "react-icons/io5";
-import "../../../../Home/component/carType/carTypeCursel/carTypeCursel.css"
 import { Link } from 'react-router-dom';
 import logo from "../../../../../images/img_artboard_2_169x246.png"
 

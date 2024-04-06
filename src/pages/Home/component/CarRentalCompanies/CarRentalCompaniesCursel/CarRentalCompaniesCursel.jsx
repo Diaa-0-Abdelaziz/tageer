@@ -3,7 +3,6 @@ import Slider from "react-slick";
 import { MdOutlineNavigateNext } from "react-icons/md";
 import { GrFormPrevious } from "react-icons/gr";
 import { GoDotFill } from "react-icons/go";
-import "../../carType/carTypeCursel/carTypeCursel.css"
 import img1 from "../../../../../images/img_artboard_2_169x246.png"
 import img2 from "../../../../../images/img_artboard_2_169x246.png"
 import img3 from "../../../../../images/img_artboard_2_169x246.png"

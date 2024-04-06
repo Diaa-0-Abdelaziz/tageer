@@ -1,5 +1,4 @@
 import React from 'react';
-import "../../Home/component/carType/CarType.css"
 export default function SuggestedCarRental() {
   return (
     <>
