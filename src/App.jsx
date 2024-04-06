@@ -4,7 +4,6 @@ import './App.css';
 import Layout from './Layout/Layout';
 import Loading from './Loading';
 const Home = lazy(() => import('./pages/Home/Home'));
-// const Layout = lazy(() => import('./Layout/Layout'));
 const Yachts = lazy(() => import('./pages/Yachts/Yachts'));
 const YachtsDetails = lazy(() => import('./pages/YachtsDetails/YachtsDetails'));
 const RentCarWithDrivers = lazy(() => import('./pages/RentCarWithDriver/RentCarWithDrivers'));

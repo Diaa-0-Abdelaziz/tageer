@@ -98,8 +98,43 @@ header
                    background-color: #f0f0f0;
                }
             }
-            
 
+            // .Brand_Options
+            // {
+            //   position: absolute;
+            //     top: 100%;
+            //     left: 0;
+            //     width: 100%;
+            //     background-color: #fff;
+            //     overflow: hidden;
+            //     color: #3A1B50;
+            //     font-size: 12px;
+            //     font-weight: bolder;
+            //     border: 1px solid #ccc;
+            //     text-align: center;
+            //     border-top: none;
+            //     border-radius: 20px;
+            //     box-shadow: 0 0px 7px rgba(0, 0, 0, 0.1);
+            //     list-style-type: none;
+            //     margin: 0;
+            //     padding: 0;
+            //     z-index: 99999;
+            //     li {
+            //        padding: 8px 12px;
+            //        cursor: pointer;
+            //        a 
+            //        {
+            //         text-decoration: none;
+            //         color: #3A1B50;
+            //        }
+                   
+            //    }
+            //     li:hover {
+            //        background-color: #f0f0f0;
+            //    }
+            // }
+            
+            
         }
 
 
@@ -494,4 +529,45 @@ header
        }
     }
 }
+}
+
+.Brand_Options
+{
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 250px;
+    background-color: #fff;
+    overflow: auto;
+    color: #3A1B50;
+    font-size: 12px;
+    font-weight: bolder;
+    border: 1px solid #ccc;
+    text-align: center;
+    border-top: none;
+    border-radius: 20px;
+    box-shadow: 0 0px 7px rgba(0, 0, 0, 0.1);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 99999;
+    li {
+       padding: 8px 12px;
+       cursor: pointer;
+       a 
+       {
+        text-decoration: none;
+        color: #3A1B50;
+       }
+       
+   }
+    li:hover {
+       background-color: #f0f0f0;
+   }
 }

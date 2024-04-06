@@ -305,4 +305,42 @@ header .navlist .twitter {
   header .navlist .content .appAndSocial img {
     max-width: 170px;
   }
+}
+
+.Brand_Options {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 250px;
+  background-color: #fff;
+  overflow: auto;
+  color: #3A1B50;
+  font-size: 12px;
+  font-weight: bolder;
+  border: 1px solid #ccc;
+  text-align: center;
+  border-top: none;
+  border-radius: 20px;
+  box-shadow: 0 0px 7px rgba(0, 0, 0, 0.1);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  z-index: 99999;
+}
+.Brand_Options li {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.Brand_Options li a {
+  text-decoration: none;
+  color: #3A1B50;
+}
+.Brand_Options li:hover {
+  background-color: #f0f0f0;
 }/*# sourceMappingURL=navbar.css.map */

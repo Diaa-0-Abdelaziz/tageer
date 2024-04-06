@@ -19,8 +19,6 @@ export default function CarTypeCursel() {
         return (
           <>
           <div onClick={onClick}><i className="position-absolute left top-50 start-0 fs-3"><GrFormPrevious/></i></div>
-          
-          
           </>
         );
       }
@@ -58,11 +56,6 @@ export default function CarTypeCursel() {
           }
         ]
       };
-    
-    
-    
-    
-    
       let products = [
         {
           id:1,
@@ -100,9 +93,6 @@ export default function CarTypeCursel() {
           img:img1
         },
       ]
-    
-    
-    
       return (
         <section className='carTypeSlider overflow-hidden'>
        <div className="container main-slider mb-5">

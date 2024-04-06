@@ -4,13 +4,11 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import img1 from "../../../images/WhatsAppImage.png"
 import logo from "../../../images/tajeer app icon@2x.png"
-// import "./filter.css"
 import { GoDotFill } from 'react-icons/go';
 import { IoLogoWhatsapp } from 'react-icons/io';
 import { MdEmail } from 'react-icons/md';
 import { IoCallSharp } from 'react-icons/io5';
 export default function Filter() {
-      // State for filter options
   const [search, setSearch] = useState('');
   const [brand, setBrand] = useState('');
   const [model, setModel] = useState('');
@@ -220,7 +218,6 @@ export default function Filter() {
 
    ]
 
-
    const [visibleProducts, setVisibleProducts] = useState(carsDetails.slice(0, 5));
 
 
@@ -365,12 +362,11 @@ export default function Filter() {
         step={10000}
         sx={{
             '& .MuiSlider-thumb': {
-              borderRadius: 0, // إلغاء الإنحناء لجعل المقبض مربعًا
+              borderRadius: 0,
               width: 16,
               height: 16,
               marginTop: 0,
               backgroundColor: '#3A1B50',
-            //   border: '2px solid #000',
               cursor: 'pointer',
             },
           }}
