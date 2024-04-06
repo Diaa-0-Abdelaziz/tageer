@@ -19,7 +19,7 @@ export default function Search() {
             <p className=' badge'>View all cars</p>
         </span>
         <div className="input-group  w-75 search_form d-flex flex-nowrap">
-  <span className="input-group-text search_btn bg-light"><BsSearch/></span>
+  <span className="input-group-text search_btn bg-white"><BsSearch/></span>
   <input type="search" className=" w-100" placeholder='Search'/>
 </div>
        </div>

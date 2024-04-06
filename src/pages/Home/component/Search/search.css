@@ -31,4 +31,38 @@
   border-radius: 0px 20px 20px 0px;
   border: none;
   outline: none;
+}
+@media screen and (max-width: 535px) {
+  .main_content .form {
+    padding: 0 50px;
+  }
+  .main_content .form .View_all_cars_btn {
+    background-color: rgba(58, 27, 80, 0.7490196078);
+    border-radius: 20px 0px 0px 20px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main_content .form .View_all_cars_btn i {
+    cursor: pointer;
+    color: #3a1b50;
+    background-color: #E6F6FF;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    margin-right: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+  .main_content .form .View_all_cars_btn p {
+    color: white;
+    font-size: 13px;
+    font-weight: bolder;
+    margin-bottom: 0;
+  }
+  .main_content .form .search_form input {
+    font-size: 10px;
+  }
 }/*# sourceMappingURL=search.css.map */

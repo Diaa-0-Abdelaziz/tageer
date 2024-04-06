@@ -394,9 +394,9 @@ export default function Navbar() {
     <header>
     <div className="navbar">
         <div className="content d-flex justify-content-around flex-nowrap">
+           <span className='setting_btn  d-none' onClick={openSettingList}> <IoMdSettings/></span>
             <img src={logo} alt={logo} className='me-5 logo'/>
            <span className='fs-1 menu  d-none' onClick={openNavList}> <CgMenuGridR /></span>
-           <span className='setting_btn  d-none' onClick={openSettingList}> <IoMdSettings className=' position-absolute start-50 top-50 translate-middle'/></span>
             <Link to="/ListYourCars" className=' text-decoration-none' aria-label="Go to list your cars page">
             <div className='advertisement px-2 me-4 d-flex align-items-center bg-light'>
               <img src={lamborghini} alt={lamborghini} className='lamborghini' />

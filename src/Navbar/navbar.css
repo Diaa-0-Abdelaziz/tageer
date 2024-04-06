@@ -110,15 +110,11 @@ header .navbar ul .fs-13 {
   }
   header .navbar .setting_btn {
     display: inline !important;
-    position: absolute;
-    right: 0px;
-    top: 58px;
+    margin-bottom: 10px;
     width: 30px;
     height: 30px;
-    background-color: #3A1B50;
-    border: 2px solid white;
     border-radius: 7px 0 0 7px;
-    font-size: 15px;
+    font-size: 25px;
     cursor: pointer;
     z-index: 9999;
   }
