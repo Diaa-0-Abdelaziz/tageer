@@ -35,8 +35,9 @@ footer
             }
             .hidden-text
             {
-              text-indent: -9999px;
-             overflow: hidden;
+                position: absolute;
+                margin-top: 40px;
+                background-color: #3A1B50;
             }
         }
         .facebook

@@ -32,8 +32,9 @@ footer .social li a {
   font-size: 20px;
 }
 footer .social li .hidden-text {
-  text-indent: -9999px;
-  overflow: hidden;
+  position: absolute;
+  margin-top: 40px;
+  background-color: #3A1B50;
 }
 footer .social .facebook {
   background-color: #4267B2 !important;

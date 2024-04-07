@@ -244,8 +244,9 @@ header .navlist .social {
   padding-left: 15px;
 }
 header .navlist .social .hidden-text {
-  text-indent: -9999px;
-  overflow: hidden;
+  position: absolute;
+  margin-top: 40px;
+  background-color: #3A1B50;
 }
 header .navlist .social li {
   width: 36px;
