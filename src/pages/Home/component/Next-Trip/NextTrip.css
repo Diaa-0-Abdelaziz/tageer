@@ -1,6 +1,8 @@
 .NextTrip {
   background-image: linear-gradient(rgba(58, 27, 80, 0.6235294118), rgba(58, 27, 80, 0.6235294118)), url(../../../../images/img_ferarif8tributo.png);
   background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .NextTrip .container {
   padding: 60px 0;

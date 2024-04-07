@@ -1,8 +1,8 @@
 $forth:#3D1F50;
 $fifth:#E6F6FF;
 $second:#000000;
-$third:#FFA200;
-$main:#03A9F4;
+$third:#000000;
+$main:#000000;
 
 
 
@@ -19,7 +19,7 @@ $main:#03A9F4;
   }
     .content
     {
-      background-color: #E6F6FF;
+      background-color: $fifth;
       padding: 20px 40px;
       max-width: 250px;
       ul 
@@ -64,7 +64,7 @@ $main:#03A9F4;
         
         padding: 10px;
         border-radius: 4px;
-        background-color: #E6F6FF;
+        background-color: $fifth;
         cursor: pointer;
         border: 1px solid #ccc;
       }
@@ -92,7 +92,7 @@ $main:#03A9F4;
       width: 100%;
       padding: 10px;
       border-radius: 4px;
-      background-color: #E6F6FF;
+      background-color: $fifth;
       border: 1px solid #ccc;
     }
     select 
@@ -162,7 +162,7 @@ $main:#03A9F4;
       padding: 10px 20px; 
     margin: 5px;
       border-radius: 0;
-      background-color: #E6F6FF;
+      background-color: $fifth;
       color: #161515;
       cursor: pointer;
       margin-bottom: 10px;
@@ -223,7 +223,7 @@ img
             li 
             {
                 text-align: center;
-                background-color: #E6F6FF;
+                background-color: $fifth;
                 padding: 0px 18px;
                 font-size: 13px;
                 font-weight: bold;
@@ -476,7 +476,7 @@ img
             {
                 font-size: 9px;
                 font-weight: bold;
-                background-color: #E6F6FF;
+                background-color: $fifth;
                 width: 100%;
                 padding: 7px;
             }
@@ -553,7 +553,7 @@ img
         }
         .ViewAll
         {
-            background-color: #E6F6FF;
+            background-color: $fifth;
             color: rgb(95, 95, 95);
             padding: 10px 40px;
             border-radius: 30px;
@@ -601,7 +601,7 @@ img
 {
     span 
     {
-        background-color: #E6F6FF;
+        background-color: $fifth;
         border-radius: 5px;
         color: #343434;
        cursor: pointer;
@@ -672,7 +672,7 @@ img
             li 
             {
                 text-align: center;
-                background-color: #E6F6FF;
+                background-color: $fifth;
                 padding: 2px 15px;
                 font-size: 18px;
                 div
