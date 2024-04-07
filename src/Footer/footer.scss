@@ -35,17 +35,16 @@ footer
             }
             .hidden-text
             {
-              text-indent: -9999px;
-             overflow: hidden;
+              display: none;
             }
         }
         .facebook
         {
-            background-color: #3B5998 !important;
+            background-color: #4267B2 !important;
         }
         .twitter
         {
-            background-color: #55ACEE !important;
+            background-color: #1DA1F2 !important;
         }
     }
     .container-fluid 

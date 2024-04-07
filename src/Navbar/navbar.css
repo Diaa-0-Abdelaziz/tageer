@@ -244,8 +244,7 @@ header .navlist .social {
   padding-left: 15px;
 }
 header .navlist .social .hidden-text {
-  text-indent: -9999px;
-  overflow: hidden;
+  display: none;
 }
 header .navlist .social li {
   width: 36px;
@@ -267,10 +266,10 @@ header .navlist .social li a {
   font-size: 20px;
 }
 header .navlist .facebook {
-  background-color: #3B5998 !important;
+  background-color: #4267B2 !important;
 }
 header .navlist .twitter {
-  background-color: #55ACEE !important;
+  background-color: #1DA1F2 !important;
 }
 @media screen and (max-width: 1091px) {
   header .open_nav_list {

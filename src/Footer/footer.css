@@ -32,14 +32,13 @@ footer .social li a {
   font-size: 20px;
 }
 footer .social li .hidden-text {
-  text-indent: -9999px;
-  overflow: hidden;
+  display: none;
 }
 footer .social .facebook {
-  background-color: #3B5998 !important;
+  background-color: #4267B2 !important;
 }
 footer .social .twitter {
-  background-color: #55ACEE !important;
+  background-color: #1DA1F2 !important;
 }
 footer .container-fluid {
   display: flex;
