@@ -3,6 +3,9 @@ import { Suspense, lazy } from 'react';
 import './App.css';
 import Layout from './Layout/Layout';
 import Loading from './Loading';
+const RentCheapCar = lazy(() => import('./pages/RentCheapCar/RentCheapCar'));
+const RentLuxuryCar = lazy(() => import('./pages/RentLuxuryCar/RentLuxuryCar'));
+const RentSportCar = lazy(() => import('./pages/RentSportCar/RentSportCar'));
 const Home = lazy(() => import('./pages/Home/Home'));
 const Yachts = lazy(() => import('./pages/Yachts/Yachts'));
 const YachtsDetails = lazy(() => import('./pages/YachtsDetails/YachtsDetails'));
@@ -47,6 +50,9 @@ function App() {
         {path:'TermsAndCondition', element:<Suspense fallback={<Loading/>}> <TermsAndCondition/> </Suspense>},
         {path:'Privacy', element:<Suspense fallback={<Loading/>}> <Privacy/> </Suspense>},
         {path:'AboutUs', element:<Suspense fallback={<Loading/>}> <AboutUs/> </Suspense>},
+        {path:'RentLuxuryCar', element:<Suspense fallback={<Loading/>}> <RentLuxuryCar/> </Suspense>},
+        {path:'RentSportCar', element:<Suspense fallback={<Loading/>}> <RentSportCar/> </Suspense>},
+        {path:'RentCheapCar', element:<Suspense fallback={<Loading/>}> <RentCheapCar/> </Suspense>},
         {path:'MyAccount', element:<Suspense fallback={<Loading/>}> <MyAccount/> </Suspense>},
         {path:'YachtsDetails/:id', element:<Suspense fallback={<Loading/>}> <YachtsDetails/> </Suspense>},
         {path:'RentCarWithDriverDetails/:id', element:<Suspense fallback={<Loading/>}> <RentCarWithDriverDetails/> </Suspense>},

@@ -74,15 +74,15 @@ export default function Navbar() {
                      },
                      {
                       linkName:"Rent luxury car",
-                      path:"./CarList"
+                      path:"./RentLuxuryCar"
                      },
                      {
                       linkName:"Rent sport car",
-                      path:"./CarList"
+                      path:"./RentSportCar"
                      },
                      {
                       linkName:"Rent cheap car",
-                      path:"./CarList"
+                      path:"./RentCheapCar"
                      },
 
                    ];
