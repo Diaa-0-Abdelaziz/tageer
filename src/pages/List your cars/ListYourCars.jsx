@@ -1,16 +1,17 @@
-import React from 'react'
-import ListYourCarsHeader from './components/ListYourCarsHeader/ListYourCarsHeader'
-import BESTSERVICESOne from './components/BEST-SERVICES one/BEST-SERVICES-One'
-import BESTSERVICESTwo from './components/BEST-SERVICES two/BESTSERVICES-Two'
-import BESTSERVICESThree from './components/BEST-SERVICES three/BESTSERVICES-three'
+import React,{lazy, Suspense} from 'react'
+import Loading from '../../Loading';
+const ListYourCarsHeader= lazy(() => import('./components/ListYourCarsHeader/ListYourCarsHeader'));
+const BESTSERVICESOne= lazy(() => import('./components/BEST-SERVICES one/BEST-SERVICES-One'));
+const BESTSERVICESTwo= lazy(() => import('./components/BEST-SERVICES two/BESTSERVICES-Two'));
+const BESTSERVICESThree= lazy(() => import('./components/BEST-SERVICES three/BESTSERVICES-three'));
 
 export default function ListYourCars() {
   return (
     <>
-    <ListYourCarsHeader/>
-    <BESTSERVICESOne/>
-    <BESTSERVICESTwo/>
-    <BESTSERVICESThree/>
+   <Suspense fallback={<Loading/>}>  <ListYourCarsHeader/> </Suspense>
+   <Suspense fallback={<Loading/>}>  <BESTSERVICESOne/> </Suspense>
+   <Suspense fallback={<Loading/>}> <BESTSERVICESTwo/> </Suspense>
+   <Suspense fallback={<Loading/>}> <BESTSERVICESThree/> </Suspense>
     </>
   )
 }

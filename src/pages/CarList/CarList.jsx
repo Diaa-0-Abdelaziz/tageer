@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, lazy, Suspense } from 'react';
 import { GoDotFill } from "react-icons/go";
-import Filter from './components/FILTER/filter';
-import BESTSERVICES from '../Home/component/BEST-SERVICES/BESTSERVICES';
-import FAQ from '../Home/component/FAQ/FAQ';
-import SuggestedCarRental from './components/SuggestedCarRental/SuggestedCarRental';
+import Loading from '../../Loading';
+const Filter= lazy(() => import('./components/FILTER/filter'));
+const BESTSERVICES= lazy(() => import('../Home/component/BEST-SERVICES/BESTSERVICES'));
+const FAQ= lazy(() => import('../Home/component/FAQ/FAQ'));
+const SuggestedCarRental= lazy(() => import('./components/SuggestedCarRental/SuggestedCarRental'));
 
 export default function CarList() {
     const [isExpanded, setIsExpanded] = useState(false);
@@ -77,10 +78,15 @@ export default function CarList() {
 
 
     </section>
-    <Filter/>
-    <SuggestedCarRental/>
-    <BESTSERVICES/>
-    <FAQ/>
+    <Suspense fallback={<Loading/>}> <Filter/> </Suspense>
+    <Suspense fallback={<Loading/>}> <SuggestedCarRental/> </Suspense>
+    <Suspense fallback={<Loading/>}> <BESTSERVICES/> </Suspense>
+    <Suspense fallback={<Loading/>}> <FAQ/> </Suspense>
+
+    
+    
+    
+    
     </>
   )
 }

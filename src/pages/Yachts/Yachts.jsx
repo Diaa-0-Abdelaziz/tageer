@@ -1,14 +1,15 @@
-import React from 'react'
-import Rentyacht from './components/RentyachtWithDriver/Rentyacht'
-import BESTSERVICES from './BEST-SERVICES/BESTSERVICES'
-import FAQ from '../Home/component/FAQ/FAQ'
+import React, {lazy, Suspense} from 'react'
+import Loading from '../../Loading';
+const Rentyacht= lazy(() => import('./components/RentyachtWithDriver/Rentyacht'));
+const BESTSERVICES= lazy(() => import('./BEST-SERVICES/BESTSERVICES'));
+const FAQ= lazy(() => import('../Home/component/FAQ/FAQ'));
 
 export default function Yachts() {
   return (
     <>
-    <Rentyacht/>
-    <BESTSERVICES/>
-    <FAQ/>
+     <Suspense fallback={<Loading/>}><Rentyacht/> </Suspense>
+     <Suspense fallback={<Loading/>}><BESTSERVICES/> </Suspense>
+     <Suspense fallback={<Loading/>}> <FAQ/> </Suspense>
     </>
   )
 }

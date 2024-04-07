@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, lazy, Suspense } from 'react';
 import { GoDotFill } from "react-icons/go";
-import Filter from './FILTER/filter';
-import BESTSERVICES from '../Home/component/BEST-SERVICES/BESTSERVICES';
-import FAQ from '../Home/component/FAQ/FAQ';
-import ViewAllCursel from './ViewAllCursel/ViewAllCursel';
+import Loading from '../../Loading';
+const Filter= lazy(() => import('./FILTER/filter'));
+const BESTSERVICES= lazy(() => import('../Home/component/BEST-SERVICES/BESTSERVICES'));
+const FAQ= lazy(() => import('../Home/component/FAQ/FAQ'));
+const ViewAllCursel= lazy(() => import('./ViewAllCursel/ViewAllCursel'));
 
 export default function ViewAll() {
     const [isExpanded, setIsExpanded] = useState(false);
@@ -77,10 +78,10 @@ export default function ViewAll() {
 
 
     </section>
-    <Filter/>
-    <ViewAllCursel/>
-    <BESTSERVICES/>
-    <FAQ/>
+    <Suspense fallback={<Loading/>}> <Filter/></Suspense>
+    <Suspense fallback={<Loading/>}>   <ViewAllCursel/></Suspense>
+    <Suspense fallback={<Loading/>}> <BESTSERVICES/></Suspense>
+    <Suspense fallback={<Loading/>}>  <FAQ/></Suspense>
     </>
   )
 }

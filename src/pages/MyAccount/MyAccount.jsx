@@ -1,12 +1,16 @@
-import React from 'react'
-import MyAccountHeader from './components/MyAccountHeader/MyAccountHeader'
-import Content from './components/content/content'
+import React, {lazy, Suspense } from 'react'
+import Loading from '../../Loading';
+const MyAccountHeader= lazy(() => import('./components/MyAccountHeader/MyAccountHeader'));
+const Content= lazy(() => import('./components/content/content'));
 
 export default function MyAccount() {
   return (
    <>
-   <MyAccountHeader/>
-   <Content/>
+  <Suspense fallback={<Loading/>}> <MyAccountHeader/></Suspense>
+  <Suspense fallback={<Loading/>}> <Content/></Suspense>
+
+   
+   
    </>
   )
 }
