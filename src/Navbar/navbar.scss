@@ -334,7 +334,8 @@ header
         padding-left: 15px;
         .hidden-text
         {
-          display: none;
+            text-indent: -9999px;
+            overflow: hidden;
         }
         li 
         {
