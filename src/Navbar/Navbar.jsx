@@ -88,164 +88,164 @@ export default function Navbar() {
                    ];
   const carBrands = [
     {
-      linkName:"Audi (102)",
+      linkName:"Audi",
       img:car_Brand,
-      path:"./Brands/"
+      path:"./"
      },
     {
-      linkName:"Audi (102)",
+      linkName:"Audi",
       img:car_Brand,
-      path:"./Brands/"
+      path:"./"
      },
     {
-      linkName:"Audi (102)",
+      linkName:"Audi",
       img:car_Brand,
-      path:"./Brands/"
+      path:"./"
      },
     {
-      linkName:"Audi (102)",
+      linkName:"Audi",
       img:car_Brand,
-      path:"./Brands/"
+      path:"./"
      },
     {
-      linkName:"Audi (102)",
+      linkName:"Audi",
       img:car_Brand,
-      path:"./Brands/"
+      path:"./"
      },
     {
-      linkName:"Audi (102)",
+      linkName:"Audi",
       img:car_Brand,
-      path:"./Brands/"
+      path:"./"
      },
     {
-      linkName:"Audi (102)",
+      linkName:"Audi",
       img:car_Brand,
-      path:"./Brands/"
+      path:"./"
      },
     {
-      linkName:"Audi (102)",
+      linkName:"Audi",
       img:car_Brand,
-      path:"./Brands/"
+      path:"./"
      },
     {
-      linkName:"Audi (102)",
+      linkName:"Audi",
       img:car_Brand,
-      path:"./Brands/"
+      path:"./"
      },
     {
-      linkName:"Audi (102)",
+      linkName:"Audi",
       img:car_Brand,
-      path:"./Brands/"
+      path:"./"
      },
     {
-      linkName:"Audi (102)",
+      linkName:"Audi",
       img:car_Brand,
-      path:"./Brands/"
+      path:"./"
      },
     {
-      linkName:"Audi (102)",
+      linkName:"Audi",
       img:car_Brand,
-      path:"./Brands/"
+      path:"./"
      },
     {
-      linkName:"Audi (102)",
+      linkName:"Audi",
       img:car_Brand,
-      path:"./Brands/"
+      path:"./"
      },
     {
-      linkName:"Audi (102)",
+      linkName:"Audi",
       img:car_Brand,
-      path:"./Brands/"
+      path:"./"
      },
     {
-      linkName:"Audi (102)",
+      linkName:"Audi",
       img:car_Brand,
-      path:"./Brands/"
+      path:"./"
      },
     {
-      linkName:"Audi (102)",
+      linkName:"Audi",
       img:car_Brand,
-      path:"./Brands/"
+      path:"./"
      },
     {
-      linkName:"Audi (102)",
+      linkName:"Audi",
       img:car_Brand,
-      path:"./Brands/"
+      path:"./"
      },
     {
-      linkName:"Audi (102)",
+      linkName:"Audi",
       img:car_Brand,
-      path:"./Brands/"
+      path:"./"
      },
     {
-      linkName:"Audi (102)",
+      linkName:"Audi",
       img:car_Brand,
-      path:"./Brands/"
+      path:"./"
      },
     {
-      linkName:"Audi (102)",
+      linkName:"Audi",
       img:car_Brand,
-      path:"./Brands/"
+      path:"./"
      },
     {
-      linkName:"Audi (102)",
+      linkName:"Audi",
       img:car_Brand,
-      path:"./Brands/"
+      path:"./"
      },
     {
-      linkName:"Audi (102)",
+      linkName:"Audi",
       img:car_Brand,
-      path:"./Brands/"
+      path:"./"
      },
     {
-      linkName:"Audi (102)",
+      linkName:"Audi",
       img:car_Brand,
-      path:"./Brands/"
+      path:"./"
      },
     {
-      linkName:"Audi (102)",
+      linkName:"Audi",
       img:car_Brand,
-      path:"./Brands/"
+      path:"./"
      },
     {
-      linkName:"Audi (102)",
+      linkName:"Audi",
       img:car_Brand,
-      path:"./Brands/"
+      path:"./"
      },
     {
-      linkName:"Audi (102)",
+      linkName:"Audi",
       img:car_Brand,
-      path:"./Brands/"
+      path:"./"
      },
     {
-      linkName:"Audi (102)",
+      linkName:"Audi",
       img:car_Brand,
-      path:"./Brands/"
+      path:"./"
      },
     {
-      linkName:"Audi (102)",
+      linkName:"Audi",
       img:car_Brand,
-      path:"./Brands/"
+      path:"./"
      },
     {
-      linkName:"Audi (102)",
+      linkName:"Audi",
       img:car_Brand,
-      path:"./Brands/"
+      path:"./"
      },
     {
-      linkName:"Audi (102)",
+      linkName:"Audi",
       img:car_Brand,
-      path:"./Brands/"
+      path:"./"
      },
     {
-      linkName:"Audi (102)",
+      linkName:"Audi",
       img:car_Brand,
-      path:"./Brands/"
+      path:"./"
      },
     {
-      linkName:"Audi (102)",
+      linkName:"Audi",
       img:car_Brand,
-      path:"./Brands/"
+      path:"./"
      },
      
 
