@@ -6,6 +6,18 @@
   margin-left: 5px;
 }
 
+.scroll-to-top-button {
+  position: fixed;
+  bottom: 0;
+  right: -50px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.show {
+  right: 10px;
+}
+
 .FILTER article {
   margin-bottom: 30px;
 }
