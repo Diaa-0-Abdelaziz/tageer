@@ -10,7 +10,7 @@ function Breadcrumb() {
     <ol className="breadcrumb ms-5">
     {location.pathname !== '/' && (
         <li className="">
-            <Link to="/" className=' text-decoration-none'>Home</Link>
+            <Link to="/" className=' text-decoration-none fw-bold text-muted'>Home</Link>
         </li>
 )}
     {pathnames.map((name, index) => {
@@ -19,9 +19,9 @@ function Breadcrumb() {
         return (
           <li className=" ms-2" key={name} active={isLast}>
             {isLast ? (
-              name
+              <span className='active fw-bold'>{name}</span>
             ) : (
-              <Link to={routeTo} className=' text-decoration-none '>{name}</Link>
+              <Link to={routeTo} className='fw-bold text-muted text-decoration-none '>{name}</Link>
             )}
           </li>
         );

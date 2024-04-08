@@ -1,6 +1,5 @@
-.breadcrumb a {
+.breadcrumb .active {
   color: #3D1F50;
-  font-weight: 500;
 }
 .breadcrumb li:not(:last-child)::after {
   content: ">";

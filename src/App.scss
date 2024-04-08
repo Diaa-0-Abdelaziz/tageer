@@ -6,10 +6,9 @@ $main:#000000;
 
 .breadcrumb
 {
-    a 
+    .active 
     {
         color: $forth;
-        font-weight: 500;
     }
  li:not(:last-child)::after {
         content: ">";
