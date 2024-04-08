@@ -17,13 +17,11 @@ function Breadcrumb() {
         const isLast = index === pathnames.length - 1;
         return (
           <li className=" ms-2" key={name} active={isLast}>
-            {!isLast && ' > '}
             {isLast ? (
               name
             ) : (
               <Link to={routeTo} className=' text-decoration-none '>{name}</Link>
             )}
-             {!isLast && ' > '}
           </li>
         );
       })}

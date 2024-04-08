@@ -11,6 +11,10 @@ $main:#000000;
         color: $forth;
         font-weight: 500;
     }
+ li:not(:last-child)::after {
+        content: ">";
+        margin-left: 5px;
+ }
 }
 
 //*** FILTER Styles**
