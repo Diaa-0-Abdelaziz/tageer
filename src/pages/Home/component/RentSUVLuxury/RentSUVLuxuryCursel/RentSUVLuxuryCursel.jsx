@@ -133,7 +133,7 @@ export default function RentSUVLuxuryCursel() {
          <Slider {...settings}>
           {products.map((pro)=> <div className='p-2 content' key={pro.id}>
             <div className='slider-pro overflow-hidden position-relative'>
-          <Link  to={`/RentCarWithDriverDetails/` + pro.id} className=' text-decoration-none text-black' aria-label="Go to rent car with driver details page">
+          <Link  to={`/rentCarWithDriver/` + pro.id} className=' text-decoration-none text-black' aria-label="Go to rent car with driver details page">
           <img src={pro.img} alt="" className='w-100' />
           </Link>
           <div className="body px-2">

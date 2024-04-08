@@ -71,7 +71,7 @@ export default function RentCarWithDriverProducts() {
        <div className="container main-slider mb-5">
         <div className="row">
           {products.map((pro)=> <div className='p-2 content col-lg-4 col-md-6' key={pro.id}>
-          <Link  to={`/RentCarWithDriverDetails/` + pro.id} className=' text-decoration-none text-black' aria-label="Go to rent car with driver details page">
+          <Link  to={`./` + pro.id} className=' text-decoration-none text-black' aria-label="Go to rent car with driver details page">
             <div className='slider-pro overflow-hidden position-relative'>
           <img src={pro.img} alt="" className='w-100' />
           <div className="body px-2">

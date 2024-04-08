@@ -100,9 +100,15 @@ export default function RentSuvDubaiCursel() {
            </div>
            <div className="contact mt-2">
             <ul className=' list-unstyled d-flex justify-content-around'>
-                <li><i><IoLogoWhatsapp/></i><span>WHATSAPP</span></li>
-                <li><i><MdEmail/></i><span>EMAIL</span></li>
-                <li><i><IoCallSharp/></i><span>CALL</span></li>
+                <li><i><div class="ex-categor d-flex flex-column">
+                     <a href={`https://wa.me/25255566`}>2532555</a>
+                  </div><IoLogoWhatsapp/></i><span>WHATSAPP</span></li>
+                <li><i><div class="ex-categor d-flex flex-column">
+                     <a href={`mailto:info@gmail.com`}>info@gmail.com</a>
+                  </div><MdEmail/></i><span>EMAIL</span></li>
+                <li><i><div class="ex-categor d-flex flex-column">
+                     <a href={`tel:+25255566`}>25255566</a>
+                  </div><IoCallSharp/></i><span>CALL</span></li>
             </ul>
           </div>
           <div className='logo d-flex justify-content-center'>
