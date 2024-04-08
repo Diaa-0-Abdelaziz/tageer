@@ -41,7 +41,7 @@ function App() {
         {path:'Blog', element:<Suspense fallback={<Loading/>}> <Blog/> </Suspense>},
         {path:'Category/:id', element:<Suspense fallback={<Loading/>}> <Category/> </Suspense>},
         {path:'CarRentalCompany', element:<Suspense fallback={<Loading/>}> <CarRentalCompany/> </Suspense>},
-        {path:'Brands', element:<Suspense fallback={<Loading/>}> <Brands/> </Suspense>},
+        {path:'Brands/:name', element:<Suspense fallback={<Loading/>}> <Brands/> </Suspense>},
         {path:'Brands/:id', element:<Suspense fallback={<Loading/>}> <BrandModel/> </Suspense>},
         {path:'ListYourCars', element:<Suspense fallback={<Loading/>}> <ListYourCars/> </Suspense>},
         {path:'ContactUs', element:<Suspense fallback={<Loading/>}> <ContactUs/> </Suspense>},

@@ -5,7 +5,8 @@ function Breadcrumb() {
   const pathnames = location.pathname.split('/').filter((x) => x);
 
   return (
-  <nav aria-label="breadcrumb">
+  <div className="container">
+    <nav aria-label="breadcrumb">
     <ol className="breadcrumb ms-5">
     {location.pathname !== '/' && (
         <li className="">
@@ -27,6 +28,7 @@ function Breadcrumb() {
       })}
     </ol>
   </nav>
+  </div>
   );
 }
 

@@ -607,7 +607,7 @@ export default function Navbar() {
                 <ul className="Brand_Options">
                     {carBrands.map((option, index) => (
                         <li key={index} onClick={() => handleOptionClick7(option)}>
-                          <Link to={option.path + index} className=' text-decoration-none' aria-label={`Go to ${option.linkName} page`}>
+                          <Link to={option.path + option.linkName} className=' text-decoration-none' aria-label={`Go to ${option.linkName} page`}>
                           <img src={option.img} alt={option.img} width={80} height={50} />
                             <span className=' ms-2'>{option.linkName}</span>
                             </Link>
