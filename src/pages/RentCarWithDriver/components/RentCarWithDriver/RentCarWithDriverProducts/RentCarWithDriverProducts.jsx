@@ -17,32 +17,50 @@ export default function RentCarWithDriverProducts() {
         {
           id:1,
           title:"BMW X5 Convertible slider ",
-          img:img1
+          img:img1,
+          whatsapp:12553355,
+          email:"info@mail.com",
+          call:1235566,
         },
         {
           id:2,
           title:"BMW X5 Convertible slider ",
-          img:img1
+          img:img1,
+          whatsapp:12553355,
+          email:"info@mail.com",
+          call:1235566,
         },
         {
           id:3,
           title:"BMW X5 Convertible slider ",
-          img:img1
+          img:img1,
+          whatsapp:12553355,
+          email:"info@mail.com",
+          call:1235566,
         },
         {
           id:4,
           title:"BMW X5 Convertible slider ",
-          img:img1
+          img:img1,
+          whatsapp:12553355,
+          email:"info@mail.com",
+          call:1235566,
         },
         {
           id:5,
           title:"BMW X5 Convertible slider ",
-          img:img1
+          img:img1,
+          whatsapp:12553355,
+          email:"info@mail.com",
+          call:1235566,
         },
         {
           id:6,
           title:"BMW X5 Convertible slider ",
-          img:img1
+          img:img1,
+          whatsapp:12553355,
+          email:"info@mail.com",
+          call:1235566,
         },
       ]
     
@@ -85,9 +103,15 @@ export default function RentCarWithDriverProducts() {
           </div>
           <div className="contact mt-2">
             <ul className=' list-unstyled d-flex justify-content-around'>
-                <li><i><IoLogoWhatsapp/></i><span>WHATSAPP</span></li>
-                <li><i><MdEmail/></i><span>EMAIL</span></li>
-                <li><i><IoCallSharp/></i><span>CALL</span></li>
+                <li><i><div class="ex-categor d-flex flex-column">
+                     <a href={`https://wa.me/${pro.whatsapp}`}>{pro.whatsapp}</a>
+                  </div><IoLogoWhatsapp/></i><span>WHATSAPP</span></li>
+                <li><i><div class="ex-categor d-flex flex-column">
+                     <a href={`mailto:${pro.email}`}>{pro.email}</a>
+                  </div><MdEmail/></i><span>EMAIL</span></li>
+                <li><i><div class="ex-categor d-flex flex-column">
+                     <a href={`tel:+${pro.call}`}>{pro.call}</a>
+                  </div><IoCallSharp/></i><span>CALL</span></li>
             </ul>
           </div>
           </div>

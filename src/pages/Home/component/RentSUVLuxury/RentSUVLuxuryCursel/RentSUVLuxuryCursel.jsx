@@ -70,37 +70,58 @@ export default function RentSUVLuxuryCursel() {
         {
           id:1,
           title:"BMW X5 Convertible slider ",
-          img:img1
+          img:img1,
+          whatsapp:12553355,
+          email:"info@mail.com",
+          call:1235566,
         },
         {
           id:2,
           title:"BMW X5 Convertible slider ",
-          img:img1
+          img:img1,
+          whatsapp:12553355,
+          email:"info@mail.com",
+          call:1235566,
         },
         {
           id:3,
           title:"BMW X5 Convertible slider ",
-          img:img1
+          img:img1,
+          whatsapp:12553355,
+          email:"info@mail.com",
+          call:1235566,
         },
         {
           id:4,
           title:"BMW X5 Convertible slider ",
-          img:img1
+          img:img1,
+          whatsapp:12553355,
+          email:"info@mail.com",
+          call:1235566,
         },
         {
           id:5,
           title:"BMW X5 Convertible slider ",
-          img:img1
+          img:img1,
+          whatsapp:12553355,
+          email:"info@mail.com",
+          call:1235566,
         },
         {
           id:6,
           title:"BMW X5 Convertible slider ",
-          img:img1
+          img:img1,
+          whatsapp:12553355,
+          email:"info@mail.com",
+          call:1235566,
         },
         {
           id:7,
           title:"BMW X5 Convertible slider ",
-          img:img1
+          img:img1,
+          whatsapp:12553355,
+          email:"info@mail.com",
+          call:1235566,
         },
       ]
     
@@ -111,9 +132,10 @@ export default function RentSUVLuxuryCursel() {
        <div className="container main-slider mb-5">
          <Slider {...settings}>
           {products.map((pro)=> <div className='p-2 content' key={pro.id}>
-          <Link  to={`/RentCarWithDriverDetails/` + pro.id} className=' text-decoration-none text-black' aria-label="Go to rent car with driver details page">
             <div className='slider-pro overflow-hidden position-relative'>
+          <Link  to={`/RentCarWithDriverDetails/` + pro.id} className=' text-decoration-none text-black' aria-label="Go to rent car with driver details page">
           <img src={pro.img} alt="" className='w-100' />
+          </Link>
           <div className="body px-2">
           <div className="options d-flex px-4 justify-content-between links position-absolute top-0 mt-3  w-100 ">
           <ul className=' list-unstyled d-flex'>
@@ -143,14 +165,20 @@ export default function RentSUVLuxuryCursel() {
           </div>
           <div className="contact mt-2">
             <ul className=' list-unstyled d-flex justify-content-around'>
-                <li><i><IoLogoWhatsapp/></i><span>WHATSAPP</span></li>
-                <li><i><MdEmail/></i><span>EMAIL</span></li>
-                <li><i><IoCallSharp/></i><span>CALL</span></li>
+                <li><i><div class="ex-categor d-flex flex-column">
+                     <a href={`https://wa.me/${pro.whatsapp}`}>{pro.whatsapp}</a>
+                  </div><IoLogoWhatsapp/></i><span>WHATSAPP</span></li>
+                <li><i><div class="ex-categor d-flex flex-column">
+                     <a href={`mailto:${pro.email}`}>{pro.email}</a>
+                  </div><MdEmail/></i><span>EMAIL</span></li>
+                <li><i><div class="ex-categor d-flex flex-column">
+                     <a href={`tel:+${pro.call}`}>{pro.call}</a>
+                  </div><IoCallSharp/></i><span>CALL</span></li>
             </ul>
           </div>
           </div>
         </div>
-        </Link>
+        
           </div>)}
       </Slider>
        </div>

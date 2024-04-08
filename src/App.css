@@ -191,12 +191,49 @@
   background-color: #E6F6FF;
   color: #3D1F50;
   margin-right: 5px;
+  position: relative;
   width: 40px;
   height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+}
+.FILTER .card .contact ul li i .ex-categor {
+  position: absolute;
+  padding: 2px 20px;
+  background: #ffffff;
+  border-radius: 20px;
+  opacity: 0;
+  top: -20px;
+  box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
+}
+.FILTER .card .contact ul li i .ex-categor a {
+  margin: 5px 0;
+  font-size: 10px;
+  font-weight: 700;
+  color: #3D1F50;
+  text-decoration: none;
+}
+.FILTER .card .contact ul li i .ex-categor::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  transform: translateX(-50%) rotate(45deg);
+  background-color: #ffffff;
+  bottom: -5px;
+  left: 50%;
+}
+.FILTER .card .contact ul li i:hover .ex-categor {
+  opacity: 1;
+  top: -30px;
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.FILTER .card .contact ul li span {
+  font-size: 10px;
+  color: #3D1F50;
 }
 .FILTER .card .contact ul li span {
   font-size: 12px;
@@ -209,6 +246,8 @@
 .FILTER .card .contact ul .imgLogo img {
   width: 70px;
   margin-top: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .FILTER .card .options {
   font-size: 13px;
@@ -258,6 +297,8 @@
 }
 .search img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .search .cover_color {
   background-color: rgba(58, 27, 80, 0.5803921569);
@@ -342,6 +383,8 @@
 .RentSUVLuxuryCursel .slider-pro .salary img {
   max-width: 125px;
   max-height: 65px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .RentSUVLuxuryCursel .slider-pro .salary span {
   font-size: 9px;
@@ -359,11 +402,44 @@
   color: #3D1F50;
   margin-right: 5px;
   width: 40px;
+  position: relative;
   height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+}
+.RentSUVLuxuryCursel .slider-pro .contact ul li i .ex-categor {
+  position: absolute;
+  padding: 2px 20px;
+  background: #ffffff;
+  border-radius: 20px;
+  opacity: 0;
+  top: -20px;
+  box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
+}
+.RentSUVLuxuryCursel .slider-pro .contact ul li i .ex-categor a {
+  margin: 5px 0;
+  font-size: 10px;
+  font-weight: 700;
+  color: #3D1F50;
+  text-decoration: none;
+}
+.RentSUVLuxuryCursel .slider-pro .contact ul li i .ex-categor::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  transform: translateX(-50%) rotate(45deg);
+  background-color: #ffffff;
+  bottom: -5px;
+  left: 50%;
+}
+.RentSUVLuxuryCursel .slider-pro .contact ul li i:hover .ex-categor {
+  opacity: 1;
+  top: -30px;
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .RentSUVLuxuryCursel .slider-pro .contact ul li span {
   font-size: 10px;
@@ -508,6 +584,8 @@
 .RentSuvDubaiCursel .details img {
   width: 100px;
   margin-top: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media screen and (max-width: 991px) {
   .RentSuvDubaiCursel .details {

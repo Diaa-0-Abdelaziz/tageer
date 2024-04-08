@@ -36,6 +36,9 @@ export default function Filter() {
             price_of_Day:"350 AED",
             price_of_Week:"350 AED",
             price_of_Month:"350 AED",
+            whatsapp:12553355,
+          email:"info@mail.com",
+          call:1235566,
     },
     {
             car_Image: img1,
@@ -51,6 +54,9 @@ export default function Filter() {
             price_of_Day:"350 AED",
             price_of_Week:"350 AED",
             price_of_Month:"350 AED",
+            whatsapp:12553355,
+          email:"info@mail.com",
+          call:1235566,
     },
     {
         car_Image: img1,
@@ -66,6 +72,9 @@ export default function Filter() {
         price_of_Day:"350 AED",
         price_of_Week:"350 AED",
         price_of_Month:"350 AED",
+        whatsapp:12553355,
+          email:"info@mail.com",
+          call:1235566,
 },
 {
     car_Image: img1,
@@ -81,6 +90,9 @@ export default function Filter() {
     price_of_Day:"350 AED",
     price_of_Week:"350 AED",
     price_of_Month:"350 AED",
+    whatsapp:12553355,
+          email:"info@mail.com",
+          call:1235566,
 },
 {
     car_Image: img1,
@@ -96,6 +108,9 @@ export default function Filter() {
     price_of_Day:"350 AED",
     price_of_Week:"350 AED",
     price_of_Month:"350 AED",
+    whatsapp:12553355,
+          email:"info@mail.com",
+          call:1235566,
 },
 {
     car_Image: img1,
@@ -111,6 +126,9 @@ export default function Filter() {
     price_of_Day:"350 AED",
     price_of_Week:"350 AED",
     price_of_Month:"350 AED",
+    whatsapp:12553355,
+          email:"info@mail.com",
+          call:1235566,
 },
 {
     car_Image: img1,
@@ -126,6 +144,9 @@ export default function Filter() {
     price_of_Day:"350 AED",
     price_of_Week:"350 AED",
     price_of_Month:"350 AED",
+    whatsapp:12553355,
+          email:"info@mail.com",
+          call:1235566,
 },
 {
     car_Image: img1,
@@ -141,6 +162,9 @@ export default function Filter() {
     price_of_Day:"350 AED",
     price_of_Week:"350 AED",
     price_of_Month:"350 AED",
+    whatsapp:12553355,
+          email:"info@mail.com",
+          call:1235566,
 },
 {
     car_Image: img1,
@@ -156,6 +180,9 @@ export default function Filter() {
     price_of_Day:"350 AED",
     price_of_Week:"350 AED",
     price_of_Month:"350 AED",
+    whatsapp:12553355,
+          email:"info@mail.com",
+          call:1235566,
 },
 {
     car_Image: img1,
@@ -171,6 +198,9 @@ export default function Filter() {
     price_of_Day:"350 AED",
     price_of_Week:"350 AED",
     price_of_Month:"350 AED",
+    whatsapp:12553355,
+          email:"info@mail.com",
+          call:1235566,
 },
 {
     car_Image: img1,
@@ -186,6 +216,9 @@ export default function Filter() {
     price_of_Day:"350 AED",
     price_of_Week:"350 AED",
     price_of_Month:"350 AED",
+    whatsapp:12553355,
+          email:"info@mail.com",
+          call:1235566,
 },
 {
     car_Image: img1,
@@ -201,6 +234,9 @@ export default function Filter() {
     price_of_Day:"350 AED",
     price_of_Week:"350 AED",
     price_of_Month:"350 AED",
+    whatsapp:12553355,
+          email:"info@mail.com",
+          call:1235566,
 },
 {
     car_Image: img1,
@@ -216,6 +252,9 @@ export default function Filter() {
     price_of_Day:"350 AED",
     price_of_Week:"350 AED",
     price_of_Month:"350 AED",
+    whatsapp:12553355,
+          email:"info@mail.com",
+          call:1235566,
 },
 
    ]
@@ -385,7 +424,7 @@ export default function Filter() {
   
   <div key={index} className="card">
   <div className="row">
-    <div className="col-lg-5 position-relative">
+    <div className="col-lg-5 position-relative overflow-hidden">
       <img src={carDetail.car_Image} className="h-100 w-100" alt={carDetail.car_Image}/>
       
       <div className="options d-flex  justify-content-around flex-wrap links position-absolute top-0 start-0 w-100 mt-3">
@@ -433,9 +472,15 @@ export default function Filter() {
            </div>
            <div className="contact ">
             <ul className=' list-unstyled d-flex justify-content-around'>
-                <li><i><IoLogoWhatsapp/></i><span>WHATSAPP</span></li>
-                <li><i><MdEmail/></i><span>EMAIL</span></li>
-                <li><i><IoCallSharp/></i><span>CALL</span></li>
+            <li><i><div class="ex-categor d-flex flex-column">
+                     <a href={`https://wa.me/${carDetail.whatsapp}`}>{carDetail.whatsapp}</a>
+                  </div><IoLogoWhatsapp/></i><span>WHATSAPP</span></li>
+                <li><i><div class="ex-categor d-flex flex-column">
+                     <a href={`mailto:${carDetail.email}`}>{carDetail.email}</a>
+                  </div><MdEmail/></i><span>EMAIL</span></li>
+                <li><i><div class="ex-categor d-flex flex-column">
+                     <a href={`tel:+${carDetail.call}`}>{carDetail.call}</a>
+                  </div><IoCallSharp/></i><span>CALL</span></li>
                 <li className='imgLogo'>
              <img src={logo} alt={logo}  className=''/>
             </li>
