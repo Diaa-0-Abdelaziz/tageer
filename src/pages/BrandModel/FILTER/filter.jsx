@@ -35,6 +35,9 @@ export default function Filter() {
             price_of_Day:"350 AED",
             price_of_Week:"350 AED",
             price_of_Month:"350 AED",
+            whatsapp:12553355,
+            email:"info@mail.com",
+            call:1235566,
     },
     {
             car_Image: img1,
@@ -50,6 +53,10 @@ export default function Filter() {
             price_of_Day:"350 AED",
             price_of_Week:"350 AED",
             price_of_Month:"350 AED",
+            whatsapp:12553355,
+            email:"info@mail.com",
+            call:1235566,
+
     },
     {
         car_Image: img1,
@@ -65,6 +72,26 @@ export default function Filter() {
         price_of_Day:"350 AED",
         price_of_Week:"350 AED",
         price_of_Month:"350 AED",
+        whatsapp:12553355,
+        email:"info@mail.com",
+        call:1235566,
+},
+{
+    car_Image: img1,
+    Car_color: "white",
+    Car_brand: "Mercedes",
+    Car_model: "C300",
+    Car_year: "2021",
+    Car_Type: "luxury ,Sport",
+    No_Of_Doors: "4 doors",
+    Engine: "5.0 V8",
+    Minimum_of_Days: "2 days",
+    Deposit: "2000 AED",
+    price_of_Day:"350 AED",
+    price_of_Week:"350 AED",
+    whatsapp:12553355,
+    email:"info@mail.com",
+    call:1235566,
 },
 {
     car_Image: img1,
@@ -80,6 +107,9 @@ export default function Filter() {
     price_of_Day:"350 AED",
     price_of_Week:"350 AED",
     price_of_Month:"350 AED",
+    whatsapp:12553355,
+    email:"info@mail.com",
+    call:1235566,
 },
 {
     car_Image: img1,
@@ -95,6 +125,9 @@ export default function Filter() {
     price_of_Day:"350 AED",
     price_of_Week:"350 AED",
     price_of_Month:"350 AED",
+    whatsapp:12553355,
+    email:"info@mail.com",
+    call:1235566,
 },
 {
     car_Image: img1,
@@ -110,6 +143,9 @@ export default function Filter() {
     price_of_Day:"350 AED",
     price_of_Week:"350 AED",
     price_of_Month:"350 AED",
+    whatsapp:12553355,
+    email:"info@mail.com",
+    call:1235566,
 },
 {
     car_Image: img1,
@@ -125,6 +161,9 @@ export default function Filter() {
     price_of_Day:"350 AED",
     price_of_Week:"350 AED",
     price_of_Month:"350 AED",
+    whatsapp:12553355,
+    email:"info@mail.com",
+    call:1235566,
 },
 {
     car_Image: img1,
@@ -140,6 +179,9 @@ export default function Filter() {
     price_of_Day:"350 AED",
     price_of_Week:"350 AED",
     price_of_Month:"350 AED",
+    whatsapp:12553355,
+    email:"info@mail.com",
+    call:1235566,
 },
 {
     car_Image: img1,
@@ -155,6 +197,9 @@ export default function Filter() {
     price_of_Day:"350 AED",
     price_of_Week:"350 AED",
     price_of_Month:"350 AED",
+    whatsapp:12553355,
+    email:"info@mail.com",
+    call:1235566,
 },
 {
     car_Image: img1,
@@ -170,6 +215,9 @@ export default function Filter() {
     price_of_Day:"350 AED",
     price_of_Week:"350 AED",
     price_of_Month:"350 AED",
+    whatsapp:12553355,
+    email:"info@mail.com",
+    call:1235566,
 },
 {
     car_Image: img1,
@@ -185,6 +233,9 @@ export default function Filter() {
     price_of_Day:"350 AED",
     price_of_Week:"350 AED",
     price_of_Month:"350 AED",
+    whatsapp:12553355,
+    email:"info@mail.com",
+    call:1235566,
 },
 {
     car_Image: img1,
@@ -200,21 +251,9 @@ export default function Filter() {
     price_of_Day:"350 AED",
     price_of_Week:"350 AED",
     price_of_Month:"350 AED",
-},
-{
-    car_Image: img1,
-    Car_color: "white",
-    Car_brand: "Mercedes",
-    Car_model: "C300",
-    Car_year: "2021",
-    Car_Type: "luxury ,Sport",
-    No_Of_Doors: "4 doors",
-    Engine: "5.0 V8",
-    Minimum_of_Days: "2 days",
-    Deposit: "2000 AED",
-    price_of_Day:"350 AED",
-    price_of_Week:"350 AED",
-    price_of_Month:"350 AED",
+    whatsapp:12553355,
+    email:"info@mail.com",
+    call:1235566,
 },
 
    ]
@@ -439,11 +478,17 @@ export default function Filter() {
            </div>
            <div className="contact ">
             <ul className=' list-unstyled d-flex justify-content-around'>
-                <li><i><IoLogoWhatsapp/></i><span>WHATSAPP</span></li>
-                <li><i><MdEmail/></i><span>EMAIL</span></li>
-                <li><i><IoCallSharp/></i><span>CALL</span></li>
+            <li><i><div class="ex-categor d-flex flex-column">
+                     <a href={`https://wa.me/${carDetail.whatsapp}`}>{carDetail.whatsapp}</a>
+                  </div><IoLogoWhatsapp/></i><span>WHATSAPP</span></li>
+                <li><i><div class="ex-categor d-flex flex-column">
+                     <a href={`mailto:${carDetail.email}`}>{carDetail.email}</a>
+                  </div><MdEmail/></i><span>EMAIL</span></li>
+                <li><i><div class="ex-categor d-flex flex-column">
+                     <a href={`tel:+${carDetail.call}`}>{carDetail.call}</a>
+                  </div><IoCallSharp/></i><span>CALL</span></li>
                 <li className='imgLogo'>
-             <img src={logo} alt={logo}  className=''/>
+             <img src={logo} alt={logo}/>
             </li>
             </ul>
           </div>

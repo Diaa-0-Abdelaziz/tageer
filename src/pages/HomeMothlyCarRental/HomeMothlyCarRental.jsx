@@ -13,7 +13,7 @@ export default function HomeMothlyCarRental() {
     <section className='CarType pt-3 mb-5'>
         <div className="container">
         <div className='CarType_Header d-flex justify-content-between mb-3 align-items-center'>
-        <h3 className=''>Rent SUV in Dubai</h3>
+        <h3 className=''>Rent Mothly Car in Dubai</h3>
         </div>
         <p className=' fw-bold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, laborum.</p>
         <p className={` position-relative ${isExpanded ? 'expanded' : 'collapsed'}`}>

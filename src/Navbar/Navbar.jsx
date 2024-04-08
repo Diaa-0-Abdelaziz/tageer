@@ -70,7 +70,7 @@ export default function Navbar() {
   const RentACar = [
                      {
                       linkName:"Rent a car monthly",
-                      path:"./HomeMothlyCarRental"
+                      path:"./MothlyCarRental"
                      },
                      {
                       linkName:"Rent luxury car",

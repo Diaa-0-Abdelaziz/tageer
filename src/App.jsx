@@ -37,7 +37,7 @@ function App() {
         {path:'ViewAll', element:<Suspense fallback={<Loading/>}> <ViewAll/> </Suspense>},
         {path:'CarList', element:<Suspense fallback={<Loading/>}> <CarList/> </Suspense>},
         {path:'CarRentalDealsOffers', element:<Suspense fallback={<Loading/>}> <CarRentalDealsOffers/> </Suspense>},
-        {path:'HomeMothlyCarRental', element:<Suspense fallback={<Loading/>}> <HomeMothlyCarRental/> </Suspense>},
+        {path:'MothlyCarRental', element:<Suspense fallback={<Loading/>}> <HomeMothlyCarRental/> </Suspense>},
         {path:'Blog', element:<Suspense fallback={<Loading/>}> <Blog/> </Suspense>},
         {path:'Category/:id', element:<Suspense fallback={<Loading/>}> <Category/> </Suspense>},
         {path:'CarRentalCompany', element:<Suspense fallback={<Loading/>}> <CarRentalCompany/> </Suspense>},
