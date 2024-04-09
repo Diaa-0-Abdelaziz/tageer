@@ -112,7 +112,7 @@ export default function CarRentalCompaniesCursel() {
          <Slider {...settings}>
           {products.map((pro)=> <div className='p-2 content' key={pro.id}>
             <div className='slider-pro p-1 overflow-hidden slider'>
-          <img src={pro.img} alt="" className='w-100' />
+          <img src={pro.img} alt="" className='w-100' loading='lazy'/>
           <ul className=' ms-3 mt-3 list-unstyled'>
                     <li><GoDotFill/>Sports car</li>
                     <li><GoDotFill/> Economy car</li>
