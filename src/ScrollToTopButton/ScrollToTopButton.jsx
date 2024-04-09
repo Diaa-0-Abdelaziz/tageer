@@ -7,7 +7,7 @@ function ScrollToTopButton() {
   const handleScroll = () => {
     const scrollPosition = window.scrollY;
     // Show the button if the user scrolls down 200 pixels from the top
-    if (scrollPosition > 200) {
+    if (scrollPosition > 1000) {
       setIsVisible(true);
     } else {
       setIsVisible(false);
