@@ -12,7 +12,7 @@ export default function SuggestedCarRentalCursel() {
     function SampleNextArrow(props) {
         const {onClick } = props;
         return (
-          <div onClick={onClick}><i className="position-absolute right top-50 end-0 fs-3"><MdOutlineNavigateNext/></i></div>
+          <div onClick={onClick}><i className="position-absolute right top-50  fs-3"><MdOutlineNavigateNext/></i></div>
           
         );
       }
@@ -21,7 +21,7 @@ export default function SuggestedCarRentalCursel() {
         const {onClick } = props;
         return (
           <>
-          <div onClick={onClick}><i className="position-absolute left top-50 start-0 fs-3"><GrFormPrevious/></i></div>
+          <div onClick={onClick}><i className="position-absolute left top-50 fs-3"><GrFormPrevious/></i></div>
           
           
           </>
