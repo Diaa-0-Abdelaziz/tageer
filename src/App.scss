@@ -3,7 +3,30 @@ $fifth:#E6F6FF;
 $second:#000000;
 $third:#000000;
 $main:#000000;
-
+.right 
+{
+    background-color: $fifth;
+    right: -27px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.left
+{
+    background-color: $fifth;
+    left: -27px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
 .breadcrumb
 {
     .active 
