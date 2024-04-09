@@ -134,7 +134,7 @@ export default function RentSUVLuxuryCursel() {
           {products.map((pro)=> <div className='p-2 content' key={pro.id}>
             <div className='slider-pro overflow-hidden position-relative'>
           <Link  to={`/rentCarWithDriver/` + pro.id} className=' text-decoration-none text-black' aria-label="Go to rent car with driver details page">
-          <img src={pro.img} alt="" className='w-100' />
+          <img src={pro.img} alt="" className='w-100' loading='lazy' />
           </Link>
           <div className="body px-2">
           <div className="options d-flex px-4 justify-content-between links position-absolute top-0 mt-3  w-100 ">
@@ -159,7 +159,7 @@ export default function RentSUVLuxuryCursel() {
                 </ul>
             </div>
             <div>
-                <img src={logo} alt={logo} />
+                <img src={logo} alt={logo} loading='lazy'/>
                 <span>Top Auto car rental</span>
             </div>
           </div>

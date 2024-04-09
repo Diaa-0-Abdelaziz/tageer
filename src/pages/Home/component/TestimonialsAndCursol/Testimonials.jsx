@@ -126,14 +126,14 @@ export default function Testimonials() {
             <div className='slider_pro overflow-hidden'>
           <ul className=' p-3 list-unstyled d-flex justify-content-between'>
             <li>
-          <img className='one' src={pro.userPicture} alt={pro.userPicture}/>
+          <img className='one' src={pro.userPicture} alt={pro.userPicture} loading='lazy'/>
             </li>
             <li  className='Name d-flex flex-column'>
                 <span className=' fs-5'>{pro.userName}</span>
                 <span className=' fs-6'>{pro.userLocation}</span>
             </li>
             <li>
-          <img src={pro.img} alt={pro.img}/>
+          <img src={pro.img} alt={pro.img} loading='lazy'/>
             </li>
           </ul>
           <div className='info text-start px-4 pb-4'>

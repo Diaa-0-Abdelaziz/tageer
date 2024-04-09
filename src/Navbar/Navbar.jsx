@@ -395,13 +395,13 @@ export default function Navbar() {
     <div className="navbar">
         <div className="content d-flex justify-content-around flex-nowrap">
            <span className='setting_btn  d-none' onClick={openSettingList}> <IoMdSettings/></span>
-            <img src={logo} alt={logo} className='me-5 logo'/>
+            <img src={logo} alt={logo} className='me-5 logo' loading='lazy'/>
            <span className='fs-1 menu  d-none' onClick={openNavList}> <CgMenuGridR /></span>
             <Link to="/ListYourCars" className=' text-decoration-none' aria-label="Go to list your cars page">
             <div className='advertisement px-2 me-4 d-flex align-items-center bg-light'>
-              <img src={lamborghini} alt={lamborghini} className='lamborghini' />
+              <img src={lamborghini} alt={lamborghini} className='lamborghini' loading='lazy' />
               <p className='badge text-dark mt-2'>List your cars in <span className='bolder'>TAJEER</span> platform</p>
-              <img src={img_calendar} alt={img_calendar} className='img_calendar' />
+              <img src={img_calendar} alt={img_calendar} className='img_calendar' loading='lazy' />
             </div>
             </Link>
             <div className={`d-flex ${openSetting? 'settings':  'settings open_Setting'}`}>
@@ -473,7 +473,7 @@ export default function Navbar() {
                 <li className='fs-5 me-2'><SiGoogletranslate/></li>
                 <li className='fs-13 text-capitalize badge p-0'>language</li>
                 <li className=' d-flex'>
-                  <img src={img_united_arab_emirates} alt={img_united_arab_emirates} className=' w-25' />
+                  <img src={img_united_arab_emirates} alt={img_united_arab_emirates} className=' w-25' loading='lazy' />
                 
                   <div className="custom-select">
             <div className="selected-option opt4" onClick={toggleOptions4}>
@@ -588,10 +588,10 @@ export default function Navbar() {
             <div className='appAndSocial m-auto d-flex align-items-center'>
              <ul className='appsLink d-flex align-items-center list-unstyled'>
               <li>
-                 <a href="https://play.google.com/store/apps/details?id=com.tajeer&hl=en&gl=US&pli=1" target='_blank' rel="noopener noreferrer"><img src={google_Play} alt={google_Play} /></a>
+                 <a href="https://play.google.com/store/apps/details?id=com.tajeer&hl=en&gl=US&pli=1" target='_blank' rel="noopener noreferrer"><img src={google_Play} alt={google_Play} loading='lazy' /></a>
               </li>
               <li>
-                 <a href="https://apps.apple.com/sa/app/tajeer-rent-a-car-in-dubai/id1458290275" target='_blank' rel="noopener noreferrer"><img src={app_Store} alt={app_Store} /></a>
+                 <a href="https://apps.apple.com/sa/app/tajeer-rent-a-car-in-dubai/id1458290275" target='_blank' rel="noopener noreferrer"><img src={app_Store} alt={app_Store} loading='lazy' /></a>
               </li>
              </ul>
               <ul className=' mt-3 social list-unstyled d-flex'>
@@ -608,7 +608,7 @@ export default function Navbar() {
                     {carBrands.map((option, index) => (
                         <li key={index} onClick={() => handleOptionClick7(option)}>
                           <Link to={option.path + option.linkName} className=' text-decoration-none' aria-label={`Go to ${option.linkName} page`}>
-                          <img src={option.img} alt={option.img} width={80} height={50} />
+                          <img src={option.img} alt={option.img} width={80} height={50} loading='lazy' />
                             <span className=' ms-2'>{option.linkName}</span>
                             </Link>
                         </li>

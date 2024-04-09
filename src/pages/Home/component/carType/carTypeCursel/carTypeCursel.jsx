@@ -2,7 +2,6 @@ import React from 'react'
 import Slider from "react-slick";
 import { MdOutlineNavigateNext } from "react-icons/md";
 import { GrFormPrevious } from "react-icons/gr";
-import "./carTypeCursel.css"
 import img1 from "../../../../../images/img_convertible.png"
 import { Link } from 'react-router-dom';
 export default function CarTypeCursel() {
@@ -100,7 +99,7 @@ export default function CarTypeCursel() {
           {products.map((pro)=> <div className='p-2 content' key={pro.id}>
            <Link to={`/Category/` + pro.id} aria-label="Go to categories's page">
            <div className='slider-pro p-1 overflow-hidden'>
-          <img src={pro.img} alt="" className='w-100' />
+          <img src={pro.img} alt="" className='w-100' loading='lazy'/>
           <div className='title'>
           <span className='text-capitalize badge text-black'>{pro.title}</span>
           </div>

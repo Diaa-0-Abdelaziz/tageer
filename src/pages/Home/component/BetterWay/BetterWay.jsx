@@ -12,7 +12,7 @@ export default function BetterWay() {
     <section className='BetterWay text-center'>
       <div className="container">
       <div className="img_cover">
-        <img src={paner} alt={paner} width={100} className=' w-100' />
+        <img src={paner} alt={paner} width={100} className=' w-100'  loading='lazy'/>
       </div>
       <div className='text'>
       <h3>Better Way to Find Your Perfect Car</h3>
@@ -25,7 +25,7 @@ export default function BetterWay() {
             <span className='exp px-1 pb-2'>Select a car using search or catalog.</span>
         </li>
         <li>
-            <img src={line1} alt={line1} width={100} />
+            <img src={line1} alt={line1} width={100} loading='lazy'/>
         </li>
         <li className='notLine'>
         <div><CiCalendar/></div>
@@ -33,7 +33,7 @@ export default function BetterWay() {
         <span className=' exp px-1 pb-2'>After you’ve selected a car a dealer will contact you.</span>
         </li>
         <li>
-            <img src={line2} alt={line2} width={100}/>
+            <img src={line2} alt={line2} width={100} loading='lazy'/>
         </li>
         <li className='notLine'>
         <div><LuCheckSquare/></div>

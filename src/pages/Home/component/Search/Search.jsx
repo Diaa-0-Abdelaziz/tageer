@@ -10,7 +10,7 @@ export default function Search() {
     <>
     <section className='main_content  position-relative'>
     <div className='search position-relative'>
-        <img src={imgCover} alt={imgCover} />
+        <img src={imgCover} alt={imgCover} loading='lazy'/>
         <div className='position-absolute top-0 bottom-0 start-0 end-0 cover_color'></div>
     </div>
        <div className='container form position-absolute top-50 start-50 translate-middle d-flex justify-content-center'>

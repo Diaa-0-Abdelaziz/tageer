@@ -68,8 +68,8 @@ export default function Footer() {
         <div className=' d-flex flex-column '>
         <span className='Download'>Download on the App Store & Google play</span>
          <div className="app">
-            <a href="https://play.google.com/store/apps/details?id=com.tajeer&hl=en&gl=US&pli=1" target='_blank' rel="noopener noreferrer"><img src={google_play} alt={google_play} /></a>
-          <a href="https://apps.apple.com/sa/app/tajeer-rent-a-car-in-dubai/id1458290275" target='_blank' rel="noopener noreferrer"><img src={app_store} alt={app_store} /></a>
+            <a href="https://play.google.com/store/apps/details?id=com.tajeer&hl=en&gl=US&pli=1" target='_blank' rel="noopener noreferrer"><img src={google_play} alt={google_play}  loading='lazy'/></a>
+          <a href="https://apps.apple.com/sa/app/tajeer-rent-a-car-in-dubai/id1458290275" target='_blank' rel="noopener noreferrer"><img src={app_store} alt={app_store} loading='lazy' /></a>
          </div>
         </div>
       </div>
