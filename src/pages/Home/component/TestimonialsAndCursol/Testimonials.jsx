@@ -3,7 +3,6 @@ import Slider from "react-slick";
 import { MdOutlineNavigateNext } from "react-icons/md";
 import { GrFormPrevious } from "react-icons/gr";
 import { IoStarSharp } from "react-icons/io5";
-import "../carType/carTypeCursel/carTypeCursel.css"
 import "./Testimonials.css"
 import img1 from "../../../../images/img_image.png"
 import google from "../../../../images/img_pngwing_com_16.png"

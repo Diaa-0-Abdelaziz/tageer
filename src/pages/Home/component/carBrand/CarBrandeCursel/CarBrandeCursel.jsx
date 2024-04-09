@@ -2,7 +2,6 @@ import React from 'react'
 import Slider from "react-slick";
 import { MdOutlineNavigateNext } from "react-icons/md";
 import { GrFormPrevious } from "react-icons/gr";
-import "../../carType/carTypeCursel/carTypeCursel.css"
 import img1 from "../../../../../images/img_dodge_logo.png"
 import { Link } from 'react-router-dom';
 export default function CarBrandeCursel() {
