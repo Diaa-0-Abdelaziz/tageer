@@ -1,4 +1,5 @@
 import React from 'react'
+import LazyLoad from 'react-lazyload';
 import img_your_image_mask from "../../../../images/img_your_image_mask.png"
 export default function BESTSERVICESAboutTwo() {
   return (
@@ -14,7 +15,9 @@ export default function BESTSERVICESAboutTwo() {
                 </p>
         </div>
         <div className="col-lg-4 col-md-6">
-        <img src={img_your_image_mask} alt={img_your_image_mask} className=' w-100' />
+          <LazyLoad>
+        <img src={img_your_image_mask} alt={img_your_image_mask} className=' w-100' loading='lazy' />
+          </LazyLoad>
         </div>
     </div>
 </div>

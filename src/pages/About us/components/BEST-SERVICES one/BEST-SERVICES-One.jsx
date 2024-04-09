@@ -1,4 +1,5 @@
 import React from 'react'
+import LazyLoad from 'react-lazyload';
 import img_your_image_mask from "../../../../images/img_your_image_mask.png"
 export default function BESTSERVICESAboutOne() {
   return (
@@ -7,7 +8,9 @@ export default function BESTSERVICESAboutOne() {
 <div className="container overflow-hidden">
     <div className="row d-flex justify-content-center overflow-hidden">
         <div className="col-lg-4 col-md-6">
-        <img src={img_your_image_mask} alt={img_your_image_mask} className=' w-100' />
+          <LazyLoad>
+        <img src={img_your_image_mask} alt={img_your_image_mask} className=' w-100' loading='lazy' />
+          </LazyLoad>
         </div>
         <div className="col-lg-5 col-md-6">
             <h3>We will allways provide the best services</h3>
