@@ -53,6 +53,12 @@
 .FILTER .clear .clearBTN {
   cursor: pointer;
 }
+.FILTER .clear .Autos {
+  background-color: #3A1B50;
+}
+.FILTER .clear .Autos .Auts_close {
+  cursor: "pointer";
+}
 .FILTER .sort {
   width: 220px;
   display: flex;
@@ -304,6 +310,7 @@
 }
 .FILTER nav .active {
   background-color: #3C1D4E;
+  color: White;
 }
 
 .View_More span {
@@ -311,6 +318,9 @@
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 50%);
+  background: #E6F6FF;
+  color: #3A1B50;
+  cursor: pointer;
 }
 
 .search {
@@ -487,6 +497,9 @@
   font-size: 24px;
   font-weight: bold;
   color: #3a1b50;
+}
+.CarType .CarType_Header .MonZa {
+  letter-spacing: 2px;
 }
 .CarType .CarType_Header .line {
   width: 60%;

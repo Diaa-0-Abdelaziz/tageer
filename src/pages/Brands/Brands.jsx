@@ -59,7 +59,7 @@ export default function Brands() {
                 <li><GoDotFill/> Mercedes (9)</li>
             </ul>
 
-            <span className='rounded-pill py-2 px-5' style={{background:"#E6F6FF",color:"#3A1B50",cursor:"pointer" }}>View More</span>
+            <span className='rounded-pill py-2 px-5 View_More_button'>View More</span>
         </div>
 
 

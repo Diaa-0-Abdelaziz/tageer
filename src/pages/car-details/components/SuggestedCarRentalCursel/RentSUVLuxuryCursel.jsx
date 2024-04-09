@@ -1,6 +1,5 @@
 import React from 'react'
 import Slider from "react-slick";
-import "./RentSUVLuxuryCursel.css"
 import { MdOutlineNavigateNext } from "react-icons/md";
 import { GrFormPrevious } from "react-icons/gr";
 import { GoDotFill } from "react-icons/go";

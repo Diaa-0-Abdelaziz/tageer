@@ -356,7 +356,7 @@ export default function Filter() {
       </p>
     </li>
     {Array.from({ length: Math.ceil(carsDetails.length / 5) }, (_, index) => (
-    <li className="page-link" key={index} onClick={() => handlePageChange(index + 1)}  style={{ backgroundColor: currentPage === index + 1 ? '#3C1D4E' : '', color: currentPage === index + 1 ? "white":""}}>{index + 1}</li>
+    <li className={`page-link ${currentPage === index + 1 ? 'active' : ''}`}  key={index} onClick={() => handlePageChange(index + 1)}>{index + 1}</li>
     ))}
     {/* <li className="page-item">3</li> */}
     <li className="page-item">

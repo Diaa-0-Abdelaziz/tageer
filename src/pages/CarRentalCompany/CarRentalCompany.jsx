@@ -14,7 +14,7 @@ export default function CarRentalCompany() {
     <section className='CarType pt-3'>
         <div className="container">
         <div className='CarType_Header d-flex justify-content-between mb-3 align-items-center'>
-        <h3 className=' fw-medium fs-2' style={{ textTransform:"uppercase",letterSpacing:"2px"}}>MonZa car rental</h3>
+        <h3 className=' fw-medium fs-2 MonZa text-uppercase'>MonZa car rental</h3>
         </div>
         <p className=' fw-bold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, laborum.</p>
         <p className={` position-relative ${isExpanded ? 'expanded' : 'collapsed'}`}>
@@ -59,7 +59,7 @@ export default function CarRentalCompany() {
                 <li><GoDotFill/> Mercedes (9)</li>
             </ul>
 
-            <span className='rounded-pill py-2 px-5' style={{background:"#E6F6FF",color:"#3A1B50",cursor:"pointer" }}>View More</span>
+            <span className='rounded-pill py-2 px-5'>View More</span>
         </div>
 
         </div>

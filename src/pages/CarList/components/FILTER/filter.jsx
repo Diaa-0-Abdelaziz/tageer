@@ -307,9 +307,9 @@ export default function Filter() {
         <div className="container">       
         <div className=' clear'>
         <span className='clearBTN' >Clear all filters </span>
-            <span className=" rounded-0 position-relative py-2 px-5 text-white" style={{backgroundColor:"#3A1B50"}}>
+            <span className="Autos rounded-0 position-relative py-2 px-5 text-white">
             6 Autos
-            <span className="position-absolute top-0 fw-bold m-2 start-0 translate-middle text-light" style={{cursor:"pointer"}}>
+            <span className="Auts_close position-absolute top-0 fw-bold m-2 start-0 translate-middle text-light">
                 <span className="">x</span>
             </span>
         </span>
@@ -503,7 +503,7 @@ export default function Filter() {
       </p>
     </li>
     {Array.from({ length: Math.ceil(carsDetails.length / 5) }, (_, index) => (
-    <li className="page-link" key={index} onClick={() => handlePageChange(index + 1)}  style={{ backgroundColor: currentPage === index + 1 ? '#3C1D4E' : '', color: currentPage === index + 1 ? "white":""}}>{index + 1}</li>
+    <li className={`page-link ${currentPage === index + 1 ? 'active' : ''}`} key={index} onClick={() => handlePageChange(index + 1)}>{index + 1}</li>
     ))}
     {/* <li className="page-item">3</li> */}
     <li className="page-item">

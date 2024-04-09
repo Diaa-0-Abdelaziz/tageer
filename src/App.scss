@@ -84,6 +84,14 @@ $main:#000000;
         {
             cursor: pointer;
         }
+        .Autos
+        {
+            background-color:#3A1B50;
+            .Auts_close
+            {
+                cursor:"pointer";
+            }
+        }
     }
 .sort
 {
@@ -412,6 +420,7 @@ nav
     .active
     {
         background-color: #3C1D4E;
+        color: White;
     }
 }
 }
@@ -423,7 +432,11 @@ nav
         bottom: 0;
         left: 50%;
         transform: translate(-50%,50%);
+        background:#E6F6FF;
+        color:#3A1B50;
+        cursor:pointer; 
     }
+
 }
 
 
@@ -659,6 +672,10 @@ img
             font-size: 24px;
             font-weight: bold;
             color: #3a1b50;
+         }
+         .MonZa
+         {
+            letter-spacing: 2px;
          }
         .line
         {

@@ -9,7 +9,6 @@ import logo from "../../../../../images/tajeer app icon@2x.png"
 import { IoLogoWhatsapp } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import { IoCallSharp } from "react-icons/io5";
-import "./RentSuvDubaiCursel.css"
 export default function RentSuvDubaiCursel() {
       return (
        <section className='RentSuvDubaiCursel'>
