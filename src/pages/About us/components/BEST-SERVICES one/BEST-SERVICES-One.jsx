@@ -9,7 +9,7 @@ export default function BESTSERVICESAboutOne() {
     <div className="row d-flex justify-content-center overflow-hidden">
         <div className="col-lg-4 col-md-6">
           <LazyLoad>
-        <img src={img_your_image_mask} width={50} height={100} alt={img_your_image_mask} className=' w-100' loading='lazy' />
+        <img src={img_your_image_mask} alt={img_your_image_mask} className=' w-100' loading='lazy' />
           </LazyLoad>
         </div>
         <div className="col-lg-5 col-md-6">
