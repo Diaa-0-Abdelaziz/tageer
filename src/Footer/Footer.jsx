@@ -1,4 +1,5 @@
 import React from 'react'
+import LazyLoad from 'react-lazyload';
 import { IoMdCall } from "react-icons/io";
 import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
@@ -10,6 +11,7 @@ import "./footer.css"
 export default function Footer() {
   return (
     <>
+     <LazyLoad>
     <footer>
     <div className="social">
       <ul className=' list-unstyled d-flex'>
@@ -74,6 +76,7 @@ export default function Footer() {
         </div>
       </div>
     </footer>
+    </LazyLoad>
     </>
   )
 }
