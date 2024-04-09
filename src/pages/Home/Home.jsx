@@ -13,7 +13,7 @@ const FAQ = lazy(() => import('./component/FAQ/FAQ'));
 export default function Home() {
   return (
   <>
-  {/* <Suspense fallback={<Loading/>}> <Search/></Suspense>
+  <Suspense fallback={<Loading/>}> <Search/></Suspense>
   <Suspense fallback={<Loading/>}><CarType/></Suspense>
   <Suspense fallback={<Loading/>}> <Carbrand/></Suspense>
   <Suspense fallback={<Loading/>}> <RentSUVLuxury/></Suspense>
@@ -24,7 +24,7 @@ export default function Home() {
   <Suspense fallback={<Loading/>}> <NextTrip/></Suspense>
   <Suspense fallback={<Loading/>}><BESTSERVICES/></Suspense>
   <Suspense fallback={<Loading/>}> <Testimonials/></Suspense>
-  <Suspense fallback={<Loading/>}><FAQ/></Suspense> */}
+  <Suspense fallback={<Loading/>}><FAQ/></Suspense>
 
  
 
