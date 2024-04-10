@@ -380,16 +380,6 @@
   background-color: #3A1B50;
   transform: translateX(-50%);
 }
-.BESTSERVICES ::after {
-  position: absolute;
-  content: "";
-  bottom: -10px;
-  width: 70%;
-  left: 50%;
-  height: 1px;
-  background-color: #3A1B50;
-  transform: translateX(-50%);
-}
 .BESTSERVICES .container {
   padding: 70px 0;
 }

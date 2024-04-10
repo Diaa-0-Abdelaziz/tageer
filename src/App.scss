@@ -506,17 +506,6 @@ img
    background-color: #3A1B50;
    transform: translateX(-50%);
    }
-   ::after
-   {
-   position: absolute;
-   content: "";
-   bottom: -10px;
-   width: 70%;
-   left: 50%;
-   height: 1px;
-   background-color: #3A1B50;
-   transform: translateX(-50%);
-   }
  .container 
  {
     padding: 70px 0;
