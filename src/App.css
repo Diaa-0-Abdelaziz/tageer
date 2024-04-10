@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "San Francisco Pro";
+  src: url("./SanFranciscoPro/SFProDisplay-Regular.woff2") format("woff2"), url("./SanFranciscoPro/SFProDisplay-Regular.woff") format("woff");
+}
 .right {
   background-color: #E6F6FF;
   right: -27px;

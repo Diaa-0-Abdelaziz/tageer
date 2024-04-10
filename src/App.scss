@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'San Francisco Pro';
+    src: url('./SanFranciscoPro/SFProDisplay-Regular.woff2') format('woff2'),
+         url('./SanFranciscoPro/SFProDisplay-Regular.woff') format('woff');
+  }
+
 $forth:#3D1F50;
 $fifth:#E6F6FF;
 $second:#000000;

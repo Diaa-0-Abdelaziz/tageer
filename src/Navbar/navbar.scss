@@ -10,7 +10,6 @@ header
         display: flex;
             justify-content: space-between;
             align-items: center;
-            // background-color: #55ACEE;
             align-content: center;
             padding: 0 10px;
             margin: auto;
@@ -59,7 +58,7 @@ header
                 border-radius: 30px;
                 margin-right: 2px;
             .selected-option {
-                font-size: 12px;
+                // font-size: 12px;
                 padding: 8px 12px;
                 border-radius: 5px;
                 width:150px;

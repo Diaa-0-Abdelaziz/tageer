@@ -408,7 +408,7 @@ export default function Navbar() {
             <span className='close_Setting d-none fs-5' onClick={openSettingList}><FaWindowClose/></span>
               <ul className=' border-style list-unstyled d-flex align-items-center'>
                 <li className=' fs-5 me-2'><CiLocationOn/></li>
-                <li className='fs-13 text-capitalize'>country</li>
+                <li className=' text-capitalize'>country</li>
                 <li>
                 <div className="custom-select">
             <div className="selected-option badge fw-light" onClick={toggleOptions}>
