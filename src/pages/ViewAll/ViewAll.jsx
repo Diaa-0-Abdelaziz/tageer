@@ -3,7 +3,7 @@ import { GoDotFill } from "react-icons/go";
 import Loading from '../../Loading';
 const Filter= lazy(() => import('./FILTER/filter'));
 const BESTSERVICES= lazy(() => import('../Home/component/BEST-SERVICES/BESTSERVICES'));
-const FAQ= lazy(() => import('../Home/component/FAQ/FAQ'));
+const FAQ= lazy(() => import('./FAQ/FAQ'));
 const ViewAllCursel= lazy(() => import('./ViewAllCursel/ViewAllCursel'));
 
 export default function ViewAll() {

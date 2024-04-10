@@ -2,7 +2,7 @@ import React, { useState, lazy, Suspense } from 'react';
 import Loading from '../../Loading';
 const Filter= lazy(() => import('./FILTER/filter'));
 const BESTSERVICES= lazy(() => import('../Home/component/BEST-SERVICES/BESTSERVICES'));
-const FAQ= lazy(() => import('../Home/component/FAQ/FAQ'));
+const FAQ= lazy(() => import('./FAQ/FAQ'));
 
 
 export default function CarRentalDealsOffers() {

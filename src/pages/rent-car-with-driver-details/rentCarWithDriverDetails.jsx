@@ -1,7 +1,7 @@
 import React, {lazy, Suspense } from 'react'
 import Loading from '../../Loading';
 const RentSuvDubai= lazy(() => import('./components/RentSuvDubai/RentSuvDubai'));
-const FAQ= lazy(() => import('../Home/component/FAQ/FAQ'));
+const FAQ= lazy(() => import('./components/FAQ/FAQ'));
 const BESTSERVICES= lazy(() => import('../Home/component/BEST-SERVICES/BESTSERVICES'));
 
 export default function RentCarWithDriverDetails() {
