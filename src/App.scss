@@ -13,6 +13,7 @@ $main:#000000;
 {
     background-color: $fifth;
     right: -27px;
+    transform: translateY(-50%);
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -25,6 +26,7 @@ $main:#000000;
 {
     background-color: $fifth;
     left: -27px;
+    transform: translateY(-50%);
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -43,6 +45,16 @@ $main:#000000;
         content: ">";
         margin-left: 5px;
  }
+}
+@media screen and (max-width: 992px) {
+    .right
+    {
+    display: none;
+}
+.left 
+{
+ display: none;
+}
 }
 //******scroll-to-top-button*******
 
@@ -63,8 +75,32 @@ $main:#000000;
 
 
 
+//****carTypeSlider********
+.carTypeSlider
+{
+    .content
+    {
+        .slider-pro
+        {
 
-
+            box-shadow:  0 0 5px rgba(0, 0, 0, 0.088);
+            // background-color: #161515;
+        }
+    .title 
+    {
+        background-color:$fifth;
+        span 
+        {
+            color: $forth;
+        font-size: 15px;
+        font-weight: 500;
+        padding: 3px 0;
+        width: 100%;
+        text-align: center;
+        }
+    }
+}
+}
 
 
 //*** FILTER Styles**

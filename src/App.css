@@ -5,6 +5,7 @@
 .right {
   background-color: #E6F6FF;
   right: -27px;
+  transform: translateY(-50%);
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -17,6 +18,7 @@
 .left {
   background-color: #E6F6FF;
   left: -27px;
+  transform: translateY(-50%);
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -34,6 +36,14 @@
   margin-left: 5px;
 }
 
+@media screen and (max-width: 992px) {
+  .right {
+    display: none;
+  }
+  .left {
+    display: none;
+  }
+}
 .scroll-to-top-button {
   position: fixed;
   bottom: 0;
@@ -45,6 +55,21 @@
 
 .show {
   right: 10px;
+}
+
+.carTypeSlider .content .slider-pro {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.088);
+}
+.carTypeSlider .content .title {
+  background-color: #E6F6FF;
+}
+.carTypeSlider .content .title span {
+  color: #3D1F50;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 3px 0;
+  width: 100%;
+  text-align: center;
 }
 
 .FILTER article {

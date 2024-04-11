@@ -584,7 +584,7 @@ export default function Navbar() {
 
 
             </ul>
-           
+           //********social links*********** */
             <div className='appAndSocial m-auto d-flex align-items-center'>
              <ul className='appsLink d-flex align-items-center list-unstyled'>
               <li>
@@ -596,7 +596,7 @@ export default function Navbar() {
              </ul>
               <ul className=' mt-3 social list-unstyled d-flex'>
                 <li><a href="tel:+971 52 313 1587"><IoMdCall/><span className="hidden-text">Call Us</span></a></li>
-                <li className='facebook'><a a href="https://www.facebook.com/Tajeercarrental" target='_blank' rel="noopener noreferrer"><FaFacebookF/><span className="hidden-text">Facebook</span></a></li>
+                <li className='facebook'><a href="https://www.facebook.com/Tajeercarrental" target='_blank' rel="noopener noreferrer"><FaFacebookF/><span className="hidden-text">Facebook</span></a></li>
                 <li className='twitter'><a href="https://twitter.com/tajeercarrental" target='_blank' rel="noopener noreferrer"><FaTwitter/><span className="hidden-text">Twitter</span></a></li>
                 <li><a href="https://www.instagram.com/tajeercarrental/?utm_medium=copy_link" target='_blank' rel="noopener noreferrer"><GrInstagram/><span className="hidden-text">Instagram</span></a></li>
               </ul>

@@ -103,13 +103,13 @@ export default function RentCarWithDriverProducts() {
           </div>
           <div className="contact mt-2">
             <ul className=' list-unstyled d-flex justify-content-around'>
-                <li><i><div class="ex-categor d-flex flex-column">
+                <li><i><div className="ex-categor d-flex flex-column">
                      <a href={`https://wa.me/${pro.whatsapp}`}>{pro.whatsapp}</a>
                   </div><IoLogoWhatsapp/></i><span>WHATSAPP</span></li>
-                <li><i><div class="ex-categor d-flex flex-column">
+                <li><i><div className="ex-categor d-flex flex-column">
                      <a href={`mailto:${pro.email}`}>{pro.email}</a>
                   </div><MdEmail/></i><span>EMAIL</span></li>
-                <li><i><div class="ex-categor d-flex flex-column">
+                <li><i><div className="ex-categor d-flex flex-column">
                      <a href={`tel:+${pro.call}`}>{pro.call}</a>
                   </div><IoCallSharp/></i><span>CALL</span></li>
             </ul>

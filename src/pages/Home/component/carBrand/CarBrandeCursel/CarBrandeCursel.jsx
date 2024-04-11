@@ -107,11 +107,11 @@ export default function CarBrandeCursel() {
        <div className="container main-slider mb-5">
          <Slider {...settings}>
           {products.map((pro)=> <div className='p-2 content' key={pro.id}>
-           <Link to={`./` + pro.title} className=' text-decoration-none text-black badge' aria-label="Go to brands's page">
-           <div className='slider-pro p-1 overflow-hidden'>
-          <img src={pro.img} alt="" className='w-100' />
+           <Link to={`./` + pro.title} className=' text-decoration-none' aria-label="Go to brands's page">
+           <div className='slider-pro overflow-hidden'>
+          <img src={pro.img} alt="" className='w-100' loading='lazy' />
           <div className='title'>
-          <span className='text-capitalize'>{pro.title}</span>
+          <span className='text-capitalize badge'>{pro.title}</span>
           </div>
         </div>
            </Link>
