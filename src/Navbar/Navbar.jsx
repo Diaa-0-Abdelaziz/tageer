@@ -584,7 +584,7 @@ export default function Navbar() {
 
 
             </ul>
-           //********social links*********** */
+            {/*******social links******** */}
             <div className='appAndSocial m-auto d-flex align-items-center'>
              <ul className='appsLink d-flex align-items-center list-unstyled'>
               <li>

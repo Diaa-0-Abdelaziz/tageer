@@ -1,9 +1,8 @@
-
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { Suspense, lazy } from 'react';
-import './App.css';
 import Layout from './Layout/Layout';
 import Loading from './Loading';
+import './App.css';
 const RentCheapCar = lazy(() => import('./pages/RentCheapCar/RentCheapCar'));
 const RentLuxuryCar = lazy(() => import('./pages/RentLuxuryCar/RentLuxuryCar'));
 const RentSportCar = lazy(() => import('./pages/RentSportCar/RentSportCar'));
