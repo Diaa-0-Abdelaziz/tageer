@@ -108,7 +108,7 @@ export default function RentSuvDubaiCursel() {
                       <i onClick={() => window.open(`https://wa.me/125855`)}>
                           <div className="ex-categor d-flex flex-column">
                               <span onClick={() => window.open(`https://wa.me/125855`)}>
-                                  {pro.whatsapp}
+                              125855
                               </span>
                           </div>
                           <IoLogoWhatsapp />
@@ -119,7 +119,7 @@ export default function RentSuvDubaiCursel() {
                       <i onClick={() => window.open(`mailto:info@gmail.com`)}>
                           <div className="ex-categor d-flex flex-column">
                               <span onClick={() => window.open(`mailto:info@gmail.com`)}>
-                                  {pro.email}
+                              info@gmail.com
                               </span>
                           </div>
                           <MdEmail/>
@@ -130,7 +130,7 @@ export default function RentSuvDubaiCursel() {
                       <i onClick={() => window.open(`tel:+125855`)}>
                           <div className="ex-categor d-flex flex-column">
                               <span onClick={() => window.open(`tel:+125855`)}>
-                                  {pro.call}
+                              125855
                               </span>
                           </div>
                           <IoCallSharp/>
