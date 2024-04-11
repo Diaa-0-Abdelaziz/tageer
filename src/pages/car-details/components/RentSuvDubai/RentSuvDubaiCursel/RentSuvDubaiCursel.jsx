@@ -103,11 +103,41 @@ export default function RentSuvDubaiCursel() {
            </ul>
            </div>
            <div className="contact mt-2">
-            <ul className=' list-unstyled d-flex justify-content-around'>
-                <li><i><IoLogoWhatsapp/></i><span>WHATSAPP</span></li>
-                <li><i><MdEmail/></i><span>EMAIL</span></li>
-                <li><i><IoCallSharp/></i><span>CALL</span></li>
-            </ul>
+              <ul className='list-unstyled d-flex justify-content-around'>
+                  <li>
+                      <i onClick={() => window.open(`https://wa.me/125855`)}>
+                          <div className="ex-categor d-flex flex-column">
+                              <span onClick={() => window.open(`https://wa.me/125855`)}>
+                                  {pro.whatsapp}
+                              </span>
+                          </div>
+                          <IoLogoWhatsapp />
+                      </i>
+                      <span>WHATSAPP</span>
+                  </li>
+                  <li>
+                      <i onClick={() => window.open(`mailto:info@gmail.com`)}>
+                          <div className="ex-categor d-flex flex-column">
+                              <span onClick={() => window.open(`mailto:info@gmail.com`)}>
+                                  {pro.email}
+                              </span>
+                          </div>
+                          <MdEmail/>
+                      </i>
+                      <span>EMAIL</span>
+                  </li>
+                  <li>
+                      <i onClick={() => window.open(`tel:+125855`)}>
+                          <div className="ex-categor d-flex flex-column">
+                              <span onClick={() => window.open(`tel:+125855`)}>
+                                  {pro.call}
+                              </span>
+                          </div>
+                          <IoCallSharp/>
+                      </i>
+                      <span>CALL</span>
+                  </li>
+              </ul>
           </div>
           <div className='logo d-flex justify-content-center'>
           <img src={logo} alt={logo} />
