@@ -156,17 +156,41 @@ export default function SuggestedCarRentalCursel() {
             </div>
           </div>
           <div className="contact mt-2">
-            <ul className=' list-unstyled d-flex justify-content-around'>
-            <li><i><div className="ex-categor d-flex flex-column">
-                     <a href={`https://wa.me/${pro.whatsapp}`}>{pro.whatsapp}</a>
-                  </div><IoLogoWhatsapp/></i><span>WHATSAPP</span></li>
-                <li><i><div className="ex-categor d-flex flex-column">
-                     <a href={`mailto:${pro.email}`}>{pro.email}</a>
-                  </div><MdEmail/></i><span>EMAIL</span></li>
-                <li><i><div className="ex-categor d-flex flex-column">
-                     <a href={`tel:+${pro.call}`}>{pro.call}</a>
-                  </div><IoCallSharp/></i><span>CALL</span></li>
-            </ul>
+              <ul className='list-unstyled d-flex justify-content-around'>
+                  <li>
+                      <i onClick={() => window.open(`https://wa.me/${pro.whatsapp}`)}>
+                          <div className="ex-categor d-flex flex-column">
+                              <span onClick={() => window.open(`https://wa.me/${pro.whatsapp}`)}>
+                                  {pro.whatsapp}
+                              </span>
+                          </div>
+                          <IoLogoWhatsapp />
+                      </i>
+                      <span>WHATSAPP</span>
+                  </li>
+                  <li>
+                      <i onClick={() => window.open(`mailto:${pro.email}`)}>
+                          <div className="ex-categor d-flex flex-column">
+                              <span onClick={() => window.open(`mailto:${pro.email}`)}>
+                                  {pro.email}
+                              </span>
+                          </div>
+                          <MdEmail/>
+                      </i>
+                      <span>EMAIL</span>
+                  </li>
+                  <li>
+                      <i onClick={() => window.open(`tel:+${pro.call}`)}>
+                          <div className="ex-categor d-flex flex-column">
+                              <span onClick={() => window.open(`tel:+${pro.call}`)}>
+                                  {pro.call}
+                              </span>
+                          </div>
+                          <IoCallSharp/>
+                      </i>
+                      <span>CALL</span>
+                  </li>
+              </ul>
           </div>
           </div>
         </div>

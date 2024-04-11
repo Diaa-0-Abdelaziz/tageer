@@ -66,37 +66,58 @@ export default function CarListCursel() {
         {
           id:1,
           title:"BMW X5 Convertible slider ",
-          img:img1
+          img:img1,
+          whatsapp:12553355,
+          email:"info@mail.com",
+          call:1235566,
         },
         {
           id:2,
           title:"BMW X5 Convertible slider ",
-          img:img1
+          img:img1,
+          whatsapp:12553355,
+          email:"info@mail.com",
+          call:1235566,
         },
         {
           id:3,
           title:"BMW X5 Convertible slider ",
-          img:img1
+          img:img1,
+          whatsapp:12553355,
+          email:"info@mail.com",
+          call:1235566,
         },
         {
           id:4,
           title:"BMW X5 Convertible slider ",
-          img:img1
+          img:img1,
+          whatsapp:12553355,
+          email:"info@mail.com",
+          call:1235566,
         },
         {
           id:5,
           title:"BMW X5 Convertible slider ",
-          img:img1
+          img:img1,
+          whatsapp:12553355,
+          email:"info@mail.com",
+          call:1235566,
         },
         {
           id:6,
           title:"BMW X5 Convertible slider ",
-          img:img1
+          img:img1,
+          whatsapp:12553355,
+          email:"info@mail.com",
+          call:1235566,
         },
         {
           id:7,
           title:"BMW X5 Convertible slider ",
-          img:img1
+          img:img1,
+          whatsapp:12553355,
+          email:"info@mail.com",
+          call:1235566,
         },
       ]
     
@@ -138,11 +159,41 @@ export default function CarListCursel() {
             </div>
           </div>
           <div className="contact mt-2">
-            <ul className=' list-unstyled d-flex justify-content-around'>
-                <li><i><IoLogoWhatsapp/></i><span>WHATSAPP</span></li>
-                <li><i><MdEmail/></i><span>EMAIL</span></li>
-                <li><i><IoCallSharp/></i><span>CALL</span></li>
-            </ul>
+              <ul className='list-unstyled d-flex justify-content-around'>
+                  <li>
+                      <i onClick={() => window.open(`https://wa.me/${pro.whatsapp}`)}>
+                          <div className="ex-categor d-flex flex-column">
+                              <span onClick={() => window.open(`https://wa.me/${pro.whatsapp}`)}>
+                                  {pro.whatsapp}
+                              </span>
+                          </div>
+                          <IoLogoWhatsapp />
+                      </i>
+                      <span>WHATSAPP</span>
+                  </li>
+                  <li>
+                      <i onClick={() => window.open(`mailto:${pro.email}`)}>
+                          <div className="ex-categor d-flex flex-column">
+                              <span onClick={() => window.open(`mailto:${pro.email}`)}>
+                                  {pro.email}
+                              </span>
+                          </div>
+                          <MdEmail/>
+                      </i>
+                      <span>EMAIL</span>
+                  </li>
+                  <li>
+                      <i onClick={() => window.open(`tel:+${pro.call}`)}>
+                          <div className="ex-categor d-flex flex-column">
+                              <span onClick={() => window.open(`tel:+${pro.call}`)}>
+                                  {pro.call}
+                              </span>
+                          </div>
+                          <IoCallSharp/>
+                      </i>
+                      <span>CALL</span>
+                  </li>
+              </ul>
           </div>
           </div>
         </div>
