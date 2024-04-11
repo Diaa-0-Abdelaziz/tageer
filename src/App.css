@@ -655,6 +655,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  cursor: pointer;
 }
 .RentSuvDubaiCursel .details .contact ul li i .ex-categor {
   position: absolute;
