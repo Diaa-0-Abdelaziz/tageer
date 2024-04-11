@@ -472,21 +472,45 @@ export default function Filter() {
             </li>
            </ul>
            </div>
-           <div className="contact ">
-            <ul className=' list-unstyled d-flex justify-content-around'>
-            <li><i><div className="ex-categor d-flex flex-column">
-                     <a href={`https://wa.me/${carDetail.whatsapp}`}>{carDetail.whatsapp}</a>
-                  </div><IoLogoWhatsapp/></i><span>WHATSAPP</span></li>
-                <li><i><div className="ex-categor d-flex flex-column">
-                     <a href={`mailto:${carDetail.email}`}>{carDetail.email}</a>
-                  </div><MdEmail/></i><span>EMAIL</span></li>
-                <li><i><div className="ex-categor d-flex flex-column">
-                     <a href={`tel:+${carDetail.call}`}>{carDetail.call}</a>
-                  </div><IoCallSharp/></i><span>CALL</span></li>
-                <li className='imgLogo'>
-             <img src={logo} alt={logo}  className=''/>
-            </li>
-            </ul>
+           <div className="contact">
+              <ul className='list-unstyled d-flex justify-content-around'>
+                  <li>
+                      <i onClick={() => window.open(`https://wa.me/${carDetail.whatsapp}`)}>
+                          <div className="ex-categor d-flex flex-column">
+                              <span onClick={() => window.open(`https://wa.me/${carDetail.whatsapp}`)}>
+                                  {carDetail.whatsapp}
+                              </span>
+                          </div>
+                          <IoLogoWhatsapp />
+                      </i>
+                      <span>WHATSAPP</span>
+                  </li>
+                  <li>
+                      <i onClick={() => window.open(`mailto:${carDetail.email}`)}>
+                          <div className="ex-categor d-flex flex-column">
+                              <span onClick={() => window.open(`mailto:${carDetail.email}`)}>
+                                  {carDetail.email}
+                              </span>
+                          </div>
+                          <MdEmail/>
+                      </i>
+                      <span>EMAIL</span>
+                  </li>
+                  <li>
+                      <i onClick={() => window.open(`tel:+${carDetail.call}`)}>
+                          <div className="ex-categor d-flex flex-column">
+                              <span onClick={() => window.open(`tel:+${carDetail.call}`)}>
+                                  {carDetail.call}
+                              </span>
+                          </div>
+                          <IoCallSharp/>
+                      </i>
+                      <span>CALL</span>
+                  </li>
+                  <li className='imgLogo'>
+                  <img src={logo} alt={logo}/>
+                  </li>
+              </ul>
           </div>
       </div>
     </div>

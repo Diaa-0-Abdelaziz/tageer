@@ -17,7 +17,7 @@ function Breadcrumb() {
         const routeTo = `/${pathnames.slice(0, index + 1).join('>')}`;
         const isLast = index === pathnames.length - 1;
         return (
-          <li className=" ms-2" key={name} active={isLast}>
+          <li className=" ms-2" key={name} aria-current={isLast ? 'page' : undefined}>
             {isLast ? (
               <span className='active fw-bold'>{name}</span>
             ) : (

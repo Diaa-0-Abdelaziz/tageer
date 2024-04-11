@@ -71,9 +71,10 @@ export default function RentCarWithDriverProducts() {
         <div className="row">
           {products.map((pro)=> 
           <div className='p-2 content col-lg-4 col-md-6' key={pro.id}>
-            <Link  to={`./` + pro.id} className=' text-decoration-none text-black' aria-label="Go to yacht details page">
             <div className='slider-pro overflow-hidden position-relative'>
+            <Link  to={`./` + pro.id} className=' text-decoration-none text-black' aria-label="Go to yacht details page">
           <img src={pro.img} alt="" className='w-100' />
+          </Link>
           <div className="body px-2">
           <div className="options d-flex px-4 justify-content-between links position-absolute top-0 mt-3  w-100 ">
           <ul className=' list-unstyled d-flex'>
@@ -102,21 +103,44 @@ export default function RentCarWithDriverProducts() {
             </div>
           </div>
           <div className="contact mt-2">
-            <ul className=' list-unstyled d-flex justify-content-around'>
-                <li><i><div className="ex-categor d-flex flex-column">
-                     <a href={`https://wa.me/${pro.whatsapp}`}>{pro.whatsapp}</a>
-                  </div><IoLogoWhatsapp/></i><span>WHATSAPP</span></li>
-                <li><i><div className="ex-categor d-flex flex-column">
-                     <a href={`mailto:${pro.email}`}>{pro.email}</a>
-                  </div><MdEmail/></i><span>EMAIL</span></li>
-                <li><i><div className="ex-categor d-flex flex-column">
-                     <a href={`tel:+${pro.call}`}>{pro.call}</a>
-                  </div><IoCallSharp/></i><span>CALL</span></li>
-            </ul>
+              <ul className='list-unstyled d-flex justify-content-around'>
+                  <li>
+                      <i onClick={() => window.open(`https://wa.me/${pro.whatsapp}`)}>
+                          <div className="ex-categor d-flex flex-column">
+                              <span onClick={() => window.open(`https://wa.me/${pro.whatsapp}`)}>
+                                  {pro.whatsapp}
+                              </span>
+                          </div>
+                          <IoLogoWhatsapp />
+                      </i>
+                      <span>WHATSAPP</span>
+                  </li>
+                  <li>
+                      <i onClick={() => window.open(`mailto:${pro.email}`)}>
+                          <div className="ex-categor d-flex flex-column">
+                              <span onClick={() => window.open(`mailto:${pro.email}`)}>
+                                  {pro.email}
+                              </span>
+                          </div>
+                          <MdEmail/>
+                      </i>
+                      <span>EMAIL</span>
+                  </li>
+                  <li>
+                      <i onClick={() => window.open(`tel:+${pro.call}`)}>
+                          <div className="ex-categor d-flex flex-column">
+                              <span onClick={() => window.open(`tel:+${pro.call}`)}>
+                                  {pro.call}
+                              </span>
+                          </div>
+                          <IoCallSharp/>
+                      </i>
+                      <span>CALL</span>
+                  </li>
+              </ul>
           </div>
           </div>
         </div>
-          </Link>
           </div>
           )}
         </div>
