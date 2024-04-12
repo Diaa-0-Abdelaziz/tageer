@@ -584,6 +584,11 @@
   cursor: pointer;
 }
 
+.slick-dots a {
+  margin-right: 50px;
+  background-color: #000000;
+}
+
 .RentSuvDubaiCursel .main_img span {
   background-color: #E6F6FF;
   border-radius: 5px;

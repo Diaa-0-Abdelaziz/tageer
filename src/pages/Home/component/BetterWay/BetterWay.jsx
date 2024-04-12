@@ -1,4 +1,10 @@
 import React from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination} from 'swiper/modules';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import { BsListUl } from "react-icons/bs";
 import { CiCalendar } from "react-icons/ci";
 import { LuCheckSquare } from "react-icons/lu";
@@ -12,7 +18,29 @@ export default function BetterWay() {
     <section className='BetterWay text-center'>
       <div className="container">
       <div className="img_cover">
-        <img src={paner} alt={paner} width={100} className=' w-100'  loading='lazy'/>
+      <Swiper
+        spaceBetween={50}
+        centeredSlides={true}
+        autoplay={{
+          delay: 3000,
+          disableOnInteraction: true,
+        }}
+        // pagination={{
+        //   clickable: true,
+        // }}
+        // navigation={true}
+        modules={[Autoplay, Pagination]}
+      >
+        <SwiperSlide><img src={paner} alt={paner} width={100} className=' w-100'  loading='lazy'/></SwiperSlide>
+        <SwiperSlide><img src={paner} alt={paner} width={100} className=' w-100'  loading='lazy'/></SwiperSlide>
+        <SwiperSlide><img src={paner} alt={paner} width={100} className=' w-100'  loading='lazy'/></SwiperSlide>
+        <SwiperSlide><img src={paner} alt={paner} width={100} className=' w-100'  loading='lazy'/></SwiperSlide>
+        <SwiperSlide><img src={paner} alt={paner} width={100} className=' w-100'  loading='lazy'/></SwiperSlide>
+        <SwiperSlide><img src={paner} alt={paner} width={100} className=' w-100'  loading='lazy'/></SwiperSlide>
+        <SwiperSlide><img src={paner} alt={paner} width={100} className=' w-100'  loading='lazy'/></SwiperSlide>
+        <SwiperSlide><img src={paner} alt={paner} width={100} className=' w-100'  loading='lazy'/></SwiperSlide>
+      </Swiper>
+        
       </div>
       <div className='text'>
       <h3>Better Way to Find Your Perfect Car</h3>

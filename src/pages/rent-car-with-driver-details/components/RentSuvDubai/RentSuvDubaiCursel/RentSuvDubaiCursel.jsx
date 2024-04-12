@@ -1,4 +1,7 @@
-import React from 'react'
+import React from "react";
+import ImageGallery from "react-image-gallery";
+// import stylesheet if you're not already using CSS @import
+import "react-image-gallery/styles/css/image-gallery.css";
 import { GoDotFill } from "react-icons/go";
 import img1 from "../../../../../images/Your image mask@2x000.png"
 import logo from "../../../../../images/tajeer app icon@2x.png"
@@ -6,22 +9,31 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import { IoCallSharp } from "react-icons/io5";
 export default function RentSuvDubaiCursel() {
+  const images = [
+    {
+      original: img1,
+      thumbnail: img1,
+    },
+    {
+      original: img1,
+      thumbnail: img1,
+    },
+    {
+      original: img1,
+      thumbnail: img1,
+    },
+  ];
       return (
        <section className='RentSuvDubaiCursel'>
        <div className="container">
        <div className="row">
-        <div className="col-lg-6 position-relative">
-            <div className=' mb-5'>
-                <div className="main_img position-relative">
-                <span className='position-absolute top-0 end-0 m-3 p-1 fs-6'>Save to whishlist</span>
-                    <img src={img1} alt={img1} className=' w-100' />
-                </div>
-                <div className='small_images d-flex justify-content-between mt-2'>
-                <img src={img1} alt={img1} className=' w-25' />
-                <img src={img1} alt={img1} className=' w-25' />
-                <img src={img1} alt={img1} className=' w-25' />
-                </div>
-            </div>        
+       <div className="col-lg-6 position-relative main_img ">
+        <ImageGallery items={images}
+         showFullscreenButton={false}
+         showPlayButton={false}
+         autoPlay={true}
+         />
+        <span className='position-absolute top-0 end-0 m-3 p-1 fs-6'>Save to whishlist</span>
         
         <ul className="nav nav-pills mb-3" id="pills-tab" role="tablist">
   <li className="nav-item" role="presentation">

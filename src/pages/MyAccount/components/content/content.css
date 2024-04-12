@@ -55,6 +55,10 @@
   border: none;
   margin: 10px;
 }
+.content .tab-content .card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .content .tab-content .feature_details ul {
   list-style: none;
 }

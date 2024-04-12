@@ -81,6 +81,10 @@ $fifth:#E6F6FF;
         border-radius: 10px;
         border: none;
         margin: 10px;
+        img 
+        {
+            object-fit: cover
+        }
     }
         .feature_details
         {

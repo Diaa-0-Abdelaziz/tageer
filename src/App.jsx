@@ -56,7 +56,7 @@ function App() {
         {path:'yachts', element:<Suspense fallback={<Loading/>}><Yachts/></Suspense>},
         {path:'rentCarWithDriver', element:<Suspense fallback={<Loading/>}> <RentCarWithDrivers/> </Suspense>},
         {path:'rentCarWithDriver/:id', element:<Suspense fallback={<Loading/>}> <RentCarWithDriverDetails/> </Suspense>},
-        {path:'Car/:id', element:<Suspense fallback={<Loading/>}> <CarDetails/> </Suspense>},
+        {path:'CarList/:id', element:<Suspense fallback={<Loading/>}> <CarDetails/> </Suspense>},
         // {path:'*', element:<Notfound/>}
       ]
     }
