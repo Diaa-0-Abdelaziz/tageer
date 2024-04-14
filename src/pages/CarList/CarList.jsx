@@ -2,7 +2,7 @@ import React, { useState, lazy, Suspense } from 'react';
 import { GoDotFill } from "react-icons/go";
 import Loading from '../../Loading';
 const Filter= lazy(() => import('./components/FILTER/filter'));
-const BESTSERVICES= lazy(() => import('../Home/component/BEST-SERVICES/BESTSERVICES'));
+const BESTSERVICES= lazy(() => import('./components/BEST-SERVICES/BESTSERVICES'));
 const FAQ= lazy(() => import('./components/FAQ/FAQ'));
 const SuggestedCarRental= lazy(() => import('./components/SuggestedCarRental/SuggestedCarRental'));
 

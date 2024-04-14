@@ -2,7 +2,7 @@ import React, { useState, lazy, Suspense  } from 'react';
 import { GoDotFill } from "react-icons/go";
 import Loading from '../../Loading';
 const Filter= lazy(() => import('./FILTER/filter'));
-const BESTSERVICES= lazy(() => import('../Home/component/BEST-SERVICES/BESTSERVICES'));
+const BESTSERVICES= lazy(() => import('./BEST-SERVICES/BESTSERVICES'));
 const FAQ= lazy(() => import('./FAQ/FAQ'));
 export default function Brands() {
     const [isExpanded, setIsExpanded] = useState(false);

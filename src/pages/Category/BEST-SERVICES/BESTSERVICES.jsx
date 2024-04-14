@@ -1,20 +1,14 @@
 import React from 'react'
 import LazyLoad from 'react-lazyload';
-import img_your_image_mask from "../../../../images/img_your_image_mask.png"
-export default function BESTSERVICESAboutOne() {
+import img_your_image_mask from "../../../images/img_your_image_mask.png"
+export default function BESTSERVICES() {
   let BESTSERVICES=[
-    {
-      img:img_your_image_mask,
-      header:"We will allways provide the best services",
-      explanation:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eius necessitatibus aspernatur dolorum aliquid facilis exercitationem deserunt nemo eveniet itaque, magnam nisi tenetur molestiae dolor vitae corporis! Esse voluptas necessitatibus autem labore quod, earum tenetur corrupti reprehenderit aut suscipit natus. Commodi natus cum at esse molestiae iste dicta velit enim? Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eius necessitatibus aspernatur dolorum aliquid facilis exercitationem deserunt nemo eveniet itaque, magnam nisi tenetur molestiae dolor vitae corporis! Esse voluptas necessitatibus autem labore quod, earum tenetur corrupti reprehenderit aut suscipit natus. Commodi natus cum at esse molestiae iste dicta velit enim?"
-    },
     {
       img:img_your_image_mask,
       header:"We will allways provide the best services",
       explanation:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eius necessitatibus aspernatur dolorum aliquid facilis exercitationem deserunt nemo eveniet itaque, magnam nisi tenetur molestiae dolor vitae corporis! Esse voluptas necessitatibus autem labore quod, earum tenetur corrupti reprehenderit aut suscipit natus. Commodi natus cum at esse molestiae iste dicta velit enim? Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eius necessitatibus aspernatur dolorum aliquid facilis exercitationem deserunt nemo eveniet itaque, magnam nisi tenetur molestiae dolor vitae corporis! Esse voluptas necessitatibus autem labore quod, earum tenetur corrupti reprehenderit aut suscipit natus. Commodi natus cum at esse molestiae iste dicta velit enim?"
     }
   ]
-  
   return (
     <>
     {BESTSERVICES.map((service, index)=>

@@ -3,7 +3,7 @@ import "./NextTrip.css"
 export default function NextTrip() {
   return (
    <>
-   <section className='NextTrip'>
+   <section className='NextTrip  mt-5'>
     <div className="container d-flex flex-row justify-content-between">
       <div className="NextTrip_content">
         <h2 className=' text-capitalize'>book your next trip in 3 easy steps</h2>

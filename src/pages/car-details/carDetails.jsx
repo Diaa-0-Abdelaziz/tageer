@@ -2,7 +2,7 @@ import React, { lazy, Suspense } from 'react';
 import Loading from '../../Loading';
 const RentSuvDubai= lazy(() => import('./components/RentSuvDubai/RentSuvDubai'));
 const FAQ= lazy(() => import('./components/FAQ/FAQ'));
-const BESTSERVICES= lazy(() => import('../Home/component/BEST-SERVICES/BESTSERVICES'));
+const BESTSERVICES= lazy(() => import('./components/BEST-SERVICES/BESTSERVICES'));
 const SuggestedCarRental= lazy(() => import('./components/SuggestedCarRental'));
 const SuggestedCarRentalCursel= lazy(() => import('./components/SuggestedCarRentalCursel/RentSUVLuxuryCursel'));
 

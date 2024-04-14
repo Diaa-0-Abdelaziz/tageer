@@ -20,7 +20,6 @@ export default function Home() {
   <Suspense fallback={<Loading/>}> <RentSUVLuxury/></Suspense>
   <Suspense fallback={<Loading/>}><CarRentalCompanies/></Suspense>
   <Suspense fallback={<Loading/>}> <BetterWay/></Suspense>
-  <Suspense fallback={<Loading/>}> <BESTSERVICES/></Suspense>
   <Suspense fallback={<Loading/>}> <NextTrip/></Suspense>
   <Suspense fallback={<Loading/>}><BESTSERVICES/></Suspense>
   <Suspense fallback={<Loading/>}> <Testimonials/></Suspense>
