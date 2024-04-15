@@ -14,6 +14,9 @@
   text-align: center;
   font-weight: 400;
 }
+.Auth .form_content h6 .close_Window {
+  cursor: pointer;
+}
 .Auth .form_content form {
   text-align: center;
   max-height: 600px;

@@ -629,8 +629,8 @@ export default function Navbar() {
                 </ul>
             )}
         </div>
-        {logIN? <Login/> : ''}
-        {register? <Register/> :  ''}
+        {logIN? <Login toggleVisibility={() => setLogIN(false)}/> : ''}
+        {register? <Register toggleVisibility={() => setRegister(false)}/> :  ''}
        
         
     </header>
