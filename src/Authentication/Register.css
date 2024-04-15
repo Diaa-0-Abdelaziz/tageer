@@ -1,0 +1,66 @@
+.Auth {
+  z-index: 9999999;
+  background-color: rgba(58, 27, 80, 0.5803921569);
+}
+.Auth .form_content {
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: white;
+  width: 60%;
+}
+.Auth .form_content h6 {
+  background-color: #E6F6FF;
+  padding: 10px 0;
+  text-align: center;
+  font-weight: 400;
+}
+.Auth .form_content form {
+  text-align: center;
+  max-height: 600px;
+  overflow: auto;
+  padding: 10px 0;
+  width: 60%;
+  margin: auto;
+}
+.Auth .form_content form .inputsForm {
+  border: none;
+  background-color: #E6F6FF;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+.Auth .form_content form p {
+  color: #3A1B50;
+}
+.Auth .form_content form p a {
+  color: #3A1B50;
+}
+.Auth .form_content form button {
+  background-color: #3A1B50;
+  color: white;
+  border: none;
+  width: 70%;
+  padding: 10px 70px;
+}
+.Auth .form_content form .forgot {
+  background-color: #3A1B50;
+  color: white;
+  border: none;
+  width: 70%;
+  padding: 10px 70px;
+  cursor: pointer;
+}
+.Auth .form_content form .signFace {
+  background-color: #3b5998;
+  padding: 7px 0;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+.Auth .form_content form .SignGoogle {
+  background-color: #5D90F1;
+  padding: 7px 0;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}/*# sourceMappingURL=Register.css.map */

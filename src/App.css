@@ -367,16 +367,6 @@
   color: White;
 }
 
-.View_More span {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  background: #E6F6FF;
-  color: #3A1B50;
-  cursor: pointer;
-}
-
 .search {
   z-index: -1;
 }

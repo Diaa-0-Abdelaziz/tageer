@@ -21,7 +21,12 @@ import { FaAngleDown } from "react-icons/fa6";
 import { IoIosArrowUp } from "react-icons/io";
 import"./navbar.css"
 import { Link } from 'react-router-dom'
+import Register from '../Authentication/Register'
+import Login from '../Authentication/Login'
 export default function Navbar() {
+
+  const [register, setRegister] = useState(false)
+  const [logIN, setLogIN] = useState(false)
   const [open, setOpen] = useState(true)
   const [openSetting, setOpenSetting] = useState(true)
   const [isOpen, setIsOpen] = useState(false);
@@ -358,6 +363,14 @@ export default function Navbar() {
   const handleDropdownAccount = () => {
     setAccount(!Account);
   };
+  const signUp = () => {
+    setAccount(!Account);
+    setRegister(true)
+  };
+  const login = () => {
+    setAccount(!Account);
+    setLogIN(true)
+  };
   const handleOptionClick1 = (option) => {
     setSelectedOption1(option);
       setIsOpen(false);
@@ -504,8 +517,8 @@ export default function Navbar() {
             </div>
             {Account && (
                 <ul className="options">
-                    <li onClick={handleDropdownAccount}>Sign in</li>
-                    <li onClick={handleDropdownAccount}>Create accoun</li>
+                    <li onClick={login}>Sign in</li>
+                    <li onClick={signUp}>Create accoun</li>
                     <li onClick={handleDropdownAccount}> <Link to="/MyAccount" aria-label="Go to my account setting page"> Manage your account</Link> </li>
                 </ul>
             )}
@@ -616,6 +629,10 @@ export default function Navbar() {
                 </ul>
             )}
         </div>
+        {logIN? <Login/> : ''}
+        {register? <Register/> :  ''}
+       
+        
     </header>
   )
 }
