@@ -3,6 +3,7 @@ import { Suspense, lazy } from 'react';
 import Layout from './Layout/Layout';
 import Loading from './Loading';
 import './App.css';
+const FAQ = lazy(() => import('./pages/FAQ/FAQ'));
 const RentCheapCar = lazy(() => import('./pages/RentCheapCar/RentCheapCar'));
 const RentLuxuryCar = lazy(() => import('./pages/RentLuxuryCar/RentLuxuryCar'));
 const RentSportCar = lazy(() => import('./pages/RentSportCar/RentSportCar'));
@@ -48,6 +49,7 @@ function App() {
         {path:'TermsAndCondition', element:<Suspense fallback={<Loading/>}> <TermsAndCondition/> </Suspense>},
         {path:'Privacy', element:<Suspense fallback={<Loading/>}> <Privacy/> </Suspense>},
         {path:'AboutUs', element:<Suspense fallback={<Loading/>}> <AboutUs/> </Suspense>},
+        {path:'FAQ', element:<Suspense fallback={<Loading/>}> <FAQ/> </Suspense>},
         {path:'RentLuxuryCar', element:<Suspense fallback={<Loading/>}> <RentLuxuryCar/> </Suspense>},
         {path:'RentSportCar', element:<Suspense fallback={<Loading/>}> <RentSportCar/> </Suspense>},
         {path:'RentCheapCar', element:<Suspense fallback={<Loading/>}> <RentCheapCar/> </Suspense>},
