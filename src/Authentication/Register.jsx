@@ -80,7 +80,7 @@ export default function Register({ toggleVisibility }) {
                 </div>
                 
                 <button disabled={!(formik.isValid && formik.dirty)} type="submit" className="text-uppercase">Sign up</button>
-                <p>By Continuing you agree to our <Link className=' badge'>terms & conditions</Link> and <Link className=' badge'>privacy</Link></p>
+                <p>By Continuing you agree to our <Link className=' badge' to="./TermsAndCondition" onClick={() => toggleVisibility()}>terms & conditions</Link> and <Link className=' badge' to="./Privacy" onClick={() => toggleVisibility()}>privacy</Link></p>
                 <div className=' d-flex flex-column'>
                 <span className='signFace my-2'>Sign up with Facebook <FaFacebookF/></span>
                  <span className='SignGoogle my-2'>Sign up with Google <FcGoogle/></span>

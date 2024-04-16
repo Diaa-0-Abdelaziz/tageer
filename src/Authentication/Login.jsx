@@ -4,7 +4,7 @@ import { FcGoogle } from "react-icons/fc";
 import { useFormik } from 'formik'
 import * as Yup from 'yup'
 import { IoCloseOutline } from 'react-icons/io5';
-export default function Login({ toggleVisibility }) {
+export default function Login({ toggleVisibility, forgotPASSWORD}) {
 
     let mySchema = Yup.object({
         email:Yup.string().email("email isn't valid").required('email is required'),
@@ -43,7 +43,7 @@ export default function Login({ toggleVisibility }) {
                 
                <div className=' d-flex flex-column align-items-center'>
                <button disabled={!(formik.isValid && formik.dirty)} type="submit" className="text-uppercase my-2">Sign in</button>
-                <span className="text-uppercase forgot my-2">forgot password</span>
+                <span className="text-uppercase forgot my-2" onClick={() => forgotPASSWORD()}>forgot password</span>
                </div>
                 <div className=' d-flex flex-column'>
                 <span className='signFace my-2'>Sign in with Facebook <FaFacebookF/></span>

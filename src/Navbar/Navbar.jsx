@@ -23,8 +23,14 @@ import"./navbar.css"
 import { Link } from 'react-router-dom'
 import Register from '../Authentication/Register'
 import Login from '../Authentication/Login'
+import ForgotPassword from '../Authentication/ForgotPassword'
+import EnterCode from '../Authentication/EnterCode'
+import ResetPassword from '../Authentication/ResetPassword'
 export default function Navbar() {
 
+  const [newPassword, setNewPassword] = useState(false)
+  const [writeCode, setWriteCode] = useState(false)
+  const [ForgetPassword, setForgetPassword] = useState(false)
   const [register, setRegister] = useState(false)
   const [logIN, setLogIN] = useState(false)
   const [open, setOpen] = useState(true)
@@ -371,6 +377,22 @@ export default function Navbar() {
     setAccount(!Account);
     setLogIN(true)
   };
+  function GoToLoginFunc (){
+    setLogIN(true)
+    setNewPassword(false)
+  }
+  function ForgetPasswordSetting (){
+    setForgetPassword(true)
+    setLogIN(false)
+  }
+  function writeNewPASSWORDSetting (){
+    setNewPassword(true)
+    setWriteCode(false)
+  }
+  function writeCodeSetting (){
+    setForgetPassword(false)
+    setWriteCode(true)
+  }
   const handleOptionClick1 = (option) => {
     setSelectedOption1(option);
       setIsOpen(false);
@@ -629,9 +651,11 @@ export default function Navbar() {
                 </ul>
             )}
         </div>
-        {logIN? <Login toggleVisibility={() => setLogIN(false)}/> : ''}
+        {logIN? <Login toggleVisibility={() => setLogIN(false)} forgotPASSWORD={ForgetPasswordSetting}/> : ''}
         {register? <Register toggleVisibility={() => setRegister(false)}/> :  ''}
-       
+        {ForgetPassword? <ForgotPassword toggleVisibility={() => setForgetPassword(false)} writeCode={writeCodeSetting}/> :  ''}
+         {writeCode? <EnterCode toggleVisibility={() => setWriteCode(false)} writeNewPASSWORD={writeNewPASSWORDSetting}/> : ''}
+         {newPassword? <ResetPassword toggleVisibility={() => setNewPassword(false)} GoToLogin={GoToLoginFunc}/> : ''}
         
     </header>
   )
