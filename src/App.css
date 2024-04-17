@@ -313,10 +313,6 @@
   transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .FILTER .card .contact ul li span {
-  font-size: 10px;
-  color: #3D1F50;
-}
-.FILTER .card .contact ul li span {
   font-size: 12px;
   font-weight: 600;
   color: #3D1F50;

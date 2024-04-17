@@ -3,12 +3,8 @@ import Slider from '@mui/material/Slider';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import img1 from "../../../../images/WhatsAppImage.png"
-import logo from "../../../../images/tajeer app icon@2x.png"
-import { GoDotFill } from 'react-icons/go';
-import { IoLogoWhatsapp } from 'react-icons/io';
-import { MdEmail } from 'react-icons/md';
-import { IoCallSharp } from 'react-icons/io5';
 import { Link } from 'react-router-dom';
+import SecondCards from '../../../../ImportantSlicesSharedComponents/SecondCards';
 export default function Filter() {
       // State for filter options
   const [search, setSearch] = useState('');
@@ -23,6 +19,7 @@ export default function Filter() {
   const [currentPage, setCurrentPage] = useState(1);
   const carsDetails=[
     {
+            car_title:"BMW X5 Convertible slider",
             car_Image: img1,
             Car_color: "white",
             Car_brand: "Mercedes",
@@ -37,10 +34,11 @@ export default function Filter() {
             price_of_Week:"350 AED",
             price_of_Month:"350 AED",
             whatsapp:12553355,
-    email:"info@mail.com",
-    call:1235566,
+            email:"info@mail.com",
+            call:1235566,
     },
     {
+      car_title:"BMW X5 Convertible slider",
             car_Image: img1,
             Car_color: "white",
             Car_brand: "Mercedes",
@@ -55,10 +53,12 @@ export default function Filter() {
             price_of_Week:"350 AED",
             price_of_Month:"350 AED",
             whatsapp:12553355,
-    email:"info@mail.com",
-    call:1235566,
+            email:"info@mail.com",
+            call:1235566,
+
     },
     {
+      car_title:"BMW X5 Convertible slider",
         car_Image: img1,
         Car_color: "white",
         Car_brand: "Mercedes",
@@ -73,10 +73,29 @@ export default function Filter() {
         price_of_Week:"350 AED",
         price_of_Month:"350 AED",
         whatsapp:12553355,
+        email:"info@mail.com",
+        call:1235566,
+},
+{
+  car_title:"BMW X5 Convertible slider",
+    car_Image: img1,
+    Car_color: "white",
+    Car_brand: "Mercedes",
+    Car_model: "C300",
+    Car_year: "2021",
+    Car_Type: "luxury ,Sport",
+    No_Of_Doors: "4 doors",
+    Engine: "5.0 V8",
+    Minimum_of_Days: "2 days",
+    Deposit: "2000 AED",
+    price_of_Day:"350 AED",
+    price_of_Week:"350 AED",
+    whatsapp:12553355,
     email:"info@mail.com",
     call:1235566,
 },
 {
+  car_title:"BMW X5 Convertible slider",
     car_Image: img1,
     Car_color: "white",
     Car_brand: "Mercedes",
@@ -95,6 +114,7 @@ export default function Filter() {
     call:1235566,
 },
 {
+  car_title:"BMW X5 Convertible slider",
     car_Image: img1,
     Car_color: "white",
     Car_brand: "Mercedes",
@@ -113,6 +133,7 @@ export default function Filter() {
     call:1235566,
 },
 {
+  car_title:"BMW X5 Convertible slider",
     car_Image: img1,
     Car_color: "white",
     Car_brand: "Mercedes",
@@ -131,6 +152,7 @@ export default function Filter() {
     call:1235566,
 },
 {
+  car_title:"BMW X5 Convertible slider",
     car_Image: img1,
     Car_color: "white",
     Car_brand: "Mercedes",
@@ -149,6 +171,7 @@ export default function Filter() {
     call:1235566,
 },
 {
+  car_title:"BMW X5 Convertible slider",
     car_Image: img1,
     Car_color: "white",
     Car_brand: "Mercedes",
@@ -167,6 +190,7 @@ export default function Filter() {
     call:1235566,
 },
 {
+  car_title:"BMW X5 Convertible slider",
     car_Image: img1,
     Car_color: "white",
     Car_brand: "Mercedes",
@@ -185,6 +209,7 @@ export default function Filter() {
     call:1235566,
 },
 {
+  car_title:"BMW X5 Convertible slider",
     car_Image: img1,
     Car_color: "white",
     Car_brand: "Mercedes",
@@ -203,6 +228,7 @@ export default function Filter() {
     call:1235566,
 },
 {
+  car_title:"BMW X5 Convertible slider",
     car_Image: img1,
     Car_color: "white",
     Car_brand: "Mercedes",
@@ -221,24 +247,7 @@ export default function Filter() {
     call:1235566,
 },
 {
-    car_Image: img1,
-    Car_color: "white",
-    Car_brand: "Mercedes",
-    Car_model: "C300",
-    Car_year: "2021",
-    Car_Type: "luxury ,Sport",
-    No_Of_Doors: "4 doors",
-    Engine: "5.0 V8",
-    Minimum_of_Days: "2 days",
-    Deposit: "2000 AED",
-    price_of_Day:"350 AED",
-    price_of_Week:"350 AED",
-    price_of_Month:"350 AED",
-    whatsapp:12553355,
-    email:"info@mail.com",
-    call:1235566,
-},
-{
+  car_title:"BMW X5 Convertible slider",
     car_Image: img1,
     Car_color: "white",
     Car_brand: "Mercedes",
@@ -424,99 +433,26 @@ export default function Filter() {
 <div className="col-md-9 carts">
 {visibleProducts.map((carDetail, index)=>
   <Link key={index} to={`./` + index} className=' text-decoration-none' aria-label="Go to rent car details page">
-  <div  className="card">
-  <div className="row">
-    <div className="col-lg-5 position-relative">
-      <img src={carDetail.car_Image} className="h-100 w-100" alt={carDetail.car_Image}/>
-      
-      <div className="options d-flex  justify-content-around flex-wrap links position-absolute top-0 start-0 w-100 mt-3">
-          <ul className=' list-unstyled d-flex justify-content-between'>
-            <li className='badge  Featured'>Featured</li>
-            <li className='badge  Premium'>Premium</li>
-            <li className='badge  Verified'>Verified</li>
-          </ul>
-          <p className='badge Save_to_wishlist text-dark'>Save to wishlist</p>
-          </div>
-   
-    </div>
-    <div className="col-lg-7">
-      <div className="card-body">
-       
-      <h2>BMW X5 Convertible slider </h2>
-      <div className="feature_details d-flex justify-content-start align-items-center">
-           <ul>
-            <li><GoDotFill/> Car color: {carDetail.Car_color}</li>
-            <li><GoDotFill/> Car brand: {carDetail.Car_brand}</li>
-            <li><GoDotFill/> Car model: {carDetail.Car_model}</li>
-            <li><GoDotFill/> Car year: {carDetail.Car_year}</li>
-            <li><GoDotFill/> Car Type: {carDetail.Car_Type}</li>
-           </ul>
-           <ul>
-            <li><GoDotFill/> No. Of Doors: {carDetail.No_Of_Doors}</li>
-            <li><GoDotFill/> Engine:  {carDetail.Engine}</li>
-            <li><GoDotFill/> Minimum of Days: {carDetail.Minimum_of_Days}</li>
-            <li><GoDotFill/> Deposit:  {carDetail.Deposit}</li>
-           </ul>
-           <ul className='pricing'>
-            <li>
-                <span>Day</span>
-                <span>{carDetail.price_of_Day}</span>
-            </li>
-            <li>
-                <span>Week</span>
-                <span>{carDetail.price_of_Week}</span>
-            </li>
-            <li>
-              <span>Month</span>
-                <span>{carDetail.price_of_Month}</span>
-            </li>
-           </ul>
-           </div>
-           <div className="contact">
-              <ul className='list-unstyled d-flex justify-content-around'>
-                  <li>
-                      <i onClick={() => window.open(`https://wa.me/${carDetail.whatsapp}`)}>
-                          <div className="ex-categor d-flex flex-column">
-                              <span onClick={() => window.open(`https://wa.me/${carDetail.whatsapp}`)}>
-                                  {carDetail.whatsapp}
-                              </span>
-                          </div>
-                          <IoLogoWhatsapp />
-                      </i>
-                      <span>WHATSAPP</span>
-                  </li>
-                  <li>
-                      <i onClick={() => window.open(`mailto:${carDetail.email}`)}>
-                          <div className="ex-categor d-flex flex-column">
-                              <span onClick={() => window.open(`mailto:${carDetail.email}`)}>
-                                  {carDetail.email}
-                              </span>
-                          </div>
-                          <MdEmail/>
-                      </i>
-                      <span>EMAIL</span>
-                  </li>
-                  <li>
-                      <i onClick={() => window.open(`tel:+${carDetail.call}`)}>
-                          <div className="ex-categor d-flex flex-column">
-                              <span onClick={() => window.open(`tel:+${carDetail.call}`)}>
-                                  {carDetail.call}
-                              </span>
-                          </div>
-                          <IoCallSharp/>
-                      </i>
-                      <span>CALL</span>
-                  </li>
-                  <li className='imgLogo'>
-                  <img src={logo} alt={logo}/>
-                  </li>
-              </ul>
-          </div>
-      </div>
-    </div>
-  </div>
-
-</div>
+  <SecondCards
+  Productindex={carDetail.index}
+  productImage={carDetail.car_Image}
+  ProductDoors={carDetail.No_Of_Doors}
+  ProductEngine={carDetail.Engine}
+  ProductPriceOfDay={carDetail.price_of_Day}
+  ProductPriceOfMonth={carDetail.price_of_Month}
+  ProductPriceOfWeek={carDetail.price_of_Week}
+  ProductDeposit={carDetail.Deposit}
+  ProductMinimumOfDays={carDetail.Minimum_of_Days}
+  ProductColor={carDetail.Car_color}
+  ProductBrand={carDetail.Car_brand}
+  ProductModel={carDetail.Car_model}
+  ProductYear={carDetail.Car_year}
+  ProductType={carDetail.Car_Type}
+  productTitle={carDetail.car_title}
+  ownerWhatsapp={carDetail.whatsapp}
+  ownerEmail={carDetail.email}
+  ownerCall={carDetail.call}
+  />
 </Link>
   )}
   <nav aria-label="Page navigation example">

@@ -1,5 +1,8 @@
 $forth:#3D1F50;
 $fifth:#E6F6FF;
+$second:#000000;
+$third:#000000;
+$main:#000000;
 .content
 {
     .list-group
@@ -85,6 +88,27 @@ $fifth:#E6F6FF;
         {
             object-fit: cover
         }
+        .Featured
+        {
+            background-color: $main;
+            margin-left: 5px;
+        }
+        .Premium
+        {
+            background-color: $second;
+            margin-left: 5px;
+        }
+        .Verified
+        {
+            background-color: $third;
+            margin-left: 5px;
+        }
+        .Save_to_wishlist
+        {
+            background-color: $fifth;
+            font-weight: 600;
+            margin-right: 5px;
+        }
     }
         .feature_details
         {
@@ -129,6 +153,8 @@ $fifth:#E6F6FF;
                     background-color: $fifth;
                     color: $forth;
                     // padding: 5px;
+                    position: relative;
+                    cursor: pointer;
                     margin-right: 5px;
                     width: 40px;
                     height: 40px;
@@ -136,7 +162,43 @@ $fifth:#E6F6FF;
                    justify-content: center;
                    align-items: center;
                    border-radius: 50%;
+                   .ex-categor
+                   {
+                    position: absolute;
+                    padding: 2px 20px;
+                    background: #ffffff;
+                    border-radius: 20px;
+                    opacity: 0;
+                    top: -20px;
+                    box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.2);
+                    transition: all .2s;
+                    a 
+                    {
+                        margin: 5px 0;
+                        font-size: 10px;
+                        font-weight: 700;
+                        color: $forth;
+                        text-decoration: none;
+                    }
+                   }
+                   .ex-categor::before
+                    {
+                        content: '';
+                        position: absolute;
+                        width: 10px;
+                        height: 10px;
+                        transform: translateX(-50%) rotate(45deg);
+                        background-color: #ffffff;
+                        bottom: -5px;
+                        left: 50%;
+                    }
                 }
+                i:hover .ex-categor
+                    {
+                        opacity: 1;
+                        top: -30px;
+                        transition: .5s cubic-bezier(0.68,-0.55,0.265,1.55);
+                    }
                 span 
                 {
                     font-size: 12px;

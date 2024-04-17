@@ -1,18 +1,15 @@
 import React from 'react'
 import { FaUserCircle } from "react-icons/fa";
 import img1 from "../../../../images/WhatsAppImage.png"
-import logo from "../../../../images/tajeer app icon@2x.png"
 import TAJEER_LOGO from "../../../../images/TAJEER LOGO.png"
 import "./content.css"
-import { GoDotFill } from "react-icons/go";
-import { IoLogoWhatsapp } from "react-icons/io";
-import { MdEmail } from "react-icons/md";
-import { IoCallSharp } from "react-icons/io5";
 import { Link } from 'react-router-dom';
+import SecondCards from '../../../../ImportantSlicesSharedComponents/SecondCards';
 export default function Content() {
 
-   const carsDetails=[
+  const carsDetails=[
     {
+            car_title:"BMW X5 Convertible slider",
             car_Image: img1,
             Car_color: "white",
             Car_brand: "Mercedes",
@@ -26,8 +23,12 @@ export default function Content() {
             price_of_Day:"350 AED",
             price_of_Week:"350 AED",
             price_of_Month:"350 AED",
+            whatsapp:12553355,
+            email:"info@mail.com",
+            call:1235566,
     },
     {
+      car_title:"BMW X5 Convertible slider",
             car_Image: img1,
             Car_color: "white",
             Car_brand: "Mercedes",
@@ -41,7 +42,12 @@ export default function Content() {
             price_of_Day:"350 AED",
             price_of_Week:"350 AED",
             price_of_Month:"350 AED",
-    },
+            whatsapp:12553355,
+            email:"info@mail.com",
+            call:1235566,
+
+    }
+
    ]
 
 
@@ -117,58 +123,27 @@ export default function Content() {
   
   {carsDetails.map((carDetail, index)=>
   
-  <div key={index} className="card">
-  <div className="row g-0">
-    <div className="col-md-4">
-      <img src={carDetail.car_Image} className="img-fluid rounded-start w-100 h-100" alt={carDetail.car_Image}/>
-    </div>
-    <div className="col-md-8">
-      <div className="card-body">
-       
-      <h2>BMW X5 Convertible slider </h2>
-      <div className="feature_details d-flex justify-content-start align-items-center">
-           <ul>
-            <li><GoDotFill/> Car color: {carDetail.Car_color}</li>
-            <li><GoDotFill/> Car brand: {carDetail.Car_brand}</li>
-            <li><GoDotFill/> Car model: {carDetail.Car_model}</li>
-            <li><GoDotFill/> Car year: {carDetail.Car_year}</li>
-            <li><GoDotFill/> Car Type: {carDetail.Car_Type}</li>
-           </ul>
-           <ul>
-            <li><GoDotFill/> No. Of Doors: {carDetail.No_Of_Doors}</li>
-            <li><GoDotFill/> Engine:  {carDetail.Engine}</li>
-            <li><GoDotFill/> Minimum of Days: {carDetail.Minimum_of_Days}</li>
-            <li><GoDotFill/> Deposit:  {carDetail.Deposit}</li>
-           </ul>
-           <ul className='pricing'>
-            <li>
-                <span>Day</span>
-                <span>{carDetail.price_of_Day}</span>
-            </li>
-            <li>
-                <span>Week</span>
-                <span>{carDetail.price_of_Week}</span>
-            </li>
-            <li>
-              <span>Month</span>
-                <span>{carDetail.price_of_Month}</span>
-            </li>
-           </ul>
-           </div>
-           <div className="contact ">
-            <ul className=' list-unstyled d-flex justify-content-around'>
-                <li><i><IoLogoWhatsapp/></i><span>WHATSAPP</span></li>
-                <li><i><MdEmail/></i><span>EMAIL</span></li>
-                <li><i><IoCallSharp/></i><span>CALL</span></li>
-                <li className='imgLogo'>
-             <img src={logo} alt={logo} />
-            </li>
-            </ul>
-          </div>
-      </div>
-    </div>
-  </div>
-</div>
+  <SecondCards
+  key={index}
+  Productindex={carDetail.index}
+  productImage={carDetail.car_Image}
+  ProductDoors={carDetail.No_Of_Doors}
+  ProductEngine={carDetail.Engine}
+  ProductPriceOfDay={carDetail.price_of_Day}
+  ProductPriceOfMonth={carDetail.price_of_Month}
+  ProductPriceOfWeek={carDetail.price_of_Week}
+  ProductDeposit={carDetail.Deposit}
+  ProductMinimumOfDays={carDetail.Minimum_of_Days}
+  ProductColor={carDetail.Car_color}
+  ProductBrand={carDetail.Car_brand}
+  ProductModel={carDetail.Car_model}
+  ProductYear={carDetail.Car_year}
+  ProductType={carDetail.Car_Type}
+  productTitle={carDetail.car_title}
+  ownerWhatsapp={carDetail.whatsapp}
+  ownerEmail={carDetail.email}
+  ownerCall={carDetail.call}
+  />
   )}
   </div>
 
@@ -196,58 +171,28 @@ export default function Content() {
   <div className="tab-pane fade" id="pills-ali" role="tabpanel" aria-labelledby="pills-ali-tab">
   {carsDetails.map((carDetail, index)=>
   
-  <div key={index} className="card">
-  <div className="row g-0">
-    <div className="col-md-4">
-      <img src={carDetail.car_Image} className="img-fluid rounded-start w-100 h-100" alt={carDetail.car_Image}/>
-    </div>
-    <div className="col-md-8">
-      <div className="card-body">
-       
-      <h2>BMW X5 Convertible slider </h2>
-      <div className="feature_details d-flex justify-content-start align-items-center">
-           <ul>
-            <li><GoDotFill/> Car color: {carDetail.Car_color}</li>
-            <li><GoDotFill/> Car brand: {carDetail.Car_brand}</li>
-            <li><GoDotFill/> Car model: {carDetail.Car_model}</li>
-            <li><GoDotFill/> Car year: {carDetail.Car_year}</li>
-            <li><GoDotFill/> Car Type: {carDetail.Car_Type}</li>
-           </ul>
-           <ul>
-            <li><GoDotFill/> No. Of Doors: {carDetail.No_Of_Doors}</li>
-            <li><GoDotFill/> Engine:  {carDetail.Engine}</li>
-            <li><GoDotFill/> Minimum of Days: {carDetail.Minimum_of_Days}</li>
-            <li><GoDotFill/> Deposit:  {carDetail.Deposit}</li>
-           </ul>
-           <ul className='pricing'>
-            <li>
-                <span>Day</span>
-                <span>{carDetail.price_of_Day}</span>
-            </li>
-            <li>
-                <span>Week</span>
-                <span>{carDetail.price_of_Week}</span>
-            </li>
-            <li>
-              <span>Month</span>
-                <span>{carDetail.price_of_Month}</span>
-            </li>
-           </ul>
-           </div>
-           <div className="contact ">
-            <ul className=' list-unstyled d-flex justify-content-around'>
-                <li><i><IoLogoWhatsapp/></i><span>WHATSAPP</span></li>
-                <li><i><MdEmail/></i><span>EMAIL</span></li>
-                <li><i><IoCallSharp/></i><span>CALL</span></li>
-                <li className='imgLogo'>
-             <img src={logo} alt={logo} />
-            </li>
-            </ul>
-          </div>
-      </div>
-    </div>
-  </div>
-</div>
+   
+  <SecondCards
+  key={index}
+  Productindex={carDetail.index}
+  productImage={carDetail.car_Image}
+  ProductDoors={carDetail.No_Of_Doors}
+  ProductEngine={carDetail.Engine}
+  ProductPriceOfDay={carDetail.price_of_Day}
+  ProductPriceOfMonth={carDetail.price_of_Month}
+  ProductPriceOfWeek={carDetail.price_of_Week}
+  ProductDeposit={carDetail.Deposit}
+  ProductMinimumOfDays={carDetail.Minimum_of_Days}
+  ProductColor={carDetail.Car_color}
+  ProductBrand={carDetail.Car_brand}
+  ProductModel={carDetail.Car_model}
+  ProductYear={carDetail.Car_year}
+  ProductType={carDetail.Car_Type}
+  productTitle={carDetail.car_title}
+  ownerWhatsapp={carDetail.whatsapp}
+  ownerEmail={carDetail.email}
+  ownerCall={carDetail.call}
+  />
   )}
   </div>
 </div>
