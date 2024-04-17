@@ -35,22 +35,22 @@ export default function Navbar() {
   const [logIN, setLogIN] = useState(false)
   const [open, setOpen] = useState(true)
   const [openSetting, setOpenSetting] = useState(true)
-  const [isOpen, setIsOpen] = useState(false);
-  const [isOpen2, setIsOpen2] = useState(false);
-  const [isOpen3, setIsOpen3] = useState(false);
-  const [isOpen4, setIsOpen4] = useState(false);
-  const [isOpen5, setIsOpen5] = useState(false);
-  const [isOpen6, setIsOpen6] = useState(false);
-  const [isOpen7, setIsOpen7] = useState(false);
+  const [selectCountry, setSelectCountry] = useState(false);
+  const [selectCity, setSelectCity] = useState(false);
+  const [selectCurrency, setSelectCurrency] = useState(false);
+  const [selectLanguage, setSelectLanguage] = useState(false);
+  const [dropRentCar, setDropRentCar] = useState(false);
+  const [quickLinks, setQuickLinks] = useState(false);
+  const [carBrand, setCarBrand] = useState(false);
   const [Account, setAccount] = useState(false);
-  const [selectedOption1, setSelectedOption1] = useState("United Arab Emirates");
-  const [selectedOption2, setSelectedOption2] = useState("Abu Dhabi");
-  const [selectedOption3, setSelectedOption3] = useState("AED");
-  const [selectedOption4, setSelectedOption4] = useState("العربية");
-  const options1 = ['United Arab Emirates', 'Saudi Arabia', 'Kuwait','Qatar'];
-  const options2 = ['dubai', 'Abu Dhabi', 'Al Ain','Sharjah'];
-  const options3 = ['AED', 'SAR', 'USD','EUR'];
-  const options4 = ['English', 'العربية', 'русский','中国人'];
+  const [selectedCountryOption, setSelectedCountryOption] = useState("United Arab Emirates");
+  const [selectedCityOption, setSelectedCityOption] = useState("Abu Dhabi");
+  const [selectedCurrencyOption, setSelectedCurrencyOption] = useState("AED");
+  const [selectedLanguageOption, setSelectedLanguageOption] = useState("العربية");
+  const CountriesOptions = ['United Arab Emirates', 'Saudi Arabia', 'Kuwait','Qatar'];
+  const CitiesOptions = ['dubai', 'Abu Dhabi', 'Al Ain','Sharjah'];
+  const CurrenciesOptions = ['AED', 'SAR', 'USD','EUR'];
+  const LanguagesOptions = ['English', 'العربية', 'русский','中国人'];
 
 
   useEffect(() => {
@@ -67,14 +67,14 @@ export default function Navbar() {
   const handleBodyClick = (event) => {
     // Check if the clicked element or any of its ancestors has class "elected-option"
     if (!event.target.closest('.selected-option')) {
-      setIsOpen(false);
-      setIsOpen2(false);
-      setIsOpen3(false);
-      setIsOpen4(false);
+      setSelectCountry(false);
+      setSelectCity(false);
+      setSelectCurrency(false);
+      setSelectLanguage(false);
       setAccount(false);
-      setIsOpen5(false);
-      setIsOpen6(false);
-      setIsOpen7(false);
+      setDropRentCar(false);
+      setQuickLinks(false);
+      setCarBrand(false);
     }
   };
   
@@ -281,87 +281,87 @@ export default function Navbar() {
                     },
 
                   ];
-  const toggleOptions = () => {
-      setIsOpen(!isOpen);
-      setIsOpen2(false);
-      setIsOpen3(false);
-      setIsOpen4(false);
+  const toggleCountriesOptions = () => {
+      setSelectCountry(!selectCountry);
+      setSelectCity(false);
+      setSelectCurrency(false);
+      setSelectLanguage(false);
       setAccount(false);
-      setIsOpen5(false);
-      setIsOpen6(false);
-      setIsOpen7(false);
+      setDropRentCar(false);
+      setQuickLinks(false);
+      setCarBrand(false);
   };
-  const toggleOptions2 = () => {
-      setIsOpen2(!isOpen2);
-      setIsOpen(false);
-      setIsOpen3(false);
-      setIsOpen4(false);
+  const toggleCitiesOptions = () => {
+      setSelectCity(!selectCity);
+      setSelectCountry(false);
+      setSelectCurrency(false);
+      setSelectLanguage(false);
       setAccount(false);
-      setIsOpen5(false);
-      setIsOpen6(false);
-      setIsOpen7(false);
+      setDropRentCar(false);
+      setQuickLinks(false);
+      setCarBrand(false);
   };
-  const toggleOptions3 = () => {
-      setIsOpen3(!isOpen3);
-      setIsOpen2(false);
-      setIsOpen(false);
-      setIsOpen4(false);
+  const toggleCurrenciesOptions = () => {
+      setSelectCurrency(!selectCurrency);
+      setSelectCity(false);
+      setSelectCountry(false);
+      setSelectLanguage(false);
       setAccount(false);
-      setIsOpen5(false);
-      setIsOpen6(false);
-      setIsOpen7(false);
+      setDropRentCar(false);
+      setQuickLinks(false);
+      setCarBrand(false);
   };
-  const toggleOptions4 = () => {
-      setIsOpen4(!isOpen4);
-      setIsOpen2(false);
-      setIsOpen3(false);
-      setIsOpen(false);
+  const toggleLanguagesOptions = () => {
+      setSelectLanguage(!selectLanguage);
+      setSelectCity(false);
+      setSelectCurrency(false);
+      setSelectCountry(false);
       setAccount(false);
-      setIsOpen5(false);
-      setIsOpen6(false);
-      setIsOpen7(false);
+      setDropRentCar(false);
+      setQuickLinks(false);
+      setCarBrand(false);
   };
   const toggleOptions5 = () => {
-      setIsOpen5(!isOpen5);
-      setIsOpen4(false);
-      setIsOpen2(false);
-      setIsOpen3(false);
-      setIsOpen(false);
+      setDropRentCar(!dropRentCar);
+      setSelectLanguage(false);
+      setSelectCity(false);
+      setSelectCurrency(false);
+      setSelectCountry(false);
       setAccount(false);
-      setIsOpen6(false);
-      setIsOpen7(false);
+      setQuickLinks(false);
+      setCarBrand(false);
   };
   const toggleOptions6 = () => {
-      setIsOpen6(!isOpen6);
-      setIsOpen5(false);
-      setIsOpen4(false);
-      setIsOpen2(false);
-      setIsOpen3(false);
-      setIsOpen(false);
+      setQuickLinks(!quickLinks);
+      setDropRentCar(false);
+      setSelectLanguage(false);
+      setSelectCity(false);
+      setSelectCurrency(false);
+      setSelectCountry(false);
       setAccount(false);
-      setIsOpen7(false);
+      setCarBrand(false);
   };
   const toggleOptions7 = () => {
-    setIsOpen7(!isOpen7)
-      setIsOpen6(false);
-      setIsOpen5(false);
-      setIsOpen4(false);
-      setIsOpen2(false);
-      setIsOpen3(false);
-      setIsOpen(false);
+    setCarBrand(!carBrand)
+      setQuickLinks(false);
+      setDropRentCar(false);
+      setSelectLanguage(false);
+      setSelectCity(false);
+      setSelectCurrency(false);
+      setSelectCountry(false);
       setAccount(false);
   };
 
 
   const toggleDropdownAccount = () => {
     setAccount(!Account);
-    setIsOpen4(false);
-    setIsOpen7(false);
-      setIsOpen2(false);
-      setIsOpen3(false);
-      setIsOpen(false);
-      setIsOpen5(false);
-      setIsOpen6(false)
+    setSelectLanguage(false);
+    setCarBrand(false);
+      setSelectCity(false);
+      setSelectCurrency(false);
+      setSelectCountry(false);
+      setDropRentCar(false);
+      setQuickLinks(false)
   };
 
 
@@ -394,29 +394,29 @@ export default function Navbar() {
     setWriteCode(true)
   }
   const handleOptionClick1 = (option) => {
-    setSelectedOption1(option);
-      setIsOpen(false);
+    setSelectedCountryOption(option);
+      setSelectCountry(false);
   };
   const handleOptionClick2 = (option) => {
-    setSelectedOption2(option);
-      setIsOpen2(false);
+    setSelectedCityOption(option);
+      setSelectCity(false);
   };
   const handleOptionClick3 = (option) => {
-    setSelectedOption3(option);
-      setIsOpen3(false);
+    setSelectedCurrencyOption(option);
+      setSelectCurrency(false);
   };
   const handleOptionClick4 = (option) => {
-    setSelectedOption4(option);
-      setIsOpen4(false);
+    setSelectedLanguageOption(option);
+      setSelectLanguage(false);
   };
   const handleOptionClick5 = (option) => {
-      setIsOpen5(false);
+      setDropRentCar(false);
   };
   const handleOptionClick6 = (option) => {
-      setIsOpen6(false);
+      setQuickLinks(false);
   };
   const handleOptionClick7 = (option) => {
-      setIsOpen7(false);
+      setCarBrand(false);
   };
 
   function openNavList(){
@@ -446,13 +446,13 @@ export default function Navbar() {
                 <li className=' text-capitalize'>country</li>
                 <li>
                 <div className="custom-select">
-            <div className="selected-option badge fw-light" onClick={toggleOptions}>
-                {selectedOption1}
-                {isOpen? <IoIosArrowUp/> : <FaAngleDown/>}
+            <div className="selected-option badge fw-light" onClick={toggleCountriesOptions}>
+                {selectedCountryOption}
+                {selectCountry? <IoIosArrowUp/> : <FaAngleDown/>}
             </div>
-            {isOpen && (
+            {selectCountry && (
                 <ul className="options">
-                    {options1.map((option, index) => (
+                    {CountriesOptions.map((option, index) => (
                         <li key={index} onClick={() => handleOptionClick1(option)}>
                             {option}
                         </li>
@@ -467,13 +467,13 @@ export default function Navbar() {
               <li className='fs-13 text-capitalize'>city</li>
               <li>
               <div className="custom-select">
-            <div className="selected-option opt2 badge fw-light" onClick={toggleOptions2}>
-                {selectedOption2}
-                {isOpen2? <IoIosArrowUp/> : <FaAngleDown/>}
+            <div className="selected-option opt2 badge fw-light" onClick={toggleCitiesOptions}>
+                {selectedCityOption}
+                {selectCity? <IoIosArrowUp/> : <FaAngleDown/>}
             </div>
-            {isOpen2 && (
+            {selectCity && (
                 <ul className="options">
-                    {options2.map((option, index) => (
+                    {CitiesOptions.map((option, index) => (
                         <li key={index} onClick={() => handleOptionClick2(option)}>
                             {option}
                         </li>
@@ -488,13 +488,13 @@ export default function Navbar() {
                 <li className='fs-13 text-capitalize badge p-0'>currency</li>
                 <li>
                 <div className="custom-select">
-            <div className="selected-option opt3" onClick={toggleOptions3}>
-                {selectedOption3}
-                {isOpen3? <IoIosArrowUp/> : <FaAngleDown/>}
+            <div className="selected-option opt3" onClick={toggleCurrenciesOptions}>
+                {selectedCurrencyOption}
+                {selectCurrency? <IoIosArrowUp/> : <FaAngleDown/>}
             </div>
-            {isOpen3 && (
+            {selectCurrency && (
                 <ul className="options">
-                    {options3.map((option, index) => (
+                    {CurrenciesOptions.map((option, index) => (
                         <li key={index} onClick={() => handleOptionClick3(option)}>
                             {option}
                         </li>
@@ -511,13 +511,13 @@ export default function Navbar() {
                   <img src={img_united_arab_emirates} alt={img_united_arab_emirates} className=' w-25' loading='lazy' />
                 
                   <div className="custom-select">
-            <div className="selected-option opt4" onClick={toggleOptions4}>
-                {selectedOption4}
-                {isOpen4? <IoIosArrowUp/> : <FaAngleDown/>}
+            <div className="selected-option opt4" onClick={toggleLanguagesOptions}>
+                {selectedLanguageOption}
+                {selectLanguage? <IoIosArrowUp/> : <FaAngleDown/>}
             </div>
-            {isOpen4 && (
+            {selectLanguage && (
                 <ul className="options">
-                    {options4.map((option, index) => (
+                    {LanguagesOptions.map((option, index) => (
                         <li key={index} onClick={() => handleOptionClick4(option)}>
                             {option}
                         </li>
@@ -565,7 +565,7 @@ export default function Navbar() {
                  
               <div className="custom-select">
             <div className="selected-option opt2" onClick={toggleOptions7}>
-            {isOpen7? <IoIosArrowUp className='arrow' /> : <FaAngleDown className='arrow' />}
+            {carBrand? <IoIosArrowUp className='arrow' /> : <FaAngleDown className='arrow' />}
             <span className='header'>Car brands</span>
             </div>
            
@@ -575,10 +575,10 @@ export default function Navbar() {
 
               <div className="custom-select">
             <div className="selected-option opt2" onClick={toggleOptions5}>
-            {isOpen5? <IoIosArrowUp className='arrow' /> : <FaAngleDown className='arrow' />}
+            {dropRentCar? <IoIosArrowUp className='arrow' /> : <FaAngleDown className='arrow' />}
             <span className='header'>Rent a car</span>
             </div>
-            {isOpen5 && (
+            {dropRentCar && (
                 <ul className="options">
                     {RentACar.map((option, index) => (
                         <li key={index} onClick={() => handleOptionClick5(option)}>
@@ -602,10 +602,10 @@ export default function Navbar() {
 
               <div className="custom-select">
             <div className="selected-option opt2" onClick={toggleOptions6}>
-            {isOpen6? <IoIosArrowUp className='arrow' /> : <FaAngleDown className='arrow' />}
+            {quickLinks? <IoIosArrowUp className='arrow' /> : <FaAngleDown className='arrow' />}
             <span className='header'>Quick links</span>
             </div>
-            {isOpen6 && (
+            {quickLinks && (
                 <ul className="options">
                     {QuickLinks.map((option, index) => (
                         <li key={index} onClick={() => handleOptionClick6(option)}>
@@ -638,7 +638,7 @@ export default function Navbar() {
             </div>
           </div> 
 
-          {isOpen7 && (
+          {carBrand && (
                 <ul className="Brand_Options">
                     {carBrands.map((option, index) => (
                         <li key={index} onClick={() => handleOptionClick7(option)}>
