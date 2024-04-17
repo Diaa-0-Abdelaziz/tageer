@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaPlus } from "react-icons/fa";
 import { FiMinus } from "react-icons/fi";
-
+import "../../../Home/component/FAQ/FAQ.css"
 export default function FAQ() {
     const [toggleState, setToggleState] = useState({});
     const faqData = [

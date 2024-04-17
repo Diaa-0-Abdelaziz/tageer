@@ -423,7 +423,7 @@ export default function Filter() {
 </div>
 <div className="col-md-9 carts">
 {visibleProducts.map((carDetail, index)=>
-  <Link key={index} to={`/CarDetails/` + index} className=' text-decoration-none' aria-label="Go to rent car details page">
+  <Link key={index} to={`./` + index} className=' text-decoration-none' aria-label="Go to rent car details page">
   <div  className="card">
   <div className="row">
     <div className="col-lg-5 position-relative">
