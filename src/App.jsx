@@ -3,6 +3,7 @@ import { Suspense, lazy } from 'react';
 import Layout from './Layout/Layout';
 import Loading from './Loading';
 import './App.css';
+const Notfound = lazy(() => import('./Notfound/Notfound'));
 const FAQ = lazy(() => import('./pages/FAQ/FAQ'));
 const RentCheapCar = lazy(() => import('./pages/RentCheapCar/RentCheapCar'));
 const RentLuxuryCar = lazy(() => import('./pages/RentLuxuryCar/RentLuxuryCar'));
@@ -59,6 +60,7 @@ function App() {
         {path:'rentCarWithDriver', element:<Suspense fallback={<Loading/>}> <RentCarWithDrivers/> </Suspense>},
         {path:'rentCarWithDriver/:id', element:<Suspense fallback={<Loading/>}> <RentCarWithDriverDetails/> </Suspense>},
         {path:'CarList/:id', element:<Suspense fallback={<Loading/>}> <CarDetails/> </Suspense>},
+        {path:'*', element:<Suspense fallback={<Loading/>}> <Notfound/> </Suspense>},
         // {path:'*', element:<Notfound/>}
       ]
     }

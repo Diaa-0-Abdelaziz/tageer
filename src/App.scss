@@ -974,3 +974,26 @@ img
     }
 }
 }
+.notfound
+{
+    img 
+    {
+        width: 70%;
+    }
+    p 
+    {
+        letter-spacing: 5px;
+        font-size: 20px;
+        font-weight: 600;
+        color: $forth;
+    }
+    a 
+    {
+        background-color: $forth;
+        color: white;
+        text-decoration: none;
+        padding: 5px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
