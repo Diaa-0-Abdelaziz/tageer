@@ -2,18 +2,21 @@
 {
 .form
 {
+    // sits above the carousels further down the page, below the navbar (9999+)
+    z-index: 500;
+
     .View_all_cars_btn
     {
-        background-color: #3a1b50bf;
+        background-color: #17233Ebf;
         border-radius: 20px 0px 0px 20px;
         padding: 7px 10px;
         display: flex;
         align-items: center;
         justify-content: center;
-        i 
+        i
         {
             cursor: pointer;
-            color: #3a1b50;
+            color: #17233E;
             background-color: #E6F6FF;
             border-radius: 50%;
             width: 30px;
@@ -48,16 +51,16 @@
             padding: 0 50px;
             .View_all_cars_btn
             {
-                background-color: #3a1b50bf;
+                background-color: #17233Ebf;
                 border-radius: 20px 0px 0px 20px;
                 padding: 0;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                i 
+                i
                 {
                     cursor: pointer;
-                    color: #3a1b50;
+                    color: #17233E;
                     background-color: #E6F6FF;
                     border-radius: 50%;
                     width: 25px;
@@ -85,4 +88,84 @@
             
         }
 }
+}
+// ---- search suggestions dropdown ----
+.main_content .form .search_form {
+  .search_results {
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    right: 0;
+    z-index: 501;
+    margin: 0;
+    padding: 6px;
+    max-height: 340px;
+    overflow-y: auto;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+    text-align: left;
+
+    li button {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      padding: 8px 10px;
+      border: 0;
+      border-radius: 8px;
+      background: transparent;
+      text-align: left;
+
+      &:hover,
+      &:focus {
+        background-color: #E6F6FF;
+      }
+    }
+
+    img {
+      width: 60px;
+      height: 40px;
+      object-fit: cover;
+      border-radius: 6px;
+      flex-shrink: 0;
+    }
+
+    .search_name {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      color: #17233E;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.2;
+
+      small {
+        color: #6b6b6b;
+        font-size: 11px;
+        font-weight: 400;
+      }
+    }
+
+    .search_price {
+      color: #17233E;
+      font-size: 13px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .search_empty {
+      padding: 12px 10px;
+      color: #6b6b6b;
+      font-size: 13px;
+    }
+
+    .search_more button {
+      justify-content: center;
+      color: #17233E;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+  }
 }

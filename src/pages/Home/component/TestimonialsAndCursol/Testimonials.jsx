@@ -65,51 +65,51 @@ export default function Testimonials() {
       let products = [
         {
           id:1,
-          userName:"Mike taylor",
+          userName:"Mike Taylor",
           userLocation:"Lahore, Pakistan",
           userPicture:img1,
           img:google,
-          article:"“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no…read more"
+          article:"“Booking was quick and the SUV was delivered right to my hotel in under an hour. Smooth experience from start to finish.”"
         },
         {
           id:2,
-          userName:"Mike taylor",
-          userLocation:"Lahore, Pakistan",
+          userName:"Sara Ahmed",
+          userLocation:"Dubai, UAE",
           userPicture:img1,
           img:google,
-          article:"“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no…read more"
+          article:"“Great selection of luxury cars and fair prices. The team was responsive whenever I had questions about my rental.”"
         },
         {
           id:3,
-          userName:"Mike taylor",
-          userLocation:"Lahore, Pakistan",
+          userName:"James Carter",
+          userLocation:"London, UK",
           userPicture:img1,
           img:google,
-          article:"“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no…read more"
+          article:"“Rented a Range Rover for a week — spotless car, no hidden fees, and an easy return process. Highly recommend.”"
         },
         {
           id:4,
-          userName:"Mike taylor",
-          userLocation:"Lahore, Pakistan",
+          userName:"Fatima Al Suwaidi",
+          userLocation:"Abu Dhabi, UAE",
           userPicture:img1,
           img:google,
-          article:"“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no…read more"
+          article:"“I've used Tajeer three times now for business trips. Always reliable, always on time.”"
         },
         {
           id:5,
-          userName:"Mike taylor",
-          userLocation:"Lahore, Pakistan",
+          userName:"Daniel Kim",
+          userLocation:"Seoul, South Korea",
           userPicture:img1,
           img:google,
-          article:"“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no…read more"
+          article:"“Clear pricing and a huge variety of cars to choose from. Support helped me change my pickup time with no hassle.”"
         },
         {
           id:6,
-          userName:"Mike taylor",
-          userLocation:"Lahore, Pakistan",
+          userName:"Aisha Noor",
+          userLocation:"Sharjah, UAE",
           userPicture:img1,
           img:google,
-          article:"“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no…read more"
+          article:"“The car was exactly as pictured and the whole rental process took less than 10 minutes online.”"
         }
       ]
     
@@ -139,6 +139,7 @@ export default function Testimonials() {
           <span>{pro.article}</span>
           <div className="rating">
             <ul className='fs-2 justify-content-center d-flex list-unstyled'>
+                <li><IoStarSharp/></li>
                 <li><IoStarSharp/></li>
                 <li><IoStarSharp/></li>
                 <li><IoStarSharp/></li>

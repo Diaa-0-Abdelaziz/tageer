@@ -4,13 +4,13 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import { IoCallSharp } from "react-icons/io5";
 import { Link } from 'react-router-dom';
-import logo from "../images/img_artboard_2_169x246.png"
-export default function MainCardCursel({productId, productImage, productTitle, ownerWhatsapp, ownerEmail, ownerCall}) {
+import fallbackLogo from "../images/img_artboard_2_169x246.png"
+export default function MainCardCursel({productId, productImage, productTitle, ownerWhatsapp, ownerEmail, ownerCall, pricePerDay = 500, pricePerWeek = 3500, pricePerMonth = 10000, deposit = 2000, minDays = 2, supplier = "Tajeer rental partner", supplierLogo}) {
   return (
     <div className='p-2 content'>
     <div className='slider-pro overflow-hidden position-relative'>
   <Link  to={`/CarList/` + productId} className=' text-decoration-none text-black' aria-label="Go to rent car with driver details page">
-  <img src={productImage} alt={productImage} className='w-100' />
+  <img src={productImage} alt={`${productTitle} for rent in Dubai`} width="600" height="400" className='w-100 card-media' loading='lazy' />
   </Link>
   <div className="body px-2">
   <div className="options d-flex px-4 justify-content-between links position-absolute top-0 mt-3  w-100 ">
@@ -27,16 +27,16 @@ export default function MainCardCursel({productId, productImage, productTitle, o
   <div className="salary border-bottom mt-3 px-2 d-flex justify-content-between align-items-center">
     <div>
         <ul className=' list-unstyled'>
-            <li><GoDotFill/> Per day 500 AED</li>
-            <li><GoDotFill/> Per week 3500 AED</li>
-            <li><GoDotFill/> Per month 10000 AED</li>
-            <li><GoDotFill/> Deposit 2000</li>
-            <li><GoDotFill/> Minimum Days 2</li>
+            <li><GoDotFill/> Per day {pricePerDay} AED</li>
+            <li><GoDotFill/> Per week {pricePerWeek} AED</li>
+            <li><GoDotFill/> Per month {pricePerMonth} AED</li>
+            <li><GoDotFill/> Deposit {deposit}</li>
+            <li><GoDotFill/> Minimum Days {minDays}</li>
         </ul>
     </div>
     <div className=' d-flex flex-column'>
-        <img src={logo} alt={logo} />
-        <span>Top Auto car rental</span>
+        <img src={supplierLogo || fallbackLogo} alt={`${supplier} logo`} />
+        <span>{supplier}</span>
     </div>
   </div>
   <div className="contact mt-2">

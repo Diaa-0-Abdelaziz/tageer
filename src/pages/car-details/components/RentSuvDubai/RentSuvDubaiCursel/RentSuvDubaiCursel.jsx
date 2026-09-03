@@ -2,26 +2,22 @@ import React from 'react'
 import ImageGallery from "react-image-gallery";
 import { GoDotFill } from "react-icons/go";
 import 'react-image-gallery/styles/css/image-gallery.css';
-import img1 from "../../../../../images/Your image mask@2x11.png"
-import logo from "../../../../../images/tajeer app icon@2x.png"
 import { IoLogoWhatsapp } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import { IoCallSharp } from "react-icons/io5";
-export default function RentSuvDubaiCursel() {
-    const images = [
-        {
-          original: img1,
-          thumbnail: img1,
-        },
-        {
-          original: img1,
-          thumbnail: img1,
-        },
-        {
-          original: img1,
-          thumbnail: img1,
-        },
-      ];
+
+export default function RentSuvDubaiCursel({car}) {
+    if (!car) return null;
+
+    const images = car.images.map((src) => ({
+      original: src,
+      thumbnail: src,
+      originalAlt: `${car.year} ${car.title} for rent in Dubai`,
+      thumbnailAlt: `${car.title} photo`,
+    }));
+
+    const highlightsTitle = `Highlights of the ${car.year} ${car.title}`;
+
       return (
        <section className='RentSuvDubaiCursel'>
        <div className="container">
@@ -30,7 +26,9 @@ export default function RentSuvDubaiCursel() {
         <ImageGallery items={images}
          showFullscreenButton={false}
          showPlayButton={false}
-         autoPlay={true}
+         showThumbnails={images.length > 1}
+         showNav={images.length > 1}
+         autoPlay={images.length > 1}
          />
         <span className='position-absolute top-0 end-0 m-3 p-1 fs-6'>Save to whishlist</span>
         
@@ -39,7 +37,7 @@ export default function RentSuvDubaiCursel() {
     <button className=" active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Description</button>
   </li>
   <li className="nav-item" role="presentation">
-    <button className="" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Features & Options</button>
+    <button className="" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Features &amp; Options</button>
   </li>
   <li className="nav-item" role="presentation">
     <button className="" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Reviews</button>
@@ -47,75 +45,67 @@ export default function RentSuvDubaiCursel() {
 </ul>
 <div className="tab-content" id="pills-tabContent">
   <div className="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-    <h3 className=' mt-5'>Highlights of the new BMW i8</h3>
-    <p className=' mt-5'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequuntur nulla natus accusamus error id reiciendis voluptas alias minus repellat.</p>
+    <h3 className=' mt-5'>{car.year} {car.brand} {car.model}</h3>
+    <p className=' mt-5'>{car.description}</p>
   </div>
   <div className="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-  <h3 className=' mt-5'>Highlights of the new BMW i8</h3>
-    <p className=' mt-5'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequuntur nulla natus accusamus error id reiciendis voluptas alias minus repellat.</p>
+    <h3 className=' mt-5'>Features &amp; options</h3>
+    <ul className=' mt-5'>
+      {car.features.map((feature) => <li key={feature}><GoDotFill/> {feature}</li>)}
+    </ul>
   </div>
   <div className="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-  <h3 className=' mt-5'>Highlights of the new BMW i8</h3>
-    <p className=' mt-5'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequuntur nulla natus accusamus error id reiciendis voluptas alias minus repellat.</p>
+    <h3 className=' mt-5'>Reviews</h3>
+    <p className=' mt-5'>This {car.title} has no reviews yet. Reviews are published here once a customer has completed a booking.</p>
   </div>
 </div>
         
 <div className="new_feature">
-<h3 className=' mt-5'>Highlights of the new BMW i8</h3>
-    <p className=' mt-5'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequuntur nulla natus accusamus error id reiciendis voluptas alias minus repellat.</p>
+<h3 className=' mt-5'>{highlightsTitle}</h3>
+    <p className=' mt-5'>{car.highlights}</p>
     </div>     
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         </div>
         <div className="col-lg-6 details">
-            <h3>BMW I8</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti maxime ullam nostrum ipsa aliquam eligendi mollitia explicabo consectetur quis eius, molestiae magni repellendus reiciendis velit delectus voluptate harum voluptates ex.</p>
+            <h3>{car.title}</h3>
+            <p>{car.description}</p>
             <h4>Feature</h4>
            <div className="feature_details d-flex justify-content-between align-items-center">
            <ul>
-            <li><GoDotFill/> Car color: white</li>
-            <li><GoDotFill/> Car brand: Mercedes</li>
-            <li><GoDotFill/> Car model: C300</li>
-            <li><GoDotFill/> Car year: 2021</li>
-            <li><GoDotFill/> Car Type: luxury ,Sport</li>
+            <li><GoDotFill/> Car color: {car.color}</li>
+            <li><GoDotFill/> Car brand: {car.brand}</li>
+            <li><GoDotFill/> Car model: {car.model}</li>
+            <li><GoDotFill/> Car year: {car.year}</li>
+            <li><GoDotFill/> Car type: {car.bodyType}</li>
            </ul>
            <ul>
-            <li><GoDotFill/> No. Of Doors: 4 doors</li>
-            <li><GoDotFill/> Engine:  5.0 V8</li>
-            <li><GoDotFill/> Minimum of Days: 2 days</li>
-            <li><GoDotFill/> Deposit:  2000 AED</li>
-            <li><GoDotFill/> Car Type</li>
+            <li><GoDotFill/> No. of doors: {car.doors} doors</li>
+            <li><GoDotFill/> Engine: {car.engine}, {car.power}</li>
+            <li><GoDotFill/> Transmission: {car.transmission}</li>
+            <li><GoDotFill/> Minimum of days: {car.minDays} {car.minDays === 1 ? 'day' : 'days'}</li>
+            <li><GoDotFill/> Deposit: {car.deposit} AED</li>
            </ul>
            <ul className='pricing'>
-            <li>
-                <div>2 hrs/ 350 AED</div>
-            </li>
-            <li>
-                <div>5 hrs/ 350 AED</div>
-            </li>
-            <li>
-                <div>8 hrs/ 350 AED</div>
-            </li>
+            {car.hourly.map((rate) => (
+              <li key={rate.hours}>
+                <div>{rate.hours} hrs/ {rate.price} AED</div>
+              </li>
+            ))}
            </ul>
            </div>
+           <ul className=' list-unstyled mt-3'>
+            <li><GoDotFill/> Per day {car.pricePerDay} AED</li>
+            <li><GoDotFill/> Per week {car.pricePerWeek} AED</li>
+            <li><GoDotFill/> Per month {car.pricePerMonth} AED</li>
+            <li><GoDotFill/> Mileage {car.mileagePerDay} km per day</li>
+            <li><GoDotFill/> Seats: {car.seats}</li>
+           </ul>
            <div className="contact mt-2">
               <ul className='list-unstyled d-flex justify-content-around'>
                   <li>
-                      <i onClick={() => window.open(`https://wa.me/125855`)}>
+                      <i onClick={() => window.open(`https://wa.me/${car.whatsapp}`)}>
                           <div className="ex-categor d-flex flex-column">
-                              <span onClick={() => window.open(`https://wa.me/125855`)}>
-                              125855
+                              <span onClick={() => window.open(`https://wa.me/${car.whatsapp}`)}>
+                              {car.whatsapp}
                               </span>
                           </div>
                           <IoLogoWhatsapp />
@@ -123,10 +113,10 @@ export default function RentSuvDubaiCursel() {
                       <span>WHATSAPP</span>
                   </li>
                   <li>
-                      <i onClick={() => window.open(`mailto:info@gmail.com`)}>
+                      <i onClick={() => window.open(`mailto:${car.email}`)}>
                           <div className="ex-categor d-flex flex-column">
-                              <span onClick={() => window.open(`mailto:info@gmail.com`)}>
-                              info@gmail.com
+                              <span onClick={() => window.open(`mailto:${car.email}`)}>
+                              {car.email}
                               </span>
                           </div>
                           <MdEmail/>
@@ -134,10 +124,10 @@ export default function RentSuvDubaiCursel() {
                       <span>EMAIL</span>
                   </li>
                   <li>
-                      <i onClick={() => window.open(`tel:+125855`)}>
+                      <i onClick={() => window.open(`tel:+${car.call}`)}>
                           <div className="ex-categor d-flex flex-column">
-                              <span onClick={() => window.open(`tel:+125855`)}>
-                              125855
+                              <span onClick={() => window.open(`tel:+${car.call}`)}>
+                              {car.call}
                               </span>
                           </div>
                           <IoCallSharp/>
@@ -146,8 +136,9 @@ export default function RentSuvDubaiCursel() {
                   </li>
               </ul>
           </div>
-          <div className='logo d-flex justify-content-center'>
-          <img src={logo} alt={logo} />
+          <div className='logo d-flex flex-column align-items-center'>
+          <img src={car.supplierLogo} alt={`${car.supplier} logo`} />
+          <span>{car.supplier}</span>
           </div>
         </div>
        </div>

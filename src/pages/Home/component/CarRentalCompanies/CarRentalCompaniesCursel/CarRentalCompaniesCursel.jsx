@@ -3,12 +3,9 @@ import Slider from "react-slick";
 import { MdOutlineNavigateNext } from "react-icons/md";
 import { GrFormPrevious } from "react-icons/gr";
 import { GoDotFill } from "react-icons/go";
-import img1 from "../../../../../images/img_artboard_2_169x246.png"
-import img2 from "../../../../../images/img_artboard_2_169x246.png"
-import img3 from "../../../../../images/img_artboard_2_169x246.png"
-import img4 from "../../../../../images/img_artboard_2_169x246.png"
-import img5 from "../../../../../images/img_artboard_2_169x246.png"
-export default function CarRentalCompaniesCursel() {
+import { Link } from 'react-router-dom';
+import { companies } from '../../../../../data/companies';
+export default function CarRentalCompaniesCursel({products = companies}) {
     function SampleNextArrow(props) {
         const {onClick } = props;
         return (
@@ -66,59 +63,26 @@ export default function CarRentalCompaniesCursel() {
     
     
     
-      let products = [
-        {
-          id:1,
-          title:"Sport cars",
-          img:img1
-        },
-        {
-          id:2,
-          title:"Sport cars",
-          img:img2
-        },
-        {
-          id:3,
-          title:"Sport cars",
-          img:img3
-        },
-        {
-          id:4,
-          title:"Sport cars",
-          img:img4
-        },
-        {
-          id:5,
-          title:"Sport cars",
-          img:img5
-        },
-        {
-          id:6,
-          title:"Sport cars",
-          img:img5
-        },
-        {
-          id:7,
-          title:"Sport cars",
-          img:img5
-        },
-      ]
     
     
     
       return (
-        <section className='carTypeSlider overflow-hidden'>
+        <section className='carTypeSlider carTypeCards overflow-hidden'>
        <div className="container main-slider mb-5">
          <Slider {...settings}>
           {products.map((pro)=> <div className='p-2 content' key={pro.id}>
+            <Link to="./CarRentalCompany" className='text-decoration-none text-black' aria-label={`See cars from ${pro.name}`}>
             <div className='slider-pro p-1 overflow-hidden slider'>
-          <img src={pro.img} alt="" className='w-100' loading='lazy'/>
-          <ul className=' ms-3 mt-3 list-unstyled'>
-                    <li><GoDotFill/>Sports car</li>
-                    <li><GoDotFill/> Economy car</li>
-                    <li><GoDotFill/> Luxury car</li>
+          <img src={pro.logo} alt={`${pro.name} logo`} width="600" height="400" className='w-100' loading='lazy'/>
+          <h4 className=' ms-3 mt-3 mb-1 fs-6 fw-bold'>{pro.name}</h4>
+          <p className=' ms-3 mb-2 small'>{pro.area}</p>
+          <ul className=' ms-3 mt-2 list-unstyled'>
+                    {pro.classes.map((carClass)=> <li key={carClass}><GoDotFill/> {carClass}</li>)}
                 </ul>
+          <p className=' ms-3 mt-2 mb-2 small'>{pro.fleetSize} cars &middot; {pro.branches} branches &middot; since {pro.since}</p>
+          <p className=' ms-3 mb-2 small'>{pro.delivery} &middot; {pro.hours}</p>
         </div>
+            </Link>
           </div>)}
       </Slider>
        </div>

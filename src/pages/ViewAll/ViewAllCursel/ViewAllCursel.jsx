@@ -2,10 +2,10 @@ import React from 'react'
 import Slider from "react-slick";
 import { MdOutlineNavigateNext } from "react-icons/md";
 import { GrFormPrevious } from "react-icons/gr";
-import img1 from "../../../images/img_whatsapp_image_2023_01_19.png"
 import { Link } from 'react-router-dom';
 import MainCardCursel from '../../../ImportantSlicesSharedComponents/mainCardCursel';
-export default function ViewAllCursel() {
+import { cars } from '../../../data/cars';
+export default function ViewAllCursel({products = cars}) {
     function SampleNextArrow(props) {
         const {onClick } = props;
         return (
@@ -20,10 +20,10 @@ export default function ViewAllCursel() {
         );
       }
       var settings = {
-        infinite: true,
-        slidesToShow: 3,
+        infinite: products.length > 3,
+        slidesToShow: Math.min(3, Math.max(products.length, 1)),
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: products.length > 3,
         autoplaySpeed: 2000,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
@@ -52,64 +52,6 @@ export default function ViewAllCursel() {
     
     
     
-      let products = [
-        {
-          id:1,
-          title:"BMW X5 Convertible slider ",
-          img:img1,
-          whatsapp:12553355,
-          email:"info@mail.com",
-          call:1235566,
-        },
-        {
-          id:2,
-          title:"BMW X5 Convertible slider ",
-          img:img1,
-          whatsapp:12553355,
-          email:"info@mail.com",
-          call:1235566,
-        },
-        {
-          id:3,
-          title:"BMW X5 Convertible slider ",
-          img:img1,
-          whatsapp:12553355,
-          email:"info@mail.com",
-          call:1235566,
-        },
-        {
-          id:4,
-          title:"BMW X5 Convertible slider ",
-          img:img1,
-          whatsapp:12553355,
-          email:"info@mail.com",
-          call:1235566,
-        },
-        {
-          id:5,
-          title:"BMW X5 Convertible slider ",
-          img:img1,
-          whatsapp:12553355,
-          email:"info@mail.com",
-          call:1235566,
-        },
-        {
-          id:6,
-          title:"BMW X5 Convertible slider ",
-          img:img1,
-          whatsapp:12553355,
-          email:"info@mail.com",
-          call:1235566,
-        },
-        {
-          id:7,
-          title:"BMW X5 Convertible slider ",
-          img:img1,
-          whatsapp:12553355,
-          email:"info@mail.com",
-          call:1235566,
-        },
-      ]
     
     
     
@@ -147,6 +89,13 @@ export default function ViewAllCursel() {
           ownerWhatsapp = {pro.whatsapp}
           ownerEmail = {pro.email}
           ownerCall = {pro.call}
+          pricePerDay = {pro.pricePerDay}
+          pricePerWeek = {pro.pricePerWeek}
+          pricePerMonth = {pro.pricePerMonth}
+          deposit = {pro.deposit}
+          minDays = {pro.minDays}
+          supplier = {pro.supplier}
+          supplierLogo = {pro.supplierLogo}
           /> 
         )}
       </Slider>

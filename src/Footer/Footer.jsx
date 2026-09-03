@@ -8,6 +8,26 @@ import { GoDotFill } from "react-icons/go";
 import google_play from "../images/google play.png"
 import app_store from "../images/app store.png"
 import "./footer.css"
+
+const footerColumns = [
+  {
+    title: 'Popular Brands',
+    items: ['Rent Mercedes Dubai', 'Rent Lamborghini Dubai', 'Rent Ferrari Dubai', 'Rent Rolls Royce Dubai', 'Rent Audi Dubai', 'Rent BMW Dubai', 'Rent Mclaren Dubai', 'Rent Range Rover Dubai', 'Rent Nissan Dubai', 'Rent Toyota Dubai'],
+  },
+  {
+    title: 'Explore',
+    items: ['Rent SUV Dubai', 'Rent Sports Car Dubai', 'Luxury Car Rental', 'Monthly Car Rental', 'Weekend Car Rental', 'Rent Car With Driver', 'Rent Car Abu Dhabi', 'Rent Car Sharjah', 'Rent Yacht Dubai', 'Rent Car Ajman'],
+  },
+  {
+    title: 'Company',
+    items: ['About Us', 'Rent by Brand', 'Privacy Policy', 'Contact Us', 'TAJEER FAQs', 'Car Rental Blog', 'Our Offers'],
+  },
+  {
+    title: 'Support',
+    items: ['Sitemap XML', 'For Inquiries & Support', '+971 56 442 4448', '+971 4 554 0871', 'info@tajeercarrent.com'],
+  },
+];
+
 export default function Footer() {
   return (
     <>
@@ -22,59 +42,27 @@ export default function Footer() {
       </ul>
     </div>
       <div className="container-fluid">
-        <ul>
-          <li><GoDotFill/> Rent Mercedes Dubai</li>
-          <li><GoDotFill/> Rent Lamborghini Dubai</li>
-          <li><GoDotFill/> Rent Ferrari Dubai</li>
-          <li><GoDotFill/> Rent Rolls Royece Dubai</li>
-          <li><GoDotFill/> Rent Audi Dubai</li>
-          <li><GoDotFill/> Rent BMW Dubai</li>
-          <li><GoDotFill/> Rent Mclaren Dubai</li>
-          <li><GoDotFill/> Rent Range Rover Dubai</li>
-          <li><GoDotFill/> Rent Nissan Dubai</li>
-          <li><GoDotFill/> Rent Toyota Dubai</li>
-        </ul>
-        <ul>
-          <li><GoDotFill/> Rent Mercedes Dubai</li>
-          <li><GoDotFill/> Rent Lamborghini Dubai</li>
-          <li><GoDotFill/> Rent Ferrari Dubai</li>
-          <li><GoDotFill/> Rent Rolls Royece Dubai</li>
-          <li><GoDotFill/> Rent Audi Dubai</li>
-          <li><GoDotFill/> Rent BMW Dubai</li>
-          <li><GoDotFill/> Rent Mclaren Dubai</li>
-          <li><GoDotFill/> Rent Range Rover Dubai</li>
-          <li><GoDotFill/> Rent Nissan Dubai</li>
-          <li><GoDotFill/> Rent Toyota Dubai</li>
-        </ul>
+        {footerColumns.map(col => (
+          <div className='footer-col' key={col.title}>
+            <h4>{col.title}</h4>
+            <ul>
+              {col.items.map(item => (
+                <li key={item}><GoDotFill/> {item}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
 
-        <ul>
-          <li><GoDotFill/> About Us</li>
-          <li><GoDotFill/> Rent Lamborghini Dubai</li>
-          <li><GoDotFill/> Privacy Policy</li>
-          <li><GoDotFill/> Contact Us</li>
-          <li><GoDotFill/> TAJEER FAQs</li>
-          <li><GoDotFill/> Car Rental Blog</li>
-          <li><GoDotFill/> Rent by Brand</li>
-          <li><GoDotFill/> Our Offers</li>
-          <li><GoDotFill/> Our Blog</li>
-          <li><GoDotFill/> Rent Toyota Dubai</li>
-        </ul>
-        
-        <ul>
-          <li><GoDotFill/> Sitemap XML</li>
-          <li><GoDotFill/> For Inquiries & Support</li>
-          <li><GoDotFill/> +971564424448</li>
-          <li><GoDotFill/> +97145540871</li>
-          <li><GoDotFill/> info@tajeercarrent.com</li>
-        </ul>
-        <div className=' d-flex flex-column '>
-        <span className='Download'>Download on the App Store & Google play</span>
-         <div className="app">
+        <div className='footer-col app-col d-flex flex-column'>
+          <h4>Get The App</h4>
+          <span className='Download'>Download on the App Store & Google Play</span>
+          <div className="app">
             <a href="https://play.google.com/store/apps/details?id=com.tajeer&hl=en&gl=US&pli=1" target='_blank' rel="noopener noreferrer"><img src={google_play} alt={google_play}  loading='lazy'/></a>
-          <a href="https://apps.apple.com/sa/app/tajeer-rent-a-car-in-dubai/id1458290275" target='_blank' rel="noopener noreferrer"><img src={app_store} alt={app_store} loading='lazy' /></a>
-         </div>
+            <a href="https://apps.apple.com/sa/app/tajeer-rent-a-car-in-dubai/id1458290275" target='_blank' rel="noopener noreferrer"><img src={app_store} alt={app_store} loading='lazy' /></a>
+          </div>
         </div>
       </div>
+      <div className='copyright'>© {new Date().getFullYear()} Tajeer Car Rental. All rights reserved.</div>
     </footer>
     </LazyLoad>
     </>

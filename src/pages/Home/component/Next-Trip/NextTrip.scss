@@ -1,56 +1,89 @@
+$navy: #17233E;
+
 .NextTrip
 {
-    background-image: linear-gradient(#3a1b509f, #3a1b509f), url(../../../../images/img_ferarif8tributo.png);
+    background-image: linear-gradient(rgba(23, 35, 62, .82), rgba(23, 35, 62, .82)), url(../../../../images/img_ferarif8tributo.png);
     background-size: cover;
+    background-position: center;
     object-fit: cover;
+
     .container
     {
         padding: 60px 0;
+
+        .NextTrip_title
+        {
+            color: #fff;
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 44px;
+        }
+
+        .NextTrip_steps
+        {
+            display: flex;
+            align-items: stretch;
+            gap: 30px;
+        }
+
         .NextTrip_content
         {
-            max-width: 290px;
-            color: white;
-            h2 
+            flex: 1;
+            color: #fff;
+            text-align: center;
+
+            .num
             {
-                font-size: 30px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                border: 1px solid rgba(255, 255, 255, .45);
+                font-size: 13px;
+                font-weight: 700;
+                letter-spacing: .3px;
+                margin-bottom: 16px;
+            }
+
+            p
+            {
+                padding: 0;
+                margin-bottom: 8px;
+                font-size: 17px;
                 font-weight: bold;
             }
-            article 
+
+            .desc
             {
-                margin: 30px 0;
-                p 
-                {
-                    padding: 0;
-                    margin-bottom: 0;
-                    font-size: 16px;
-                    font-weight: bold;
-                }
-                span 
-                {
-                    font-size: 16px;
-                }
+                font-size: 14px;
+                line-height: 1.6;
+                opacity: .85;
             }
         }
+
         .line
         {
-            width: 2px;
-            background-color: white;
+            width: 1px;
+            background-color: rgba(255, 255, 255, .3);
         }
+
         @media screen and (max-width:770px) {
 
-            flex-direction: column;
-            align-items: center;
-            .NextTrip_content
+            .NextTrip_steps
             {
-                margin-top: 20px;
+                flex-direction: column;
+                align-items: center;
+                gap: 28px;
             }
             .line
-                {
-                    height: 2px;
-                    width: 100%;
-                    background-color: white;
-                }
-            
+            {
+                height: 1px;
+                width: 60%;
+                background-color: rgba(255, 255, 255, .3);
+            }
+
         }
     }
 }

@@ -57,6 +57,18 @@
   right: 10px;
 }
 
+.carTypeCards .content .slider-pro {
+  border-radius: 6px;
+}
+.carTypeCards .content .slider-pro img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  object-position: center;
+  height: auto;
+}
+
 .carTypeSlider .content .slider-pro {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.088);
 }
@@ -227,8 +239,7 @@
   margin: 10px;
 }
 .FILTER .card img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .FILTER .card .feature_details ul {
   list-style: none;
@@ -323,8 +334,7 @@
 .FILTER .card .contact ul .imgLogo img {
   width: 70px;
   margin-top: 15px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .FILTER .card .options {
   font-size: 13px;
@@ -348,7 +358,6 @@
 .FILTER nav {
   margin: auto;
   margin-top: 200px;
-  width: -moz-fit-content;
   width: fit-content;
 }
 .FILTER nav .page-link {
@@ -368,11 +377,10 @@
 }
 .search img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .search .cover_color {
-  background-color: rgba(58, 27, 80, 0.5803921569);
+  background-color: rgba(23, 35, 62, 0.5803921569);
 }
 
 .BESTSERVICES {
@@ -389,18 +397,48 @@
   width: 70%;
   left: 50%;
   height: 1px;
-  background-color: #3A1B50;
+  background-color: rgba(23, 35, 62, 0.15);
   transform: translateX(-50%);
 }
 .BESTSERVICES .container {
   padding: 70px 0;
 }
-.BESTSERVICES .container h3 {
-  font-size: 20px;
+.BESTSERVICES .container .media {
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(23, 35, 62, 0.16);
+  aspect-ratio: 4/5;
+}
+.BESTSERVICES .container .media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.BESTSERVICES .container .media:hover img {
+  transform: scale(1.05);
+}
+.BESTSERVICES .container .eyebrow {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
   text-transform: uppercase;
+  color: #17233E;
+  margin-bottom: 10px;
+}
+.BESTSERVICES .container h3 {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #17233E;
+  text-transform: none;
+  margin-bottom: 16px;
 }
 .BESTSERVICES .container p {
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #5c5c5c;
 }
 @media screen and (max-width: 770px) {
   .BESTSERVICES {
@@ -408,6 +446,10 @@
     background-image: linear-gradient(rgba(255, 255, 255, 0.871), rgba(255, 255, 255, 0.307)), url(./images/dots.png);
     background-size: auto;
     background-repeat: repeat;
+  }
+  .BESTSERVICES .container .media {
+    aspect-ratio: 16/10;
+    margin-bottom: 24px;
   }
 }
 
@@ -420,13 +462,21 @@
   color: #3A1B50;
 }
 
+img.card-media {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  object-position: center;
+}
+
 .RentSUVLuxuryCursel .slider-pro {
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.116);
   border-radius: 40px;
 }
 .RentSUVLuxuryCursel .slider-pro img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .RentSUVLuxuryCursel .slider-pro .Featured {
   background-color: #000000;
@@ -444,8 +494,7 @@
 .RentSUVLuxuryCursel .slider-pro .salary img {
   max-width: 125px;
   max-height: 65px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .RentSUVLuxuryCursel .slider-pro .salary span {
   font-size: 9px;
@@ -515,7 +564,6 @@
     margin: auto;
   }
   .RentSUVLuxuryCursel .options .Save_to_wishlist {
-    width: -moz-fit-content;
     width: fit-content;
     margin: auto;
     margin-top: 5px;
@@ -523,7 +571,6 @@
 }
 
 .CarType .CarType_Header h3 {
-  width: -moz-fit-content;
   width: fit-content;
   font-size: 24px;
   font-weight: bold;
@@ -683,8 +730,7 @@
 .RentSuvDubaiCursel .details img {
   width: 100px;
   margin-top: 15px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 @media screen and (max-width: 991px) {
   .RentSuvDubaiCursel .details {
@@ -728,4 +774,6 @@
   padding: 5px 20px;
   border-radius: 5px;
   cursor: pointer;
-}/*# sourceMappingURL=App.css.map */
+}
+
+/*# sourceMappingURL=App.css.map */

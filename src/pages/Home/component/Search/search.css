@@ -1,5 +1,8 @@
+.main_content .form {
+  z-index: 500;
+}
 .main_content .form .View_all_cars_btn {
-  background-color: rgba(58, 27, 80, 0.7490196078);
+  background-color: rgba(23, 35, 62, 0.7490196078);
   border-radius: 20px 0px 0px 20px;
   padding: 7px 10px;
   display: flex;
@@ -8,7 +11,7 @@
 }
 .main_content .form .View_all_cars_btn i {
   cursor: pointer;
-  color: #3a1b50;
+  color: #17233E;
   background-color: #E6F6FF;
   border-radius: 50%;
   width: 30px;
@@ -37,7 +40,7 @@
     padding: 0 50px;
   }
   .main_content .form .View_all_cars_btn {
-    background-color: rgba(58, 27, 80, 0.7490196078);
+    background-color: rgba(23, 35, 62, 0.7490196078);
     border-radius: 20px 0px 0px 20px;
     padding: 0;
     display: flex;
@@ -46,7 +49,7 @@
   }
   .main_content .form .View_all_cars_btn i {
     cursor: pointer;
-    color: #3a1b50;
+    color: #17233E;
     background-color: #E6F6FF;
     border-radius: 50%;
     width: 25px;
@@ -65,4 +68,75 @@
   .main_content .form .search_form input {
     font-size: 10px;
   }
-}/*# sourceMappingURL=search.css.map */
+}
+
+.main_content .form .search_form .search_results {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  z-index: 501;
+  margin: 0;
+  padding: 6px;
+  max-height: 340px;
+  overflow-y: auto;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  text-align: left;
+}
+.main_content .form .search_form .search_results li button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 8px 10px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  text-align: left;
+}
+.main_content .form .search_form .search_results li button:hover, .main_content .form .search_form .search_results li button:focus {
+  background-color: #E6F6FF;
+}
+.main_content .form .search_form .search_results img {
+  width: 60px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+.main_content .form .search_form .search_results .search_name {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  color: #17233E;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.main_content .form .search_form .search_results .search_name small {
+  color: #6b6b6b;
+  font-size: 11px;
+  font-weight: 400;
+}
+.main_content .form .search_form .search_results .search_price {
+  color: #17233E;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.main_content .form .search_form .search_results .search_empty {
+  padding: 12px 10px;
+  color: #6b6b6b;
+  font-size: 13px;
+}
+.main_content .form .search_form .search_results .search_more button {
+  justify-content: center;
+  color: #17233E;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=search.css.map */

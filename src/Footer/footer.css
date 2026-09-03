@@ -1,7 +1,7 @@
 footer {
   margin-top: 100px;
   padding: 20px;
-  background-image: linear-gradient(rgba(58, 27, 80, 0.7137254902), rgba(58, 27, 80, 0.7137254902));
+  background-image: linear-gradient(#17233E 0%, #0A1220 100%);
   color: white;
 }
 footer .social {
@@ -14,7 +14,7 @@ footer .social li {
   height: 36px;
   position: relative;
   border-radius: 50%;
-  background-color: #3A1B50;
+  background-color: #17233E;
   margin: 0 5px;
   overflow: hidden;
 }
@@ -32,7 +32,7 @@ footer .social li a {
 footer .social li .hidden-text {
   position: absolute;
   margin-top: 40px;
-  background-color: #3A1B50;
+  background-color: #17233E;
 }
 footer .social .facebook {
   background-color: #4267B2 !important;
@@ -42,22 +42,44 @@ footer .social .twitter {
 }
 footer .container-fluid {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  gap: 24px 20px;
 }
-footer .container-fluid ul {
-  list-style: none;
-  font-size: 17px;
+footer .container-fluid .footer-col {
   position: relative;
+  padding-right: 20px;
 }
-footer .container-fluid ul:not(:nth-child(5))::after {
-  position: absolute;
+footer .container-fluid .footer-col:not(:last-child)::after {
   content: "";
-  width: 1px;
-  background-color: white;
-  height: 100%;
-  right: -20px;
+  position: absolute;
   top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+footer .container-fluid .footer-col h4 {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: rgba(255, 255, 255, 0.65);
+  margin-bottom: 14px;
+}
+footer .container-fluid .footer-col ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer .container-fluid .footer-col ul li {
+  font-size: 15px;
+  line-height: 2.1;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: rgba(255, 255, 255, 0.92);
 }
 footer .container-fluid .app {
   position: relative;
@@ -66,30 +88,40 @@ footer .container-fluid .app {
 }
 footer .container-fluid .app img {
   width: 150px;
-  margin-left: 20px;
 }
 footer .container-fluid .Download {
   max-width: 200px;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+footer .copyright {
   text-align: center;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 30px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 @media screen and (max-width: 1242px) {
   footer .container-fluid {
     flex-wrap: wrap;
     justify-content: center;
   }
-  footer .container-fluid ul:not(:nth-child(5))::after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0px;
+  footer .container-fluid .footer-col {
+    min-width: 180px;
+  }
+  footer .container-fluid .footer-col::after {
+    display: none;
   }
 }
 @media screen and (max-width: 507px) {
   footer {
-    background-image: linear-gradient(rgba(58, 27, 80, 0), #3a1b50), url(../images/dots.png);
+    background-image: linear-gradient(#17233E 0%, #0A1220 100%), url(../images/dots.png);
     background-size: auto;
     background-repeat: repeat;
-    color: rgb(15, 15, 15);
+    color: white;
     font-weight: 500;
   }
-}/*# sourceMappingURL=footer.css.map */
+}
+
+/*# sourceMappingURL=footer.css.map */

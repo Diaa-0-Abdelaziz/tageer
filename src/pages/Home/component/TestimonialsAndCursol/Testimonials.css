@@ -1,5 +1,5 @@
 .Testimonials .container {
-  border-top: 1px solid #3A1B50;
+  border-top: 1px solid rgba(23, 35, 62, 0.15);
   padding-top: 20px;
 }
 .Testimonials .container p {
@@ -10,6 +10,7 @@
 .Testimonials .container h2 {
   font-size: 40px;
   font-weight: bolder;
+  color: #17233E;
 }
 .Testimonials .container .slider_pro {
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.226);
@@ -35,4 +36,6 @@
 }
 .Testimonials .container .slider_pro .info .rating li {
   color: rgb(232, 232, 11);
-}/*# sourceMappingURL=Testimonials.css.map */
+}
+
+/*# sourceMappingURL=Testimonials.css.map */

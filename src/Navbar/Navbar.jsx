@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react'
-import logo from "../images/img_tajeer_logo_websit.png"
+import logo from "../images/brand/zenith-icon.png"
 import lamborghini from "../images/img_lamborghiniurus.png"
 import img_calendar from "../images/img_calendar.svg"
-import car_Brand from "../images/img_infinity_logo.png"
+import logo_dodge from "../images/img_dodge_logo.png"
+import logo_chrysler from "../images/img_chrysler_logo.png"
+import logo_infiniti from "../images/img_infinity_logo.png"
+import logo_tesla from "../images/img_tesla_logo.png"
 import app_Store from "../images/app store.png"
 import google_Play from "../images/google play.png"
-import img_united_arab_emirates from "../images/img_united_arab_emirates.png"
 import { CiLocationOn } from "react-icons/ci";
+import { IoEarthOutline } from "react-icons/io5";
 import { RiMoneyDollarCircleLine } from "react-icons/ri";
 import { SiGoogletranslate } from "react-icons/si";
 import { MdOutlineAccountBox } from "react-icons/md";
@@ -51,6 +54,12 @@ export default function Navbar() {
   const CitiesOptions = ['dubai', 'Abu Dhabi', 'Al Ain','Sharjah'];
   const CurrenciesOptions = ['AED', 'SAR', 'USD','EUR'];
   const LanguagesOptions = ['English', 'العربية', 'русский','中国人'];
+  const LanguageFlags = {
+    'English': '🇬🇧',
+    'العربية': '🇦🇪',
+    'русский': '🇷🇺',
+    '中国人': '🇨🇳',
+  };
 
 
   useEffect(() => {
@@ -99,167 +108,25 @@ export default function Navbar() {
                    ];
   const carBrands = [
     {
-      linkName:"Audi",
-      img:car_Brand,
-      path:"./"
+      linkName:"Dodge",
+      img:logo_dodge,
+      path:"./Brands"
      },
     {
-      linkName:"Audi",
-      img:car_Brand,
-      path:"./"
+      linkName:"Chrysler",
+      img:logo_chrysler,
+      path:"./Brands"
      },
     {
-      linkName:"Audi",
-      img:car_Brand,
-      path:"./"
+      linkName:"Infiniti",
+      img:logo_infiniti,
+      path:"./Brands"
      },
     {
-      linkName:"Audi",
-      img:car_Brand,
-      path:"./"
+      linkName:"Tesla",
+      img:logo_tesla,
+      path:"./Brands"
      },
-    {
-      linkName:"Audi",
-      img:car_Brand,
-      path:"./"
-     },
-    {
-      linkName:"Audi",
-      img:car_Brand,
-      path:"./"
-     },
-    {
-      linkName:"Audi",
-      img:car_Brand,
-      path:"./"
-     },
-    {
-      linkName:"Audi",
-      img:car_Brand,
-      path:"./"
-     },
-    {
-      linkName:"Audi",
-      img:car_Brand,
-      path:"./"
-     },
-    {
-      linkName:"Audi",
-      img:car_Brand,
-      path:"./"
-     },
-    {
-      linkName:"Audi",
-      img:car_Brand,
-      path:"./"
-     },
-    {
-      linkName:"Audi",
-      img:car_Brand,
-      path:"./"
-     },
-    {
-      linkName:"Audi",
-      img:car_Brand,
-      path:"./"
-     },
-    {
-      linkName:"Audi",
-      img:car_Brand,
-      path:"./"
-     },
-    {
-      linkName:"Audi",
-      img:car_Brand,
-      path:"./"
-     },
-    {
-      linkName:"Audi",
-      img:car_Brand,
-      path:"./"
-     },
-    {
-      linkName:"Audi",
-      img:car_Brand,
-      path:"./"
-     },
-    {
-      linkName:"Audi",
-      img:car_Brand,
-      path:"./"
-     },
-    {
-      linkName:"Audi",
-      img:car_Brand,
-      path:"./"
-     },
-    {
-      linkName:"Audi",
-      img:car_Brand,
-      path:"./"
-     },
-    {
-      linkName:"Audi",
-      img:car_Brand,
-      path:"./"
-     },
-    {
-      linkName:"Audi",
-      img:car_Brand,
-      path:"./"
-     },
-    {
-      linkName:"Audi",
-      img:car_Brand,
-      path:"./"
-     },
-    {
-      linkName:"Audi",
-      img:car_Brand,
-      path:"./"
-     },
-    {
-      linkName:"Audi",
-      img:car_Brand,
-      path:"./"
-     },
-    {
-      linkName:"Audi",
-      img:car_Brand,
-      path:"./"
-     },
-    {
-      linkName:"Audi",
-      img:car_Brand,
-      path:"./"
-     },
-    {
-      linkName:"Audi",
-      img:car_Brand,
-      path:"./"
-     },
-    {
-      linkName:"Audi",
-      img:car_Brand,
-      path:"./"
-     },
-    {
-      linkName:"Audi",
-      img:car_Brand,
-      path:"./"
-     },
-    {
-      linkName:"Audi",
-      img:car_Brand,
-      path:"./"
-     },
-    {
-      linkName:"Audi",
-      img:car_Brand,
-      path:"./"
-     },
-     
-
                    ];
 
  const QuickLinks = [
@@ -425,13 +292,18 @@ export default function Navbar() {
   function openSettingList(){
     setOpenSetting(!openSetting)
   }
+  function closeAllPanels(){
+    setOpen(true)
+    setOpenSetting(true)
+  }
   return (
     <header>
+    {(!open || !openSetting || carBrand) && <div className="nav-backdrop" onClick={closeAllPanels}></div>}
     <div className="navbar">
         <div className="content d-flex justify-content-around flex-nowrap">
-           <span className='setting_btn  d-none' onClick={openSettingList}> <IoMdSettings/></span>
-            <img src={logo} alt={logo} className='me-5 logo' loading='lazy'/>
-           <span className='fs-1 menu  d-none' onClick={openNavList}> <CgMenuGridR /></span>
+           <span className='setting_btn icon-btn d-none' onClick={openSettingList}> <IoMdSettings/></span>
+            <img src={logo} alt="Zenith" className='me-5 logo' loading='lazy'/>
+           <span className='menu icon-btn d-none' onClick={openNavList}> <CgMenuGridR /></span>
             <Link to="/ListYourCars" className=' text-decoration-none' aria-label="Go to list your cars page">
             <div className='advertisement px-2 me-4 d-flex align-items-center bg-light'>
               <img src={lamborghini} alt={lamborghini} className='lamborghini' loading='lazy' />
@@ -442,8 +314,7 @@ export default function Navbar() {
             <div className={`d-flex ${openSetting? 'settings':  'settings open_Setting'}`}>
             <span className='close_Setting d-none fs-5' onClick={openSettingList}><FaWindowClose/></span>
               <ul className=' border-style list-unstyled d-flex align-items-center'>
-                <li className=' fs-5 me-2'><CiLocationOn/></li>
-                <li className=' text-capitalize'>country</li>
+                <li className=' fs-5 me-2' title='Country'><IoEarthOutline/></li>
                 <li>
                 <div className="custom-select">
             <div className="selected-option badge fw-light" onClick={toggleCountriesOptions}>
@@ -464,7 +335,7 @@ export default function Navbar() {
               </ul>
 
               <ul className='list-unstyled d-flex align-items-center'>
-              <li className='fs-13 text-capitalize'>city</li>
+              <li className='fs-5 me-2' title='City'><CiLocationOn/></li>
               <li>
               <div className="custom-select">
             <div className="selected-option opt2 badge fw-light" onClick={toggleCitiesOptions}>
@@ -484,8 +355,7 @@ export default function Navbar() {
               </li>
               </ul>
               <ul className=' ms-2 border-style list-unstyled d-flex align-items-center'>
-                <li className='fs-5 me-2'><RiMoneyDollarCircleLine/></li>
-                <li className='fs-13 text-capitalize badge p-0'>currency</li>
+                <li className='fs-5 me-2' title='Currency'><RiMoneyDollarCircleLine/></li>
                 <li>
                 <div className="custom-select">
             <div className="selected-option opt3" onClick={toggleCurrenciesOptions}>
@@ -505,11 +375,9 @@ export default function Navbar() {
                 </li>
               </ul>
               <ul className='ms-2 border-style language list-unstyled d-flex align-items-center'>
-                <li className='fs-5 me-2'><SiGoogletranslate/></li>
-                <li className='fs-13 text-capitalize badge p-0'>language</li>
+                <li className='fs-5 me-2' title='Language'><SiGoogletranslate/></li>
                 <li className=' d-flex'>
-                  <img src={img_united_arab_emirates} alt={img_united_arab_emirates} className=' w-25' loading='lazy' />
-                
+                  <span className='lang-flag' role='img' aria-label={selectedLanguageOption}>{LanguageFlags[selectedLanguageOption]}</span>
                   <div className="custom-select">
             <div className="selected-option opt4" onClick={toggleLanguagesOptions}>
                 {selectedLanguageOption}
@@ -519,7 +387,7 @@ export default function Navbar() {
                 <ul className="options">
                     {LanguagesOptions.map((option, index) => (
                         <li key={index} onClick={() => handleOptionClick4(option)}>
-                            {option}
+                            <span className='lang-flag' role='img' aria-label={option}>{LanguageFlags[option]}</span> {option}
                         </li>
                     ))}
                 </ul>
@@ -642,7 +510,7 @@ export default function Navbar() {
                 <ul className="Brand_Options">
                     {carBrands.map((option, index) => (
                         <li key={index} onClick={() => handleOptionClick7(option)}>
-                          <Link to={option.path + option.linkName} className=' text-decoration-none' aria-label={`Go to ${option.linkName} page`}>
+                          <Link to={option.path} className=' text-decoration-none' aria-label={`Go to ${option.linkName} page`}>
                           <img src={option.img} alt={option.img} width={80} height={50} loading='lazy' />
                             <span className=' ms-2'>{option.linkName}</span>
                             </Link>

@@ -2,9 +2,9 @@ import React from 'react'
 import Slider from "react-slick";
 import { MdOutlineNavigateNext } from "react-icons/md";
 import { GrFormPrevious } from "react-icons/gr";
-import img1 from "../../../../../images/img_whatsapp_image_2023_01_19.png"
 import MainCardCursel from '../../../../../ImportantSlicesSharedComponents/mainCardCursel';
-export default function RentSUVLuxuryCursel() {
+import { luxurySuvs } from '../../../../../data/cars';
+export default function RentSUVLuxuryCursel({products = luxurySuvs}) {
     function SampleNextArrow(props) {
         const {onClick } = props;
         return (
@@ -51,64 +51,6 @@ export default function RentSUVLuxuryCursel() {
         ]
       };
     
-      let products = [
-        {
-          id:1,
-          title:"BMW X5 Convertible slider ",
-          img:img1,
-          whatsapp:12553355,
-          email:"info@mail.com",
-          call:1235566,
-        },
-        {
-          id:2,
-          title:"BMW X5 Convertible slider ",
-          img:img1,
-          whatsapp:12553355,
-          email:"info@mail.com",
-          call:1235566,
-        },
-        {
-          id:3,
-          title:"BMW X5 Convertible slider ",
-          img:img1,
-          whatsapp:12553355,
-          email:"info@mail.com",
-          call:1235566,
-        },
-        {
-          id:4,
-          title:"BMW X5 Convertible slider ",
-          img:img1,
-          whatsapp:12553355,
-          email:"info@mail.com",
-          call:1235566,
-        },
-        {
-          id:5,
-          title:"BMW X5 Convertible slider ",
-          img:img1,
-          whatsapp:12553355,
-          email:"info@mail.com",
-          call:1235566,
-        },
-        {
-          id:6,
-          title:"BMW X5 Convertible slider ",
-          img:img1,
-          whatsapp:12553355,
-          email:"info@mail.com",
-          call:1235566,
-        },
-        {
-          id:7,
-          title:"BMW X5 Convertible slider ",
-          img:img1,
-          whatsapp:12553355,
-          email:"info@mail.com",
-          call:1235566,
-        },
-      ]
       return (
         <section className='overflow-hidden RentSUVLuxuryCursel'>
        <div className="container main-slider mb-5">
@@ -122,6 +64,13 @@ export default function RentSUVLuxuryCursel() {
             ownerWhatsapp = {pro.whatsapp}
             ownerEmail = {pro.email}
             ownerCall = {pro.call}
+            pricePerDay = {pro.pricePerDay}
+            pricePerWeek = {pro.pricePerWeek}
+            pricePerMonth = {pro.pricePerMonth}
+            deposit = {pro.deposit}
+            minDays = {pro.minDays}
+            supplier = {pro.supplier}
+            supplierLogo = {pro.supplierLogo}
             /> 
         )}
       </Slider>

@@ -2,17 +2,23 @@ import React from 'react'
 import Slider from "react-slick";
 import { MdOutlineNavigateNext } from "react-icons/md";
 import { GrFormPrevious } from "react-icons/gr";
-import img1 from "../../../../../images/img_convertible.png"
+import imgSport from "../../../../../images/cartypes/sport-cars.jpg"
+import imgConvertible from "../../../../../images/cartypes/convertibles.jpg"
+import imgCoupe from "../../../../../images/cartypes/coupes.jpg"
+import imgElectric from "../../../../../images/cartypes/electric-cars.jpg"
+import imgSedan from "../../../../../images/cartypes/luxury-sedans.jpg"
+import imgSUV from "../../../../../images/cartypes/luxury-suvs.jpg"
+import imgExotic from "../../../../../images/cartypes/exotic-supercars.jpg"
 import { Link } from 'react-router-dom';
 export default function CarTypeCursel() {
     function SampleNextArrow(props) {
         const {onClick } = props;
         return (
           <div onClick={onClick}><i className="position-absolute right top-50 fs-3"><MdOutlineNavigateNext/></i></div>
-          
+
         );
       }
-      
+
       function SamplePrevArrow(props) {
         const {onClick } = props;
         return (
@@ -59,47 +65,54 @@ export default function CarTypeCursel() {
         {
           id:1,
           title:"Sport cars",
-          img:img1
+          img:imgSport,
+          alt:"Porsche 911 GT3 RS sport car for rent in Dubai"
         },
         {
           id:2,
-          title:"Sport cars",
-          img:img1
+          title:"Convertibles",
+          img:imgConvertible,
+          alt:"Mercedes-Benz E-Class Cabriolet convertible for rent in Dubai"
         },
         {
           id:3,
-          title:"Sport cars",
-          img:img1
+          title:"Coupes",
+          img:imgCoupe,
+          alt:"BMW M4 coupe for rent in Dubai"
         },
         {
           id:4,
-          title:"Sport cars",
-          img:img1
+          title:"Electric cars",
+          img:imgElectric,
+          alt:"Tesla Model 3 electric car for rent in Dubai"
         },
         {
           id:5,
-          title:"Sport cars",
-          img:img1
+          title:"Luxury sedans",
+          img:imgSedan,
+          alt:"Mercedes-Benz S-Class luxury sedan for rent in Dubai"
         },
         {
           id:6,
-          title:"Sport cars",
-          img:img1
+          title:"Luxury SUVs",
+          img:imgSUV,
+          alt:"Range Rover Sport luxury SUV for rent in Dubai"
         },
         {
           id:7,
-          title:"Sport cars",
-          img:img1
+          title:"Exotic supercars",
+          img:imgExotic,
+          alt:"Lamborghini Huracan exotic supercar for rent in Dubai"
         },
       ]
       return (
-        <section className='carTypeSlider overflow-hidden'>
+        <section className='carTypeSlider carTypeCards overflow-hidden'>
        <div className="container main-slider mb-5">
          <Slider {...settings}>
           {products.map((pro)=> <div className='p-2 content' key={pro.id}>
            <Link to={`/Category/` + pro.id} aria-label="Go to categories's page" className=' text-decoration-none'>
            <div className='slider-pro border-0  overflow-hidden'>
-          <img src={pro.img} alt="" className='w-100' loading='lazy'/>
+          <img src={pro.img} alt={pro.alt} width="600" height="400" className='w-100' loading='lazy'/>
           <div className='title'>
           <span className='text-capitalize badge'>{pro.title}</span>
           </div>
@@ -111,4 +124,3 @@ export default function CarTypeCursel() {
         </section>
       )
     }
-    

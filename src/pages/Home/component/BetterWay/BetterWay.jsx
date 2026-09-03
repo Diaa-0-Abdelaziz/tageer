@@ -8,10 +8,15 @@ import 'swiper/css/navigation';
 import { BsListUl } from "react-icons/bs";
 import { CiCalendar } from "react-icons/ci";
 import { LuCheckSquare } from "react-icons/lu";
-import line1 from "../../../../images/Line@2x11.png"
-import line2 from "../../../../images/Line@2x.png"
 import paner from "../../../../images/img_rum_banner.png"
 import "./BetterWay.css"
+
+const steps = [
+  { icon: <BsListUl />, title: 'Choose Your Car', exp: 'Select a car using search or catalog.' },
+  { icon: <CiCalendar />, title: 'Contact Your Dealer', exp: 'After you’ve selected a car a dealer will contact you.' },
+  { icon: <LuCheckSquare />, title: 'Get Your Car', exp: 'Here you are! Your car is book and waiting for you.' },
+];
+
 export default function BetterWay() {
   return (
     <>
@@ -40,38 +45,26 @@ export default function BetterWay() {
         <SwiperSlide><img src={paner} alt={paner} width={100} className=' w-100'  loading='lazy'/></SwiperSlide>
         <SwiperSlide><img src={paner} alt={paner} width={100} className=' w-100'  loading='lazy'/></SwiperSlide>
       </Swiper>
-        
+
       </div>
       <div className='text'>
       <h3>Better Way to Find Your Perfect Car</h3>
       <p>In hac habitasse platea dictumst. In pharetra tellus eu justo tincidunt bibendum. Morbi rutrum elit ligula, eget fringilla sem pellentesque aliquam suspendisse.</p>
       </div>
-      <ul className=' list-unstyled d-flex flex-nowrap align-items-center flex-nowrap justify-content-center'>
-        <li className='notLine'>
-            <div><BsListUl/></div>
-            <span className='head badge text-dark'>Choose Your Car</span>
-            <span className='exp px-1 pb-2'>Select a car using search or catalog.</span>
-        </li>
-        <li>
-            <img src={line1} alt={line1} width={100} loading='lazy'/>
-        </li>
-        <li className='notLine'>
-        <div><CiCalendar/></div>
-        <span className=' head badge text-dark'>Contact Your Dealer</span>
-        <span className=' exp px-1 pb-2'>After you’ve selected a car a dealer will contact you.</span>
-        </li>
-        <li>
-            <img src={line2} alt={line2} width={100} loading='lazy'/>
-        </li>
-        <li className='notLine'>
-        <div><LuCheckSquare/></div>
-        <span className=' head badge text-dark'>Get Your Car</span>
-        <span className=' exp px-1 pb-2'>Here you are! Your car is book and waiting for you.</span>
-        </li>
+      <ul className='steps list-unstyled d-flex flex-wrap align-items-start justify-content-center'>
+        {steps.map((step, i) => (
+          <li className='step' key={step.title}>
+              <div className='icon-wrap'>
+                  <span className='num'>{`0${i + 1}`}</span>
+                  {step.icon}
+              </div>
+              <span className='head'>{step.title}</span>
+              <span className='exp'>{step.exp}</span>
+          </li>
+        ))}
       </ul>
       </div>
     </section>
     </>
   )
 }
-

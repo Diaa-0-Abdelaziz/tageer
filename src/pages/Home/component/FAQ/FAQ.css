@@ -1,5 +1,5 @@
 .faq h2 {
-  color: #3D1F50;
+  color: #17233E;
 }
 .faq .article {
   background-color: #E6F6FF;
@@ -30,4 +30,6 @@
 }
 .faq .article .button .accordion-body {
   font-size: 25px;
-}/*# sourceMappingURL=FAQ.css.map */
+}
+
+/*# sourceMappingURL=FAQ.css.map */
