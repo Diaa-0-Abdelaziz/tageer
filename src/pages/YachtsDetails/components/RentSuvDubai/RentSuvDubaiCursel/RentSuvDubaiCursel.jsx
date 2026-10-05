@@ -7,7 +7,7 @@ import logo from "../../../../../images/brand/zenith-icon.png"
 import ContactBar from '../../../../../ImportantSlicesSharedComponents/ContactBar';
 
 export default function RentSuvDubaiCursel({yacht: source}) {
-    const { t, lang, money, yacht: localize } = useLocalize();
+    const { t, money, yacht: localize } = useLocalize();
     if (!source) return null;
     const yacht = localize(source);
 

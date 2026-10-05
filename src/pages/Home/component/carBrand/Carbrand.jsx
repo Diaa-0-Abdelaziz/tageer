@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import React, { useState } from 'react';
 import CarBrandeCursel from './CarBrandeCursel/CarBrandeCursel';
 export default function Carbrand() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
     const [isExpanded, setIsExpanded] = useState(false);
 

@@ -6,7 +6,7 @@ import { GrFormPrevious } from "react-icons/gr";
 import MainCardCursel from '../../../../../ImportantSlicesSharedComponents/mainCardCursel';
 import { luxurySuvs } from '../../../../../data/cars';
 export default function RentSUVLuxuryCursel({products = luxurySuvs}) {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
 
     function SampleNextArrow(props) {
         const {onClick } = props;

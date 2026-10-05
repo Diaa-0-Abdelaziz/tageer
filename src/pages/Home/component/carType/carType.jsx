@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import React, { useState } from 'react';
 import CarTypeCursel from './carTypeCursel/carTypeCursel';
 export default function CarType() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
     const [isExpanded, setIsExpanded] = useState(false);
 

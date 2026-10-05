@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import CarRentalCompaniesCursel from './CarRentalCompaniesCursel/CarRentalCompaniesCursel';
 import { Link } from 'react-router-dom';
 export default function CarRentalCompanies() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
     const [isExpanded, setIsExpanded] = useState(false);
 
