@@ -20,6 +20,11 @@ import imgPegas from "../images/fleet/kia-pegas.jpg";
 import imgAttrage from "../images/fleet/mitsubishi-attrage.jpg";
 import imgCorolla from "../images/fleet/toyota-corolla.jpg";
 import imgMalibu from "../images/fleet/chevrolet-malibu.jpg";
+import imgPorsche911 from "../images/cartypes/sport-cars.jpg";
+import imgHuracan from "../images/cartypes/exotic-supercars.jpg";
+import imgEClassCab from "../images/cartypes/convertibles.jpg";
+import imgM4 from "../images/cartypes/coupes.jpg";
+import imgModel3 from "../images/cartypes/electric-cars.jpg";
 
 // Extra gallery shots per car. A car with no extras simply shows its card photo.
 import gBmwX52 from "../images/fleet/gallery/bmw-x5-2.jpg";
@@ -604,10 +609,176 @@ export const cars = [
       "Salik tag fitted",
     ],
   }),
+  car({
+    id: 15,
+    slug: "porsche-911-gt3-rs",
+    title: "Porsche 911 GT3 RS",
+    img: imgPorsche911,
+    category: "sport",
+    brand: "Porsche",
+    model: "911 GT3 RS",
+    year: 2010,
+    color: "Orange",
+    bodyType: "Sports coupe",
+    doors: 2,
+    seats: 2,
+    engine: "3.6L naturally aspirated flat-six",
+    power: "415 hp",
+    transmission: "6-speed manual, rear-wheel drive",
+    fuel: "Petrol",
+    mileagePerDay: 150,
+    supplier: "Marina Auto Rental",
+    pricePerDay: 1600, pricePerWeek: 10000, pricePerMonth: 30000, deposit: 10000, minDays: 1,
+    description:
+      "The GT3 RS is a road-legal track car. A high-revving flat-six, a close-ratio manual gearbox and almost no sound deadening make it one of the most involving cars you can rent in Dubai.",
+    highlights:
+      "It is light, loud and demands attention, which is exactly the point. Book it for an early-morning drive along the Hatta road or a weekend at the Dubai Autodrome, and expect to be noticed everywhere you park.",
+    features: [
+      "3.6L naturally aspirated flat-six, 8,400 rpm limit",
+      "6-speed manual gearbox",
+      "Lightweight bucket seats",
+      "Ceramic-ready sport brakes",
+      "Rear wing and carbon bonnet",
+      "Salik tag fitted",
+    ],
+  }),
+  car({
+    id: 16,
+    slug: "lamborghini-huracan-tecnica",
+    title: "Lamborghini Huracán Tecnica",
+    img: imgHuracan,
+    category: "sport",
+    brand: "Lamborghini",
+    model: "Huracán Tecnica",
+    year: 2023,
+    color: "Blu Eleos",
+    bodyType: "Supercar",
+    doors: 2,
+    seats: 2,
+    engine: "5.2L naturally aspirated V10",
+    power: "631 hp",
+    transmission: "7-speed dual-clutch, rear-wheel drive",
+    fuel: "Petrol",
+    mileagePerDay: 150,
+    supplier: "Marina Auto Rental",
+    pricePerDay: 3500, pricePerWeek: 22000, pricePerMonth: 64000, deposit: 20000, minDays: 1,
+    description:
+      "The Tecnica takes the Huracán's V10 and wraps it in sharper aerodynamics and a rear-wheel-drive chassis tuned for road and track. It is the supercar most visitors have in mind when they ask for one in Dubai.",
+    highlights:
+      "The naturally aspirated V10 revs to 8,500 rpm and sounds like nothing else on Sheikh Zayed Road. Expect a firm ride, low ground clearance and a lot of attention, so plan your parking and your route accordingly.",
+    features: [
+      "5.2L naturally aspirated V10, 631 hp",
+      "0 to 100 km/h in 3.2 seconds",
+      "Rear-wheel drive with rear-wheel steering",
+      "Lifting system for the front axle",
+      "Apple CarPlay touchscreen",
+      "Salik tag fitted",
+    ],
+  }),
+  car({
+    id: 17,
+    slug: "mercedes-e-class-cabriolet",
+    title: "Mercedes-Benz E-Class Cabriolet",
+    img: imgEClassCab,
+    category: "sport",
+    brand: "Mercedes-Benz",
+    model: "E 200 Cabriolet AMG Line",
+    year: 2021,
+    color: "Cavansite Blue",
+    bodyType: "Convertible",
+    doors: 2,
+    seats: 4,
+    engine: "2.0L turbocharged 4-cylinder",
+    power: "197 hp",
+    transmission: "9-speed automatic, rear-wheel drive",
+    fuel: "Petrol",
+    mileagePerDay: 250,
+    supplier: "Palm Coast Rentals",
+    pricePerDay: 750, pricePerWeek: 4600, pricePerMonth: 13500, deposit: 3000, minDays: 1,
+    description:
+      "A four-seat cabriolet that is as comfortable in traffic as it is on an open coastal road. The fabric roof folds away in under 20 seconds, and the heated neck-level vents keep the cabin pleasant on cooler evenings.",
+    highlights:
+      "It is the easy way to enjoy Dubai's winter months: Jumeirah Beach Road with the roof down, an evening along the Creek, or a day out to Fujairah. The boot still takes two cabin bags with the roof folded.",
+    features: [
+      "Electric fabric roof, opens at up to 50 km/h",
+      "Air Scarf neck-level heating",
+      "AMG Line styling",
+      "12.3-inch digital instrument cluster",
+      "Apple CarPlay and Android Auto",
+      "Salik tag fitted",
+    ],
+  }),
+  car({
+    id: 18,
+    slug: "bmw-m4-csl",
+    title: "BMW M4 CSL",
+    img: imgM4,
+    category: "sport",
+    brand: "BMW",
+    model: "M4 CSL",
+    year: 2023,
+    color: "Brooklyn Grey",
+    bodyType: "Sports coupe",
+    doors: 2,
+    seats: 2,
+    engine: "3.0L twin-turbo inline-6",
+    power: "543 hp",
+    transmission: "8-speed automatic, rear-wheel drive",
+    fuel: "Petrol",
+    mileagePerDay: 200,
+    supplier: "Palm Coast Rentals",
+    pricePerDay: 1900, pricePerWeek: 12000, pricePerMonth: 34000, deposit: 8000, minDays: 1,
+    description:
+      "The M4 CSL is the lightest and fastest road car BMW M has built in its class. Carbon-fibre bodywork, a stripped-out rear seat and a stiffer chassis make it a coupe for people who care how it drives.",
+    highlights:
+      "Power arrives instantly from the twin-turbo six and the steering is direct and precise. It is firm over bumps, so it suits smooth highways and mountain roads such as Jebel Jais more than city potholes.",
+    features: [
+      "3.0L twin-turbo inline-6, 543 hp",
+      "Carbon-fibre roof and bonnet",
+      "Two bucket seats, no rear bench",
+      "Adaptive M suspension",
+      "M Drift Analyser",
+      "Salik tag fitted",
+    ],
+  }),
+  car({
+    id: 19,
+    slug: "tesla-model-3-performance",
+    title: "Tesla Model 3 Performance",
+    img: imgModel3,
+    category: "sport",
+    brand: "Tesla",
+    model: "Model 3 Performance",
+    year: 2024,
+    color: "Ultra Red",
+    bodyType: "Electric sedan",
+    doors: 4,
+    seats: 5,
+    engine: "Dual-motor electric",
+    power: "510 hp",
+    transmission: "Single-speed automatic, all-wheel drive",
+    fuel: "Electric",
+    mileagePerDay: 250,
+    supplier: "Palm Coast Rentals",
+    pricePerDay: 650, pricePerWeek: 4000, pricePerMonth: 11500, deposit: 3000, minDays: 1,
+    description:
+      "The quickest car on the sport list for the money, and the only electric one. Instant torque takes it to 100 km/h in 3.1 seconds in near silence, and it is still a practical five-seat family sedan.",
+    highlights:
+      "There is no fuel to buy and many public charging bays in Dubai are free or cheap. The 15.4-inch touchscreen runs navigation, streaming and the climate controls, and the car handles motorway driving with its adaptive cruise control.",
+    features: [
+      "Dual-motor all-wheel drive, 510 hp",
+      "0 to 100 km/h in 3.1 seconds",
+      "Up to 600 km of range",
+      "15.4-inch touchscreen",
+      "Autopilot and adaptive cruise control",
+      "Salik tag fitted",
+    ],
+  }),
 ];
 
 export const luxurySuvs = cars.filter((c) => c.category === "luxury");
 export const cheapCars = cars.filter((c) => c.category === "economy");
+export const sportCars = cars.filter((c) => c.category === "sport");
 export const getCarById = (id) => cars.find((c) => String(c.id) === String(id));
 
 // Free-text search over the catalogue. Matches the car name, brand, model, body type,
@@ -615,7 +786,7 @@ export const getCarById = (id) => cars.find((c) => String(c.id) === String(id));
 const searchIndex = (c) =>
   [
     c.title, c.brand, c.model, c.bodyType, c.color, c.supplier, c.category,
-    c.category === "economy" ? "cheap budget economy" : "luxury premium",
+    { economy: "cheap budget economy", sport: "sport sports supercar fast performance", luxury: "luxury premium" }[c.category] || "",
     String(c.year), c.fuel, c.engine,
   ]
     .join(" ")

@@ -1,4 +1,5 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 import { GoDotFill } from "react-icons/go";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
@@ -6,21 +7,22 @@ import { IoCallSharp } from "react-icons/io5";
 import { Link } from 'react-router-dom';
 import logo from "../images/brand/zenith-icon.png"
 export default function SecondCards({Productindex, productImage, ProductDoors, ProductEngine, ProductPriceOfDay, ProductPriceOfMonth,  ProductPriceOfWeek, ProductDeposit,  ProductMinimumOfDays, ProductColor, ProductBrand, ProductModel, ProductYear, ProductType,  productTitle, ownerWhatsapp, ownerEmail, ownerCall}) {
+  const { t } = useTranslation();
   return (
     <div className="card">
     <div className="row">
       <div className="col-lg-5 position-relative">
         <Link to={`/CarList/` + Productindex}>
-        <img src={productImage} className="h-100 w-100" alt={productImage}/>
+        <img src={productImage} className="h-100 w-100" alt={productTitle}/>
         </Link>
         
         <div className="options d-flex  justify-content-around flex-wrap links position-absolute top-0 start-0 w-100 mt-3">
             <ul className=' list-unstyled d-flex justify-content-between'>
-              <li className='badge  Featured'>Featured</li>
-              <li className='badge  Premium'>Premium</li>
-              <li className='badge  Verified'>Verified</li>
+              <li className='badge  Featured'>{t('common.featured')}</li>
+              <li className='badge  Premium'>{t('common.premium')}</li>
+              <li className='badge  Verified'>{t('common.verified')}</li>
             </ul>
-            <p className='badge Save_to_wishlist text-dark'>Save to wishlist</p>
+            <p className='badge Save_to_wishlist text-dark'>{t('common.saveToWishlist')}</p>
             </div>
      
       </div>
@@ -30,29 +32,29 @@ export default function SecondCards({Productindex, productImage, ProductDoors, P
         <h2>{productTitle}</h2>
         <div className="feature_details d-flex justify-content-start align-items-center">
              <ul>
-              <li><GoDotFill/> Car color: {ProductColor}</li>
-              <li><GoDotFill/> Car brand: {ProductBrand}</li>
-              <li><GoDotFill/> Car model: {ProductModel}</li>
-              <li><GoDotFill/> Car year: {ProductYear}</li>
-              <li><GoDotFill/> Car Type: {ProductType}</li>
+              <li><GoDotFill/> {t('card.color')}: {ProductColor}</li>
+              <li><GoDotFill/> {t('card.brand')}: {ProductBrand}</li>
+              <li><GoDotFill/> {t('card.model')}: {ProductModel}</li>
+              <li><GoDotFill/> {t('card.year')}: {ProductYear}</li>
+              <li><GoDotFill/> {t('card.type')}: {ProductType}</li>
              </ul>
              <ul>
-              <li><GoDotFill/> No. Of Doors: {ProductDoors}</li>
-              <li><GoDotFill/> Engine:  {ProductEngine}</li>
-              <li><GoDotFill/> Minimum of Days: {ProductMinimumOfDays}</li>
-              <li><GoDotFill/> Deposit:  {ProductDeposit}</li>
+              <li><GoDotFill/> {t('card.doors')}: {ProductDoors}</li>
+              <li><GoDotFill/> {t('card.engine')}: {ProductEngine}</li>
+              <li><GoDotFill/> {t('card.minDays')}: {ProductMinimumOfDays}</li>
+              <li><GoDotFill/> {t('card.deposit')}: {ProductDeposit}</li>
              </ul>
              <ul className='pricing'>
               <li>
-                  <span>Day</span>
+                  <span>{t('card.day')}</span>
                   <span>{ProductPriceOfDay}</span>
               </li>
               <li>
-                  <span>Week</span>
+                  <span>{t('card.week')}</span>
                   <span>{ProductPriceOfWeek}</span>
               </li>
               <li>
-                <span>Month</span>
+                <span>{t('card.month')}</span>
                   <span>{ProductPriceOfMonth}</span>
               </li>
              </ul>
@@ -68,7 +70,7 @@ export default function SecondCards({Productindex, productImage, ProductDoors, P
                             </div>
                             <IoLogoWhatsapp />
                         </i>
-                        <span>WHATSAPP</span>
+                        <span>{t('common.whatsapp')}</span>
                     </li>
                     <li>
                         <i onClick={() => window.open(`mailto:${ownerEmail}`)}>
@@ -79,7 +81,7 @@ export default function SecondCards({Productindex, productImage, ProductDoors, P
                             </div>
                             <MdEmail/>
                         </i>
-                        <span>EMAIL</span>
+                        <span>{t('common.email')}</span>
                     </li>
                     <li>
                         <i onClick={() => window.open(`tel:+${ownerCall}`)}>
@@ -90,7 +92,7 @@ export default function SecondCards({Productindex, productImage, ProductDoors, P
                             </div>
                             <IoCallSharp/>
                         </i>
-                        <span>CALL</span>
+                        <span>{t('common.call')}</span>
                     </li>
                     <li className='imgLogo'>
                     <img src={logo} alt={logo}/>

@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination} from 'swiper/modules';
@@ -11,19 +12,19 @@ import { LuCheckSquare } from "react-icons/lu";
 import paner from "../../../../images/img_rum_banner.png"
 import "./BetterWay.css"
 
-const steps = [
-  { icon: <BsListUl />, title: 'Choose Your Car', exp: 'Select a car using search or catalog.' },
-  { icon: <CiCalendar />, title: 'Contact Your Dealer', exp: 'After you’ve selected a car a dealer will contact you.' },
-  { icon: <LuCheckSquare />, title: 'Get Your Car', exp: 'Here you are! Your car is book and waiting for you.' },
-];
+const stepIcons = [<BsListUl />, <CiCalendar />, <LuCheckSquare />];
 
 export default function BetterWay() {
+  const { t, i18n } = useTranslation();
+  const steps = t('home.betterWay.steps', { returnObjects: true });
   return (
     <>
     <section className='BetterWay text-center'>
       <div className="container">
       <div className="img_cover">
       <Swiper
+        dir={i18n.dir()}
+        key={i18n.dir()}
         spaceBetween={50}
         centeredSlides={true}
         autoplay={{
@@ -48,15 +49,15 @@ export default function BetterWay() {
 
       </div>
       <div className='text'>
-      <h3>Better Way to Find Your Perfect Car</h3>
-      <p>In hac habitasse platea dictumst. In pharetra tellus eu justo tincidunt bibendum. Morbi rutrum elit ligula, eget fringilla sem pellentesque aliquam suspendisse.</p>
+      <h3>{t('home.betterWay.title')}</h3>
+      <p>{t('home.betterWay.text')}</p>
       </div>
       <ul className='steps list-unstyled d-flex flex-wrap align-items-start justify-content-center'>
         {steps.map((step, i) => (
-          <li className='step' key={step.title}>
+          <li className='step' key={i}>
               <div className='icon-wrap'>
                   <span className='num'>{`0${i + 1}`}</span>
-                  {step.icon}
+                  {stepIcons[i]}
               </div>
               <span className='head'>{step.title}</span>
               <span className='exp'>{step.exp}</span>

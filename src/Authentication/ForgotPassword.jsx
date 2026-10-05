@@ -1,11 +1,13 @@
+import { useTranslation } from 'react-i18next';
 import React from 'react'
 import { IoCloseOutline } from "react-icons/io5";
 import { useFormik } from 'formik'
 import * as Yup from 'yup'
 import "./Register.css"
 export default function ForgotPassword({toggleVisibility, writeCode}) {
+    const { t } = useTranslation();
     let mySchema = Yup.object({
-          email:Yup.string().email("email isn't valid").required('email is required')
+          email:Yup.string().email(t('auth.v.emailInvalid')).required(t('auth.v.emailRequired'))
         })
   
       let initialValues ={email:""}
@@ -30,14 +32,14 @@ export default function ForgotPassword({toggleVisibility, writeCode}) {
     <div className="container d-flex align-items-center justify-content-center h-100">
       
             <div className="form_content">
-                <h6 className=' position-relative'>Write Valid Email <IoCloseOutline onClick={() => toggleVisibility()} className='close_Window position-absolute me-5 end-0 fs-4 top-50 translate-middle-y'/></h6>
+                <h6 className=' position-relative'>{t('auth.forgotTitle')} <IoCloseOutline onClick={() => toggleVisibility()} className='close_Window position-absolute me-5 end-0 fs-4 top-50 translate-middle-y'/></h6>
                 <form onSubmit={formik.handleSubmit}>
           
                   <div className="mb-3">
-                  <input type="email" className="inputsForm"  placeholder="Enter your email......."  value={formik.values.email || ''} name="email" onChange={formik.handleChange} onBlur={formik.handleBlur}/>
+                  <input type="email" className="inputsForm"  placeholder={t('auth.forgotPlaceholder')}  value={formik.values.email || ''} name="email" onChange={formik.handleChange} onBlur={formik.handleBlur}/>
                   {formik.touched.email && formik.errors.email ? <p className='text-danger'>{formik.errors.email}</p>: ""}
                   </div>
-                    <button type="submit" className="text-uppercase  my-2" disabled={!(formik.isValid && formik.dirty)} onClick={() => writeCode()}>Next</button>
+                    <button type="submit" className="text-uppercase  my-2" disabled={!(formik.isValid && formik.dirty)} onClick={() => writeCode()}>{t('auth.next')}</button>
                 </form>
             </div>
        

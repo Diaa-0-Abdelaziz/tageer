@@ -1,42 +1,75 @@
 import React, { useState, lazy, Suspense } from 'react';
+import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import Loading from '../../Loading';
-const Filter= lazy(() => import('./FILTER/filter'));
-const BESTSERVICES= lazy(() => import('./BEST-SERVICES/BESTSERVICES'));
-const FAQ= lazy(() => import('./FAQ/FAQ'));
-
+import { offers, offerFigures } from '../../data/offers';
+import PageIntro from '../../ImportantSlicesSharedComponents/PageIntro';
+import './offers.css';
+const PageServices= lazy(() => import('../../ImportantSlicesSharedComponents/PageServices'));
+const PageFAQ= lazy(() => import('../../ImportantSlicesSharedComponents/PageFAQ'));
 
 export default function CarRentalDealsOffers() {
-    const [isExpanded, setIsExpanded] = useState(false);
-    const toggleExpanded = () => {
-      setIsExpanded(!isExpanded);
+    const { t } = useTranslation();
+    const [copied, setCopied] = useState('');
+    const date = t('offers.date');
+    const aed = (n) => t('card.aed', { value: Number(n).toLocaleString('en-US') });
+    // figures quoted inside the offer texts, formatted as money
+    const figures = { day: aed(offerFigures.day), month: aed(offerFigures.month), transfer: aed(offerFigures.transfer) };
+
+    const copyCode = async (code) => {
+      let ok = false;
+      try {
+        await navigator.clipboard.writeText(code);
+        ok = true;
+      } catch (e) {
+        // clipboard API unavailable (insecure context / denied): fall back to a hidden textarea
+        const area = document.createElement('textarea');
+        area.value = code;
+        area.style.position = 'fixed';
+        area.style.opacity = '0';
+        document.body.appendChild(area);
+        area.select();
+        try { ok = document.execCommand('copy'); } catch (err) { ok = false; }
+        document.body.removeChild(area);
+      }
+      setCopied(ok ? code : 'failed:' + code);
+      setTimeout(() => setCopied(''), 2000);
     };
   return (
-    <>
-    <section className='CarType pt-3 mb-5'>
-        <div className="container">
-        <div className='CarType_Header d-flex justify-content-between mb-3 align-items-center'>
-        <h3 className=''>Rent SUV in Dubai</h3>
+    <div className='NavyPage'>
+    <PageIntro id='offers' values={{ date }} className='CarType pt-3'/>
+
+    <section className='offers-grid'>
+      <div className='container'>
+        <div className='row'>
+          {offers.map((offer) => {
+            const key = `offers.items.${offer.id}`;
+            return (
+              <div className='col-xl-4 col-md-6 mb-4' key={offer.id}>
+                <article className='offer-card'>
+                  <div className='offer-top'>
+                    <span className='offer-tag'>{t(`${key}.tag`)}</span>
+                    <span className='offer-badge'>{t(`${key}.badge`, figures)}</span>
+                  </div>
+                  <h4>{t(`${key}.title`)}</h4>
+                  <p className='offer-desc'>{t(`${key}.description`, figures)}</p>
+                  {offer.code && (
+                    <button type='button' className='offer-code' onClick={() => copyCode(offer.code)} aria-label={t('offers.copyAria', { code: offer.code })}>
+                      <span>{offer.code}</span>
+                      <small>{copied === offer.code ? t('offers.copied') : copied === 'failed:' + offer.code ? t('offers.copyManually') : t('offers.copy')}</small>
+                    </button>
+                  )}
+                  <p className='offer-terms'>{t(`${key}.conditions`)} {t('offers.validUntil', { date })}</p>
+                  <Link to={offer.to} className='offer-cta'>{t(`${key}.cta`)} &rarr;</Link>
+                </article>
+              </div>
+            );
+          })}
         </div>
-        <p className=' fw-bold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, laborum.</p>
-        <p className={` position-relative ${isExpanded ? 'expanded' : 'collapsed'}`}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          {!isExpanded ?
-          <span onClick={toggleExpanded} className=" position-absolute bottom-0 end-0 mt-2 read_more text-decoration-underline fw-bold">read more</span>:<span onClick={toggleExpanded} className=" position-absolute bottom-0 end-0 mt-2 read_more text-decoration-underline fw-bold">read less</span> 
-          }
-        </p>
-        </div>
+      </div>
     </section>
-    <Suspense fallback={<Loading/>}> <Filter/></Suspense>
-    <Suspense fallback={<Loading/>}> <BESTSERVICES/></Suspense>
-    <Suspense fallback={<Loading/>}>  <FAQ/></Suspense>
-    </>
+    <Suspense fallback={<Loading/>}> <PageServices/></Suspense>
+    <Suspense fallback={<Loading/>}> <PageFAQ set='offers'/></Suspense>
+    </div>
   )
 }
-

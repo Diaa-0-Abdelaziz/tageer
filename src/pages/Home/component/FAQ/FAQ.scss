@@ -28,11 +28,12 @@
             transition: all .3s;
             font-size: 20px;
             position: absolute;
-            right: 0;
+            inset-inline-end: 0;
         }
         .question
         {
             font-size: 25px;
+            padding-inline-end: 44px;
         }
         .accordion-body{
             font-size: 25px;

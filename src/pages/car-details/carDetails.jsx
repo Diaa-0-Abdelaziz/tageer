@@ -3,8 +3,8 @@ import { useParams } from 'react-router-dom';
 import Loading from '../../Loading';
 import { cars, getCarById } from '../../data/cars';
 const RentSuvDubai= lazy(() => import('./components/RentSuvDubai/RentSuvDubai'));
-const FAQ= lazy(() => import('./components/FAQ/FAQ'));
-const BESTSERVICES= lazy(() => import('./components/BEST-SERVICES/BESTSERVICES'));
+const PageServices= lazy(() => import('../../ImportantSlicesSharedComponents/PageServices'));
+const PageFAQ= lazy(() => import('../../ImportantSlicesSharedComponents/PageFAQ'));
 const SuggestedCarRental= lazy(() => import('./components/SuggestedCarRental'));
 const SuggestedCarRentalCursel= lazy(() => import('./components/SuggestedCarRentalCursel/RentSUVLuxuryCursel'));
 const Notfound= lazy(() => import('../../Notfound/Notfound'));
@@ -24,12 +24,12 @@ export default function CarDetails() {
   ].slice(0, 8);
 
   return (
-   <>
+   <div className='NavyPage'>
   <Suspense fallback={<Loading/>}> <RentSuvDubai car={car}/> </Suspense>
      <Suspense fallback={<Loading/>}> <SuggestedCarRental/> </Suspense>
      <Suspense fallback={<Loading/>}> <SuggestedCarRentalCursel products={suggested}/> </Suspense>
-     <Suspense fallback={<Loading/>}> <BESTSERVICES/> </Suspense>
-     <Suspense fallback={<Loading/>}> <FAQ/> </Suspense>
-   </>
+     <Suspense fallback={<Loading/>}> <PageServices/> </Suspense>
+     <Suspense fallback={<Loading/>}> <PageFAQ set='general'/> </Suspense>
+   </div>
   )
 }

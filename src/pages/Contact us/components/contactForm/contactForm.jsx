@@ -4,16 +4,18 @@ import * as Yup from 'yup'
 import { PhoneInput } from 'react-international-phone';
 import 'react-international-phone/style.css';
 import { parsePhoneNumberFromString } from 'libphonenumber-js';
+import { useTranslation } from 'react-i18next';
 export default function ContactForm() {
+    const { t } = useTranslation();
     let mySchema = Yup.object({
-        name:Yup.string().required('name is required').min(3,'min is 3 char').max(15, 'max is 15 char') ,
-        email:Yup.string().email("email isn't valid").required('email is required'),
-        phone:Yup.string().test('phone', 'Invalid phone number', value => {
+        name:Yup.string().required(t('contact.v.nameRequired')).min(3,t('contact.v.nameMin')).max(50, t('contact.v.nameMax')) ,
+        email:Yup.string().email(t('contact.v.emailInvalid')).required(t('contact.v.emailRequired')),
+        phone:Yup.string().test('phone', t('contact.v.phoneInvalid'), value => {
             if (!value) return false;
-            const phoneNumber = parsePhoneNumberFromString(value, 'UA'); 
+            const phoneNumber = parsePhoneNumberFromString(value);
             return phoneNumber && phoneNumber.isValid();
-          }).required('Phone number is required'),
-        message:Yup.string().required('message is required').min(10,'You shold write 10 char or more').max(15, 'max length 100 char')
+          }).required(t('contact.v.phoneRequired')),
+        message:Yup.string().required(t('contact.v.messageRequired')).min(10,t('contact.v.messageMin')).max(500, t('contact.v.messageMax'))
       })
       let formik = useFormik({
         initialValues:{
@@ -39,20 +41,20 @@ export default function ContactForm() {
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7220.928369635145!2d55.281079!3d25.187564!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5d818bf1f6e3%3A0x86248e6468b6ed4e!2sTAJEER%20RENT%20A%20CAR!5e0!3m2!1sen!2skw!4v1712047952927!5m2!1sen!2skw" className=' w-100 h-100' allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title='company_Location'></iframe>
             </div>
             <div className="col-md-5">
-                <h2>SEND A MESSAGE</h2>
+                <h2>{t('contact.send')}</h2>
                 <form onSubmit={formik.handleSubmit}>
   <div className="mb-3">
-    <label htmlFor="exampleInputName1">Your Name:</label>
+    <label htmlFor="exampleInputName1">{t('contact.name')}</label>
     <input type="text" className="inputsForm" onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.name} name='name' id="exampleInputName1"/>
     {formik.touched.name && formik.errors.name ? <p className='text-danger'>{formik.errors.name}</p>: ""}
   </div>
   <div className="mb-3">
-    <label htmlFor="exampleInputEmail1">Your Email:</label>
+    <label htmlFor="exampleInputEmail1">{t('contact.email')}</label>
     <input type="email" className="inputsForm" onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.email} name='email' id="exampleInputEmail1"/>
     {formik.touched.email && formik.errors.email ? <p className='text-danger'>{formik.errors.email}</p>: ""}
   </div>
   <div className="mb-3">
-    <label htmlFor="exampleInputphone1">Your Phone Number:</label>
+    <label htmlFor="exampleInputphone1">{t('contact.phoneLabel')}</label>
     <PhoneInput 
     inputStyle={{
         width: '100%',
@@ -60,16 +62,16 @@ export default function ContactForm() {
         backgroundColor:"#E6F6FF",
         border: 'none',
     }}
-    defaultCountry="ua" onChange={phone => formik.setFieldValue('phone', phone)} onBlur={formik.handleBlur} value={formik.values.phone} name='phone' id="exampleInputphone1"/>
+    defaultCountry="ae" onChange={phone => formik.setFieldValue('phone', phone)} onBlur={formik.handleBlur} value={formik.values.phone} name='phone' id="exampleInputphone1"/>
     {formik.touched.phone && formik.errors.phone ? <p className='text-danger'>{formik.errors.phone}</p>: ""}
   </div>
   <div className="mb-3">
-    <label htmlFor="exampleInputmessage1">Your Message:</label>
+    <label htmlFor="exampleInputmessage1">{t('contact.message')}</label>
     <textarea className="inputsForm" onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.message} name='message' id="exampleInputmessage1" cols="40" rows="5"></textarea>
     {formik.touched.message && formik.errors.message ? <p className='text-danger'>{formik.errors.message}</p>: ""}
   </div>
   
-  <button disabled={!(formik.isValid && formik.dirty)} type="submit" className="text-uppercase">Send Message</button>
+  <button disabled={!(formik.isValid && formik.dirty)} type="submit" className="text-uppercase">{t('contact.submit')}</button>
   
 </form>
             </div>

@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import React from 'react'
 import Slider from "react-slick";
 import { MdOutlineNavigateNext } from "react-icons/md";
@@ -5,6 +6,8 @@ import { GrFormPrevious } from "react-icons/gr";
 import MainCardCursel from '../../../../../ImportantSlicesSharedComponents/mainCardCursel';
 import { luxurySuvs } from '../../../../../data/cars';
 export default function RentSUVLuxuryCursel({products = luxurySuvs}) {
+  const { t, i18n } = useTranslation();
+
     function SampleNextArrow(props) {
         const {onClick } = props;
         return (
@@ -24,6 +27,7 @@ export default function RentSUVLuxuryCursel({products = luxurySuvs}) {
         );
       }
       var settings = {
+        rtl: i18n.dir() === 'rtl',
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -54,7 +58,7 @@ export default function RentSUVLuxuryCursel({products = luxurySuvs}) {
       return (
         <section className='overflow-hidden RentSUVLuxuryCursel'>
        <div className="container main-slider mb-5">
-         <Slider {...settings}>
+         <Slider key={i18n.dir()} {...settings}>
           {products.map((pro)=>
             <MainCardCursel
             key={pro.id}

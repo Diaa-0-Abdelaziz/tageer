@@ -1,0 +1,1209 @@
+{
+  "nav": {
+    "home": "Home",
+    "carBrands": "Car brands",
+    "rentACar": "Rent a car",
+    "rentCarWithDriver": "Rent a car with driver",
+    "rentYacht": "Rent yacht",
+    "quickLinks": "Quick links",
+    "myAccount": "My Account",
+    "signIn": "Sign in",
+    "createAccount": "Create account",
+    "manageAccount": "Manage your account",
+    "listYourCarsPrefix": "List your cars in",
+    "listYourCarsSuffix": "platform",
+    "country": "Country",
+    "city": "City",
+    "currency": "Currency",
+    "language": "Language",
+    "callUs": "Call Us",
+    "close": "Close"
+  },
+  "rentOptions": {
+    "monthly": "Rent a car monthly",
+    "luxury": "Rent luxury car",
+    "sport": "Rent sport car",
+    "cheap": "Rent cheap car"
+  },
+  "quickOptions": {
+    "contact": "Contact us",
+    "about": "About us",
+    "blog": "Blog",
+    "terms": "Terms & Conditions"
+  },
+  "brands": {
+    "BMW": "BMW",
+    "Mercedes-Benz": "Mercedes-Benz",
+    "Audi": "Audi",
+    "Range Rover": "Range Rover",
+    "Toyota": "Toyota",
+    "Nissan": "Nissan",
+    "Dodge": "Dodge",
+    "Chrysler": "Chrysler",
+    "Infiniti": "Infiniti",
+    "Tesla": "Tesla"
+  },
+  "countries": {
+    "United Arab Emirates": "United Arab Emirates",
+    "Saudi Arabia": "Saudi Arabia",
+    "Kuwait": "Kuwait",
+    "Qatar": "Qatar"
+  },
+  "cities": {
+    "Dubai": "Dubai",
+    "Abu Dhabi": "Abu Dhabi",
+    "Al Ain": "Al Ain",
+    "Sharjah": "Sharjah"
+  },
+  "currencies": {
+    "AED": "AED",
+    "SAR": "SAR",
+    "USD": "USD",
+    "EUR": "EUR"
+  },
+  "common": {
+    "viewAll": "View all",
+    "readMore": "read more",
+    "readLess": "read less",
+    "saveToWishlist": "Save to wishlist",
+    "featured": "Featured",
+    "premium": "Premium",
+    "verified": "Verified",
+    "perDay": "Per day",
+    "perWeek": "Per week",
+    "perMonth": "Per month",
+    "deposit": "Deposit",
+    "minimumDays": "Minimum Days",
+    "aedUnit": "AED",
+    "whatsapp": "WHATSAPP",
+    "email": "EMAIL",
+    "call": "CALL",
+    "faq": "FAQ"
+  },
+  "home": {
+    "search": {
+      "viewAllCars": "View all cars",
+      "placeholder": "Search by car, brand or type — try \"BMW\", \"SUV\" or \"cheap\"",
+      "aria": "Search cars",
+      "noMatch": "No cars match “{{query}}”. Try a brand, a body type or “cheap”.",
+      "perDay": "{{price}}/day",
+      "seeAll": "See all {{count}} results",
+      "coverAlt": "Cars available to rent in Dubai"
+    },
+    "carType": {
+      "title": "Choose your favorite car type",
+      "lead": "From everyday economy cars to exotic supercars — pick the category that fits your trip and compare live prices in seconds.",
+      "body": [
+        "Not every journey needs the same car. A weekend on Sheikh Zayed Road, a family trip to Hatta, an airport pickup at DXB and a photo drive down Jumeirah Beach Road all call for something different, which is why we group our fleet by body type instead of by price alone. Browse a category and you will only see cars that actually behave the way you expect them to.",
+        "Sport cars and exotic supercars are the ones you rent for the experience: two doors, a loud engine and a driving position that makes a short trip feel like an occasion. Convertibles are best enjoyed between November and March, when the weather along the coast is at its finest and the roof can stay down all evening. Coupes sit comfortably in between — sharp to look at, easy to live with, and still practical enough for two people with luggage.",
+        "If comfort matters more than drama, luxury sedans give you a quiet cabin, a smooth ride and enough boot space for a full business trip, while luxury SUVs add the extra height, ground clearance and seating you need for families, desert roads and weekend runs across the emirates. Electric cars are the value pick for city driving: no fuel bill, free parking in many designated bays, and a growing charging network across Dubai and Abu Dhabi.",
+        "Every listing shows the daily, weekly and monthly rate, the mileage allowance, the security deposit and the insurance included, so there is nothing to discover at the counter. Delivery to your hotel, home or the airport terminal is available on most cars, and monthly rentals come with servicing and registration already covered. Choose a category below to get started."
+      ]
+    },
+    "carBrand": {
+      "title": "Choose your favorite car brand",
+      "lead": "German luxury, Japanese reliability, American muscle and electric — browse the brands our rental partners keep on the road across the UAE.",
+      "body": [
+        "Most people already know which badge they want on the bonnet before they know the model, so we let you start from the brand. Pick one and you will see every car that partner companies currently have available, with the daily, weekly and monthly rate shown side by side.",
+        "Mercedes-Benz, BMW and Audi cover the German side of the fleet, from a C-Class or a 3 Series for a business week to an S-Class or a large SUV when you are carrying clients or family. Range Rover is the default choice for anyone heading out of the city — high driving position, real ground clearance and enough space for luggage on a weekend to Fujairah or Ras Al Khaimah.",
+        "Nissan and Toyota are where the value sits. A Nissan Sunny, a Toyota Yaris or a Corolla will cover a month of commuting for a fraction of the cost of owning one, and they are the easiest cars to insure for younger drivers. Dodge and Chrysler bring the American character — a Charger or a Challenger is still the most-requested car for a weekend in Dubai — while Tesla leads the electric side, with free charging in many public bays and no fuel bill at all.",
+        "Whichever brand you pick, the terms are the same: a valid driving licence, Emirates ID or passport, a refundable security deposit, and comprehensive insurance already included in the price. Delivery to your hotel, residence or airport terminal is available on request."
+      ]
+    },
+    "suv": {
+      "title": "Rent SUV Luxury Car In Dubai",
+      "lead": "Seven-seaters, high driving position and enough boot space for the whole family — the SUVs UAE residents and visitors book most.",
+      "body": [
+        "An SUV is the default choice in the UAE for a reason. The extra ride height makes speed bumps, sand drifts and unmarked construction roads a non-issue, the cabins are built for long air-conditioned drives, and there is room for luggage even with five people on board. Everything in this list is available today from a licensed rental partner in Dubai.",
+        "At the top end, the Range Rover Sport, Mercedes-Benz G-Class and Lexus LX 600 are the cars people book for weddings, client pickups and long weekends in Hatta or Ras Al Khaimah. The BMW X5, Audi Q8 and Porsche Cayenne sit a step below on price but drive better on the highway, which makes them the sensible pick for a week of commuting between Dubai and Abu Dhabi. The Nissan Patrol remains the value option and the only one on this list built for real dune driving.",
+        "Every rate shown is the all-in daily, weekly or monthly price with comprehensive insurance included. Weekly bookings are roughly 20% cheaper per day than the daily rate, and monthly bookings are cheaper again, with servicing, registration and Salik registration handled by the supplier. The security deposit is refunded within 21 days of returning the car, once any outstanding fines have cleared.",
+        "To book you need a valid UAE driving licence, or an international driving permit plus your home licence if you are visiting, an Emirates ID or passport, and a credit card in the driver's name for the deposit. Free delivery to your hotel, residence or DXB and AUH terminals is available on most cars in this list."
+      ]
+    },
+    "cheap": {
+      "title": "Rent Cheap Car In Dubai",
+      "lead": "Economy sedans from 75 AED a day - the cheapest way to stay mobile in Dubai without buying a car.",
+      "body": [
+        "If you only need a car to get to work, to the mall and to the airport, there is no reason to pay luxury rates. These are the cheapest cars our partners have on the road right now, and the monthly rates work out lower than most people spend on taxis and ride-hailing in the same period.",
+        "The Kia Pegas, Nissan Sunny and Mitsubishi Attrage sit at the bottom of the price list and are the usual choice for a long-stay rental. The Toyota Yaris and Hyundai Accent cost a little more but are slightly bigger inside and are the easiest cars to park in older parts of Deira and Bur Dubai. If you need something more presentable for client meetings, the Toyota Corolla and Chevrolet Malibu are still under 150 AED a day.",
+        "All of them are automatic, all are fitted with Salik tags, and every rate includes comprehensive insurance and a mileage allowance of 250 km a day on daily bookings or 4,500 km a month on monthly ones. Fuel is not included and the car is handed over with a full tank, which is how it should come back.",
+        "Monthly rentals are where the savings are: servicing, registration and roadside assistance are all covered by the supplier, and there is no down payment. A valid driving licence, Emirates ID or passport and a credit card for the refundable deposit is all you need to collect the keys."
+      ]
+    },
+    "companies": {
+      "title": "Car Rental Companies",
+      "lead": "Seven licensed rental companies list their cars on Zenith — compare their fleets, rates and delivery areas in one place.",
+      "body": [
+        "Zenith does not own cars. Every vehicle you see on this site belongs to a rental company licensed by the RTA, and booking through us puts you in direct contact with them. What we do is put their fleets side by side so you can compare the same car across several suppliers before you commit.",
+        "The companies here specialise in different things. Skyline and Marina hold most of the luxury and sports cars, so that is where to look for a Range Rover, a G-Class or a convertible for the weekend. Deira Drive and Barsha Motors run the largest economy fleets and are the cheapest option for a monthly rental. Desert Road keeps the 4x4s and full-size SUVs for trips out of the city, and Creekside is set up for airport pickups at DXB Terminal 3.",
+        "Every partner listed here holds a valid UAE trade licence and provides comprehensive insurance with each rental. Rates shown on their listings are all-in: insurance, registration and servicing are included, and the mileage allowance is stated on each car. Fuel and Salik charges are extra, as they are everywhere in the UAE.",
+        "Deposits, delivery areas and opening hours vary between suppliers, so check the card before you book. Most offer free delivery within Dubai; a few extend that to Sharjah, Abu Dhabi or the airport terminals at no charge. If something goes wrong during a rental, contact the supplier directly on the number shown on the listing."
+      ]
+    },
+    "carTypes": {
+      "Sport cars": "Sport cars",
+      "Convertibles": "Convertibles",
+      "Coupes": "Coupes",
+      "Electric cars": "Electric cars",
+      "Luxury sedans": "Luxury sedans",
+      "Luxury SUVs": "Luxury SUVs",
+      "Exotic supercars": "Exotic supercars"
+    },
+    "betterWay": {
+      "title": "Better Way to Find Your Perfect Car",
+      "text": "Search the whole UAE fleet in one place, compare rates from licensed rental companies and book the car that fits your trip.",
+      "steps": [
+        {
+          "title": "Choose Your Car",
+          "exp": "Select a car using search or catalog."
+        },
+        {
+          "title": "Contact Your Dealer",
+          "exp": "After you’ve selected a car a dealer will contact you."
+        },
+        {
+          "title": "Get Your Car",
+          "exp": "Here you are! Your car is book and waiting for you."
+        }
+      ]
+    },
+    "nextTrip": {
+      "title": "book your next trip in 3 easy steps",
+      "steps": [
+        {
+          "title": "Choose Your Car",
+          "text": "Browse the fleet by type, brand or price and pick the car that suits your trip."
+        },
+        {
+          "title": "Confirm With The Supplier",
+          "text": "Contact the rental company on WhatsApp, email or phone and agree dates, delivery and deposit."
+        },
+        {
+          "title": "Pick Up And Drive",
+          "text": "Collect the keys at your hotel, home or the airport terminal and enjoy the road."
+        }
+      ]
+    },
+    "services": [
+      {
+        "eyebrow": "Why Zenith",
+        "header": "We always deliver the best service",
+        "explanation": "Every car on Zenith is verified and insured before it goes live. Transparent pricing, flexible pickup and 24/7 support mean you can book with confidence, anywhere in the UAE."
+      },
+      {
+        "eyebrow": "Our Fleet",
+        "header": "A fleet built for every journey",
+        "explanation": "From economy hatchbacks to luxury SUVs, choose the ride that fits your trip. Daily, weekly or monthly rentals — delivered clean, fueled and ready to go."
+      }
+    ],
+    "testimonials": {
+      "eyebrow": "Testimonials",
+      "title": "google reviews",
+      "items": [
+        {
+          "name": "Mike Taylor",
+          "location": "Lahore, Pakistan",
+          "text": "“Booking was quick and the SUV was delivered right to my hotel in under an hour. Smooth experience from start to finish.”"
+        },
+        {
+          "name": "Sara Ahmed",
+          "location": "Dubai, UAE",
+          "text": "“Great selection of luxury cars and fair prices. The team was responsive whenever I had questions about my rental.”"
+        },
+        {
+          "name": "James Carter",
+          "location": "London, UK",
+          "text": "“Rented a Range Rover for a week — spotless car, no hidden fees, and an easy return process. Highly recommend.”"
+        },
+        {
+          "name": "Fatima Al Suwaidi",
+          "location": "Abu Dhabi, UAE",
+          "text": "“I've used Zenith three times now for business trips. Always reliable, always on time.”"
+        },
+        {
+          "name": "Daniel Kim",
+          "location": "Seoul, South Korea",
+          "text": "“Clear pricing and a huge variety of cars to choose from. Support helped me change my pickup time with no hassle.”"
+        },
+        {
+          "name": "Aisha Noor",
+          "location": "Sharjah, UAE",
+          "text": "“The car was exactly as pictured and the whole rental process took less than 10 minutes online.”"
+        }
+      ]
+    },
+    "faq": {
+      "title": "FAQ",
+      "items": [
+        {
+          "q": "Can I take a rental car from Dubai to Oman?",
+          "a": "Yes, cross-border trips to Oman are allowed on selected vehicles. Let us know your travel dates when booking so we can arrange the required border permit in advance."
+        },
+        {
+          "q": "What documents do I need to rent a car in Dubai?",
+          "a": "A valid driving license and passport or Emirates ID. Visitors whose license isn't in English or Arabic will also need an International Driving Permit."
+        },
+        {
+          "q": "Is insurance included in the rental price?",
+          "a": "Every rental includes basic insurance coverage. Additional protection plans are available at checkout if you'd like extra peace of mind."
+        },
+        {
+          "q": "Can I cancel or modify my booking?",
+          "a": "You can cancel for free up to 24 hours before pickup. To modify dates or the vehicle, just reach out to our support team or manage it from your account."
+        }
+      ]
+    }
+  },
+  "companies": {
+    "Marina Auto Rental": "Marina Auto Rental",
+    "Deira Drive Rent A Car": "Deira Drive Rent A Car",
+    "Desert Road Rent A Car": "Desert Road Rent A Car",
+    "Skyline Car Rental": "Skyline Car Rental",
+    "Palm Coast Rentals": "Palm Coast Rentals",
+    "Barsha Motors Rental": "Barsha Motors Rental",
+    "Creekside Car Hire": "Creekside Car Hire"
+  },
+  "footer": {
+    "brands": {
+      "title": "Popular Brands",
+      "items": [
+        "Rent Mercedes Dubai",
+        "Rent Lamborghini Dubai",
+        "Rent Ferrari Dubai",
+        "Rent Rolls Royce Dubai",
+        "Rent Audi Dubai",
+        "Rent BMW Dubai",
+        "Rent Mclaren Dubai",
+        "Rent Range Rover Dubai",
+        "Rent Nissan Dubai",
+        "Rent Toyota Dubai"
+      ]
+    },
+    "explore": {
+      "title": "Explore",
+      "items": [
+        "Rent SUV Dubai",
+        "Rent Sports Car Dubai",
+        "Luxury Car Rental",
+        "Monthly Car Rental",
+        "Weekend Car Rental",
+        "Rent Car With Driver",
+        "Rent Car Abu Dhabi",
+        "Rent Car Sharjah",
+        "Rent Yacht Dubai",
+        "Rent Car Ajman"
+      ]
+    },
+    "company": {
+      "title": "Company",
+      "items": [
+        "About Us",
+        "Rent by Brand",
+        "Privacy Policy",
+        "Contact Us",
+        "ZENITH FAQs",
+        "Car Rental Blog",
+        "Our Offers"
+      ]
+    },
+    "support": {
+      "title": "Support",
+      "items": [
+        "Sitemap XML",
+        "For Inquiries & Support"
+      ]
+    },
+    "app": {
+      "title": "Get The App",
+      "text": "Download on the App Store & Google Play",
+      "googlePlay": "Get it on Google Play",
+      "appStore": "Download on the App Store"
+    },
+    "copyright": "© {{year}} Zenith Car Rental. All rights reserved.",
+    "social": {
+      "call": "Call Us",
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "instagram": "Instagram"
+    }
+  },
+  "pages": {
+    "brands": {
+      "title": "Rent a car by brand in Dubai",
+      "lead": "Choose from the world's most popular car brands, all available for rent in Dubai.",
+      "body": [
+        "Browse rental cars by brand and find the exact badge you want, from Toyota and Nissan for everyday driving to Mercedes-Benz, BMW and Porsche for a statement arrival.",
+        "Every vehicle is offered by a verified rental company, with transparent daily, weekly and monthly rates, free delivery on many cars and flexible pick-up across Dubai, Abu Dhabi and Sharjah.",
+        "Pick a brand to see available models, compare prices side by side and book in minutes."
+      ]
+    },
+    "brandModel": {
+      "title": "Rent a car by model in Dubai",
+      "lead": "Find the exact model you are looking for and compare rental offers.",
+      "body": [
+        "Every model listed here is available from trusted rental companies across the UAE, with daily, weekly and monthly rates.",
+        "Compare the specs, mileage allowance and deposit of each offer, then book online with free delivery on many vehicles.",
+        "Not sure which model suits your trip? Use the filters to narrow down by price, body type, seats and year."
+      ]
+    },
+    "luxury": {
+      "title": "Rent a luxury car in Dubai",
+      "lead": "Drive in style with a premium vehicle from Dubai's top luxury rental companies.",
+      "body": [
+        "Make every journey memorable with a luxury car from brands such as Mercedes-Benz, BMW, Bentley, Rolls-Royce and Range Rover.",
+        "All vehicles are late-model, fully insured and professionally maintained, with delivery to your hotel, home or airport and an optional chauffeur.",
+        "Compare luxury rental offers, check what is included and book online in minutes."
+      ]
+    },
+    "sport": {
+      "title": "Rent a sports car in Dubai",
+      "lead": "Experience the thrill of a supercar on Dubai's roads.",
+      "body": [
+        "From a Lamborghini Huracán Tecnica and a Porsche 911 GT3 RS to the BMW M4 CSL, a Mercedes-Benz E-Class Cabriolet and a Tesla Model 3 Performance, our sports car rentals deliver the performance and head-turning looks you expect.",
+        "Each car is inspected before every rental and comes with insurance, a daily mileage allowance and a full briefing at hand-over. A security deposit applies.",
+        "Choose your car, pick your dates and we will deliver it wherever you are in the UAE."
+      ]
+    },
+    "cheap": {
+      "title": "Rent a cheap car in Dubai",
+      "lead": "Affordable, reliable cars for daily, weekly and monthly rental.",
+      "body": [
+        "Looking for the best value? Our budget-friendly selection includes compact and economy cars from Nissan, Kia, Hyundai, Toyota and Mitsubishi.",
+        "Prices include basic insurance, with low deposits and no hidden fees. Weekly and monthly bookings unlock further discounts.",
+        "Filter by price to find the cheapest available car for your dates and book in minutes."
+      ]
+    },
+    "chauffeur": {
+      "title": "Rent a car with driver in Dubai",
+      "lead": "Travel in comfort with a professional, licensed chauffeur.",
+      "body": [
+        "Sit back and relax while an experienced local driver takes you to meetings, sightseeing stops or the airport.",
+        "Choose from economy sedans, family SUVs and luxury cars, hired by the hour, by the day or for a full trip across the UAE. Fuel, insurance and the driver are included in the quoted price.",
+        "Ideal for business travellers, families, special occasions and visitors who prefer not to navigate the city themselves."
+      ]
+    },
+    "yachts": {
+      "title": "Rent a yacht in Dubai",
+      "lead": "Cruise Dubai Marina, Palm Jumeirah and the Arabian Gulf on a private yacht.",
+      "body": [
+        "Our yachts range from a 42-foot sport fisher for small groups to a 150-foot vessel for large parties, all with a professional captain and crew.",
+        "Charters are available by the hour with refreshments, fuel and safety equipment included. Optional extras include catering, fishing gear, water toys and decorations.",
+        "Compare yachts by capacity and price, then book your perfect day on the water."
+      ]
+    },
+    "monthly": {
+      "title": "Monthly car rental in Dubai",
+      "lead": "Long-term car rental from {{price}} a month, with registration, insurance and servicing included.",
+      "body": [
+        "Renting by the month is the most economical way to stay mobile in Dubai. Monthly rates are significantly lower than daily rates and include registration, basic insurance and routine maintenance.",
+        "Choose from economy hatchbacks and family SUVs to premium sedans, with a generous monthly mileage allowance and the option to swap vehicles if your needs change.",
+        "Perfect for relocating professionals, long visits and businesses that need a reliable vehicle without the cost of buying one."
+      ]
+    },
+    "offers": {
+      "title": "Car rental deals & offers in Dubai",
+      "lead": "Weekly and monthly savings, a first-booking discount and free delivery — valid until {{date}}.",
+      "body": [
+        "Zenith brings together offers from licensed rental companies across the UAE. Longer rentals are always cheaper per day, so the biggest savings come from weekly and monthly bookings, while luxury weekends, airport transfers and yacht charters have their own packages.",
+        "Discounts apply to the rental fee only. The refundable security deposit, Salik tolls, fuel and traffic fines are charged separately, and the terms of each offer are shown on its card. Offers are subject to availability and the final price is confirmed by the rental company when you book."
+      ]
+    },
+    "viewAll": {
+      "title": "All cars available to rent in Dubai",
+      "lead": "{{count}} cars from seven licensed rental partners across Dubai, from {{price}} a day.",
+      "body": [
+        "This is the full fleet currently listed on Zenith, from the cheapest economy sedans to the luxury SUVs.",
+        "Rates are shown per day, per week and per month, and the weekly and monthly prices work out cheaper per day than booking day by day. The mileage allowance and the refundable security deposit are listed on each car, and comprehensive insurance is already included in every price you see.",
+        "Fuel and Salik tolls are not included. The car is handed over with a full tank and should be returned the same way, and any Salik charges or traffic fines incurred during the rental are deducted from the deposit before it is released.",
+        "To book you need a valid UAE driving licence, or your home licence plus an international driving permit if you are visiting, an Emirates ID or passport, and a credit card in the main driver's name for the deposit. Most partners deliver free of charge anywhere in Dubai, and several cover the airport terminals as well."
+      ]
+    },
+    "search": {
+      "title": "Search results for “{{query}}”",
+      "lead_one": "{{count}} car matches your search. Every rate below includes comprehensive insurance.",
+      "lead_other": "{{count}} cars match your search. Every rate below includes comprehensive insurance.",
+      "body": [
+        "Results are matched on the car name, brand, model, body type and rental company, so a search for a brand returns every car that company lists.",
+        "Rates are shown per day, per week and per month, and the weekly and monthly prices work out cheaper per day than booking day by day. The mileage allowance and the refundable security deposit are listed on each car, and comprehensive insurance is already included in every price you see.",
+        "Fuel and Salik tolls are not included. The car is handed over with a full tank and should be returned the same way.",
+        "To book you need a valid UAE driving licence, or your home licence plus an international driving permit if you are visiting, an Emirates ID or passport, and a credit card in the main driver's name for the deposit."
+      ],
+      "noneTitle": "No cars match “{{query}}”.",
+      "noneText": "Try a brand such as BMW or Toyota, a body type such as SUV or sedan, or the word “cheap”.",
+      "showAll": "Show all {{count}} cars"
+    },
+    "companies": {
+      "title": "Car rental companies in Dubai",
+      "lead": "{{count}} licensed rental companies list their cars on Zenith — compare their fleets, delivery areas and opening hours.",
+      "body": [
+        "Zenith does not own cars. Every vehicle on this site belongs to a rental company licensed by the RTA, and booking through us puts you in direct contact with them. Choose a company below to see its fleet, or call it directly.",
+        "Some companies specialise in luxury and sports cars, others in economy fleets for monthly rental, 4x4s for trips out of the city or airport pickups, so the best match depends on what you need and where you will collect the car. Delivery areas, deposits and opening hours vary between companies."
+      ],
+      "allCompanies": "← All rental companies",
+      "noCars": "{{name}} has no cars listed at the moment.",
+      "noCarsText": "Call {{phone}} for current availability, or",
+      "browseOthers": "browse other companies",
+      "cars": "cars",
+      "branches": "branches",
+      "since": "Since",
+      "viewCars_one": "View {{count}} car",
+      "viewCars_other": "View {{count}} cars",
+      "viewCompany": "View company",
+      "specialises": "{{name}} specialises in {{classes}}. {{delivery}}. {{hours}}.",
+      "profile": [
+        "{{name}} is a licensed rental company based in {{area}}, operating {{branches}} branches and a fleet of around {{fleet}} vehicles since {{since}}. Every car listed here is rented directly by the company, with comprehensive insurance and the mileage allowance shown on each listing.",
+        "Deposits, delivery areas and opening hours are set by {{name}}, so check each card before you book. For bookings or questions, call {{phone}} or contact the company by WhatsApp or email from any of its listings.",
+        "To rent you need a valid UAE driving licence, or your home licence and an international driving permit if you are visiting, an Emirates ID or passport, and a credit card in the main driver's name for the refundable security deposit."
+      ],
+      "carsFleetFacts": "{{fleet}} cars · {{branches}} branches · since {{since}}"
+    },
+    "carList": {
+      "title": "Rent a car in Dubai",
+      "lead": "Every car available to rent, from economy sedans to luxury SUVs.",
+      "body": [
+        "Browse the full list, compare daily, weekly and monthly rates side by side and open any car for photos, specifications and the supplier's contact details.",
+        "Every rate includes comprehensive insurance, and the mileage allowance and refundable deposit are shown on each listing so there is nothing to discover at the counter."
+      ]
+    },
+    "category": {
+      "title": "Rent a {{type}} in Dubai",
+      "lead": "{{count}} {{type}} options from licensed rental companies in the UAE.",
+      "body": [
+        "Compare every {{type}} on offer, check the daily, weekly and monthly rates and open any listing for specifications and the supplier's contact details.",
+        "Rates include comprehensive insurance. The mileage allowance and refundable deposit are shown on each car."
+      ],
+      "types": {
+        "luxury": "luxury car",
+        "sport": "sports car",
+        "economy": "economy car",
+        "all": "car"
+      }
+    }
+  },
+  "faqSets": {
+    "general": [
+      {
+        "q": "What do I need to rent a car in Dubai?",
+        "a": "Tourists need a valid passport, a visa or entry stamp, a home-country driving licence (an International Driving Permit is recommended) and a credit or debit card for the security deposit. UAE residents need an Emirates ID and a UAE driving licence."
+      },
+      {
+        "q": "Can I take a rental car from Dubai to Oman?",
+        "a": "Yes, on selected vehicles. Cross-border travel to Oman needs prior approval and extra insurance cover, so tell us before you book and we will arrange the paperwork."
+      },
+      {
+        "q": "Is insurance included in the rental price?",
+        "a": "Basic insurance is included with every rental. Full-coverage and zero-excess options are available as add-ons when you book."
+      },
+      {
+        "q": "Can I cancel or change my booking?",
+        "a": "Yes. You can cancel or amend a booking free of charge up to 24 hours before pick-up. Later changes may be subject to a fee depending on the owner's policy."
+      }
+    ],
+    "luxury": [
+      {
+        "q": "What is the security deposit for a luxury car?",
+        "a": "Deposits typically range from AED 2,000 to AED 10,000 depending on the car, and are refunded after the vehicle is returned undamaged."
+      },
+      {
+        "q": "Is there a daily mileage limit?",
+        "a": "Yes, most luxury rentals include 250 km per day. Additional kilometres are charged at a per-km rate shown in the listing."
+      },
+      {
+        "q": "Can I hire a chauffeur with a luxury car?",
+        "a": "Yes. Many listings offer an optional professional chauffeur for an extra daily fee."
+      },
+      {
+        "q": "Where can the car be delivered?",
+        "a": "Delivery is available to your hotel, home, office or any airport terminal in the UAE, often free of charge."
+      }
+    ],
+    "sport": [
+      {
+        "q": "What is the minimum age to rent a sports car?",
+        "a": "The minimum age is usually 25, with at least one year of holding a valid driving licence. Some high-performance cars require 30+."
+      },
+      {
+        "q": "What documents do I need?",
+        "a": "A valid passport, visa or Emirates ID, and a driving licence. Tourists should carry an International Driving Permit if their licence is not in English or Arabic."
+      },
+      {
+        "q": "Is insurance included?",
+        "a": "Basic insurance is included with an excess. Zero-excess cover can be added at booking."
+      },
+      {
+        "q": "What is the mileage allowance?",
+        "a": "Sports cars typically include 150–250 km per day. Extra kilometres are charged per km."
+      }
+    ],
+    "cheap": [
+      {
+        "q": "What is the cheapest way to rent a car in Dubai?",
+        "a": "Book for a week or a month and choose an economy car. Longer rentals have much lower daily rates."
+      },
+      {
+        "q": "Are there any hidden fees?",
+        "a": "No. The price shown includes basic insurance and VAT. Fuel, Salik tolls, fines and optional extras are charged separately."
+      },
+      {
+        "q": "How much is the deposit for an economy car?",
+        "a": "Deposits for economy cars usually range from AED 300 to AED 1,000 and are refunded when you return the car."
+      },
+      {
+        "q": "Can I pay by cash?",
+        "a": "Payment options vary by company. Most accept cards, and some accept cash for the rental fee, but deposits are normally held on a card."
+      }
+    ],
+    "monthly": [
+      {
+        "q": "How much cheaper is monthly rental than daily rental?",
+        "a": "Monthly rates are usually 40–60% lower per day than short-term rates, depending on the car and season."
+      },
+      {
+        "q": "Is maintenance included in a monthly rental?",
+        "a": "Yes. Routine servicing, registration and basic insurance are included. You only pay for fuel, Salik tolls and fines."
+      },
+      {
+        "q": "Is there a mileage limit?",
+        "a": "Most monthly rentals include around 3,000 km. Extra kilometres are charged at a small per-km rate, and unlimited-mileage options are available."
+      },
+      {
+        "q": "Can I extend or end my monthly rental early?",
+        "a": "You can extend at any time subject to availability. Early returns are accepted with prior notice, and the terms depend on the rental company."
+      }
+    ],
+    "chauffeur": [
+      {
+        "q": "What is included in the price?",
+        "a": "The driver, fuel, insurance and vehicle are included. Parking, tolls and entrance fees are paid separately."
+      },
+      {
+        "q": "Can I book a driver for a few hours only?",
+        "a": "Yes. Most companies offer hourly bookings with a minimum of 4 to 8 hours, as well as full-day packages."
+      },
+      {
+        "q": "Do the drivers speak English?",
+        "a": "Drivers are licensed professionals who speak English, and many also speak Arabic and Hindi or Urdu."
+      },
+      {
+        "q": "Can I use the car for travel to other emirates?",
+        "a": "Yes. Trips to Abu Dhabi, Sharjah, Ajman and other emirates are available, and some companies also offer trips to Oman."
+      }
+    ],
+    "yachts": [
+      {
+        "q": "How long is a yacht charter?",
+        "a": "Charters usually start at 2 hours and can extend to a full day. Longer bookings get a lower hourly rate."
+      },
+      {
+        "q": "What is included in the price?",
+        "a": "The captain, crew, fuel, soft drinks, water and safety equipment are included. Catering and water sports can be added."
+      },
+      {
+        "q": "How many guests can join?",
+        "a": "Capacity depends on the yacht, from 6 guests on smaller boats up to 50 or more on luxury vessels."
+      },
+      {
+        "q": "What happens if the weather is bad?",
+        "a": "If conditions are unsafe, you can reschedule free of charge or receive a full refund."
+      }
+    ],
+    "offers": [
+      {
+        "q": "How do I get an offer?",
+        "a": "Most offers apply automatically to the rates shown on each listing. For promo codes, such as the first-booking code, mention the code to the rental company when you confirm your reservation."
+      },
+      {
+        "q": "Can I combine two offers?",
+        "a": "Usually not. Each booking can use one promotion, so choose the one that saves you most. The terms on each card say whether it can be combined."
+      },
+      {
+        "q": "Do the discounts include the security deposit?",
+        "a": "No. Discounts apply to the rental fee only. The refundable deposit, Salik tolls, fuel and fines are charged separately."
+      },
+      {
+        "q": "When do the offers end?",
+        "a": "All offers on this page are valid until the date shown on the card, and are subject to availability at the time of booking."
+      }
+    ],
+    "company": [
+      {
+        "q": "What do I need to rent a car in Dubai?",
+        "a": "Tourists need a valid passport, a visa or entry stamp, a home-country driving licence (an International Driving Permit is recommended) and a credit or debit card for the security deposit. UAE residents need an Emirates ID and a UAE driving licence."
+      },
+      {
+        "q": "Can I take a rental car from Dubai to Oman?",
+        "a": "Yes, on selected vehicles. Cross-border travel to Oman needs prior approval and extra insurance cover, so tell us before you book and we will arrange the paperwork."
+      },
+      {
+        "q": "Is insurance included in the rental price?",
+        "a": "Basic insurance is included with every rental. Full-coverage and zero-excess options are available as add-ons when you book."
+      },
+      {
+        "q": "Can I cancel or change my booking?",
+        "a": "Yes. You can cancel or amend a booking free of charge up to 24 hours before pick-up. Later changes may be subject to a fee depending on the owner's policy."
+      }
+    ]
+  },
+  "servicesGeneric": {
+    "header": "We always deliver the best service",
+    "explanation": "We bring together trusted rental companies across the UAE so you can compare prices, read verified reviews and book with confidence. Every listing shows what is included, with clear terms and no hidden fees, and our support team is available seven days a week to help before and after you book.",
+    "eyebrow": "Why Zenith"
+  },
+  "catalog": {
+    "allBrands": "All brands",
+    "carsAvailable_one": "{{count}} car available",
+    "carsAvailable_other": "{{count}} cars available",
+    "clearAll": "Clear all",
+    "filters": "Filters",
+    "filtersCount": "Filters ({{count}})",
+    "hideFilters": "Hide filters",
+    "sortBy": "Sort by",
+    "sorts": {
+      "recommended": "Recommended",
+      "priceAsc": "Price: low to high",
+      "priceDesc": "Price: high to low",
+      "yearDesc": "Newest first",
+      "nameAsc": "Name: A to Z"
+    },
+    "filterTitle": "Filter",
+    "searchYourCar": "Search your car",
+    "searchPlaceholder": "Search by name, model, supplier…",
+    "searchAria": "Search cars",
+    "brand": "Brand",
+    "allModels": "All models",
+    "model": "Model",
+    "anyYear": "Any year",
+    "year": "Year",
+    "anyColor": "Any color",
+    "color": "Color",
+    "class": "Class",
+    "classes": {
+      "all": "All",
+      "luxury": "Luxury",
+      "sport": "Sport",
+      "economy": "Economy"
+    },
+    "bodyType": "Body type",
+    "all": "All",
+    "pricePerDay": "Price per day",
+    "showCars_one": "Show {{count}} car",
+    "showCars_other": "Show {{count}} cars",
+    "reset": "Reset",
+    "noMatchTitle": "No cars match your filters",
+    "noMatchText": "Try removing a filter or widening the price range.",
+    "clearAllFilters": "Clear all filters",
+    "prevPage": "Previous page",
+    "nextPage": "Next page",
+    "removeFilter": "Remove filter {{label}}",
+    "priceChip": "{{min}} – {{max}} AED/day",
+    "filterByBrand": "Filter by brand",
+    "pageNav": "Page navigation",
+    "allBrandsAria": "Filter by brand"
+  },
+  "card": {
+    "color": "Car color",
+    "brand": "Car brand",
+    "model": "Car model",
+    "year": "Car year",
+    "type": "Car Type",
+    "doors": "No. Of Doors",
+    "doorsValue": "{{count}} doors",
+    "engine": "Engine",
+    "minDays": "Minimum of Days",
+    "daysValue_one": "{{count}} day",
+    "daysValue_other": "{{count}} days",
+    "deposit": "Deposit",
+    "day": "Day",
+    "week": "Week",
+    "month": "Month",
+    "aed": "{{value}} AED"
+  },
+  "offers": {
+    "items": {
+      "1": {
+        "tag": "Weekly",
+        "badge": "Up to 20% off",
+        "title": "Rent for a week, pay less per day",
+        "description": "Book any car for 7 days or more and the weekly rate works out about 20% cheaper per day than daily booking, with the same comprehensive insurance and mileage allowance. Economy cars start from {{day}} a day.",
+        "conditions": "Applies automatically to weekly rates shown on each listing.",
+        "cta": "Browse all cars"
+      },
+      "2": {
+        "tag": "Monthly",
+        "badge": "From {{month}}",
+        "title": "Monthly rental with servicing included",
+        "description": "Rent for 30 days and the supplier covers registration, servicing and roadside assistance. Monthly rates start from {{month}} for an economy sedan, with no down payment.",
+        "conditions": "Minimum 30 days. Mileage allowance of 4,500 km a month on economy cars.",
+        "cta": "See monthly rates"
+      },
+      "3": {
+        "tag": "New customers",
+        "badge": "10% off",
+        "title": "10% off your first booking",
+        "description": "New to Zenith? Enter the promo code when you confirm your first rental with any of our partner companies and ask for 10% off the rental fee.",
+        "conditions": "One use per customer. Not combinable with other discounts. Excludes deposits and Salik.",
+        "cta": "Find a car"
+      },
+      "4": {
+        "tag": "Luxury",
+        "badge": "15% off",
+        "title": "Luxury weekend, Friday to Sunday",
+        "description": "Collect a luxury SUV on Friday morning and return it on Sunday evening for 15% off the daily rate. Range Rover, G-Class, BMW X5 and more are included.",
+        "conditions": "2 nights minimum, Friday–Sunday only. Subject to availability.",
+        "cta": "View luxury cars"
+      },
+      "5": {
+        "tag": "Delivery",
+        "badge": "Free",
+        "title": "Free delivery to your door",
+        "description": "Most of our partner companies deliver at no charge to hotels and residences in Dubai, and several cover the DXB and Al Maktoum airport terminals as well.",
+        "conditions": "Delivery areas vary by company — check the company page before you book.",
+        "cta": "Compare companies"
+      },
+      "6": {
+        "tag": "Chauffeur",
+        "badge": "From {{transfer}}",
+        "title": "Airport transfer with a driver",
+        "description": "A professional chauffeur meets you at arrivals with free waiting time of up to 60 minutes. One-way transfers within Dubai start from {{transfer}}, with fuel, Salik and insurance included.",
+        "conditions": "Fixed price within Dubai. Other emirates on request.",
+        "cta": "Book a driver"
+      },
+      "7": {
+        "tag": "Yachts",
+        "badge": "5% off",
+        "title": "Longer on the water, pay less",
+        "description": "Charter a yacht for 4 hours and take 5% off the hourly rate; a full 8-hour day saves 15%. Captain, crew, fuel and refreshments are included.",
+        "conditions": "Packages are priced on each yacht listing. Weather cancellations are free to reschedule.",
+        "cta": "View yachts"
+      }
+    },
+    "validUntil": "Valid until {{date}}.",
+    "copy": "Tap to copy",
+    "copied": "Copied!",
+    "copyManually": "Copy it manually",
+    "copyAria": "Copy promo code {{code}}",
+    "date": "31 Dec 2026"
+  },
+  "companyData": {
+    "marina-auto-rental": {
+      "classes": [
+        "Luxury cars",
+        "Sports cars",
+        "Convertibles"
+      ],
+      "area": "Dubai Marina & JBR",
+      "delivery": "Free delivery in Dubai",
+      "hours": "Open 8am – 11pm daily"
+    },
+    "deira-drive": {
+      "classes": [
+        "Economy cars",
+        "Mid-size sedans",
+        "Monthly rentals"
+      ],
+      "area": "Deira & Bur Dubai",
+      "delivery": "Free delivery in Dubai",
+      "hours": "Open 24 hours"
+    },
+    "desert-road": {
+      "classes": [
+        "4x4 & SUVs",
+        "Full-size SUVs",
+        "Economy cars"
+      ],
+      "area": "Al Quoz & Hatta road",
+      "delivery": "Free delivery in Dubai and Sharjah",
+      "hours": "Open 7am – 10pm daily"
+    },
+    "skyline-car-rental": {
+      "classes": [
+        "Luxury SUVs",
+        "Luxury sedans",
+        "Chauffeur service"
+      ],
+      "area": "Downtown Dubai & DIFC",
+      "delivery": "Free delivery across the UAE",
+      "hours": "Open 24 hours"
+    },
+    "palm-coast-rentals": {
+      "classes": [
+        "Convertibles",
+        "Sports cars",
+        "Electric cars"
+      ],
+      "area": "Palm Jumeirah & Al Sufouh",
+      "delivery": "Free hotel delivery",
+      "hours": "Open 9am – 9pm daily"
+    },
+    "barsha-motors": {
+      "classes": [
+        "Economy cars",
+        "7-seaters",
+        "Long-term leasing"
+      ],
+      "area": "Al Barsha & Mall of the Emirates",
+      "delivery": "Free delivery in Dubai",
+      "hours": "Open 8am – 10pm daily"
+    },
+    "creekside-car-hire": {
+      "classes": [
+        "Economy cars",
+        "Mid-size sedans",
+        "Airport pickup"
+      ],
+      "area": "Dubai Creek & DXB Terminal 3",
+      "delivery": "Free airport delivery",
+      "hours": "Open 24 hours"
+    }
+  },
+  "carFields": {
+    "hp": "{{value}} hp"
+  },
+  "notFound": {
+    "text": "This page was not found",
+    "back": "Back to home"
+  },
+  "banner": {
+    "about": "About us",
+    "blog": "Blog",
+    "contact": "Contact us",
+    "faq": "FAQ",
+    "privacy": "Privacy",
+    "terms": "Terms & Conditions",
+    "account": "My Account",
+    "listYourCars": "List your cars"
+  },
+  "about": {
+    "sections": [
+      {
+        "eyebrow": "Who we are",
+        "header": "One place to compare every rental in the UAE",
+        "text": "Zenith brings together licensed car rental companies, chauffeur services and yacht charters in one place, so you can compare fleets, prices and delivery areas without calling around. We do not own the vehicles ourselves: every listing belongs to a partner company with a valid trade licence, and booking through Zenith puts you in direct contact with them."
+      },
+      {
+        "eyebrow": "What we promise",
+        "header": "Clear prices, verified listings, real support",
+        "text": "Every listing shows what is included, the refundable deposit and the mileage allowance, so there is nothing to discover at the counter. Our team checks each partner before it goes live and is available seven days a week to help before and after you book."
+      }
+    ]
+  },
+  "blog": {
+    "featured": "Featured Cars",
+    "viewAll": "View all"
+  },
+  "contact": {
+    "intro": "We are here to help, seven days a week.",
+    "introText": "Questions about a booking, a car or listing your own vehicle? Call or WhatsApp us, or send us a message using the form below and we will reply within one business day. Our team is available daily from 9:00 AM to 10:00 PM (GST).",
+    "office": "Head Office",
+    "address": "Business Bay, Dubai, United Arab Emirates",
+    "phone": "Phone number",
+    "sales": "Sales",
+    "whatsapp": "Whatsapp",
+    "mail": "Mail",
+    "send": "SEND A MESSAGE",
+    "name": "Your Name:",
+    "email": "Your Email:",
+    "phoneLabel": "Your Phone Number:",
+    "message": "Your Message:",
+    "submit": "Send Message",
+    "v": {
+      "nameRequired": "name is required",
+      "nameMin": "min is 3 characters",
+      "nameMax": "max is 50 characters",
+      "emailRequired": "email is required",
+      "emailInvalid": "email isn't valid",
+      "phoneInvalid": "Invalid phone number",
+      "phoneRequired": "Phone number is required",
+      "messageRequired": "message is required",
+      "messageMin": "Please write 10 characters or more",
+      "messageMax": "max length is 500 characters"
+    }
+  },
+  "auth": {
+    "signIn": "Sign in",
+    "signUp": "Sign Up",
+    "email": "Email",
+    "password": "Password",
+    "rePassword": "Confirm password",
+    "fullName": "Full Name",
+    "forgot": "forgot password",
+    "signInFacebook": "Sign in with Facebook",
+    "signInGoogle": "Sign in with Google",
+    "signUpFacebook": "Sign up with Facebook",
+    "signUpGoogle": "Sign up with Google",
+    "submitSignUp": "Sign up",
+    "agree": "By continuing you agree to our",
+    "terms": "terms & conditions",
+    "and": "and",
+    "privacy": "privacy",
+    "forgotTitle": "Write Valid Email",
+    "forgotPlaceholder": "Enter your email...",
+    "next": "Next",
+    "otpTitle": "Enter OTP received by email",
+    "otpPlaceholder": "Enter 6 digits code",
+    "resend": "Resend OTP",
+    "continue": "continue",
+    "resetTitle": "Write New Password",
+    "continueLogin": "Continue to log in",
+    "close": "Close",
+    "v": {
+      "emailRequired": "email is required",
+      "emailInvalid": "email isn't valid",
+      "passwordRequired": "password is required",
+      "passwordRule": "password must start with a capital letter and be 6–16 characters (letters and numbers)",
+      "passwordMismatch": "passwords do not match",
+      "nameRequired": "name is required",
+      "nameMin": "min is 3 characters",
+      "nameMax": "max is 50 characters",
+      "phoneInvalid": "Invalid phone number",
+      "phoneRequired": "Phone number is required",
+      "codeRequired": "code is required",
+      "codeRule": "code must be 6 numbers"
+    }
+  },
+  "account": {
+    "name": "Ahmed Ibrahim",
+    "profile": "My Profile",
+    "notifications": "Notifications",
+    "logout": "Logout",
+    "tabs": {
+      "profile": "My profile",
+      "contacted": "Contacted",
+      "bookings": "Bookings",
+      "viewed": "Viewed Cars"
+    },
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone number",
+    "edit": "EDIT",
+    "noBookings": "You don’t have saved bookings yet",
+    "backHome": "Back to home"
+  },
+  "listYourCars": {
+    "sections": [
+      {
+        "header": "List your fleet in minutes",
+        "explanation": "Create a free Zenith account, add your cars with photos, daily, weekly and monthly rates, and your listing goes live after a quick verification. No setup fees and no long-term contract."
+      },
+      {
+        "header": "Get bookings straight to your phone",
+        "explanation": "Customers see your full specs, rates and availability, then contact you instantly on WhatsApp, email or phone. You keep control of pricing and who you rent to."
+      },
+      {
+        "header": "Grow with a platform built for rental companies",
+        "explanation": "Reach thousands of visitors searching for cars in Dubai every month. Featured placement, verified badges and customer reviews help your fleet stand out."
+      }
+    ]
+  },
+  "legal": {
+    "terms": {
+      "title1": "Rental terms",
+      "title2": "and conditions",
+      "items": [
+        "1. Eligibility. Renters must be at least 21 years old (25 for premium and sports cars) and hold a valid driving licence. Tourists must present a passport and visa or entry stamp.",
+        "2. Booking and payment. A booking is confirmed once the rental company accepts it. The rental fee is paid as agreed at booking, and a refundable security deposit is held on a credit or debit card.",
+        "3. Use of the vehicle. The vehicle must be driven only by the named drivers, within UAE law and the agreed mileage allowance. Travel outside the UAE requires prior written approval.",
+        "4. Insurance, fines and damage. Basic insurance is included. Traffic fines, Salik tolls, fuel and damage not covered by insurance are the renter's responsibility and may be deducted from the deposit.",
+        "5. Cancellation. Bookings can be cancelled free of charge up to 24 hours before pick-up. Later cancellations and no-shows may be charged according to the rental company's policy."
+      ]
+    },
+    "privacy": {
+      "title1": "How we handle",
+      "title2": "your information",
+      "items": [
+        "1. What we collect. When you create an account, contact a rental company or send us a message, we collect your name, email address, phone number and the details of the booking you ask about. We also record basic usage data, such as the pages you visit, to improve the service.",
+        "2. How we use it. We use your details to connect you with the rental company you choose, to confirm and manage bookings, to answer your questions and to keep the platform safe. We do not sell your personal data.",
+        "3. Who we share it with. Your contact details and booking request are shared with the rental company, chauffeur service or yacht operator you contact, and with service providers who help us run the site, under strict confidentiality.",
+        "4. Your choices. You can ask us to access, correct or delete your personal data at any time, and you can opt out of marketing messages using the link in each email. Contact our support team to make a request.",
+        "5. Security and retention. We protect your data with technical and organisational safeguards and keep it only as long as needed for the purposes above or as required by UAE law."
+      ]
+    }
+  },
+  "faqGroups": {
+    "general": "Booking basics",
+    "luxury": "Luxury cars",
+    "sport": "Sports cars",
+    "cheap": "Economy cars",
+    "monthly": "Monthly rental",
+    "chauffeur": "Rent with driver",
+    "yachts": "Yacht charters",
+    "offers": "Offers"
+  },
+  "chauffeur": {
+    "badgeWithDriver": "With driver",
+    "titleWithDriver": "{{title}} with driver",
+    "altWithDriver": "{{title}} with driver for rent in Dubai",
+    "rate": {
+      "hourly": "Per hour",
+      "halfDay": "Half day",
+      "fullDay": "Full day",
+      "airport": "Airport transfer"
+    },
+    "detail": {
+      "hourly": "{{count}} hrs minimum",
+      "halfDay": "5 hours",
+      "fullDay": "10 hours",
+      "airport": "One way within Dubai"
+    },
+    "seatsSpeaks": "Seats {{seats}} · Speaks {{languages}}",
+    "included": {
+      "Professional, licensed chauffeur": "Professional, licensed chauffeur",
+      "Fuel and Salik tolls": "Fuel and Salik tolls",
+      "Comprehensive insurance": "Comprehensive insurance",
+      "Complimentary bottled water": "Complimentary bottled water",
+      "Wi-Fi on board": "Wi-Fi on board",
+      "Child seat on request": "Child seat on request",
+      "Free waiting time at airport pickups (up to 60 minutes)": "Free waiting time at airport pickups (up to 60 minutes)"
+    },
+    "details": {
+      "pageTitle": "Rent {{title}} with driver in Dubai",
+      "lead": "Chauffeur-driven {{year}} {{model}} from {{hourly}} an hour, {{fullDay}} for a full day, with fuel, Salik and insurance included.",
+      "body": [
+        "Book the {{title}} together with a professional, licensed driver supplied by {{supplier}}. Your driver knows the roads, the shortcuts and the drop-off points at hotels, malls and the airport terminals, so you can work, rest or enjoy the view while the car does the rest.",
+        "Hire it by the hour (minimum {{minHours}} hours), for a {{halfDayDetail}} half-day package at {{halfDay}}, or for a {{fullDayDetail}} full day at {{fullDay}}. A one-way airport transfer within Dubai is {{airport}} and includes up to 60 minutes of free waiting time after your flight lands.",
+        "Fuel, Salik tolls and comprehensive insurance are included in every package. The {{title}} seats up to {{seats}} passengers, and the driver speaks {{languages}}. Hours beyond your package are charged at {{extraHour}} per hour, and trips to other emirates can be arranged on request.",
+        "There is no security deposit for chauffeur-driven bookings. To confirm, contact {{supplier}} on WhatsApp, email or phone with your pick-up time, route and number of passengers."
+      ],
+      "included": "What's included",
+      "carFeatures": "Car features",
+      "includedTab": "Included & Features",
+      "noReviews": "This chauffeur service has no reviews yet. Reviews are published here once a customer has completed a booking.",
+      "airportLine": "{{label}} ({{detail}}): {{price}}",
+      "minBooking": "Minimum booking: {{hours}} hours",
+      "extraHour": "Extra hour: {{price}}",
+      "driverSpeaks": "Driver speaks: {{languages}}",
+      "seats": "Seats: {{count}}",
+      "depositNone": "Deposit: none",
+      "fuelType": "Fuel type: {{value}}"
+    }
+  },
+  "languagesNames": {
+    "English": "English",
+    "Arabic": "Arabic",
+    "Hindi": "Hindi",
+    "Urdu": "Urdu",
+    "Russian": "Russian",
+    "Tagalog": "Tagalog"
+  },
+  "yacht": {
+    "badgeLength": "{{length}} ft",
+    "badgeGuests": "Up to {{count}} guests",
+    "altCharter": "{{title}} charter in Dubai",
+    "rate": {
+      "hourly": "Per hour",
+      "fourHours": "4 hours",
+      "fullDay": "Full day"
+    },
+    "detail": {
+      "hourly": "{{count}} hrs minimum",
+      "fourHours": "Save 5%",
+      "fullDay": "8 hours, save 15%"
+    },
+    "cabinsDeparts": "{{cabins}} · Departs {{departure}}",
+    "cabin_one": "{{count}} cabin",
+    "cabin_other": "{{count}} cabins",
+    "included": {
+      "Licensed captain and crew": "Licensed captain and crew",
+      "Fuel for the booked hours": "Fuel for the booked hours",
+      "Soft drinks, water and ice": "Soft drinks, water and ice",
+      "Life jackets and safety equipment": "Life jackets and safety equipment",
+      "Music system and sunbathing area": "Music system and sunbathing area",
+      "Towels and on-board restroom": "Towels and on-board restroom"
+    },
+    "details": {
+      "pageTitle": "Rent {{title}} in Dubai",
+      "lead": "{{length}}-foot yacht for up to {{capacity}} guests from {{hourly}} an hour, departing from {{departure}}.",
+      "body": [
+        "The {{title}} is operated by {{operator}} and is best suited to {{bestFor}}. Charters start at {{minHours}} hours ({{hourly}} per hour). A 4-hour charter is {{fourHours}} and a full 8-hour day is {{fullDay}}. The captain, crew, fuel, soft drinks, water and safety equipment are included in every booking; catering, water sports, decorations and live music can be added on request.",
+        "Please arrive 20 minutes before departure with a photo ID for each guest. The captain may adjust the route or cancel for safety if the sea conditions are unsuitable, in which case you can reschedule free of charge or receive a full refund. To book, contact {{operator}} on WhatsApp, email or phone with your date, group size and preferred departure time."
+      ],
+      "about": "About the {{title}}",
+      "includedTab": "Included & Features",
+      "included": "What's included",
+      "onBoard": "On board",
+      "noReviews": "This yacht has no reviews yet. Reviews are published here once a customer has completed a booking.",
+      "length": "Length: {{value}} ft",
+      "guests": "Guests: up to {{count}}",
+      "cabins": "Cabins: {{count}}",
+      "crew": "Crew: {{count}}",
+      "departs": "Departs: {{value}}",
+      "bestFor": "Best for: {{value}}",
+      "minCharter": "Minimum charter: {{hours}} hours",
+      "operator": "Operator: {{value}}",
+      "fuelCrew": "Fuel & crew: included"
+    }
+  },
+  "details": {
+    "description": "Description",
+    "reviews": "Reviews",
+    "featureTitle": "Feature",
+    "saveWishlist": "Save to wishlist"
+  },
+  "carDetails": {
+    "pageTitle": "Rent {{title}} in Dubai",
+    "lead": "{{year}} {{model}} — from {{day}} a day, {{month}} a month, with comprehensive insurance and {{km}} km a day included.",
+    "body": [
+      "The car is supplied by {{supplier}}, a licensed rental company operating in Dubai. The rate you see is the all-in price: comprehensive insurance, registration and servicing are already included, and there is no charge for a second driver on the same booking. Fuel is not included — the car is handed over with a full tank and should come back the same way.",
+      "A refundable security deposit of {{deposit}} is held on a credit card in the main driver's name and released within 21 days of the car being returned, once any Salik charges and traffic fines have cleared. The minimum rental period for this car is {{minDays}}.",
+      "To collect the keys you need a valid UAE driving licence, or your home licence plus an international driving permit if you are visiting, an Emirates ID or passport, and a credit card for the deposit. Free delivery is available to hotels and residences across Dubai, and to DXB and Al Maktoum terminals."
+    ],
+    "suv": "As a {{bodyType}}, this one seats {{seats}} and has the ground clearance for weekend trips out to Hatta, Jebel Jais or Ras Al Khaimah, not just city driving.",
+    "notSuv": "As a {{bodyType}}, it seats {{seats}} and is built for daily commuting and city parking, which is where the running costs stay lowest.",
+    "highlightsTitle": "Highlights of the {{year}} {{title}}",
+    "descTab": "Description",
+    "featuresTab": "Features & Options",
+    "reviewsTab": "Reviews",
+    "featuresTitle": "Features & options",
+    "reviewsTitle": "Reviews",
+    "noReviews": "This {{title}} has no reviews yet. Reviews are published here once a customer has completed a booking.",
+    "feature": "Feature",
+    "color": "Car color: {{value}}",
+    "brand": "Car brand: {{value}}",
+    "model": "Car model: {{value}}",
+    "year": "Car year: {{value}}",
+    "type": "Car type: {{value}}",
+    "doors": "No. of doors: {{count}} doors",
+    "engine": "Engine: {{engine}}, {{power}}",
+    "transmission": "Transmission: {{value}}",
+    "minDays": "Minimum of days: {{value}}",
+    "deposit": "Deposit: {{value}}",
+    "hours": "{{hours}} hrs / {{price}}",
+    "perDay": "Per day {{price}}",
+    "perWeek": "Per week {{price}}",
+    "perMonth": "Per month {{price}}",
+    "mileage": "Mileage {{km}} km per day",
+    "seats": "Seats: {{count}}",
+    "suggested": "Suggested Car Rental",
+    "viewAll": "View all"
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "details": "Details",
+    "routes": {
+      "ViewAll": "View All",
+      "CarList": "Cars",
+      "CarRentalDealsOffers": "Deals & Offers",
+      "MothlyCarRental": "Monthly Car Rental",
+      "Blog": "Blog",
+      "Category": "Category",
+      "CarRentalCompany": "Rental Companies",
+      "Brands": "Brands",
+      "BrandModel": "Models",
+      "ListYourCars": "List Your Cars",
+      "ContactUs": "Contact Us",
+      "TermsAndCondition": "Terms & Conditions",
+      "Privacy": "Privacy",
+      "AboutUs": "About Us",
+      "FAQ": "FAQ",
+      "RentLuxuryCar": "Luxury Cars",
+      "RentSportCar": "Sports Cars",
+      "RentCheapCar": "Economy Cars",
+      "MyAccount": "My Account",
+      "yachts": "Yachts",
+      "rentCarWithDriver": "Car With Driver",
+      "luxury": "Luxury",
+      "sport": "Sport",
+      "economy": "Economy"
+    }
+  }
+}

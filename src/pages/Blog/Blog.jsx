@@ -1,24 +1,27 @@
 import React, { lazy, Suspense } from 'react'
+import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import Loading from '../../Loading';
-const BlogHeader = lazy(() => import('./components/BlogHeader/BlogHeader'));
-const FeatureCars = lazy(() => import('./components/Feature Cars/FeatureCars'));
-const  RentSUVLuxuryCursel= lazy(() => import('../Home/component/RentSUVLuxury/RentSUVLuxuryCursel/RentSUVLuxuryCursel'));
-const  BESTSERVICES= lazy(() => import('./components/BEST-SERVICES/BESTSERVICES'));
-
+import PageBanner from '../../ImportantSlicesSharedComponents/PageBanner';
+import PageServices from '../../ImportantSlicesSharedComponents/PageServices';
+const RentSUVLuxuryCursel= lazy(() => import('../Home/component/RentSUVLuxury/RentSUVLuxuryCursel/RentSUVLuxuryCursel'));
 
 export default function Blog() {
+  const { t } = useTranslation();
   return (
     <>
-    <Suspense fallback={<Loading/>}><BlogHeader/> </Suspense>
-    <Suspense fallback={<Loading/>}><FeatureCars/></Suspense>
+    <PageBanner title={t('banner.blog')} />
+    <section className='CarType pt-3'>
+      <div className="container">
+        <div className='CarType_Header d-flex justify-content-between mb-3 align-items-center'>
+          <h3 className=''>{t('blog.featured')}</h3>
+          <div className='line'></div>
+          <Link to="/ViewAll" className='ViewAll badge ms-2 text-decoration-none'><span className=''>{t('blog.viewAll')}</span></Link>
+        </div>
+      </div>
+    </section>
     <Suspense fallback={<Loading/>}><RentSUVLuxuryCursel/> </Suspense>
-    <Suspense fallback={<Loading/>}><BESTSERVICES/></Suspense>
-    <Suspense fallback={<Loading/>}><BESTSERVICES/> </Suspense>
-    
-    
-    
-   
-    
+    <PageServices />
     </>
   )
 }

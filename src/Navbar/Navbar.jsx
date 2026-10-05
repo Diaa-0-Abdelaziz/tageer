@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
+import { LANGUAGES, changeLanguage } from '../i18n'
 import logo from "../images/brand/zenith-icon.png"
 import lamborghini from "../images/img_lamborghiniurus.png"
 import img_calendar from "../images/img_calendar.svg"
@@ -30,6 +32,7 @@ import ForgotPassword from '../Authentication/ForgotPassword'
 import EnterCode from '../Authentication/EnterCode'
 import ResetPassword from '../Authentication/ResetPassword'
 export default function Navbar() {
+  const { t, i18n } = useTranslation();
 
   const [newPassword, setNewPassword] = useState(false)
   const [writeCode, setWriteCode] = useState(false)
@@ -49,17 +52,10 @@ export default function Navbar() {
   const [selectedCountryOption, setSelectedCountryOption] = useState("United Arab Emirates");
   const [selectedCityOption, setSelectedCityOption] = useState("Abu Dhabi");
   const [selectedCurrencyOption, setSelectedCurrencyOption] = useState("AED");
-  const [selectedLanguageOption, setSelectedLanguageOption] = useState("العربية");
   const CountriesOptions = ['United Arab Emirates', 'Saudi Arabia', 'Kuwait','Qatar'];
-  const CitiesOptions = ['dubai', 'Abu Dhabi', 'Al Ain','Sharjah'];
+  const CitiesOptions = ['Dubai', 'Abu Dhabi', 'Al Ain','Sharjah'];
   const CurrenciesOptions = ['AED', 'SAR', 'USD','EUR'];
-  const LanguagesOptions = ['English', 'العربية', 'русский','中国人'];
-  const LanguageFlags = {
-    'English': '🇬🇧',
-    'العربية': '🇦🇪',
-    'русский': '🇷🇺',
-    '中国人': '🇨🇳',
-  };
+  const LanguagesOptions = Object.keys(LANGUAGES);
 
 
   useEffect(() => {
@@ -89,51 +85,51 @@ export default function Navbar() {
   
   const RentACar = [
                      {
-                      linkName:"Rent a car monthly",
+                      linkName:"Rent a car monthly", tKey:"rentOptions.monthly",
                       path:"./MothlyCarRental"
                      },
                      {
-                      linkName:"Rent luxury car",
+                      linkName:"Rent luxury car", tKey:"rentOptions.luxury",
                       path:"./RentLuxuryCar"
                      },
                      {
-                      linkName:"Rent sport car",
+                      linkName:"Rent sport car", tKey:"rentOptions.sport",
                       path:"./RentSportCar"
                      },
                      {
-                      linkName:"Rent cheap car",
+                      linkName:"Rent cheap car", tKey:"rentOptions.cheap",
                       path:"./RentCheapCar"
                      },
 
                    ];
   const carBrands = [
     {
-      linkName:"BMW",
+      linkName:"BMW", tKey:"brands.BMW",
       img:logo_bmw,
       path:"/Brands?brand=BMW"
      },
     {
-      linkName:"Mercedes-Benz",
+      linkName:"Mercedes-Benz", tKey:"brands.Mercedes-Benz",
       img:logo_mercedes,
       path:"/Brands?brand=Mercedes-Benz"
      },
     {
-      linkName:"Audi",
+      linkName:"Audi", tKey:"brands.Audi",
       img:logo_audi,
       path:"/Brands?brand=Audi"
      },
     {
-      linkName:"Range Rover",
+      linkName:"Range Rover", tKey:"brands.Range Rover",
       img:logo_rangerover,
       path:"/Brands?brand=Land%20Rover"
      },
     {
-      linkName:"Toyota",
+      linkName:"Toyota", tKey:"brands.Toyota",
       img:logo_toyota,
       path:"/Brands?brand=Toyota"
      },
     {
-      linkName:"Nissan",
+      linkName:"Nissan", tKey:"brands.Nissan",
       img:logo_nissan,
       path:"/Brands?brand=Nissan"
      },
@@ -141,19 +137,19 @@ export default function Navbar() {
 
  const QuickLinks = [
                     {
-                     linkName:"Contact us",
+                     linkName:"Contact us", tKey:"quickOptions.contact",
                      path:"./ContactUs"
                     },
                     {
-                     linkName:"About us",
+                     linkName:"About us", tKey:"quickOptions.about",
                      path:"./AboutUs"
                     },
                     {
-                     linkName:"Blog",
+                     linkName:"Blog", tKey:"quickOptions.blog",
                      path:"./Blog"
                     },
                     {
-                     linkName:"Terms & Conditions",
+                     linkName:"Terms & Conditions", tKey:"quickOptions.terms",
                      path:"./TermsAndCondition"
                     },
 
@@ -282,9 +278,9 @@ export default function Navbar() {
     setSelectedCurrencyOption(option);
       setSelectCurrency(false);
   };
-  const handleOptionClick4 = (option) => {
-    setSelectedLanguageOption(option);
+  const handleOptionClick4 = (code) => {
       setSelectLanguage(false);
+      changeLanguage(code);
   };
   const handleOptionClick5 = (option) => {
       setDropRentCar(false);
@@ -317,25 +313,25 @@ export default function Navbar() {
             <Link to="/ListYourCars" className=' text-decoration-none' aria-label="Go to list your cars page">
             <div className='advertisement px-2 me-4 d-flex align-items-center bg-light'>
               <img src={lamborghini} alt={lamborghini} className='lamborghini' loading='lazy' />
-              <p className='badge text-dark mt-2'>List your cars in <span className='bolder'>ZENITH</span> platform</p>
+              <p className='badge text-dark mt-2'>{t('nav.listYourCarsPrefix')} <span className='bolder'>ZENITH</span> {t('nav.listYourCarsSuffix')}</p>
               <img src={img_calendar} alt={img_calendar} className='img_calendar' loading='lazy' />
             </div>
             </Link>
             <div className={`d-flex ${openSetting? 'settings':  'settings open_Setting'}`}>
             <span className='close_Setting d-none fs-5' onClick={openSettingList}><FaWindowClose/></span>
               <ul className=' border-style list-unstyled d-flex align-items-center'>
-                <li className=' fs-5 me-2' title='Country'><IoEarthOutline/></li>
+                <li className=' fs-5 me-2' title={t('nav.country')}><IoEarthOutline/></li>
                 <li>
                 <div className="custom-select">
             <div className="selected-option badge fw-light" onClick={toggleCountriesOptions}>
-                {selectedCountryOption}
+                {t(`countries.${selectedCountryOption}`)}
                 {selectCountry? <IoIosArrowUp/> : <FaAngleDown/>}
             </div>
             {selectCountry && (
                 <ul className="options">
                     {CountriesOptions.map((option, index) => (
                         <li key={index} onClick={() => handleOptionClick1(option)}>
-                            {option}
+                            {t(`countries.${option}`)}
                         </li>
                     ))}
                 </ul>
@@ -345,18 +341,18 @@ export default function Navbar() {
               </ul>
 
               <ul className='list-unstyled d-flex align-items-center'>
-              <li className='fs-5 me-2' title='City'><CiLocationOn/></li>
+              <li className='fs-5 me-2' title={t('nav.city')}><CiLocationOn/></li>
               <li>
               <div className="custom-select">
             <div className="selected-option opt2 badge fw-light" onClick={toggleCitiesOptions}>
-                {selectedCityOption}
+                {t(`cities.${selectedCityOption}`)}
                 {selectCity? <IoIosArrowUp/> : <FaAngleDown/>}
             </div>
             {selectCity && (
                 <ul className="options">
                     {CitiesOptions.map((option, index) => (
                         <li key={index} onClick={() => handleOptionClick2(option)}>
-                            {option}
+                            {t(`cities.${option}`)}
                         </li>
                     ))}
                 </ul>
@@ -365,18 +361,18 @@ export default function Navbar() {
               </li>
               </ul>
               <ul className=' ms-2 border-style list-unstyled d-flex align-items-center'>
-                <li className='fs-5 me-2' title='Currency'><RiMoneyDollarCircleLine/></li>
+                <li className='fs-5 me-2' title={t('nav.currency')}><RiMoneyDollarCircleLine/></li>
                 <li>
                 <div className="custom-select">
             <div className="selected-option opt3" onClick={toggleCurrenciesOptions}>
-                {selectedCurrencyOption}
+                {t(`currencies.${selectedCurrencyOption}`)}
                 {selectCurrency? <IoIosArrowUp/> : <FaAngleDown/>}
             </div>
             {selectCurrency && (
                 <ul className="options">
                     {CurrenciesOptions.map((option, index) => (
                         <li key={index} onClick={() => handleOptionClick3(option)}>
-                            {option}
+                            {t(`currencies.${option}`)}
                         </li>
                     ))}
                 </ul>
@@ -385,19 +381,19 @@ export default function Navbar() {
                 </li>
               </ul>
               <ul className='ms-2 border-style language list-unstyled d-flex align-items-center'>
-                <li className='fs-5 me-2' title='Language'><SiGoogletranslate/></li>
+                <li className='fs-5 me-2' title={t('nav.language')}><SiGoogletranslate/></li>
                 <li className=' d-flex'>
-                  <span className='lang-flag' role='img' aria-label={selectedLanguageOption}>{LanguageFlags[selectedLanguageOption]}</span>
+                  <span className='lang-flag' role='img' aria-label={LANGUAGES[i18n.language].label}>{LANGUAGES[i18n.language].flag}</span>
                   <div className="custom-select">
             <div className="selected-option opt4" onClick={toggleLanguagesOptions}>
-                {selectedLanguageOption}
+                {LANGUAGES[i18n.language].label}
                 {selectLanguage? <IoIosArrowUp/> : <FaAngleDown/>}
             </div>
             {selectLanguage && (
                 <ul className="options">
                     {LanguagesOptions.map((option, index) => (
                         <li key={index} onClick={() => handleOptionClick4(option)}>
-                            <span className='lang-flag' role='img' aria-label={option}>{LanguageFlags[option]}</span> {option}
+                            <span className='lang-flag' role='img' aria-label={LANGUAGES[option].label}>{LANGUAGES[option].flag}</span> {LANGUAGES[option].label}
                         </li>
                     ))}
                 </ul>
@@ -413,13 +409,13 @@ export default function Navbar() {
                   
                 <div className="custom-select">
             <div className="selected-option badge opt2" onClick={toggleDropdownAccount}>
-                My Account
+                {t('nav.myAccount')}
             </div>
             {Account && (
                 <ul className="options">
-                    <li onClick={login}>Sign in</li>
-                    <li onClick={signUp}>Create accoun</li>
-                    <li onClick={handleDropdownAccount}> <Link to="/MyAccount" aria-label="Go to my account setting page"> Manage your account</Link> </li>
+                    <li onClick={login}>{t('nav.signIn')}</li>
+                    <li onClick={signUp}>{t('nav.createAccount')}</li>
+                    <li onClick={handleDropdownAccount}> <Link to="/MyAccount" aria-label="Go to my account setting page">{t('nav.manageAccount')}</Link> </li>
                 </ul>
             )}
                 </div>          
@@ -435,7 +431,7 @@ export default function Navbar() {
            <span className='close d-none fs-5' onClick={openNavList}><FaWindowClose/></span>
             <ul className='navlinks m-auto mt-3 pe-5 justify-content-between list-unstyled d-flex align-items-center'>
               <li>
-              <Link className='fs-18 text-decoration-none' to="/" aria-label="Go to home page">Home</Link>
+              <Link className='fs-18 text-decoration-none' to="/" aria-label="Go to home page">{t('nav.home')}</Link>
               </li>
               <li>
 
@@ -444,15 +440,15 @@ export default function Navbar() {
               <div className="custom-select">
             <div className="selected-option opt2" onClick={toggleOptions7}>
             {carBrand? <IoIosArrowUp className='arrow' /> : <FaAngleDown className='arrow' />}
-            <span className='header'>Car brands</span>
+            <span className='header'>{t('nav.carBrands')}</span>
             </div>
             {carBrand && (
                 <ul className="options brand-options">
                     {carBrands.map((option, index) => (
                         <li key={index} onClick={() => handleOptionClick7(option)}>
                           <Link to={option.path} className=' text-decoration-none' aria-label={`Go to ${option.linkName} page`}>
-                            <img src={option.img} alt={option.linkName} width={48} height={30} loading='lazy' />
-                            <span>{option.linkName}</span>
+                            <img src={option.img} alt={t(option.tKey)} width={48} height={30} loading='lazy' />
+                            <span>{t(option.tKey)}</span>
                           </Link>
                         </li>
                     ))}
@@ -465,13 +461,13 @@ export default function Navbar() {
               <div className="custom-select">
             <div className="selected-option opt2" onClick={toggleOptions5}>
             {dropRentCar? <IoIosArrowUp className='arrow' /> : <FaAngleDown className='arrow' />}
-            <span className='header'>Rent a car</span>
+            <span className='header'>{t('nav.rentACar')}</span>
             </div>
             {dropRentCar && (
                 <ul className="options">
                     {RentACar.map((option, index) => (
                         <li key={index} onClick={() => handleOptionClick5(option)}>
-                            <Link to={option.path} className=' text-decoration-none' aria-label={`Go to ${option.linkName} page`}>{option.linkName}</Link>
+                            <Link to={option.path} className=' text-decoration-none' aria-label={`Go to ${option.linkName} page`}>{t(option.tKey)}</Link>
                         </li>
                     ))}
                 </ul>
@@ -481,9 +477,9 @@ export default function Navbar() {
 
               </li>
               <li>
-                <Link className='fs-18 text-decoration-none'  to="./rentCarWithDriver" aria-label="Go to rent car with driver page">Rent a car with driver</Link>
+                <Link className='fs-18 text-decoration-none'  to="./rentCarWithDriver" aria-label="Go to rent car with driver page">{t('nav.rentCarWithDriver')}</Link>
               </li>
-              <li><Link className='fs-18 text-decoration-none'  to="./yachts" aria-label="Go to yachts page">Rent yacht</Link></li>
+              <li><Link className='fs-18 text-decoration-none'  to="./yachts" aria-label="Go to yachts page">{t('nav.rentYacht')}</Link></li>
               <li>
 
 
@@ -492,13 +488,13 @@ export default function Navbar() {
               <div className="custom-select">
             <div className="selected-option opt2" onClick={toggleOptions6}>
             {quickLinks? <IoIosArrowUp className='arrow' /> : <FaAngleDown className='arrow' />}
-            <span className='header'>Quick links</span>
+            <span className='header'>{t('nav.quickLinks')}</span>
             </div>
             {quickLinks && (
                 <ul className="options">
                     {QuickLinks.map((option, index) => (
                         <li key={index} onClick={() => handleOptionClick6(option)}>
-                          <Link to={option.path} aria-label={`Go to ${option.linkName} page`}>{option.linkName}</Link>
+                          <Link to={option.path} aria-label={`Go to ${option.linkName} page`}>{t(option.tKey)}</Link>
                         </li>
                     ))}
                 </ul>
@@ -511,7 +507,7 @@ export default function Navbar() {
             {/*******social links******** */}
             <div className='appAndSocial m-auto d-flex align-items-center'>
               <ul className=' mt-3 social list-unstyled d-flex'>
-                <li><a href="tel:+971 52 313 1587"><IoMdCall/><span className="hidden-text">Call Us</span></a></li>
+                <li><a href="tel:+971 52 313 1587"><IoMdCall/><span className="hidden-text">{t('nav.callUs')}</span></a></li>
                 <li className='facebook'><a href="https://www.facebook.com/Tajeercarrental" target='_blank' rel="noopener noreferrer"><FaFacebookF/><span className="hidden-text">Facebook</span></a></li>
                 <li className='twitter'><a href="https://twitter.com/tajeercarrental" target='_blank' rel="noopener noreferrer"><FaTwitter/><span className="hidden-text">Twitter</span></a></li>
                 <li><a href="https://www.instagram.com/tajeercarrental/?utm_medium=copy_link" target='_blank' rel="noopener noreferrer"><GrInstagram/><span className="hidden-text">Instagram</span></a></li>

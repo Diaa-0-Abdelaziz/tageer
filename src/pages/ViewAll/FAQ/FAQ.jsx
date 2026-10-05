@@ -5,13 +5,21 @@ import { FiMinus } from "react-icons/fi";
 export default function FAQ() {
     const [toggleState, setToggleState] = useState({});
     const faqData = [
-        { id: 1, 
-            question: "Can I take a rental car from Dubai to Oman?", 
-            answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quo nam nesciunt laboriosam iste laborum corrupti corporis quaerat ut perspiciatis?" 
+        { id: 1,
+            question: "What do I need to rent a car in Dubai?",
+            answer: "Tourists need a valid passport, a visa or entry stamp, a home-country driving licence (an International Driving Permit is recommended) and a credit or debit card for the security deposit. UAE residents need an Emirates ID and a UAE driving licence."
         },
-        { id: 2, 
-          question: "Can I take a rental car from Dubai to Oman?",
-          answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quo nam nesciunt laboriosam iste laborum corrupti corporis quaerat ut perspiciatis?" 
+        { id: 2,
+            question: "Can I take a rental car from Dubai to Oman?",
+            answer: "Yes, on selected vehicles. Cross-border travel to Oman needs prior approval and extra insurance cover, so tell us before you book and we will arrange the paperwork."
+        },
+        { id: 3,
+            question: "Is insurance included in the rental price?",
+            answer: "Basic insurance is included with every rental. Full-coverage and zero-excess options are available as add-ons when you book."
+        },
+        { id: 4,
+            question: "Can I cancel or change my booking?",
+            answer: "Yes. You can cancel or amend a booking free of charge up to 24 hours before pick-up. Later changes may be subject to a fee depending on the owner's policy."
         },
     ];
     

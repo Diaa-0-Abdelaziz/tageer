@@ -1,18 +1,14 @@
-import React, {lazy, Suspense } from 'react'
-import Loading from '../../Loading';
-const TermsAndConditionHeader= lazy(() => import('./components/TermsAndConditionHeader/TermsAndConditionHeader'));
-const BESTSERVICES= lazy(() => import('./components/BEST-SERVICES/BEST-SERVICES'));
-
-
+import React from 'react'
+import { useTranslation } from 'react-i18next';
+import PageBanner from '../../ImportantSlicesSharedComponents/PageBanner';
+import LegalSection from '../../ImportantSlicesSharedComponents/LegalSection';
 
 export default function TermsAndCondition() {
+  const { t } = useTranslation();
   return (
-   <>
-  <Suspense fallback={<Loading/>}> <TermsAndConditionHeader/> </Suspense>
-  <Suspense fallback={<Loading/>}> <BESTSERVICES/> </Suspense>
-
-   
-   
-   </>
+    <>
+      <PageBanner title={t('banner.terms')} />
+      <LegalSection id='terms' />
+    </>
   )
 }

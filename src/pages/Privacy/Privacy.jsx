@@ -1,13 +1,14 @@
-import React, {lazy, Suspense } from 'react'
-import Loading from '../../Loading';
-const BESTSERVICES= lazy(() => import('./components/BEST-SERVICES/BEST-SERVICES'));
-const PrivacyHeader= lazy(() => import('./components/PrivacyHeader/PrivacyHeader'));
+import React from 'react'
+import { useTranslation } from 'react-i18next';
+import PageBanner from '../../ImportantSlicesSharedComponents/PageBanner';
+import LegalSection from '../../ImportantSlicesSharedComponents/LegalSection';
 
 export default function Privacy() {
+  const { t } = useTranslation();
   return (
-   <>
-  <Suspense fallback={<Loading/>}><PrivacyHeader/> </Suspense>
-  <Suspense fallback={<Loading/>}> <BESTSERVICES/></Suspense>
-   </>
+    <>
+      <PageBanner title={t('banner.privacy')} />
+      <LegalSection id='privacy' />
+    </>
   )
 }

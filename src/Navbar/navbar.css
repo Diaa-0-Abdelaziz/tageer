@@ -546,4 +546,35 @@ header .navlist .twitter {
   border-radius: 4px;
 }
 
+@media screen and (max-width: 1300px) {
+  [dir=rtl] header .navlist {
+    left: auto;
+    right: -100%;
+    transition: right 0.35s ease;
+  }
+  [dir=rtl] header .navlist .close {
+    right: auto;
+    left: 16px;
+  }
+  [dir=rtl] header .open_nav_list {
+    left: auto !important;
+    right: 0 !important;
+  }
+  [dir=rtl] header .navbar .content .menu {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  [dir=rtl] header .navbar .settings .close_Setting {
+    right: auto;
+    left: 20px;
+  }
+  [dir=rtl] header .navbar .settings ul li:last-child {
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+[dir=rtl] header .navbar .options {
+  text-align: right;
+}
+
 /*# sourceMappingURL=navbar.css.map */

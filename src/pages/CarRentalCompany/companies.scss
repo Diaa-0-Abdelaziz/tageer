@@ -1,0 +1,118 @@
+$primary: #17233E;
+$primary-dark: #0A1220;
+$tint: #E6F6FF;
+$border: #d9dee5;
+
+.company-hero {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 18px;
+    flex-wrap: wrap;
+
+    .company-name { color: $primary; margin: 0 0 4px; }
+    .area { color: #555; }
+    .company-stats {
+        display: flex;
+        gap: 18px;
+        flex-wrap: wrap;
+        margin: 8px 0 0;
+        padding: 0;
+        li { font-size: 14px; color: #333; strong { color: $primary; font-size: 18px; } }
+    }
+}
+
+.company-logo {
+    flex: 0 0 auto;
+    width: 120px;
+    height: 90px;
+    border-radius: 12px;
+    border: 1px solid $border;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    img { max-width: 100%; max-height: 100%; object-fit: contain; }
+}
+
+.back-link {
+    margin-top: 24px;
+    a { color: $primary; font-weight: 600; text-decoration: none; &:hover { text-decoration: underline; } }
+}
+
+.companies-grid {
+    padding-bottom: 30px;
+}
+
+.company-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border: 1px solid $border;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba($primary, .08);
+    transition: transform .2s ease, box-shadow .2s ease;
+
+    &:hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba($primary, .16); }
+
+    .company-logo {
+        width: 100%;
+        height: 150px;
+        border: none;
+        border-bottom: 1px solid $border;
+        border-radius: 0;
+        background: $tint;
+    }
+
+    .company-body { padding: 18px 20px 20px; display: flex; flex-direction: column; flex: 1; }
+    h4 { color: $primary; font-size: 20px; font-weight: 700; margin: 0 0 2px; }
+    .area { color: #666; font-size: 14px; margin-bottom: 10px; }
+
+    .classes {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin: 0 0 12px;
+        padding: 0;
+        li { background: $tint; color: $primary; font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 20px; }
+    }
+
+    .facts {
+        margin: 0 0 16px;
+        padding: 0;
+        li { font-size: 14px; color: #333; line-height: 1.9; display: flex; align-items: center; gap: 6px; }
+    }
+
+    .company-actions {
+        margin-top: auto;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .view-cars {
+            background: $primary;
+            color: #fff;
+            text-decoration: none;
+            padding: 9px 18px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 14px;
+            &:hover { background: $primary-dark; }
+        }
+        .call {
+            color: $primary;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            direction: ltr;
+        }
+    }
+}

@@ -1,36 +1,27 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useLocalize } from '../../../../i18n/localize';
+import PageIntro from '../../../../ImportantSlicesSharedComponents/PageIntro';
 import RentSuvDubaiCursel from './RentSuvDubaiCursel/RentSuvDubaiCursel';
-export default function RentSuvDubai() {
-    const [isExpanded, setIsExpanded] = useState(false);
 
-    const toggleExpanded = () => {
-      setIsExpanded(!isExpanded);
-    };
+export default function RentSuvDubai({yacht: source}) {
+  const { t, money, yacht: localize } = useLocalize();
+  if (!source) return null;
+  const yacht = localize(source);
+  const [hourly, fourHours, fullDay] = yacht.rates;
+  const values = {
+    title: yacht.title, length: yacht.lengthFt, capacity: yacht.capacity, departure: yacht.departure, operator: yacht.operator,
+    bestFor: yacht.bestFor.toLowerCase(), minHours: yacht.minHours,
+    hourly: money(hourly.price), fourHours: money(fourHours.price), fullDay: money(fullDay.price),
+  };
   return (
     <>
-    <section className='CarType pt-3'>
-        <div className="container">
-        <div className='CarType_Header d-flex justify-content-between mb-3 align-items-center'>
-        <h3 className=''>Rent SUV in Dubai</h3>
-        <div className='line'></div>
-        </div>
-        <p className=' fw-bold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, laborum.</p>
-        <p className={` position-relative ${isExpanded ? 'expanded' : 'collapsed'}`}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          {!isExpanded ?
-          <span onClick={toggleExpanded} className=" position-absolute bottom-0 end-0 mt-2 read_more text-decoration-underline fw-bold">read more</span>:<span onClick={toggleExpanded} className=" position-absolute bottom-0 end-0 mt-2 read_more text-decoration-underline fw-bold">read less</span> 
-          }
-        </p>
-        </div>
-    </section>
-    <RentSuvDubaiCursel/>
+    <PageIntro
+      className='CarType pt-3'
+      title={t('yacht.details.pageTitle', values)}
+      lead={t('yacht.details.lead', values)}
+      body={[yacht.description, yacht.highlights, ...t('yacht.details.body', { returnObjects: true, ...values })]}
+    />
+    <RentSuvDubaiCursel yacht={source}/>
     </>
   )
 }

@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import React from 'react'
 import Slider from "react-slick";
 import { MdOutlineNavigateNext } from "react-icons/md";
@@ -11,6 +12,8 @@ import imgSUV from "../../../../../images/cartypes/luxury-suvs.jpg"
 import imgExotic from "../../../../../images/cartypes/exotic-supercars.jpg"
 import { Link } from 'react-router-dom';
 export default function CarTypeCursel() {
+  const { t, i18n } = useTranslation();
+
     function SampleNextArrow(props) {
         const {onClick } = props;
         return (
@@ -28,6 +31,7 @@ export default function CarTypeCursel() {
         );
       }
       var settings = {
+        rtl: i18n.dir() === 'rtl',
         infinite: true,
         slidesToShow: 7,
         slidesToScroll: 1,
@@ -108,13 +112,13 @@ export default function CarTypeCursel() {
       return (
         <section className='carTypeSlider carTypeCards overflow-hidden'>
        <div className="container main-slider mb-5">
-         <Slider {...settings}>
+         <Slider key={i18n.dir()} {...settings}>
           {products.map((pro)=> <div className='p-2 content' key={pro.id}>
            <Link to={`/Category/` + pro.id} aria-label="Go to categories's page" className=' text-decoration-none'>
            <div className='slider-pro border-0  overflow-hidden'>
           <img src={pro.img} alt={pro.alt} width="600" height="400" className='w-100' loading='lazy'/>
           <div className='title'>
-          <span className='text-capitalize badge'>{pro.title}</span>
+          <span className='text-capitalize badge'>{t(`home.carTypes.${pro.title}`, pro.title)}</span>
           </div>
         </div>
            </Link>

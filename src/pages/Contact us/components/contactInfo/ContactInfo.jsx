@@ -3,8 +3,10 @@ import { FaLocationDot } from "react-icons/fa6";
 import { IoCall } from "react-icons/io5";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
+import { useTranslation } from 'react-i18next';
 import "./ContactInfo.css"
 export default function ContactInfo() {
+  const { t } = useTranslation();
   return (
     <section className='ContactInfo mt-5'>
         <div className="container">
@@ -13,15 +15,15 @@ export default function ContactInfo() {
         <li>
             <div>
                <i><FaLocationDot/></i>
-               <h4>Head Office</h4>
-               <span><a href="https://maps.app.goo.gl/inBUS8hTzjHZC1eF9" target='_blank' rel="noopener noreferrer">68 Landsriver St, Welson California 22066</a></span>
+               <h4>{t('contact.office')}</h4>
+               <span><a href="https://maps.app.goo.gl/inBUS8hTzjHZC1eF9" target='_blank' rel="noopener noreferrer">{t('contact.address')}</a></span>
             </div>
         </li>
         <li>
         <div>
                <i><IoCall/></i>
-               <h4>Phone number</h4>
-               <span><a href="#tel:+303 123 456 7890" aria-label="call me on phone number">+303 123 456 7890</a> <a href="#tel:0800 123 4567">Sales.  0800 123 4567</a></span>
+               <h4>{t('contact.phone')}</h4>
+               <span><a href="tel:+97145540871" aria-label={t('contact.phone')}><bdi dir="ltr">+971 4 554 0871</bdi></a> <a href="tel:+971564424448">{t('contact.sales')}. <bdi dir="ltr">+971 56 442 4448</bdi></a></span>
             </div>
         </li>
        </ul>
@@ -30,15 +32,15 @@ export default function ContactInfo() {
         <li>
             <div>
                <i><IoLogoWhatsapp/></i>
-               <h4>Whatsapp</h4>
-               <span><a href="https://wa.me/+3031234567890" aria-label="call me on whatsapp number">+303 123 456 7890</a> <a href="https://wa.me/08001234567">Sales.  0800 123 4567</a></span>
+               <h4>{t('contact.whatsapp')}</h4>
+               <span><a href="https://wa.me/971564424448" aria-label={t('contact.whatsapp')}><bdi dir="ltr">+971 56 442 4448</bdi></a> <a href="https://wa.me/97145540871">{t('contact.sales')}. <bdi dir="ltr">+971 4 554 0871</bdi></a></span>
             </div>
         </li>
         <li>
         <div>
                <i><MdEmail/></i>
-               <h4>Mail</h4>
-               <span><a href="mailto:info@tajeercarrent.com" aria-label="this link is gmail link">info@tajeercarrent.com</a> <a href="mailto:support@domain.com">support@domain.com</a></span>
+               <h4>{t('contact.mail')}</h4>
+               <span><a href="mailto:info@tajeercarrent.com" aria-label={t('contact.mail')}>info@tajeercarrent.com</a></span>
             </div>
         </li>
        </ul>

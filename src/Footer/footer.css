@@ -85,6 +85,16 @@ footer .container-fluid .footer-col ul li {
   gap: 6px;
   color: rgba(255, 255, 255, 0.92);
 }
+footer .container-fluid .footer-col ul li a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+  display: inline-block;
+}
+footer .container-fluid .footer-col ul li a:hover, footer .container-fluid .footer-col ul li a:focus-visible {
+  color: #4FC3F7;
+  transform: translateX(3px);
+}
 footer .container-fluid .app {
   position: relative;
   display: flex;

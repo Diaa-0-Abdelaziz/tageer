@@ -1,0 +1,35 @@
+
+/* Arabic: Cairo (self-hosted, loads only the glyph subsets actually used) */
+html[lang="ar"] {
+  --bs-body-font-family: "Cairo Variable", "Segoe UI", Tahoma, Arial, sans-serif;
+}
+html[lang="ar"] body,
+html[lang="ar"] button,
+html[lang="ar"] input,
+html[lang="ar"] select,
+html[lang="ar"] textarea,
+html[lang="ar"] h1, html[lang="ar"] h2, html[lang="ar"] h3,
+html[lang="ar"] h4, html[lang="ar"] h5, html[lang="ar"] h6 {
+  font-family: "Cairo Variable", "Segoe UI", Tahoma, Arial, sans-serif;
+}
+/* Arabic letters connect, so letter-spacing breaks the words apart */
+html[lang="ar"] * {
+  letter-spacing: 0 !important;
+}
+
+/* Arabic sizing: Arabic script reads smaller than Latin at the same font-size, so scale
+   every glyph up ~12% in one place instead of adjusting each component (Cairo's natural
+   x-height ratio is ~0.50; font-size-adjust raises it to 0.56 everywhere). */
+html[lang="ar"],
+html[lang="ar"] * {
+  font-size-adjust: 0.56;
+}
+html[lang="ar"] body { line-height: 1.8; }
+/* a few spots are tiny in the English design; give them a floor in Arabic */
+html[lang="ar"] .CarType p { font-size: 14px; line-height: 1.9; }
+html[lang="ar"] .slider-pro .contact span { font-size: 11px; }
+/* room for the one-line preview plus the "read more" link underneath it */
+html[lang="ar"] .CarType p.collapsed { height: 62px; line-height: 1.7; }
+html[lang="ar"] .CarType p .read_more { line-height: 1.7; }
+/* FAQ: the question text is already large; keep it clear of the +/- button */
+html[lang="ar"] .faq .article .button .question { font-size: 21px; line-height: 1.6; }

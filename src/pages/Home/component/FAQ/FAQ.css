@@ -23,10 +23,11 @@
   transition: all 0.3s;
   font-size: 20px;
   position: absolute;
-  right: 0;
+  inset-inline-end: 0;
 }
 .faq .article .button .question {
   font-size: 25px;
+  padding-inline-end: 44px;
 }
 .faq .article .button .accordion-body {
   font-size: 25px;

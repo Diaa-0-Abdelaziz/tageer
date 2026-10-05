@@ -1,27 +1,12 @@
+import { useTranslation } from 'react-i18next';
 import React, { useState } from 'react';
 import { FaPlus } from "react-icons/fa";
 import { FiMinus } from "react-icons/fi";
 import './FAQ.css'
 export default function FAQ() {
+  const { t } = useTranslation();
     const [toggleState, setToggleState] = useState({});
-    const faqData = [
-        { id: 1,
-            question: "Can I take a rental car from Dubai to Oman?",
-            answer: "Yes, cross-border trips to Oman are allowed on selected vehicles. Let us know your travel dates when booking so we can arrange the required border permit in advance."
-        },
-        { id: 2,
-          question: "What documents do I need to rent a car in Dubai?",
-          answer: "A valid driving license and passport or Emirates ID. Visitors whose license isn't in English or Arabic will also need an International Driving Permit."
-        },
-        { id: 3,
-          question: "Is insurance included in the rental price?",
-          answer: "Every rental includes basic insurance coverage. Additional protection plans are available at checkout if you'd like extra peace of mind."
-        },
-        { id: 4,
-          question: "Can I cancel or modify my booking?",
-          answer: "You can cancel for free up to 24 hours before pickup. To modify dates or the vehicle, just reach out to our support team or manage it from your account."
-        },
-    ];
+    const faqData = t('home.faq.items', { returnObjects: true }).map((item, i) => ({ id: i + 1, question: item.q, answer: item.a }));
     
     function toggleFaq(id) {
         setToggleState(prevState => ({
@@ -34,7 +19,7 @@ export default function FAQ() {
         <>
             <section className='faq'>
                 <div className="container">
-                    <h2>FAQ</h2>
+                    <h2>{t('home.faq.title')}</h2>
                     <div>
                         {faqData.map((faq) => (
                             <div className="accordion-item article mt-5" key={faq.id}>

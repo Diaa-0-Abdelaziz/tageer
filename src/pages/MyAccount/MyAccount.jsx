@@ -1,16 +1,14 @@
-import React, {lazy, Suspense } from 'react'
-import Loading from '../../Loading';
-const MyAccountHeader= lazy(() => import('./components/MyAccountHeader/MyAccountHeader'));
-const Content= lazy(() => import('./components/content/content'));
+import React from 'react'
+import { useTranslation } from 'react-i18next';
+import PageBanner from '../../ImportantSlicesSharedComponents/PageBanner';
+import Content from './components/content/content';
 
 export default function MyAccount() {
+  const { t } = useTranslation();
   return (
    <>
-  <Suspense fallback={<Loading/>}> <MyAccountHeader/></Suspense>
-  <Suspense fallback={<Loading/>}> <Content/></Suspense>
-
-   
-   
+    <PageBanner title={t('banner.account')} />
+    <Content/>
    </>
   )
 }

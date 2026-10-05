@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import React from 'react'
 import Slider from "react-slick";
 import { MdOutlineNavigateNext } from "react-icons/md";
@@ -7,6 +8,7 @@ import "./Testimonials.css"
 import img1 from "../../../../images/img_image.png"
 import google from "../../../../images/img_pngwing_com_16.png"
 export default function Testimonials() {
+  const { t, i18n } = useTranslation();
     function SampleNextArrow(props) {
         const {onClick } = props;
         return (
@@ -24,6 +26,7 @@ export default function Testimonials() {
         );
       }
       var settings = {
+        rtl: i18n.dir() === 'rtl',
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -62,65 +65,17 @@ export default function Testimonials() {
     
     
     
-      let products = [
-        {
-          id:1,
-          userName:"Mike Taylor",
-          userLocation:"Lahore, Pakistan",
-          userPicture:img1,
-          img:google,
-          article:"“Booking was quick and the SUV was delivered right to my hotel in under an hour. Smooth experience from start to finish.”"
-        },
-        {
-          id:2,
-          userName:"Sara Ahmed",
-          userLocation:"Dubai, UAE",
-          userPicture:img1,
-          img:google,
-          article:"“Great selection of luxury cars and fair prices. The team was responsive whenever I had questions about my rental.”"
-        },
-        {
-          id:3,
-          userName:"James Carter",
-          userLocation:"London, UK",
-          userPicture:img1,
-          img:google,
-          article:"“Rented a Range Rover for a week — spotless car, no hidden fees, and an easy return process. Highly recommend.”"
-        },
-        {
-          id:4,
-          userName:"Fatima Al Suwaidi",
-          userLocation:"Abu Dhabi, UAE",
-          userPicture:img1,
-          img:google,
-          article:"“I've used Zenith three times now for business trips. Always reliable, always on time.”"
-        },
-        {
-          id:5,
-          userName:"Daniel Kim",
-          userLocation:"Seoul, South Korea",
-          userPicture:img1,
-          img:google,
-          article:"“Clear pricing and a huge variety of cars to choose from. Support helped me change my pickup time with no hassle.”"
-        },
-        {
-          id:6,
-          userName:"Aisha Noor",
-          userLocation:"Sharjah, UAE",
-          userPicture:img1,
-          img:google,
-          article:"“The car was exactly as pictured and the whole rental process took less than 10 minutes online.”"
-        }
-      ]
+      const items = t('home.testimonials.items', { returnObjects: true });
+      let products = items.map((item, i) => ({ id: i + 1, userName: item.name, userLocation: item.location, userPicture: img1, img: google, article: item.text }));
     
     
     
       return (
         <section className='Testimonials overflow-hidden'>
        <div className="container main-slider mb-5">
-        <p>Testimonials</p>
-        <h2 className=' text-capitalize'>google reviews</h2>
-         <Slider {...settings}>
+        <p>{t('home.testimonials.eyebrow')}</p>
+        <h2 className=' text-capitalize'>{t('home.testimonials.title')}</h2>
+         <Slider key={i18n.dir()} {...settings}>
           {products.map((pro)=> <div className='p-2 content' key={pro.id}>
             <div className='slider_pro overflow-hidden'>
           <ul className=' p-3 list-unstyled d-flex justify-content-between'>

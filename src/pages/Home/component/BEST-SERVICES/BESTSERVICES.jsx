@@ -1,21 +1,14 @@
+import { useTranslation } from 'react-i18next';
 import React from 'react'
 import LazyLoad from 'react-lazyload';
 import img_your_image_mask from "../../../../images/img_your_image_mask.png"
 import img_fleet_variety from "../../../../images/fleet/mercedes-g-class.jpg"
 export default function BESTSERVICES() {
+  const { t } = useTranslation();
+  const texts = t('home.services', { returnObjects: true });
   let BESTSERVICES=[
-    {
-      img:img_your_image_mask,
-      eyebrow:"Why Zenith",
-      header:"We always deliver the best service",
-      explanation:"Every car on Zenith is verified and insured before it goes live. Transparent pricing, flexible pickup and 24/7 support mean you can book with confidence, anywhere in the UAE."
-    },
-    {
-      img:img_fleet_variety,
-      eyebrow:"Our Fleet",
-      header:"A fleet built for every journey",
-      explanation:"From economy hatchbacks to luxury SUVs, choose the ride that fits your trip. Daily, weekly or monthly rentals — delivered clean, fueled and ready to go."
-    }
+    { img:img_your_image_mask, ...texts[0] },
+    { img:img_fleet_variety, ...texts[1] },
   ]
   return (
     <>

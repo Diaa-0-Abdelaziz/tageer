@@ -1,36 +1,29 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useLocalize } from '../../../../i18n/localize';
+import PageIntro from '../../../../ImportantSlicesSharedComponents/PageIntro';
 import RentSuvDubaiCursel from './RentSuvDubaiCursel/RentSuvDubaiCursel';
-export default function RentSuvDubai() {
-    const [isExpanded, setIsExpanded] = useState(false);
 
-    const toggleExpanded = () => {
-      setIsExpanded(!isExpanded);
-    };
+export default function RentSuvDubai({car: source}) {
+  const { t, lang, money, chauffeur: localize } = useLocalize();
+  if (!source) return null;
+  const car = localize(source);
+  const { chauffeur } = car;
+  const [hourly, halfDay, fullDay, airport] = chauffeur.rates;
+  const values = {
+    title: car.title, year: car.year, model: car.model, supplier: car.supplierLabel, seats: car.seats,
+    hourly: money(hourly.price), halfDay: money(halfDay.price), fullDay: money(fullDay.price), airport: money(airport.price),
+    halfDayDetail: halfDay.detail, fullDayDetail: fullDay.detail, minHours: chauffeur.minHours,
+    languages: chauffeur.languages.join(lang === 'ar' ? '، ' : ', '), extraHour: money(chauffeur.extraHourPrice),
+  };
   return (
     <>
-    <section className='CarType pt-3'>
-        <div className="container">
-        <div className='CarType_Header d-flex justify-content-between mb-3 align-items-center'>
-        <h3 className=''>Rent SUV in Dubai</h3>
-        <div className='line'></div>
-        </div>
-        <p className=' fw-bold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, laborum.</p>
-        <p className={` position-relative ${isExpanded ? 'expanded' : 'collapsed'}`}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          {!isExpanded ?
-          <span onClick={toggleExpanded} className=" position-absolute bottom-0 end-0 mt-2 read_more text-decoration-underline fw-bold">read more</span>:<span onClick={toggleExpanded} className=" position-absolute bottom-0 end-0 mt-2 read_more text-decoration-underline fw-bold">read less</span> 
-          }
-        </p>
-        </div>
-    </section>
-    <RentSuvDubaiCursel/>
+    <PageIntro
+      className='CarType pt-3'
+      title={t('chauffeur.details.pageTitle', values)}
+      lead={t('chauffeur.details.lead', values)}
+      body={t('chauffeur.details.body', { returnObjects: true, ...values })}
+    />
+    <RentSuvDubaiCursel car={source}/>
     </>
   )
 }
