@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaUserCircle } from "react-icons/fa";
 import img1 from "../../../../images/WhatsAppImage.png"
-import TAJEER_LOGO from "../../../../images/TAJEER LOGO.png"
+import ZENITH_LOGO from "../../../../images/brand/zenith-icon.png"
 import "./content.css"
 import { Link } from 'react-router-dom';
 import SecondCards from '../../../../ImportantSlicesSharedComponents/SecondCards';
@@ -153,7 +153,7 @@ export default function Content() {
   <div className="tab-pane fade p-1" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
 
   <div className="container my-5 d-flex flex-column align-items-center">
-  <img src={TAJEER_LOGO} alt={TAJEER_LOGO} className=' w-75'/>
+  <img src={ZENITH_LOGO} alt='Zenith Car Rental' className='w-50 p-4 rounded-4' style={{backgroundImage:'linear-gradient(180deg, #17233E 0%, #0A1220 100%)'}}/>
   <p>You don’t have saved bookings yet</p>
   <Link to="/" className='Back_To_Home text-decoration-none'><span className=''>Back to home</span></Link>
   </div>

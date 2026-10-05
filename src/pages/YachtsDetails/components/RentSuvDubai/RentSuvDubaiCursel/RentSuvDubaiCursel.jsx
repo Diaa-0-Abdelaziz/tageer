@@ -2,7 +2,7 @@ import React from 'react'
 import ImageGallery from "react-image-gallery";
 import { GoDotFill } from "react-icons/go";
 import img1 from "../../../../../images/Your image mask@2x.png"
-import logo from "../../../../../images/tajeer app icon@2x.png"
+import logo from "../../../../../images/brand/zenith-icon.png"
 import { IoLogoWhatsapp } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import { IoCallSharp } from "react-icons/io5";
@@ -146,7 +146,7 @@ export default function RentSuvDubaiCursel() {
               </ul>
           </div>
           <div className='logo d-flex justify-content-center'>
-          <img src={logo} alt={logo} />
+          <img src={logo} alt='Zenith Car Rental' style={{width:'110px',padding:'10px 14px',borderRadius:'12px',backgroundImage:'linear-gradient(180deg, #17233E 0%, #0A1220 100%)'}} />
           </div>
         </div>
        </div>

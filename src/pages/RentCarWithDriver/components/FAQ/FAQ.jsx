@@ -5,13 +5,21 @@ import { FiMinus } from "react-icons/fi";
 export default function FAQ() {
     const [toggleState, setToggleState] = useState({});
     const faqData = [
-        { id: 1, 
-            question: "Can I take a rental car from Dubai to Oman?", 
-            answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quo nam nesciunt laboriosam iste laborum corrupti corporis quaerat ut perspiciatis?" 
+        { id: 1,
+            question: "What is included in the price?",
+            answer: "The driver, fuel, insurance and vehicle are included. Parking, tolls and entrance fees are paid separately."
         },
-        { id: 2, 
-          question: "Can I take a rental car from Dubai to Oman?",
-          answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quo nam nesciunt laboriosam iste laborum corrupti corporis quaerat ut perspiciatis?" 
+        { id: 2,
+            question: "Can I book a driver for a few hours only?",
+            answer: "Yes. Most companies offer hourly bookings with a minimum of 4 to 8 hours, as well as full-day packages."
+        },
+        { id: 3,
+            question: "Do the drivers speak English?",
+            answer: "Drivers are licensed professionals who speak English, and many also speak Arabic and Hindi or Urdu."
+        },
+        { id: 4,
+            question: "Can I use the car for travel to other emirates?",
+            answer: "Yes. Trips to Abu Dhabi, Sharjah, Ajman and other emirates are available, and some companies also offer trips to Oman."
         },
     ];
     

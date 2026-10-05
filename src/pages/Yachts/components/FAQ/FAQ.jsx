@@ -5,13 +5,21 @@ import { FiMinus } from "react-icons/fi";
 export default function FAQ() {
     const [toggleState, setToggleState] = useState({});
     const faqData = [
-        { id: 1, 
-            question: "Can I take a rental car from Dubai to Oman?", 
-            answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quo nam nesciunt laboriosam iste laborum corrupti corporis quaerat ut perspiciatis?" 
+        { id: 1,
+            question: "How long is a yacht charter?",
+            answer: "Charters usually start at 2 hours and can extend to a full day. Longer bookings get a lower hourly rate."
         },
-        { id: 2, 
-          question: "Can I take a rental car from Dubai to Oman?",
-          answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quo nam nesciunt laboriosam iste laborum corrupti corporis quaerat ut perspiciatis?" 
+        { id: 2,
+            question: "What is included in the price?",
+            answer: "The captain, crew, fuel, soft drinks, water and safety equipment are included. Catering and water sports can be added."
+        },
+        { id: 3,
+            question: "How many guests can join?",
+            answer: "Capacity depends on the yacht, from 6 guests on smaller boats up to 50 or more on luxury vessels."
+        },
+        { id: 4,
+            question: "What happens if the weather is bad?",
+            answer: "If conditions are unsafe, you can reschedule free of charge or receive a full refund."
         },
     ];
     

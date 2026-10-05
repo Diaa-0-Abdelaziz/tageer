@@ -4,7 +4,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import { IoCallSharp } from "react-icons/io5";
 import { Link } from 'react-router-dom';
-import logo from "../images/img_artboard_2_169x246.png"
+import logo from "../images/brand/zenith-icon.png"
 export default function SecondCards({Productindex, productImage, ProductDoors, ProductEngine, ProductPriceOfDay, ProductPriceOfMonth,  ProductPriceOfWeek, ProductDeposit,  ProductMinimumOfDays, ProductColor, ProductBrand, ProductModel, ProductYear, ProductType,  productTitle, ownerWhatsapp, ownerEmail, ownerCall}) {
   return (
     <div className="card">

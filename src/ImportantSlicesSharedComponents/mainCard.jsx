@@ -4,7 +4,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import { IoCallSharp } from "react-icons/io5";
 import { Link } from 'react-router-dom';
-import logo from "../images/img_artboard_2_169x246.png"
+import logo from "../images/brand/zenith-icon.png"
 export default function MainCard({productId, productImage, productTitle, ownerWhatsapp, ownerEmail, ownerCall}) {
   return (
     <div className='p-2 content col-lg-4 col-md-6'>

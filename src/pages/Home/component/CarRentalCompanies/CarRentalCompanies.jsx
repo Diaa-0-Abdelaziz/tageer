@@ -16,9 +16,9 @@ export default function CarRentalCompanies() {
         <div className='line'></div>
         <Link to="./CarRentalCompany" className='ViewAll badge ms-2 text-decoration-none' aria-label="Go to view all page"><span className=''>View all</span></Link>
         </div>
-        <p className=' fw-bold'>Seven licensed rental companies list their cars on Tajeer &mdash; compare their fleets, rates and delivery areas in one place.</p>
+        <p className=' fw-bold'>Seven licensed rental companies list their cars on Zenith &mdash; compare their fleets, rates and delivery areas in one place.</p>
         <p className={` position-relative ${isExpanded ? 'expanded' : 'collapsed'}`}>
-          Tajeer does not own cars. Every vehicle you see on this site belongs to a rental company licensed by
+          Zenith does not own cars. Every vehicle you see on this site belongs to a rental company licensed by
           the RTA, and booking through us puts you in direct contact with them. What we do is put their fleets
           side by side so you can compare the same car across several suppliers before you commit.
           {' '}

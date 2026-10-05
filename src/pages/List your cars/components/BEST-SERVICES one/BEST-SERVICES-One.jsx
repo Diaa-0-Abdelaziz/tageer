@@ -1,25 +1,25 @@
 import React from 'react'
 import LazyLoad from 'react-lazyload';
-import img_your_image_mask1 from "../../../../images/mok up@2x0010.png"
-import img_your_image_mask2 from "../../../../images/Scene-6@2x0012.png"
-import img_your_image_mask3 from "../../../../images/Scene-6@2x0012.png"
+import img_your_image_mask1 from "../../../../images/brand/list-app-splash.png"
+import img_your_image_mask2 from "../../../../images/brand/list-app-detail.png"
+import img_your_image_mask3 from "../../../../images/brand/list-app-splash.png"
 export default function BESTSERVICESOne() {
 
   let BESTSERVICES=[
     {
       img:img_your_image_mask1,
-      header:"We will allways provide the best services",
-      explanation:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eius necessitatibus aspernatur dolorum aliquid facilis exercitationem deserunt nemo eveniet itaque, magnam nisi tenetur molestiae dolor vitae corporis! Esse voluptas necessitatibus autem labore quod, earum tenetur corrupti reprehenderit aut suscipit natus. Commodi natus cum at esse molestiae iste dicta velit enim? Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eius necessitatibus aspernatur dolorum aliquid facilis exercitationem deserunt nemo eveniet itaque, magnam nisi tenetur molestiae dolor vitae corporis! Esse voluptas necessitatibus autem labore quod, earum tenetur corrupti reprehenderit aut suscipit natus. Commodi natus cum at esse molestiae iste dicta velit enim?"
+      header:"List your fleet in minutes",
+      explanation:"Create a free Zenith account, add your cars with photos, daily, weekly and monthly rates, and your listing goes live after a quick verification. No setup fees and no long-term contract."
     },
     {
       img:img_your_image_mask2,
-      header:"We will allways provide the best services",
-      explanation:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eius necessitatibus aspernatur dolorum aliquid facilis exercitationem deserunt nemo eveniet itaque, magnam nisi tenetur molestiae dolor vitae corporis! Esse voluptas necessitatibus autem labore quod, earum tenetur corrupti reprehenderit aut suscipit natus. Commodi natus cum at esse molestiae iste dicta velit enim? Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eius necessitatibus aspernatur dolorum aliquid facilis exercitationem deserunt nemo eveniet itaque, magnam nisi tenetur molestiae dolor vitae corporis! Esse voluptas necessitatibus autem labore quod, earum tenetur corrupti reprehenderit aut suscipit natus. Commodi natus cum at esse molestiae iste dicta velit enim?"
+      header:"Get bookings straight to your phone",
+      explanation:"Customers see your full specs, rates and availability, then contact you instantly on WhatsApp, email or phone. You keep control of pricing and who you rent to."
     },
     {
       img:img_your_image_mask3,
-      header:"We will allways provide the best services",
-      explanation:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eius necessitatibus aspernatur dolorum aliquid facilis exercitationem deserunt nemo eveniet itaque, magnam nisi tenetur molestiae dolor vitae corporis! Esse voluptas necessitatibus autem labore quod, earum tenetur corrupti reprehenderit aut suscipit natus. Commodi natus cum at esse molestiae iste dicta velit enim? Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eius necessitatibus aspernatur dolorum aliquid facilis exercitationem deserunt nemo eveniet itaque, magnam nisi tenetur molestiae dolor vitae corporis! Esse voluptas necessitatibus autem labore quod, earum tenetur corrupti reprehenderit aut suscipit natus. Commodi natus cum at esse molestiae iste dicta velit enim?"
+      header:"Grow with a platform built for rental companies",
+      explanation:"Reach thousands of visitors searching for cars in Dubai every month. Featured placement, verified badges and customer reviews help your fleet stand out."
     }
   ]
   return (
@@ -32,7 +32,7 @@ export default function BESTSERVICESOne() {
           
           <div className="col-lg-4 col-md-6">
           <LazyLoad>
-        <img src={service.img} alt={service.img} className=' w-100' loading='lazy' />
+        <img src={service.img} alt={service.header} className=' w-100' loading='lazy' />
           </LazyLoad>
         </div>
         :
@@ -49,7 +49,7 @@ export default function BESTSERVICESOne() {
           :
           <div className="col-lg-4 col-md-6">
           <LazyLoad>
-        <img src={service.img} alt={service.img} className=' w-100' loading='lazy' />
+        <img src={service.img} alt={service.header} className=' w-100' loading='lazy' />
           </LazyLoad>
         </div>
             }

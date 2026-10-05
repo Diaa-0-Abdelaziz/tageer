@@ -4,8 +4,8 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
 import { IoCallSharp } from "react-icons/io5";
 import { Link } from 'react-router-dom';
-import fallbackLogo from "../images/img_artboard_2_169x246.png"
-export default function MainCardCursel({productId, productImage, productTitle, ownerWhatsapp, ownerEmail, ownerCall, pricePerDay = 500, pricePerWeek = 3500, pricePerMonth = 10000, deposit = 2000, minDays = 2, supplier = "Tajeer rental partner", supplierLogo}) {
+import fallbackLogo from "../images/brand/zenith-icon.png"
+export default function MainCardCursel({productId, productImage, productTitle, ownerWhatsapp, ownerEmail, ownerCall, pricePerDay = 500, pricePerWeek = 3500, pricePerMonth = 10000, deposit = 2000, minDays = 2, supplier = "Zenith rental partner", supplierLogo}) {
   return (
     <div className='p-2 content'>
     <div className='slider-pro overflow-hidden position-relative'>

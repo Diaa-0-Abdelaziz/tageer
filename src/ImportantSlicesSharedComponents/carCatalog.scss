@@ -1,0 +1,276 @@
+$primary: #17233E;
+$primary-dark: #0A1220;
+$tint: #E6F6FF;
+$border: #d9dee5;
+$radius: 10px;
+
+.BrandsFilter {
+    padding-bottom: 40px;
+
+    .brand-chips {
+        position: relative;
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
+        padding: 4px 2px 12px;
+        margin-bottom: 18px;
+        scrollbar-width: thin;
+
+        .brand-chip {
+            flex: 0 0 auto;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            border: 1px solid $border;
+            border-radius: 30px;
+            background: #fff;
+            color: #222;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all .2s ease;
+
+            span {
+                font-size: 12px;
+                padding: 1px 8px;
+                border-radius: 20px;
+                background: $tint;
+                color: $primary;
+            }
+
+            &:hover { border-color: $primary; }
+
+            &.active {
+                background: $primary;
+                border-color: $primary;
+                color: #fff;
+
+                span { background: rgba(255, 255, 255, .22); color: #fff; }
+            }
+        }
+    }
+
+    .results-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 16px;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        scroll-margin-top: 16px;
+
+        .results-count { margin: 0 0 8px; font-size: 20px; font-weight: 700; }
+
+        .active-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .active-chip {
+            border: none;
+            background: $tint;
+            color: $primary;
+            border-radius: 20px;
+            padding: 4px 12px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+
+            span { margin-left: 4px; font-size: 15px; }
+            &:hover { background: darken($tint, 6%); }
+        }
+
+        .clear-all {
+            border: none;
+            background: none;
+            color: #555;
+            font-size: 13px;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .results-actions {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .filters-toggle {
+            display: none;
+            padding: 9px 16px;
+            border: 1px solid $primary;
+            background: #fff;
+            color: $primary;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .sort-by {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 0;
+            font-size: 14px;
+
+            select {
+                padding: 9px 12px;
+                border: 1px solid $border;
+                border-radius: 6px;
+                background: $tint;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .filter-panel {
+        background: #fff;
+        border: 1px solid $border;
+        border-radius: $radius;
+        padding: 20px;
+        position: sticky;
+        top: 16px;
+        margin-bottom: 24px;
+
+        .filter-title {
+            margin-bottom: 18px;
+            h2 { font-size: 20px; font-weight: 700; margin: 0; }
+            p { margin: 2px 0 0; font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; color: #777; }
+        }
+
+        .filter-item { margin-bottom: 12px; }
+
+        input[type="text"], select {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid $border;
+            border-radius: 6px;
+            background: $tint;
+            font-size: 14px;
+        }
+        select { cursor: pointer; }
+
+        .filter-label {
+            margin: 16px 0 8px;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: .5px;
+            color: #333;
+        }
+
+        .pill-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .pill {
+            padding: 6px 14px;
+            border: 1px solid $border;
+            border-radius: 20px;
+            background: #fff;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all .2s ease;
+
+            &:hover { border-color: $primary; }
+            &.active { background: $primary; border-color: $primary; color: #fff; }
+        }
+
+        .price-values {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .filter-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+    }
+
+    .find-car, .reset {
+        padding: 11px 16px;
+        border-radius: 6px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    .find-car {
+        flex: 1;
+        background: $primary;
+        color: #fff;
+        border: 1px solid $primary;
+        &:hover { background: $primary-dark; }
+    }
+    .reset {
+        background: #fff;
+        color: $primary;
+        border: 1px solid $border;
+        &:disabled { opacity: .45; cursor: not-allowed; }
+    }
+
+    .carts .card { margin: 0 0 20px; }
+
+    .no-results {
+        text-align: center;
+        padding: 60px 20px;
+        border: 1px dashed $border;
+        border-radius: $radius;
+
+        h4 { font-weight: 700; }
+        p { color: #666; }
+        .find-car { flex: none; }
+    }
+
+    .pagination {
+        justify-content: center;
+        gap: 6px;
+        margin-top: 10px;
+
+        .page-link {
+            border-radius: 6px;
+            color: $primary;
+            min-width: 40px;
+            text-align: center;
+        }
+        .page-item.active .page-link { background: $primary; border-color: $primary; color: #fff; }
+        .page-item.disabled .page-link { opacity: .5; }
+    }
+
+    @media (max-width: 1199.98px) {
+        .results-bar .filters-toggle { display: inline-block; }
+        .filter-panel {
+            display: none;
+            position: static;
+            &.open { display: block; }
+        }
+    }
+
+    @media (max-width: 575.98px) {
+        .results-bar {
+            .results-actions { width: 100%; justify-content: space-between; }
+            .sort-by span { display: none; }
+        }
+    }
+}
+
+// Match the navbar palette across the whole Brands page (the shared card / heading
+// styles in App.scss use the older purple).
+.NavyPage {
+    .CarType .CarType_Header h3,
+    .FILTER .Autos { color: $primary; }
+
+    .CarType .CarType_Header h3 { border-bottom-color: $primary; }
+
+    .card .feature_details .pricing li { color: $primary; }
+
+    .card .contact ul li i { color: $primary; }
+}

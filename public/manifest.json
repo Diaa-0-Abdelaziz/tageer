@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Zenith",
+  "name": "Zenith Car Rental",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,7 +8,7 @@
       "type": "image/x-icon"
     },
     {
-      "src": "img_artboard_2_169x246.png",
+      "src": "zenith-icon.png",
       "type": "image/png",
       "sizes": "192x192"
     },

@@ -5,13 +5,21 @@ import { FiMinus } from "react-icons/fi";
 export default function FAQ() {
     const [toggleState, setToggleState] = useState({});
     const faqData = [
-        { id: 1, 
-            question: "Can I take a rental car from Dubai to Oman?", 
-            answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quo nam nesciunt laboriosam iste laborum corrupti corporis quaerat ut perspiciatis?" 
+        { id: 1,
+            question: "What is the security deposit for a luxury car?",
+            answer: "Deposits typically range from AED 2,000 to AED 10,000 depending on the car, and are refunded after the vehicle is returned undamaged."
         },
-        { id: 2, 
-          question: "Can I take a rental car from Dubai to Oman?",
-          answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quo nam nesciunt laboriosam iste laborum corrupti corporis quaerat ut perspiciatis?" 
+        { id: 2,
+            question: "Is there a daily mileage limit?",
+            answer: "Yes, most luxury rentals include 250 km per day. Additional kilometres are charged at a per-km rate shown in the listing."
+        },
+        { id: 3,
+            question: "Can I hire a chauffeur with a luxury car?",
+            answer: "Yes. Many listings offer an optional professional chauffeur for an extra daily fee."
+        },
+        { id: 4,
+            question: "Where can the car be delivered?",
+            answer: "Delivery is available to your hotel, home, office or any airport terminal in the UAE, often free of charge."
         },
     ];
     

@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react'
 import logo from "../images/brand/zenith-icon.png"
 import lamborghini from "../images/img_lamborghiniurus.png"
 import img_calendar from "../images/img_calendar.svg"
-import logo_dodge from "../images/img_dodge_logo.png"
-import logo_chrysler from "../images/img_chrysler_logo.png"
-import logo_infiniti from "../images/img_infinity_logo.png"
-import logo_tesla from "../images/img_tesla_logo.png"
-import app_Store from "../images/app store.png"
-import google_Play from "../images/google play.png"
+import logo_bmw from "../images/carbrands/bmw.png"
+import logo_mercedes from "../images/carbrands/mercedes-benz.png"
+import logo_audi from "../images/carbrands/audi.png"
+import logo_rangerover from "../images/carbrands/range-rover.png"
+import logo_toyota from "../images/carbrands/toyota.png"
+import logo_nissan from "../images/carbrands/nissan.png"
 import { CiLocationOn } from "react-icons/ci";
 import { IoEarthOutline } from "react-icons/io5";
 import { RiMoneyDollarCircleLine } from "react-icons/ri";
@@ -108,24 +108,34 @@ export default function Navbar() {
                    ];
   const carBrands = [
     {
-      linkName:"Dodge",
-      img:logo_dodge,
-      path:"./Brands"
+      linkName:"BMW",
+      img:logo_bmw,
+      path:"/Brands?brand=BMW"
      },
     {
-      linkName:"Chrysler",
-      img:logo_chrysler,
-      path:"./Brands"
+      linkName:"Mercedes-Benz",
+      img:logo_mercedes,
+      path:"/Brands?brand=Mercedes-Benz"
      },
     {
-      linkName:"Infiniti",
-      img:logo_infiniti,
-      path:"./Brands"
+      linkName:"Audi",
+      img:logo_audi,
+      path:"/Brands?brand=Audi"
      },
     {
-      linkName:"Tesla",
-      img:logo_tesla,
-      path:"./Brands"
+      linkName:"Range Rover",
+      img:logo_rangerover,
+      path:"/Brands?brand=Land%20Rover"
+     },
+    {
+      linkName:"Toyota",
+      img:logo_toyota,
+      path:"/Brands?brand=Toyota"
+     },
+    {
+      linkName:"Nissan",
+      img:logo_nissan,
+      path:"/Brands?brand=Nissan"
      },
                    ];
 
@@ -298,7 +308,7 @@ export default function Navbar() {
   }
   return (
     <header>
-    {(!open || !openSetting || carBrand) && <div className="nav-backdrop" onClick={closeAllPanels}></div>}
+    {(!open || !openSetting) && <div className="nav-backdrop" onClick={closeAllPanels}></div>}
     <div className="navbar">
         <div className="content d-flex justify-content-around flex-nowrap">
            <span className='setting_btn icon-btn d-none' onClick={openSettingList}> <IoMdSettings/></span>
@@ -307,7 +317,7 @@ export default function Navbar() {
             <Link to="/ListYourCars" className=' text-decoration-none' aria-label="Go to list your cars page">
             <div className='advertisement px-2 me-4 d-flex align-items-center bg-light'>
               <img src={lamborghini} alt={lamborghini} className='lamborghini' loading='lazy' />
-              <p className='badge text-dark mt-2'>List your cars in <span className='bolder'>TAJEER</span> platform</p>
+              <p className='badge text-dark mt-2'>List your cars in <span className='bolder'>ZENITH</span> platform</p>
               <img src={img_calendar} alt={img_calendar} className='img_calendar' loading='lazy' />
             </div>
             </Link>
@@ -436,7 +446,18 @@ export default function Navbar() {
             {carBrand? <IoIosArrowUp className='arrow' /> : <FaAngleDown className='arrow' />}
             <span className='header'>Car brands</span>
             </div>
-           
+            {carBrand && (
+                <ul className="options brand-options">
+                    {carBrands.map((option, index) => (
+                        <li key={index} onClick={() => handleOptionClick7(option)}>
+                          <Link to={option.path} className=' text-decoration-none' aria-label={`Go to ${option.linkName} page`}>
+                            <img src={option.img} alt={option.linkName} width={48} height={30} loading='lazy' />
+                            <span>{option.linkName}</span>
+                          </Link>
+                        </li>
+                    ))}
+                </ul>
+            )}
                 </div>
               </li>
               <li>
@@ -489,14 +510,6 @@ export default function Navbar() {
             </ul>
             {/*******social links******** */}
             <div className='appAndSocial m-auto d-flex align-items-center'>
-             <ul className='appsLink d-flex align-items-center list-unstyled'>
-              <li>
-                 <a href="https://play.google.com/store/apps/details?id=com.tajeer&hl=en&gl=US&pli=1" target='_blank' rel="noopener noreferrer"><img src={google_Play} alt={google_Play} loading='lazy' /></a>
-              </li>
-              <li>
-                 <a href="https://apps.apple.com/sa/app/tajeer-rent-a-car-in-dubai/id1458290275" target='_blank' rel="noopener noreferrer"><img src={app_Store} alt={app_Store} loading='lazy' /></a>
-              </li>
-             </ul>
               <ul className=' mt-3 social list-unstyled d-flex'>
                 <li><a href="tel:+971 52 313 1587"><IoMdCall/><span className="hidden-text">Call Us</span></a></li>
                 <li className='facebook'><a href="https://www.facebook.com/Tajeercarrental" target='_blank' rel="noopener noreferrer"><FaFacebookF/><span className="hidden-text">Facebook</span></a></li>
@@ -505,19 +518,6 @@ export default function Navbar() {
               </ul>
             </div>
           </div> 
-
-          {carBrand && (
-                <ul className="Brand_Options">
-                    {carBrands.map((option, index) => (
-                        <li key={index} onClick={() => handleOptionClick7(option)}>
-                          <Link to={option.path} className=' text-decoration-none' aria-label={`Go to ${option.linkName} page`}>
-                          <img src={option.img} alt={option.img} width={80} height={50} loading='lazy' />
-                            <span className=' ms-2'>{option.linkName}</span>
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
-            )}
         </div>
         {logIN? <Login toggleVisibility={() => setLogIN(false)} forgotPASSWORD={ForgetPasswordSetting}/> : ''}
         {register? <Register toggleVisibility={() => setRegister(false)}/> :  ''}

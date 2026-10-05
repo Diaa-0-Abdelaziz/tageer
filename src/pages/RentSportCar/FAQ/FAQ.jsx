@@ -5,13 +5,21 @@ import { FiMinus } from "react-icons/fi";
 export default function FAQ() {
     const [toggleState, setToggleState] = useState({});
     const faqData = [
-        { id: 1, 
-            question: "Can I take a rental car from Dubai to Oman?", 
-            answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quo nam nesciunt laboriosam iste laborum corrupti corporis quaerat ut perspiciatis?" 
+        { id: 1,
+            question: "What is the minimum age to rent a sports car?",
+            answer: "The minimum age is usually 25, with at least one year of holding a valid driving licence. Some high-performance cars require 30+."
         },
-        { id: 2, 
-          question: "Can I take a rental car from Dubai to Oman?",
-          answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quo nam nesciunt laboriosam iste laborum corrupti corporis quaerat ut perspiciatis?" 
+        { id: 2,
+            question: "What documents do I need?",
+            answer: "A valid passport, visa or Emirates ID, and a driving licence. Tourists should carry an International Driving Permit if their licence is not in English or Arabic."
+        },
+        { id: 3,
+            question: "Is insurance included?",
+            answer: "Basic insurance is included with an excess. Zero-excess cover can be added at booking."
+        },
+        { id: 4,
+            question: "What is the mileage allowance?",
+            answer: "Sports cars typically include 150\u2013250 km per day. Extra kilometres are charged per km."
         },
     ];
     

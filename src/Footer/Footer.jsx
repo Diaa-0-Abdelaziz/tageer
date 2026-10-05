@@ -5,8 +5,8 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
 import { GoDotFill } from "react-icons/go";
-import google_play from "../images/google play.png"
-import app_store from "../images/app store.png"
+import google_play from "../images/apps images/google play.png"
+import app_store from "../images/apps images/app store.png"
 import "./footer.css"
 
 const footerColumns = [
@@ -20,7 +20,7 @@ const footerColumns = [
   },
   {
     title: 'Company',
-    items: ['About Us', 'Rent by Brand', 'Privacy Policy', 'Contact Us', 'TAJEER FAQs', 'Car Rental Blog', 'Our Offers'],
+    items: ['About Us', 'Rent by Brand', 'Privacy Policy', 'Contact Us', 'ZENITH FAQs', 'Car Rental Blog', 'Our Offers'],
   },
   {
     title: 'Support',
@@ -62,7 +62,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className='copyright'>© {new Date().getFullYear()} Tajeer Car Rental. All rights reserved.</div>
+      <div className='copyright'>© {new Date().getFullYear()} Zenith Car Rental. All rights reserved.</div>
     </footer>
     </LazyLoad>
     </>

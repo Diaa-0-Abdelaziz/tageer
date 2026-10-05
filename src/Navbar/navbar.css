@@ -497,6 +497,12 @@ header .navlist .twitter {
     background-color: #E6F6FF;
     width: 100%;
   }
+  header .navlist .content .navlinks li .custom-select .options li {
+    transition: all 0.25s ease;
+  }
+  header .navlist .content .navlinks li .custom-select .options li:hover {
+    background-color: rgba(23, 35, 62, 0.12);
+  }
   header .navlist .content .navlinks .navlinks > li > a.fs-18::after,
   header .navlist .content .navlinks .custom-select .selected-option::after {
     display: none;
@@ -528,56 +534,16 @@ header .navlist .twitter {
   }
 }
 
-.Brand_Options {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: min(760px, 92vw);
-  max-height: 70vh;
-  background-color: #fff;
-  overflow: auto;
-  color: #17233E;
-  font-size: 12.5px;
-  font-weight: 600;
-  border: none;
-  text-align: center;
-  border-radius: 20px;
-  box-shadow: 0 4px 18px rgba(23, 35, 62, 0.12);
-  list-style-type: none;
-  margin: 0;
-  padding: 14px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-  gap: 6px;
-  z-index: 99999;
-}
-.Brand_Options li {
-  padding: 10px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.25s ease;
-}
-.Brand_Options li a {
+.options.brand-options li a {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 6px;
-  text-decoration: none;
-  color: #17233E;
+  gap: 10px;
 }
-.Brand_Options li a img {
-  border-radius: 8px;
-}
-.Brand_Options li:hover {
-  background-color: #E6F6FF;
-  transform: scale(1.04);
-}
-
-@media screen and (max-width: 576px) {
-  .Brand_Options {
-    grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
-  }
+.options.brand-options li a img {
+  width: 48px;
+  height: 30px;
+  object-fit: contain;
+  border-radius: 4px;
 }
 
 /*# sourceMappingURL=navbar.css.map */

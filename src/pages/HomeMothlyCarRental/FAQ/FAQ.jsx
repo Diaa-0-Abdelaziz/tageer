@@ -5,13 +5,21 @@ import { FiMinus } from "react-icons/fi";
 export default function FAQ() {
     const [toggleState, setToggleState] = useState({});
     const faqData = [
-        { id: 1, 
-            question: "Can I take a rental car from Dubai to Oman?", 
-            answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quo nam nesciunt laboriosam iste laborum corrupti corporis quaerat ut perspiciatis?" 
+        { id: 1,
+            question: "How much cheaper is monthly rental than daily rental?",
+            answer: "Monthly rates are usually 40\u201360% lower per day than short-term rates, depending on the car and season."
         },
-        { id: 2, 
-          question: "Can I take a rental car from Dubai to Oman?",
-          answer: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quo nam nesciunt laboriosam iste laborum corrupti corporis quaerat ut perspiciatis?" 
+        { id: 2,
+            question: "Is maintenance included in a monthly rental?",
+            answer: "Yes. Routine servicing, registration and basic insurance are included. You only pay for fuel, Salik tolls and fines."
+        },
+        { id: 3,
+            question: "Is there a mileage limit?",
+            answer: "Most monthly rentals include around 3,000 km. Extra kilometres are charged at a small per-km rate, and unlimited-mileage options are available."
+        },
+        { id: 4,
+            question: "Can I extend or end my monthly rental early?",
+            answer: "You can extend at any time subject to availability. Early returns are accepted with prior notice, and the terms depend on the rental company."
         },
     ];
     

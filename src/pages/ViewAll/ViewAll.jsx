@@ -37,7 +37,7 @@ export default function ViewAll() {
         <p className={` position-relative ${isExpanded ? 'expanded' : 'collapsed'}`}>
           {query
             ? `Results are matched on the car name, brand, model, body type and rental company, so a search for a brand returns every car that company lists. `
-            : `This is the full fleet currently listed on Tajeer, from the cheapest economy sedans to the luxury SUVs. `}
+            : `This is the full fleet currently listed on Zenith, from the cheapest economy sedans to the luxury SUVs. `}
           Rates are shown per day, per week and per month, and the weekly and monthly prices work out cheaper per
           day than booking day by day. The mileage allowance and the refundable security deposit are listed on
           each car, and comprehensive insurance is already included in every price you see.

@@ -4,10 +4,9 @@ export default function Info() {
     <>
     <section className=' pt-3 mt-5'>
         <div className="container">
-        <p className=' fw-bold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, laborum.</p>
+        <p className=' fw-bold'>We are here to help, seven days a week.</p>
         <p className='position-relative'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Questions about a booking, a car or listing your own vehicle? Call or WhatsApp us on +971 52 313 1587, or send us a message using the form below and we will reply within one business day. Our team is available daily from 9:00 AM to 10:00 PM (GST).
         </p>
         </div>
     </section>

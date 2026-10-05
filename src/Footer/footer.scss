@@ -6,7 +6,12 @@ footer
 {
     margin-top: 100px;
     padding: 20px;
-    background-image: linear-gradient($navy 0%, $navy-dark 100%);
+    background-color: $navy-dark;
+    background-image: linear-gradient(180deg, rgba($navy, .72) 0%, rgba($navy-dark, .55) 45%, rgba($navy-dark, .88) 100%),
+                      url("../images/footer-bg.jpg");
+    background-size: cover;
+    background-position: center 35%;
+    background-repeat: no-repeat;
     color: white;
     .social
     {
@@ -149,9 +154,11 @@ footer
         }
     }
    @media screen and (max-width:507px){
-    background-image: linear-gradient($navy 0%, $navy-dark 100%), url(../images/dots.png);
-    background-size: auto;
-    background-repeat: repeat;
+    background-image: linear-gradient(180deg, rgba($navy, .8) 0%, rgba($navy-dark, .6) 40%, rgba($navy-dark, .9) 100%),
+                      url("../images/footer-bg.jpg");
+    background-size: cover;
+    background-position: 62% bottom;
+    background-repeat: no-repeat;
     color: white;
     font-weight: 500;
    }

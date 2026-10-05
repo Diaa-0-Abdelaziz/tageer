@@ -6,9 +6,9 @@ export default function BESTSERVICES() {
   let BESTSERVICES=[
     {
       img:img_your_image_mask,
-      eyebrow:"Why Tajeer",
+      eyebrow:"Why Zenith",
       header:"We always deliver the best service",
-      explanation:"Every car on Tajeer is verified and insured before it goes live. Transparent pricing, flexible pickup and 24/7 support mean you can book with confidence, anywhere in the UAE."
+      explanation:"Every car on Zenith is verified and insured before it goes live. Transparent pricing, flexible pickup and 24/7 support mean you can book with confidence, anywhere in the UAE."
     },
     {
       img:img_fleet_variety,

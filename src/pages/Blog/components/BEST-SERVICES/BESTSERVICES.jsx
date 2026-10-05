@@ -6,12 +6,12 @@ export default function BESTSERVICES() {
     {
       img:img_your_image_mask,
       header:"We will allways provide the best services",
-      explanation:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eius necessitatibus aspernatur dolorum aliquid facilis exercitationem deserunt nemo eveniet itaque, magnam nisi tenetur molestiae dolor vitae corporis! Esse voluptas necessitatibus autem labore quod, earum tenetur corrupti reprehenderit aut suscipit natus. Commodi natus cum at esse molestiae iste dicta velit enim? Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eius necessitatibus aspernatur dolorum aliquid facilis exercitationem deserunt nemo eveniet itaque, magnam nisi tenetur molestiae dolor vitae corporis! Esse voluptas necessitatibus autem labore quod, earum tenetur corrupti reprehenderit aut suscipit natus. Commodi natus cum at esse molestiae iste dicta velit enim?"
+      explanation:"We bring together trusted rental companies across the UAE so you can compare prices, read verified reviews and book with confidence. Every listing shows what is included, with clear terms and no hidden fees, and our support team is available seven days a week to help before and after you book."
     },
     {
       img:img_your_image_mask,
       header:"We will allways provide the best services",
-      explanation:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eius necessitatibus aspernatur dolorum aliquid facilis exercitationem deserunt nemo eveniet itaque, magnam nisi tenetur molestiae dolor vitae corporis! Esse voluptas necessitatibus autem labore quod, earum tenetur corrupti reprehenderit aut suscipit natus. Commodi natus cum at esse molestiae iste dicta velit enim? Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eius necessitatibus aspernatur dolorum aliquid facilis exercitationem deserunt nemo eveniet itaque, magnam nisi tenetur molestiae dolor vitae corporis! Esse voluptas necessitatibus autem labore quod, earum tenetur corrupti reprehenderit aut suscipit natus. Commodi natus cum at esse molestiae iste dicta velit enim?"
+      explanation:"We bring together trusted rental companies across the UAE so you can compare prices, read verified reviews and book with confidence. Every listing shows what is included, with clear terms and no hidden fees, and our support team is available seven days a week to help before and after you book."
     }
   ]
   return (

@@ -93,7 +93,7 @@ export default function Testimonials() {
           userLocation:"Abu Dhabi, UAE",
           userPicture:img1,
           img:google,
-          article:"“I've used Tajeer three times now for business trips. Always reliable, always on time.”"
+          article:"“I've used Zenith three times now for business trips. Always reliable, always on time.”"
         },
         {
           id:5,
