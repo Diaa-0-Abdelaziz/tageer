@@ -917,7 +917,13 @@
       "messageRequired": "message is required",
       "messageMin": "Please write 10 characters or more",
       "messageMax": "max length is 500 characters"
-    }
+    },
+    "success": "Thank you! Your message has been sent. We will reply within one business day.",
+    "sendAnother": "Send another message",
+    "hours": "Open daily 9:00 AM – 10:00 PM (GST)",
+    "reach": "Reach us",
+    "formIntro": "Fill in the form and a member of our team will get back to you.",
+    "openMap": "Open in Google Maps"
   },
   "auth": {
     "signIn": "Sign in",

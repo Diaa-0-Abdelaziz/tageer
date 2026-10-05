@@ -649,6 +649,36 @@ header {
     }
 }
 
+// ---- Desktop link row: line the links and the social icons up with the page container ----
+// (Both languages. The old `m-auto` centring let the row float to wherever the link text
+// happened to end, which looked off in Arabic where the labels are wider.)
+@media screen and (min-width: 1301px) {
+    header .navlist {
+        .content {
+            width: 100%;
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 12px;
+            justify-content: space-between !important;
+        }
+
+        .navlinks {
+            margin: 0 !important;
+            padding: 0 !important;
+            gap: 30px;
+            justify-content: flex-start !important;
+
+            > li { margin: 0; }
+        }
+
+        .appAndSocial { margin: 0 !important; }
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    header .navlist .content { max-width: 1320px; }
+}
+
 // ---- Right-to-left (Arabic) ----
 [dir="rtl"] header {
     @media screen and (max-width: 1300px) {
