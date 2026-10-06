@@ -60,13 +60,17 @@ export default function Register({ toggleVisibility }) {
                     {formik.touched.email && formik.errors.email ? <p className='text-danger'>{formik.errors.email}</p>: ""}
                 </div>
                 <div className="mb-3">
-                    <PhoneInput 
+                    <PhoneInput
                     inputStyle={{
                         width: '100%',
-                        padding: '15px',
-                        backgroundColor:"#E6F6FF",
-                        border: 'none',
+                        padding: '12px 14px',
+                        height: '46px',
+                        backgroundColor:"#F4F7FB",
+                        border: '1px solid #d9dee5',
+                        borderRadius: '8px',
+                        fontSize: '15px',
                     }}
+                    countrySelectorStyleProps={{ buttonStyle: { height: '46px', backgroundColor: '#F4F7FB', border: '1px solid #d9dee5', borderRadius: '8px', padding: '0 8px' } }}
                     defaultCountry="ae" onChange={phone => formik.setFieldValue('phone', phone)} onBlur={formik.handleBlur} value={formik.values.phone} name='phone'/>
                     {formik.touched.phone && formik.errors.phone ? <p className='text-danger'>{formik.errors.phone}</p>: ""}
                 </div>

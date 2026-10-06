@@ -1,97 +1,181 @@
+// Sign in / Sign up / Forgot password / OTP / Reset password modals
+$primary: #17233E;
+$primary-dark: #0A1220;
+$tint: #E6F6FF;
+$border: #d9dee5;
+$field: #F4F7FB;
+
 .Auth
 {
     z-index: 9999999;
-    background-color: #3a1b5094;
+    background-color: rgba($primary-dark, .62);
+    backdrop-filter: blur(3px);
+    animation: authFade .2s ease-out;
+
     .form_content
     {
-        border-radius: 20px;
+        position: relative;
+        width: min(440px, 92vw);
+        max-height: 92vh;
+        display: flex;
+        flex-direction: column;
+        border-radius: 18px;
         overflow: hidden;
-        background-color: white;
-        width: 60%;
-        
+        background-color: #fff;
+        box-shadow: 0 24px 70px rgba($primary-dark, .45);
+        animation: authPop .25s ease-out;
+
         h6
         {
-            background-color: #E6F6FF;
-            padding: 10px 0;
+            position: relative;
+            margin: 0;
+            padding: 18px 56px 16px;
             text-align: center;
-            font-weight: 400;
+            font-size: 18px;
+            font-weight: 700;
+            color: #fff;
+            background-image: linear-gradient(180deg, $primary 0%, $primary-dark 100%);
+
+            &::before
+            {
+                content: "";
+                display: block;
+                width: 96px;
+                height: 40px;
+                margin: 0 auto 6px;
+                background: url("../images/brand/zenith-icon.png") center / contain no-repeat;
+            }
+
             .close_Window
             {
+                position: absolute !important;
+                top: 14px !important;
+                inset-inline-end: 14px !important;
+                inset-inline-start: auto !important;
+                margin: 0 !important;
+                transform: none !important;
+                padding: 4px;
+                font-size: 28px !important;
+                color: #fff;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, .14);
                 cursor: pointer;
+                transition: background .2s ease;
+
+                &:hover { background: rgba(255, 255, 255, .28); }
             }
         }
-        form 
+
+        form
         {
-            text-align: center;
-            max-height: 600px;
-            overflow: auto;
-            padding: 10px 0;
-            width: 60%;
-            margin: auto;
+            width: 100%;
+            margin: 0;
+            padding: 24px 28px 26px;
+            max-height: calc(92vh - 110px);
+            overflow-y: auto;
+            text-align: start;
+
             .inputsForm
             {
-              border: none;
-              background-color: #E6F6FF;
-              width: 100%;
-              padding: 10px;
-              outline: none;
-            }
-            p 
-            {
-                color: #3A1B50;
-                a 
+                width: 100%;
+                padding: 12px 14px;
+                border: 1px solid $border;
+                border-radius: 8px;
+                background-color: $field;
+                font-size: 15px;
+                outline: none;
+                transition: border-color .2s ease, box-shadow .2s ease, background .2s ease;
+
+                &:focus
                 {
-                    color: #3A1B50;
-                    font-weight: 500;
-                    padding: 0;
-                    font-size: 14px;
+                    border-color: $primary;
+                    background: #fff;
+                    box-shadow: 0 0 0 3px rgba($primary, .12);
                 }
             }
-            button 
+
+            p
             {
-              background-color: #3A1B50;
-              color: white;
-              border: none;
-              width: 70%;
-              padding: 10px 70px;
+                margin: 6px 0 0;
+                font-size: 13px;
+                color: #555;
+                text-align: center;
+
+                &.text-danger { text-align: start; margin-top: 6px; }
+
+                a, .badge
+                {
+                    color: $primary !important;
+                    background: transparent !important;
+                    font-weight: 700;
+                    font-size: 13px;
+                    padding: 0 2px;
+                    text-decoration: underline;
+                }
             }
+
+            // primary action
+            button
+            {
+                width: 100%;
+                padding: 12px;
+                border: none;
+                border-radius: 8px;
+                background-image: linear-gradient(180deg, $primary 0%, $primary-dark 100%);
+                color: #fff;
+                font-weight: 700;
+                letter-spacing: .4px;
+                transition: transform .2s ease, opacity .2s ease;
+
+                &:hover:not(:disabled) { transform: translateY(-1px); }
+                &:disabled { opacity: .45; cursor: not-allowed; }
+            }
+
+            // "forgot password" / "resend" links
             .forgot
             {
-            background-color: #3A1B50;
-              color: white;
-              border: none;
-              width: 70%;
-              padding: 10px 70px;
-              cursor: pointer;
+                background: none;
+                color: $primary;
+                border: none;
+                width: auto;
+                padding: 4px;
+                margin: 4px 0 8px !important;
+                font-size: 13px;
+                font-weight: 600;
+                text-transform: none;
+                text-decoration: underline;
+                cursor: pointer;
             }
-            .signFace
+
+            // social sign-in
+            .signFace, .SignGoogle
             {
-              background-color: #3b5998;
-              padding: 7px 0;
-              color: white;
-              font-size: 20px;
-              cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row-reverse;
+                gap: 10px;
+                padding: 11px 0;
+                border-radius: 8px;
+                font-size: 15px;
+                font-weight: 600;
+                cursor: pointer;
+                transition: transform .2s ease, box-shadow .2s ease;
+
+                &:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba($primary, .16); }
             }
-            .SignGoogle
-            {
-              background-color: #5D90F1;
-              padding: 7px 0;
-              color: white;
-              font-size: 20px;
-              cursor: pointer;
-            }
-        }
-        @media screen and (max-width: 992px) {
-            form
-            {
-                width: 95%;
-            }
-        }
-        @media screen and (max-width: 547px) {
-        
-            
-                width: 95%;
-            
+            .signFace { background-color: #1877F2; color: #fff; }
+            .SignGoogle { background-color: #fff; color: #333; border: 1px solid $border; }
+
+            .phone-field, .react-international-phone-input-container { direction: ltr; }
         }
     }
+
+    @media screen and (max-width: 547px)
+    {
+        .form_content form { padding: 20px 18px 22px; }
+    }
 }
+
+@keyframes authFade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes authPop { from { opacity: 0; transform: translateY(14px) scale(.98); } to { opacity: 1; transform: none; } }

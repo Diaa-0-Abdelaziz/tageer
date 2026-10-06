@@ -33,3 +33,13 @@ html[lang="ar"] .CarType p.collapsed { height: 62px; line-height: 1.7; }
 html[lang="ar"] .CarType p .read_more { line-height: 1.7; }
 /* FAQ: the question text is already large; keep it clear of the +/- button */
 html[lang="ar"] .faq .article .button .question { font-size: 21px; line-height: 1.6; }
+
+/* Phones: keep text off the screen edges. Images that sit outside a container (banners, hero
+   images) stay full width; text inside containers gets a comfortable side gutter. */
+@media (max-width: 575.98px) {
+  body .container,
+  body .container-fluid {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}

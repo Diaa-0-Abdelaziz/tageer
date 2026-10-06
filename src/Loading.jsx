@@ -1,21 +1,18 @@
 import React from 'react'
-import { BallTriangle } from 'react-loader-spinner'
+import { useTranslation } from 'react-i18next'
+import logo from './images/brand/zenith-icon.png'
+import './loading.css'
+
+// Full-area splash shown while a lazy page chunk loads (Suspense fallback).
 export default function Loading() {
+  const { t } = useTranslation();
   return (
-    
-    <>
-    <section className=' position-absolute top-0 bottom-0 start-0 end-0 d-flex align-items-center justify-content-center' style={{backgroundColor:"#3D1F50", zIndex:"9999999"}}>
-      <BallTriangle
-  height={100}
-  width={100}
-  radius={5}
-  color="white"
-  ariaLabel="ball-triangle-loading"
-  wrapperStyle={{}}
-  wrapperClass=""
-  visible={true}
-  />
+    <section className='zenith-loading position-absolute top-0 bottom-0 start-0 end-0' role='status' aria-live='polite' aria-label={t('common.loading')}>
+      <div className='zenith-loading__box'>
+        <img src={logo} alt='' className='zenith-loading__logo' />
+        <div className='zenith-loading__bar' aria-hidden='true'><span></span></div>
+        <p>{t('common.loading')}</p>
+      </div>
     </section>
-    </>
   )
 }

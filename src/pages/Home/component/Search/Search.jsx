@@ -13,6 +13,14 @@ export default function Search() {
   const { car: localizeCar, money } = useLocalize();
   const [query, setQuery] = useState('');
   const [isOpen, setIsOpen] = useState(false);
+  // the long placeholder is cut off on phones, so swap in a short one
+  const [compact, setCompact] = useState(() => window.matchMedia('(max-width: 575.98px)').matches);
+  useEffect(() => {
+    const mq = window.matchMedia('(max-width: 575.98px)');
+    const onChange = (e) => setCompact(e.matches);
+    mq.addEventListener('change', onChange);
+    return () => mq.removeEventListener('change', onChange);
+  }, []);
   const navigate = useNavigate();
   const boxRef = useRef(null);
 
@@ -62,7 +70,7 @@ export default function Search() {
   <input
     type="search"
     className=" w-100"
-    placeholder={t('home.search.placeholder')}
+    placeholder={t(compact ? 'home.search.placeholderShort' : 'home.search.placeholder')}
     aria-label={t('home.search.aria')}
     value={query}
     onChange={(event) => { setQuery(event.target.value); setIsOpen(true); }}

@@ -78,7 +78,8 @@
     "whatsapp": "WHATSAPP",
     "email": "EMAIL",
     "call": "CALL",
-    "faq": "FAQ"
+    "faq": "FAQ",
+    "loading": "Loading…"
   },
   "home": {
     "search": {
@@ -88,7 +89,8 @@
       "noMatch": "No cars match “{{query}}”. Try a brand, a body type or “cheap”.",
       "perDay": "{{price}}/day",
       "seeAll": "See all {{count}} results",
-      "coverAlt": "Cars available to rent in Dubai"
+      "coverAlt": "Cars available to rent in Dubai",
+      "placeholderShort": "Search by car or brand…"
     },
     "carType": {
       "title": "Choose your favorite car type",

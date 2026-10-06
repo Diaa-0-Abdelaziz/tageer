@@ -1,0 +1,62 @@
+$primary: #17233E;
+$primary-dark: #0A1220;
+$cyan: #4FC3F7;
+
+.zenith-loading
+{
+    z-index: 9999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: radial-gradient(circle at 50% 40%, lighten($primary, 6%) 0%, $primary 45%, $primary-dark 100%);
+    animation: loadingFade .2s ease-out;
+
+    &__box
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        color: rgba(255, 255, 255, .75);
+        text-align: center;
+        p { margin: 0; font-size: 14px; letter-spacing: .6px; }
+    }
+
+    &__logo
+    {
+        width: 150px;
+        max-width: 50vw;
+        animation: loadingPulse 1.6s ease-in-out infinite;
+        filter: drop-shadow(0 0 18px rgba($cyan, .35));
+    }
+
+    &__bar
+    {
+        position: relative;
+        width: 160px;
+        height: 3px;
+        border-radius: 3px;
+        overflow: hidden;
+        background: rgba(255, 255, 255, .15);
+
+        span
+        {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 40%;
+            border-radius: 3px;
+            background: linear-gradient(90deg, transparent, $cyan, transparent);
+            animation: loadingSlide 1.1s ease-in-out infinite;
+        }
+    }
+}
+
+@keyframes loadingFade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes loadingPulse { 0%, 100% { transform: scale(1); opacity: .9; } 50% { transform: scale(1.06); opacity: 1; } }
+@keyframes loadingSlide { from { left: -40%; } to { left: 100%; } }
+
+@media (prefers-reduced-motion: reduce)
+{
+    .zenith-loading__logo, .zenith-loading__bar span { animation: none; }
+}
