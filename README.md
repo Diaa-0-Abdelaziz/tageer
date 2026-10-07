@@ -1,70 +1,120 @@
-# Getting Started with Create React App
+<div align="center">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src="public/zenith-icon.png" alt="ZENITH logo" width="110" />
 
-## Available Scripts
+# ZENITH
 
-In the project directory, you can run:
+**A bilingual (Arabic / English) marketplace for renting cars, chauffeur services and yachts.**
 
-### `npm start`
+[**🌐 Live Demo**](https://tajeer-v376.vercel.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=white)
+![React Router](https://img.shields.io/badge/React_Router-6-CA4245?logo=reactrouter&logoColor=white)
+![MUI](https://img.shields.io/badge/MUI-5-007FFF?logo=mui&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5-7952B3?logo=bootstrap&logoColor=white)
+![i18next](https://img.shields.io/badge/i18n-AR%20%7C%20EN-26A69A)
+![Node](https://img.shields.io/badge/Node-24.x-339933?logo=nodedotjs&logoColor=white)
+![Deployed on Vercel](https://img.shields.io/badge/Deployed_on-Vercel-000000?logo=vercel&logoColor=white)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+</div>
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Overview
 
-### `npm run build`
+ZENITH lets users browse and compare rental cars, hire cars with a driver, discover yacht charters and explore rental companies, all in a responsive interface with full right-to-left (RTL) support.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Car rental**: browse by brand, model, category (luxury, sport, cheap) and monthly deals.
+- **Chauffeur service**: rent a car with a driver, with dedicated detail pages.
+- **Yachts**: yacht catalogue with detail pages and image galleries.
+- **Rental companies and offers**: company listings and special deals.
+- **Bilingual**: Arabic and English via `i18next`, with automatic RTL/LTR layout.
+- **Authentication UI**: login, register, forgot/reset password and verification code flow.
+- **User account area** and a **"List your cars"** page for owners.
+- **Content pages**: About us, Contact us, Blog, FAQ, Privacy Policy and Terms & Conditions.
+- **Polished UX**: loading screen, scroll-to-top button, mobile-friendly search, carousels and galleries.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Tech Stack
 
-### `npm run eject`
+| Area | Tools |
+| --- | --- |
+| Framework | React 18, Create React App (`react-scripts` 5) |
+| Routing | React Router v6 |
+| UI | MUI, Bootstrap 5, styled-components, Sass |
+| Forms & validation | Formik, Yup, `react-international-phone`, `libphonenumber-js` |
+| Carousels & media | Swiper, React Slick, React Image Gallery |
+| i18n | i18next, react-i18next |
+| Typography | Cairo (variable font) |
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Getting Started
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Prerequisites
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Node.js **24.x**
+- npm
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Installation
 
-## Learn More
+```bash
+git clone https://github.com/Diaa-0-Abdelaziz/tageer.git
+cd tageer
+npm install --legacy-peer-deps
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+> `--legacy-peer-deps` is required because of peer-dependency conflicts between some UI packages (this is also what the Vercel build uses).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Run locally
 
-### Code Splitting
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The app opens at [http://localhost:3000](http://localhost:3000).
 
-### Analyzing the Bundle Size
+### Production build
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+npm run build
+```
 
-### Making a Progressive Web App
+The optimized bundle is written to the `build/` folder.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Scripts
 
-### Advanced Configuration
+| Command | Description |
+| --- | --- |
+| `npm start` | Start the development server |
+| `npm run build` | Create a production build |
+| `npm test` | Run tests in watch mode |
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Project Structure
 
-### Deployment
+```text
+tageer/
+├── public/              # Static assets, index.html, manifest
+├── scripts/             # Build helpers (e.g. copy-bootstrap.js)
+└── src/
+    ├── Authentication/  # Login, register, password reset flows
+    ├── data/            # Catalogue data: cars, chauffeurs, companies, offers, yachts
+    ├── i18n/            # i18next setup and ar/en locale files
+    ├── pages/           # Route-level pages (Home, CarList, Yachts, Blog, FAQ, ...)
+    ├── Layout/          # App layout wrapper
+    ├── Navbar/          # Header and navigation
+    ├── Footer/          # Site footer
+    ├── Breadcrumb/      # Breadcrumb navigation
+    └── App.jsx          # Routes and app root
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Internationalization
 
-### `npm run build` fails to minify
+Translations live in `src/i18n/locales`. To add or edit text, update the matching key in both the Arabic and English files so the two languages stay in sync.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Deployment
+
+The project is live at [tajeer-v376.vercel.app](https://tajeer-v376.vercel.app/), deployed on **Vercel** (Node 24, install with `--legacy-peer-deps`). Any static host that can serve the `build/` folder will also work, as long as it rewrites unknown routes to `index.html` for client-side routing.
+
+## Author
+
+**Diaa Abdelaziz** · [@Diaa-0-Abdelaziz](https://github.com/Diaa-0-Abdelaziz)
